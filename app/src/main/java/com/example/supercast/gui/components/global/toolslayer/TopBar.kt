@@ -15,6 +15,11 @@ import com.example.supercast.ui.Colors
 
 
 
+private val colorBack = Colors.BarBackground
+private val colorCorner = Colors.BarBorder
+
+
+
 @Composable
 fun TopBar (
     someParams: String = "",
@@ -24,12 +29,12 @@ fun TopBar (
     Box (
         modifier = Modifier
             .fillMaxWidth ()
-            .background (Colors.BarBackground)
+            .background (colorBack)
             .statusBarsPadding ()
             .height (65.5.dp)
-            .background (Colors.BarBorder)
+            .background (colorCorner)
             .padding (bottom = 2.dp)
-            .background (Colors.BarBackground)
+            .background (colorBack)
     ) {
 
         content ()

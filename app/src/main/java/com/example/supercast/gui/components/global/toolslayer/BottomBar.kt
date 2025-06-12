@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.Alignment
@@ -26,6 +27,22 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.supercast.R
 import com.example.supercast.ui.Colors
+
+
+
+private val barColorBack = Colors.BarBackground
+private val barColorCorner = Colors.BarBorder
+
+private val separatorColor = Colors.Button
+
+private val picCollectionsLight = R.drawable.collections_light
+private val picCollectionsDark = R.drawable.collections_dark
+private val picPieLight = R.drawable.pie_light
+private val picPieDark = R.drawable.pie_dark
+private val picHomeLight = R.drawable.home_light
+private val picHomeDark = R.drawable.home_dark
+
+private const val picsDescription = "[navigation picture]"
 
 
 
@@ -51,13 +68,12 @@ private fun Bar (
     Box (
         modifier = Modifier
             .fillMaxWidth ()
-            .background (Colors.BarBackground)
+            .background (barColorBack)
             .navigationBarsPadding ()
-//            .safeGesturesPadding ()
             .height (65.5.dp)
-            .background (Colors.BarBorder)
+            .background (barColorCorner)
             .padding (top = 2.dp)
-            .background (Colors.BarBackground)
+            .background (barColorBack)
     ) {
 
         content ()
@@ -76,9 +92,8 @@ private fun SeparatorsLayer () {
 
         Box (
             modifier = Modifier
-                .height (25.dp)
-                .width (2.dp)
-                .background (color = Colors.Button)
+                .size (2.dp, 25.dp)
+                .background (color = separatorColor)
                 .clip (RoundedCornerShape (25.dp))
         )
 
@@ -86,10 +101,10 @@ private fun SeparatorsLayer () {
 
 
     Row (
+        verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceEvenly,
         modifier = Modifier
-            .fillMaxSize (),
-        verticalAlignment = Alignment.CenterVertically
+            .fillMaxSize ()
     ) {
 
         Separator ()
@@ -104,31 +119,29 @@ private fun SeparatorsLayer () {
 @Composable
 private fun ButtonsLayer (destination: String) {
 
-    var configuration = LocalConfiguration.current
-
-    var screenWidth = (configuration.screenWidthDp + 1).dp
-    var buttonWidth = screenWidth / 3
-
-
     @Composable
     fun NavButton (
-        picture: Painter
+        picture: Painter,
+        onClick: () -> Unit?
     ) {
 
+        val screenWidth = (LocalConfiguration.current.screenWidthDp + 1).dp
+        val buttonWidth = screenWidth / 3
+
+
         Box (
+            contentAlignment = Alignment.Center,
             modifier = Modifier
+                .clickable {onClick ()}
                 .fillMaxHeight ()
                 .width (buttonWidth)
-                .clickable {},
-            contentAlignment = Alignment.Center
         ) {
 
             Image (
-                modifier = Modifier
-                    .width (30.dp)
-                    .height (30.dp),
                 painter = picture,
-                contentDescription = "[navigation picture]"
+                contentDescription = picsDescription,
+                modifier = Modifier
+                    .size (30.dp)
             )
 
         }
@@ -142,13 +155,16 @@ private fun ButtonsLayer (destination: String) {
     ) {
 
         NavButton (
-            picture = painterResource (if (destination == "collections") R.drawable.collections_light else R.drawable.collections_dark)
+            picture = painterResource (if (destination == "collections") picCollectionsLight else picCollectionsDark),
+            onClick = {}
         )
         NavButton (
-            picture = painterResource (if (destination == "main") R.drawable.pie_light else R.drawable.pie_dark)
+            picture = painterResource (if (destination == "main") picPieLight else picPieDark),
+            onClick = {}
         )
         NavButton (
-            picture = painterResource (if (destination == "me") R.drawable.home_light else R.drawable.home_dark)
+            picture = painterResource (if (destination == "home") picHomeLight else picHomeDark),
+            onClick = {}
         )
 
     }

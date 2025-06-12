@@ -42,8 +42,9 @@ fun Collections () {
 private fun ToolsLayer () {
 
     Column (
-        modifier = Modifier.fillMaxSize (),
-        verticalArrangement = Arrangement.SpaceBetween
+        verticalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier
+            .fillMaxSize ()
     ) {
 
         TopBar ()

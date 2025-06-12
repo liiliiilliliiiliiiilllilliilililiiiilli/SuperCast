@@ -8,9 +8,13 @@ import com.example.supercast.gui.components.global.toolslayer.BottomBar as Botto
 
 
 
+private const val destination = "collections"
+
+
+
 @Composable
 fun BottomBar () {
 
-    BottomBarComponent (destination = "collections")
+    BottomBarComponent (destination = destination)
 
 }

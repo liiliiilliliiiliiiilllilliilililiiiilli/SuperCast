@@ -12,6 +12,10 @@ import com.example.supercast.ui.Colors
 
 
 
+private val colorBack = Colors.Black
+
+
+
 @Composable
 fun AppBackground (
     content: @Composable () -> Unit = @Composable {Box {}}
@@ -20,9 +24,8 @@ fun AppBackground (
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-//            .windowInsetsPadding (WindowInsets.systemBars)
             .fillMaxSize ()
-            .background (color = Colors.Black)
+            .background (color = colorBack)
     ) {
 
         content ()
