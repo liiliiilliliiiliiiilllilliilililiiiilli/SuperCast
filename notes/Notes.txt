@@ -1,0 +1,10 @@
+// Code's notes
+
+// Интерфесы:
+//
+//   Определение размеров экрана:
+//
+//     var configuration = LocalConfiguration.current
+//
+//     var screenHeight = configuration.screenHeightDp.dp+1.dp
+//     var screenWidth = configuration.screenWidthDp.dp+1.dp
