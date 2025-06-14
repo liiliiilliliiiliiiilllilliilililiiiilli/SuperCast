@@ -13,8 +13,7 @@ import androidx.compose.ui.Modifier
 fun Main () {
 
     Box (
-        modifier = Modifier
-            .fillMaxSize ()
+        modifier = Modifier.fillMaxSize ()
     ) {}
 
 }

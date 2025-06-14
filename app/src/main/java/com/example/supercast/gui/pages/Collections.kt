@@ -19,8 +19,7 @@ import com.example.supercast.gui.components.pages.collections.toolslayer.BottomB
 fun Collections () {
 
     Box (
-        modifier = Modifier
-            .fillMaxSize ()
+        modifier = Modifier.fillMaxSize ()
     ) {
 
         ToolsLayer ()
@@ -43,8 +42,7 @@ private fun ToolsLayer () {
 
     Column (
         verticalArrangement = Arrangement.SpaceBetween,
-        modifier = Modifier
-            .fillMaxSize ()
+        modifier = Modifier.fillMaxSize ()
     ) {
 
         TopBar ()

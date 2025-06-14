@@ -43,7 +43,7 @@ class Colors () {
         val BlueLink = Color (0xFF9DA6D9)
         val PreWhite = Color (0xFFF2F2F2)
 
-        val Transparent = Color (0x00000000)
+        val Transparent = Color(0x00000000)
 
     }
 

@@ -66,18 +66,17 @@ fun TopBar () {
             Row {
 
                 BarButton (
-                    picture = painterResource (picSearch),
-                    onClick = {}
+                    pic = painterResource (picSearch),
+                    onPress = {}
                 )
 
                 Spacer (
-                    modifier = Modifier
-                        .width (12.5.dp)
+                    modifier = Modifier.width (12.5.dp)
                 )
 
                 BarButton (
-                    picture = painterResource (picMenu),
-                    onClick = {}
+                    pic = painterResource (picMenu),
+                    onPress = {}
                 )
 
             }
@@ -91,15 +90,16 @@ fun TopBar () {
 
 
 @Composable
-private fun Label (text: String) {
+private fun Label (
+    text: String
+) {
 
     Text (
         text = text,
-        fontFamily = labelFont,
         fontSize = 23.sp,
+        fontFamily = labelFont,
         color = labelColor,
-        modifier = Modifier
-            .padding (start = 18.5.dp, end = 25.dp)
+        modifier = Modifier.padding (start = 18.5.dp, end = 25.dp)
     )
 
 }
@@ -108,15 +108,15 @@ private fun Label (text: String) {
 
 @Composable
 private fun BarButton (
-    picture: Painter,
-    onClick: () -> Unit?
+    pic: Painter,
+    onPress: () -> Unit?
 ) {
 
     Image (
-        painter = picture,
+        painter = pic,
         contentDescription = picsDescription,
         modifier = Modifier
-            .clickable (onClick = {onClick ()})
+            .clickable (onClick = {onPress ()})
             .clip (RoundedCornerShape (10.dp))
             .background (color = buttonColorCorner)
             .padding (3.dp)
@@ -125,7 +125,6 @@ private fun BarButton (
             .padding (7.dp)
             .size (17.dp)
             .background (color = buttonColorBack)
-//            .clickable (onClick = {onClick ()})
     )
 
 }

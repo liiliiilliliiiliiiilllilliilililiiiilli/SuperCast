@@ -21,8 +21,8 @@ fun AppGraphicsInterface () {
 
     AppBackground {
 
-        Collections ()
-        Main ()
+//        Collections ()
+//        Main ()
         Home ()
 
     }

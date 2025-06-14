@@ -1,4 +1,4 @@
-// Main page - Main content component
+// Main page - Main layer
 
 package com.example.supercast.gui.components.pages.main.mainlayer
 
@@ -13,8 +13,7 @@ import androidx.compose.ui.Modifier
 fun Main () {
 
     Box (
-        modifier = Modifier
-            .fillMaxSize ()
+        modifier = Modifier.fillMaxSize ()
     ) {}
 
 }

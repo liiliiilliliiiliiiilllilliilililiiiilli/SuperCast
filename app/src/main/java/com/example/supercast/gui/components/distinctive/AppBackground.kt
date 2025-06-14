@@ -24,8 +24,8 @@ fun AppBackground (
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .fillMaxSize ()
             .background (color = colorBack)
+            .fillMaxSize ()
     ) {
 
         content ()

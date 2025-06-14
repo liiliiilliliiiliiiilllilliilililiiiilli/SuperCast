@@ -15,6 +15,8 @@ private const val destination = "home"
 @Composable
 fun BottomBar () {
 
-    BottomBarComponent (destination = destination)
+    BottomBarComponent (
+        destination = destination
+    )
 
 }

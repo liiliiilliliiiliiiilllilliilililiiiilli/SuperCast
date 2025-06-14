@@ -103,8 +103,7 @@ private fun SeparatorsLayer () {
     Row (
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceEvenly,
-        modifier = Modifier
-            .fillMaxSize ()
+        modifier = Modifier.fillMaxSize ()
     ) {
 
         Separator ()
@@ -122,7 +121,7 @@ private fun ButtonsLayer (destination: String) {
     @Composable
     fun NavButton (
         picture: Painter,
-        onClick: () -> Unit?
+        onPress: () -> Unit?
     ) {
 
         val screenWidth = (LocalConfiguration.current.screenWidthDp + 1).dp
@@ -132,16 +131,15 @@ private fun ButtonsLayer (destination: String) {
         Box (
             contentAlignment = Alignment.Center,
             modifier = Modifier
-                .clickable {onClick ()}
                 .fillMaxHeight ()
                 .width (buttonWidth)
+                .clickable {onPress ()}
         ) {
 
             Image (
                 painter = picture,
                 contentDescription = picsDescription,
-                modifier = Modifier
-                    .size (30.dp)
+                modifier = Modifier.size (30.dp)
             )
 
         }
@@ -150,21 +148,20 @@ private fun ButtonsLayer (destination: String) {
 
 
     Row (
-        modifier = Modifier
-            .fillMaxSize ()
+        modifier = Modifier.fillMaxSize ()
     ) {
 
         NavButton (
             picture = painterResource (if (destination == "collections") picCollectionsLight else picCollectionsDark),
-            onClick = {}
+            onPress = {}
         )
         NavButton (
             picture = painterResource (if (destination == "main") picPieLight else picPieDark),
-            onClick = {}
+            onPress = {}
         )
         NavButton (
             picture = painterResource (if (destination == "home") picHomeLight else picHomeDark),
-            onClick = {}
+            onPress = {}
         )
 
     }
