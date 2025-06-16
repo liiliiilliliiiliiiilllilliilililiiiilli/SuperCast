@@ -131,9 +131,9 @@ private fun ButtonsLayer (destination: String) {
         Box (
             contentAlignment = Alignment.Center,
             modifier = Modifier
+                .clickable {onPress ()}
                 .fillMaxHeight ()
                 .width (buttonWidth)
-                .clickable {onPress ()}
         ) {
 
             Image (
@@ -151,16 +151,23 @@ private fun ButtonsLayer (destination: String) {
         modifier = Modifier.fillMaxSize ()
     ) {
 
+        val picCollections = if (destination == "collections") picCollectionsLight else picCollectionsDark
+        val picMain = if (destination == "main") picPieLight else picPieDark
+        val picHome = if (destination == "home") picHomeLight else picHomeDark
+
+
         NavButton (
-            picture = painterResource (if (destination == "collections") picCollectionsLight else picCollectionsDark),
+            picture = painterResource (picCollections),
             onPress = {}
         )
+
         NavButton (
-            picture = painterResource (if (destination == "main") picPieLight else picPieDark),
+            picture = painterResource (picMain),
             onPress = {}
         )
+
         NavButton (
-            picture = painterResource (if (destination == "home") picHomeLight else picHomeDark),
+            picture = painterResource (picHome),
             onPress = {}
         )
 

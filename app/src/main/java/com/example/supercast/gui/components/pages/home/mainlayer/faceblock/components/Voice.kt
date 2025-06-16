@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
@@ -24,6 +23,7 @@ import androidx.compose.ui.unit.sp
 import com.example.supercast.R
 import com.example.supercast.ui.Colors
 
+import com.example.supercast.gui.components.distinctive.Width
 import com.example.supercast.gui.components.global.mainlayer.PlayButton
 
 
@@ -64,8 +64,8 @@ fun Voice (
             scale = 1f
         )
 
-        Spacer (
-            modifier = Modifier.width (8.dp)
+        Width (
+            8.dp
         )
 
         Column {

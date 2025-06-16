@@ -22,8 +22,8 @@ fun Home () {
         modifier = Modifier.fillMaxSize ()
     ) {
 
-        ToolsLayer ()
         MainLayer ()
+        ToolsLayer ()
         SlidersLayer ()
         WindowsLayer ()
 

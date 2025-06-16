@@ -5,12 +5,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -24,6 +21,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.supercast.R
 import com.example.supercast.ui.Colors
+
+import com.example.supercast.gui.components.distinctive.Height
+import com.example.supercast.gui.components.distinctive.Width
 
 
 
@@ -61,16 +61,16 @@ fun Ditle () {
             text = textName
         )
 
-        Spacer (
-            modifier = Modifier.height (10.dp)
+        Height (
+            10.dp
         )
 
         ShortName (
             text = textShortName
         )
 
-        Spacer (
-            modifier = Modifier.height (20.dp)
+        Height (
+            20.dp
         )
 
         EditButton ()
@@ -142,8 +142,8 @@ private fun EditButton () {
             color = colorText
         )
 
-        Spacer (
-            modifier = Modifier.width (8.dp)
+        Width (
+            8.dp
         )
 
         Image (

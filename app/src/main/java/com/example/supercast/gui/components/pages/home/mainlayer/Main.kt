@@ -4,10 +4,8 @@ package com.example.supercast.gui.components.pages.home.mainlayer
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.rememberScrollState
@@ -16,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+import com.example.supercast.gui.components.distinctive.Height
 import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.FaceBlock
 import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.TiesProvider
 import com.example.supercast.gui.components.pages.home.mainlayer.liner.Liner
@@ -31,25 +30,27 @@ fun Main () {
 
         Column (
             modifier = Modifier
-                .fillMaxWidth ()
                 .verticalScroll (rememberScrollState ())
+                .fillMaxWidth ()
                 .statusBarsPadding ()
-                .padding (top = 65.5.dp, start = 4.dp, end = 4.dp, bottom = 65.5.dp)
+                .padding (vertical = 65.5.dp)
         ) {
 
-            FaceBlock ()
+            FaceBlock (
+                modifier = Modifier.padding (horizontal = 4.dp)
+            )
 
-//            Spacer (
-//                modifier = Modifier.height (25.dp)
-//            )
-//
-//            TiesProvider ()
-//
-//            Spacer (
-//                modifier = Modifier.height (25.dp)
-//            )
-//
-//            Liner ()
+            Height (
+                25.dp
+            )
+
+            TiesProvider ()
+
+            Height (
+                25.dp
+            )
+
+            Liner ()
 
         }
 

@@ -5,38 +5,46 @@ package com.example.supercast.gui.components.pages.home.mainlayer.faceblock
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import com.example.supercast.ui.Colors
 
+import com.example.supercast.gui.components.distinctive.Height
 import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.components.*
 
 
 
 private val colorBack = Colors.Blocks
 
+private const val isDescriptionOpened_initialState = false
+
 
 
 @Composable
-fun FaceBlock () {
+fun FaceBlock (
+    modifier: Modifier
+) {
 
     Column (
-        modifier = Modifier.padding (top = 17.dp)
+        modifier = Modifier
+            .padding (top = 17.dp)
+            .then (modifier)
     ) {
 
         Face ()
 
-        Spacer (
-            modifier = Modifier.height (13.5.dp)
+        Height (
+             13.5.dp
         )
 
         ButtonsBar ()
@@ -65,13 +73,12 @@ private fun Face () {
         ) {
 
             Ava ()
-
             Ditle ()
 
         }
 
-        Spacer (
-            modifier = Modifier.height (5.dp)
+        Height (
+            5.dp
         )
 
         Row (
@@ -96,7 +103,7 @@ private fun Face () {
 @Composable
 private fun ButtonsBar () {
 
-    val isDescriptionOpened = true
+    val (isDescriptionOpened, setDescriptionOpened) = remember {mutableStateOf (isDescriptionOpened_initialState)}
 
 
     Column (
@@ -104,13 +111,14 @@ private fun ButtonsBar () {
     ) {
 
         Buttons (
-            isDescriptionOpened = isDescriptionOpened
+            isDescriptionOpened = isDescriptionOpened,
+            setDescriptionOpened = setDescriptionOpened
         )
 
         if (isDescriptionOpened) {
 
-            Spacer (
-                modifier = Modifier.height (25.dp)
+            Height (
+                12.5.dp
             )
 
             Description ()
