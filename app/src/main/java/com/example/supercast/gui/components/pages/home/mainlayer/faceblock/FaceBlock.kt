@@ -17,10 +17,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import com.example.supercast.ui.Colors
+import com.example.supercast.ui.colors.Colors
 
-import com.example.supercast.gui.components.distinctive.Height
-import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.components.*
+import com.example.supercast.gui.components.distinctive.spaces.Height
+import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.ava.Ava
+import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.ditle.Ditle
+import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.voice.Voice
+import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.stats.Stats
+import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.buttons.Buttons
+import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.description.Description
 
 
 

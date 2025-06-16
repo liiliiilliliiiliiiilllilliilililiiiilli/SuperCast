@@ -5,7 +5,7 @@ package com.example.supercast.gui.components.pages.home.mainlayer.liner
 import androidx.compose.runtime.Composable
 import com.example.supercast.R
 
-import com.example.supercast.gui.components.global.mainlayer.Liner as LinerComponent
+import com.example.supercast.gui.components.global.mainlayer.liner.Liner as LinerComponent
 
 
 

@@ -1,4 +1,4 @@
-// Main page - Main layer - FaceBlock
+// Home page - Main layer - Ties provider
 
 package com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider
 
@@ -10,10 +10,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-import com.example.supercast.gui.components.distinctive.Height
-import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.components.Settings
-import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.components.Blobs
-import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.components.Strick
+import com.example.supercast.gui.components.distinctive.spaces.Height
+import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.settings.Settings
+import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.blobs.Blobs
+import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.strick.Strick
 
 
 
