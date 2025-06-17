@@ -20,37 +20,37 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
+import com.example.supercast.projectlib.ProjectLib
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
 import com.example.supercast.gui.components.global.mainlayer.actionsbutton.ActionsButton
 
 
 
-private val picAva = R.drawable.samples_ava_3
+private val picAva = Pics.SamplesAva_3
 private const val avaDescription = "[ava pic]"
 private val colorAvaCircleCorner = Colors.AvaCircle
 private val colorAvaCircleRest = Colors.BarBorder
 
 private const val textDitleName = "Anny"
 private const val textDitleTie = "существую"
-private val fontDitleName = FontFamily (Font (R.font.arimo_semi_bold))
-private val fontDitleTie = FontFamily (Font (R.font.arimo_semi_bold))
+private val fontDitleName = Fonts.ArimoSemiBold
+private val fontDitleTie = Fonts.ArimoSemiBold
 private val colorDitleName = Colors.PreWhite
 private val colorDitleTie = Colors.Grey
 
-private val picStarPressed = R.drawable.star_dark
-private val picStarNotPressed = R.drawable.star_light
+private val picStarPressed = Pics.StarDark
+private val picStarNotPressed = Pics.StarLight
 private const val starDescription = "[star pic]"
 private val colorStarButtonBackPressed = Colors.CircleButton
 private val colorStarButtonBackUnPressed = Colors.Button
 private const val numStars = 5100
-private val fontStars = FontFamily (Font (R.font.arimo_bold))
+private val fontStars = Fonts.ArimoBold
 private val colorStarButtonTextPressed = Colors.Blocks
 private val colorStarButtonTextUnPressed = Colors.CircleButton
 
@@ -134,15 +134,15 @@ private fun Author (
 			Text (
 				text = name,
 				fontSize = 14.sp,
-				fontFamily = fontDitleName,
-				color = colorDitleName
+				color = colorDitleName,
+				fontFamily = fontDitleName
 			)
 
 			Text (
 				text = tie,
 				fontSize = 14.sp,
-				fontFamily = fontDitleTie,
-				color = colorDitleTie
+				color = colorDitleTie,
+				fontFamily = fontDitleTie
 			)
 
 		}
@@ -181,37 +181,19 @@ private fun StarButton (
 	setIsStarButtonPressed: (Boolean) -> Unit
 ) {
 
-	fun formatStarsNumber (q: Int): String {
-
-		var r = "$q"
-
-		return when (q) {
-
-			in 0..999 -> r
-			in 1000..9999 -> r.substring(0, 1) + "." + r.substring(1, 2) + "k"
-			in 10000..999999 -> r.dropLast(3) + "k"
-			in 1000000..9999999 -> r.substring(0, 1) + "." + r.substring(1, 2) + "m"
-			in 10000000..999999999 -> r.dropLast(6) + "m"
-			in 1000000000..9999999999 -> r.substring(0, 1) + "." + r.substring(1, 2) + "b"
-			else -> r.dropLast(9) + "b"
-
-		}
-
-	}
-
-	val text = formatStarsNumber (value)
-
-
+	val text = ProjectLib.formatStarsNumber (value)
 
 	val colorBack = if (isStarButtonPressed) colorStarButtonBackPressed else colorStarButtonBackUnPressed
 	val colorText = if (isStarButtonPressed) colorStarButtonTextPressed else colorStarButtonTextUnPressed
 	val picStar = if (isStarButtonPressed) picStarPressed else picStarNotPressed
 
+	val switchStarState = {setIsStarButtonPressed (!isStarButtonPressed)}
+
 
 	Row (
 		verticalAlignment = Alignment.CenterVertically,
 		modifier = Modifier
-			.clickable (onClick = {setIsStarButtonPressed (!isStarButtonPressed)})
+			.clickable (onClick = switchStarState)
 			.clip (RoundedCornerShape (100))
 			.background (color = colorBack)
 			.padding (top = 8.dp, bottom = 8.dp, end = 13.dp, start = 14.dp)
@@ -220,8 +202,8 @@ private fun StarButton (
 		Text (
 			text = text,
 			fontSize = 14.sp,
-			fontFamily = fontStars,
-			color = colorText
+			color = colorText,
+			fontFamily = fontStars
 		)
 
 		Width (
@@ -246,8 +228,11 @@ private fun ActionsButton (
 	setIsActionsButtonressed: (Boolean) -> Unit
 ) {
 
+	val switchActionsButtonState = {setIsActionsButtonressed (!isActionsButtonressed)}
+
+
 	ActionsButton (
-		onPress = {setIsActionsButtonressed (!isActionsButtonressed)}
+		onPress = switchActionsButtonState
 	)
 
 }

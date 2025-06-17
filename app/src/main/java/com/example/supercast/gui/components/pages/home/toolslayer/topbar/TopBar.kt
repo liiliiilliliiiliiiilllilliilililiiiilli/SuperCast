@@ -2,53 +2,33 @@
 
 package com.example.supercast.gui.components.pages.home.toolslayer.topbar
 
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.painter.Painter
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.example.supercast.R
-import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
 import com.example.supercast.gui.components.global.toolslayer.topbar.TopBar as TopBarComponent
-
+import com.example.supercast.gui.components.global.toolslayer.topbar.label.Label
+import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarButton
 
 
 private const val labelText = "Мой профиль"
 
-private val labelFont = FontFamily (Font (R.font.fredoka_semi_bold))
-private val labelColor = Colors.PreWhite
-
-private val buttonColorBack = Colors.Black
-private val buttonColorCorner = Colors.Button
-
-private val picSearch = R.drawable.search_grey
-private val picMenu = R.drawable.burger_grey
-
-private const val picsDescription = "[top bar picture]"
+private val picSearch = Pics.SearchGrey
+private val picMenu = Pics.BurgerGrey
 
 
 
 @Composable
 fun TopBar () {
 
-    TopBarComponent (someParams = "") {
+    TopBarComponent {
 
         Row (
             verticalAlignment = Alignment.CenterVertically,
@@ -65,7 +45,7 @@ fun TopBar () {
             Row {
 
                 BarButton (
-                    pic = painterResource (picSearch),
+                    pic = picSearch,
                     onPress = {}
                 )
 
@@ -74,7 +54,7 @@ fun TopBar () {
                 )
 
                 BarButton (
-                    pic = painterResource (picMenu),
+                    pic = picMenu,
                     onPress = {}
                 )
 
@@ -83,47 +63,5 @@ fun TopBar () {
         }
 
     }
-
-}
-
-
-
-@Composable
-private fun Label (
-    text: String
-) {
-
-    Text (
-        text = text,
-        fontSize = 23.sp,
-        fontFamily = labelFont,
-        color = labelColor,
-        modifier = Modifier.padding (start = 18.5.dp, end = 25.dp)
-    )
-
-}
-
-
-
-@Composable
-private fun BarButton (
-    pic: Painter,
-    onPress: () -> Unit?
-) {
-
-    Image (
-        painter = pic,
-        contentDescription = picsDescription,
-        modifier = Modifier
-            .clickable (onClick = {onPress ()})
-            .clip (RoundedCornerShape (10.dp))
-            .background (color = buttonColorCorner)
-            .padding (3.dp)
-            .clip (RoundedCornerShape (7.dp))
-            .background (color = buttonColorBack)
-            .padding (7.dp)
-            .size (17.dp)
-            .background (color = buttonColorBack)
-    )
 
 }

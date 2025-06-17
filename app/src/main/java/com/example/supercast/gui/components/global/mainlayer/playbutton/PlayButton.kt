@@ -15,13 +15,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
 
 
 
 private val colorBack = Colors.Olive
-private val picTriangle = R.drawable.play_dark
+private val picTriangle = Pics.PlayDark
 
 private const val picDescription = "[triangle image]"
 

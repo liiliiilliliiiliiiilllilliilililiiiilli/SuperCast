@@ -14,20 +14,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.painter.Painter
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private val textFont = FontFamily (Font (R.font.arimo_bold))
 private val textColor = Colors.ActionText
+private val textFont = Fonts.ArimoBold
 
 private const val picDescription = "[action image]"
 
@@ -35,10 +33,10 @@ private const val picDescription = "[action image]"
 
 @Composable
 fun ActionText (
-    isReversed: Boolean = false,
     text: String,
     color: Color = textColor,
-    picture: Painter? = null,
+    pic: Int? = null,
+    isReversed: Boolean = false,
     onPress: () -> Unit = {},
     contentAlignment: Alignment = Alignment.TopStart,
     modifier: Modifier = Modifier
@@ -53,15 +51,15 @@ fun ActionText (
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center,
             modifier = Modifier
-                .clickable (onClick = {onPress ()})
+                .clickable (onClick = onPress)
                 .padding (vertical = 2.5.dp, horizontal = 8.dp)
 
         ) {
 
-            if (isReversed && picture is Painter) {
+            if (isReversed && pic is Int) {
 
                 Image (
-                    painter = picture,
+                    painter = painterResource (pic),
                     contentDescription = picDescription,
                     modifier = Modifier
                         .size (13.dp)
@@ -77,18 +75,18 @@ fun ActionText (
             Text (
                 text = text,
                 fontSize = 16.sp,
-                fontFamily = textFont,
-                color = color
+                color = color,
+                fontFamily = textFont
             )
 
-            if (!isReversed && picture is Painter) {
+            if (!isReversed && pic is Int) {
 
                 Width (
                     8.dp
                 )
 
                 Image (
-                    painter = picture,
+                    painter = painterResource (pic),
                     contentDescription = picDescription,
                     modifier = Modifier
                         .size (13.dp)

@@ -19,6 +19,10 @@ import com.example.supercast.gui.components.global.mainlayer.post.mainblock.audi
 
 
 
+private val colorBack = Colors.BarBorder
+
+
+
 @Composable
 fun MainBlock () {
 
@@ -26,7 +30,7 @@ fun MainBlock () {
 		modifier = Modifier
 			.padding (bottom = if (true) 4.dp else 0.dp)
 			.clip (RoundedCornerShape (12.dp))
-			.background (color = Colors.BarBorder)
+			.background (color = colorBack)
 			.fillMaxWidth ()
 	) {
 

@@ -17,13 +17,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
 import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButton
@@ -32,7 +30,7 @@ import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButt
 
 private val colorTube = Colors.OliveLight
 
-private val textFont = FontFamily (Font (R.font.fira_sans_semi_bold))
+private val textFont = Fonts.FiraSansSemiBold
 private val colorText = Colors.Olive
 
 
@@ -142,8 +140,8 @@ private fun Times (
     Text (
         text = text,
         fontSize = 14.sp,
-        fontFamily = textFont,
         color = colorText,
+        fontFamily = textFont,
         modifier = Modifier.offset (x = 5.dp, y = 11.dp)
     )
 

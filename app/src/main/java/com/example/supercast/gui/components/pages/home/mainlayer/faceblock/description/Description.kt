@@ -1,3 +1,5 @@
+// Main page - Main layer - FaceBlock - Description
+
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.description
 
 import androidx.compose.foundation.layout.Column
@@ -38,6 +40,7 @@ fun Description () {
                 "instagram: leahhalton\ntiktok: https://vm.tiktok.com/ZMJSTVwqE/\nsnapchat: leahhaltonn"
             )
         )
+
         val data_2 = arrayOf (
             arrayOf (
                 "Что я делаю?",
@@ -62,10 +65,10 @@ fun Description () {
         )
 
 
-        var (chosenSwitch, setChosenSwitch) = remember {mutableStateOf ("Об авторе")}
-        var contentOfSwitch by remember {mutableStateOf (if (chosenSwitch == "Описание") data_1 else data_2)}
+        var (chosenSwitch, setChosenSwitch) = remember {mutableStateOf (switch_2)}
+        var contentOfSwitch by remember {mutableStateOf (if (chosenSwitch == switch_1) data_1 else data_2)}
 
-        contentOfSwitch = if (chosenSwitch == "Описание") data_1 else data_2
+        contentOfSwitch = if (chosenSwitch == switch_1) data_1 else data_2
 
 
         Switcher (

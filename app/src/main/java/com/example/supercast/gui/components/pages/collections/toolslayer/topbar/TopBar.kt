@@ -11,8 +11,6 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.TopBar as T
 @Composable
 fun TopBar () {
 
-    TopBarComponent (
-        someParams = ""
-    )
+    TopBarComponent ()
 
 }

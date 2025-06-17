@@ -14,20 +14,19 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
+
 
 
 private const val textDescription = "Описание"
 private const val textAboutAuthor = "Об авторе"
 
-private val textFont = FontFamily (Font (R.font.arimo_bold))
+private val textFont = Fonts.ArimoBold
 private val colorChosen = Colors.Olive
 private val colorNotChosen = Colors.OliveMonochromic
 
@@ -54,10 +53,10 @@ fun Switcher (
         Text (
             text = text,
             fontSize = 15.5.sp,
-            fontFamily = textFont,
             color = colorText,
+            fontFamily = textFont,
             modifier = Modifier
-                .clickable (onClick = {onPress ()})
+                .clickable (onClick = onPress)
                 .padding (horizontal = 8.dp)
                 .drawBehind {
                     if (isChosen) drawLine (

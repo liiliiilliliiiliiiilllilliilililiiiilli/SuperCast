@@ -6,12 +6,15 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
+
+
+
+private val colorText = Colors.PreWhite
+private val fontText = Fonts.ArchivoRegular
 
 
 
@@ -23,8 +26,8 @@ fun Oration (
 	Text (
 		text = text,
 		fontSize = 14.5.sp,
-		fontFamily = FontFamily (Font (R.font.archivo_regular)),
-		color = Colors.PreWhite,
+		color = colorText,
+		fontFamily = fontText,
 		modifier = Modifier.padding (start = 16.dp, end = 16.dp, bottom = 2.5.dp)
 	)
 

@@ -21,12 +21,11 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
 
 
 
@@ -35,14 +34,14 @@ private val barColorCorner = Colors.BarBorder
 
 private val separatorColor = Colors.Button
 
-private val picCollectionsLight = R.drawable.collections_light
-private val picCollectionsDark = R.drawable.collections_dark
-private val picPieLight = R.drawable.pie_light
-private val picPieDark = R.drawable.pie_dark
-private val picHomeLight = R.drawable.home_light
-private val picHomeDark = R.drawable.home_dark
+private val picCollectionsLight = Pics.CollectionsLight
+private val picCollectionsDark = Pics.CollectionsDark
+private val picPieLight = Pics.PieLight
+private val picPieDark = Pics.PieDark
+private val picHomeLight = Pics.HomeLight
+private val picHomeDark = Pics.HomeDark
 
-private const val picsDescription = "[navigation picture]"
+private const val picsDescription = "[navigation pic]"
 
 
 
@@ -52,7 +51,10 @@ fun BottomBar (destination: String) {
     Bar {
 
         SeparatorsLayer ()
-        ButtonsLayer (destination)
+
+        ButtonsLayer (
+            destination = destination
+        )
 
     }
 
@@ -120,7 +122,7 @@ private fun ButtonsLayer (destination: String) {
 
     @Composable
     fun NavButton (
-        picture: Painter,
+        pic: Int,
         onPress: () -> Unit?
     ) {
 
@@ -137,7 +139,7 @@ private fun ButtonsLayer (destination: String) {
         ) {
 
             Image (
-                painter = picture,
+                painter = painterResource (pic),
                 contentDescription = picsDescription,
                 modifier = Modifier.size (30.dp)
             )
@@ -157,17 +159,17 @@ private fun ButtonsLayer (destination: String) {
 
 
         NavButton (
-            picture = painterResource (picCollections),
+            pic = picCollections,
             onPress = {}
         )
 
         NavButton (
-            picture = painterResource (picMain),
+            pic = picMain,
             onPress = {}
         )
 
         NavButton (
-            picture = painterResource (picHome),
+            pic = picHome,
             onPress = {}
         )
 

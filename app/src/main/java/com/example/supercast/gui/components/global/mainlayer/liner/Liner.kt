@@ -20,12 +20,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.distinctive.spaces.Width
@@ -36,9 +35,9 @@ private val colorLine = Colors.Line
 private val colorItemsBack = Colors.Black
 
 private val colorText = Colors.PreWhite
-private val fontText = FontFamily (Font (R.font.fredoka_semi_bold))
+private val fontText = Fonts.FredokaSemiBold
 
-private val picTriangle = R.drawable.wrap_triangle_light
+private val picTriangle = Pics.WrapTriangleLight
 
 private const val picOptionDescription = "[option pic]"
 private const val picListDescription = "[triangle pic]"
@@ -112,7 +111,7 @@ private fun ListButton (
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center,
         modifier = Modifier
-            .clickable (onClick = {unwrapAction ()})
+            .clickable (onClick = unwrapAction)
             .background (color = colorItemsBack)
             .padding (horizontal = 10.dp)
     ) {
@@ -120,8 +119,8 @@ private fun ListButton (
         Text (
             text = text,
             fontSize = 27.sp,
-            fontFamily = fontText,
-            color = colorText
+            color = colorText,
+            fontFamily = fontText
         )
 
         Width (
@@ -152,7 +151,7 @@ private fun PicButton (
         painter = painterResource (pic),
         contentDescription = picOptionDescription,
         modifier = Modifier
-            .clickable (onClick = {picRightOnPress ()})
+            .clickable (onClick = picRightOnPress)
             .background (color = colorItemsBack)
             .padding (horizontal = 10.dp)
             .size (25.dp)

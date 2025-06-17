@@ -15,19 +15,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
 
 
 
 private val colorBack = Colors.Blocks
 
-private val textLinerFont = FontFamily (Font (R.font.arimo_bold))
-private val textAreaFont = FontFamily (Font (R.font.arimo_regular))
+private val textLinerFont = Fonts.ArimoBold
+private val textAreaFont = Fonts.ArimoRegular
 
 private val colorLinerLine = Colors.Line
 private val colorLinerText = Colors.PreWhite
@@ -89,8 +87,8 @@ private fun Liner (
         Text (
             text = text,
             fontSize = 16.sp,
-            fontFamily = textLinerFont,
             color = colorLinerText,
+            fontFamily = textLinerFont,
             modifier = Modifier
                 .absoluteOffset (x = 25.dp)
                 .background (color = colorLinerBack)
@@ -112,8 +110,8 @@ private fun TextArea (
         text = text,
         fontSize = 16.sp,
         lineHeight = 20.sp,
-        fontFamily = textAreaFont,
         color = colorAreaText,
+        fontFamily = textAreaFont,
         modifier = Modifier.padding (horizontal = 22.dp)
     )
 

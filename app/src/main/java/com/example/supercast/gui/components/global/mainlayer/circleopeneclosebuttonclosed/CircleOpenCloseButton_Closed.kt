@@ -15,14 +15,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
 
 
 
 private val colorBack = Colors.CircleButton
-private val picChrist = R.drawable.smooth_dark
-
+private val picChrist = Pics.SmoothDark
 private const val picDescription = "[button image]"
 
 
@@ -35,7 +34,7 @@ fun CircleOpenCloseButton_Closed (
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .clickable (onClick = {onPress ()})
+            .clickable (onClick = onPress)
             .clip (RoundedCornerShape (100))
             .background (color = colorBack)
             .size (33.dp)

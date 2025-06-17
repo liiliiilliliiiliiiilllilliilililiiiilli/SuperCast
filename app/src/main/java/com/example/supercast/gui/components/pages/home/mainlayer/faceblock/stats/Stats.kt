@@ -12,12 +12,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
 
@@ -29,8 +27,8 @@ private const val textNum_2 = "83"
 private const val textOf_2 = "слушает"
 
 private val colorText = Colors.PreWhite
-private val textFontNum = FontFamily (Font (R.font.gadugi_bold))
-private val textFontOf = FontFamily (Font (R.font.archivo_regular))
+private val textFontNum = Fonts.GadugiBold
+private val textFontOf = Fonts.ArchivoRegular
 
 
 
@@ -78,21 +76,21 @@ private fun Stat (
     Column (
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.clickable (onClick = {onPress ()})
+        modifier = Modifier.clickable (onClick = onPress)
     ) {
 
         Text (
             text = num,
             fontSize = 25.sp,
-            fontFamily = textFontNum,
-            color = colorText
+            color = colorText,
+            fontFamily = textFontNum
         )
 
         Text (
             text = of,
             fontSize = 15.sp,
-            fontFamily = textFontOf,
-            color = colorText
+            color = colorText,
+            fontFamily = textFontOf
         )
 
     }

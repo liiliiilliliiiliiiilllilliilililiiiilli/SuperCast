@@ -19,18 +19,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private val textBlobFont = FontFamily (Font (R.font.fira_sans_semi_bold))
+private val textBlobFont = Fonts.FiraSansSemiBold
 
 private val colorBlobText_Chosen = Colors.ChosenText
 private val colorBlobText_NotChosen = Colors.PreWhite
@@ -108,10 +106,10 @@ private fun Blob (
     Text (
         text = text,
         fontSize = 14.sp,
-        fontFamily = textBlobFont,
         color = colorText,
+        fontFamily = textBlobFont,
         modifier = Modifier
-            .clickable (onClick = {onPress ()})
+            .clickable (onClick = onPress)
             .padding (horizontal = 5.dp)
 
             .clip (RoundedCornerShape (10.dp))

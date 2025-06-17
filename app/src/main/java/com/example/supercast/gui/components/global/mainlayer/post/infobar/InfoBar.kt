@@ -9,7 +9,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
-
 import androidx.compose.ui.unit.dp
 import com.example.supercast.ui.colors.Colors
 

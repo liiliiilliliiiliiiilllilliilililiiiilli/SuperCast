@@ -13,12 +13,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
 
 
 
-private val picAvaSample = R.drawable.samples_ava_1
+private val picAvaSample = Pics.SamplesAva_1
 
 private val colorCornerOut = Colors.AvaCircle
 private val colorCornerMediate = Colors.Blocks

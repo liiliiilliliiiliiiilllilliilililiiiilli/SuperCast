@@ -12,35 +12,34 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.supercast.ui.colors.Colors
 
 
 
 private val colorBack = Colors.Olive
-
 private const val picDescription = "[button image]"
 
 
 
 @Composable
 fun CircleActionButton (
-    picture: Painter,
+    pic: Int,
     onPress: () -> Unit
 ) {
 
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .clickable (onClick = {onPress ()})
+            .clickable (onClick = onPress)
             .clip (RoundedCornerShape (100))
             .background (color = colorBack)
             .size (33.dp)
     ) {
 
         Image (
-            painter = picture,
+            painter = painterResource (pic),
             contentDescription = picDescription,
             modifier = Modifier.size (17.75.dp)
         )

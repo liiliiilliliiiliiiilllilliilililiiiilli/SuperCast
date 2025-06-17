@@ -1,3 +1,5 @@
+// Main page - Main layer - FaceBlock - Buttons
+
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.buttons
 
 import androidx.compose.foundation.layout.Row
@@ -7,9 +9,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.distinctive.spaces.Width
@@ -18,11 +19,12 @@ import com.example.supercast.gui.components.global.mainlayer.circleopeneclosebut
 import com.example.supercast.gui.components.global.mainlayer.circleactionbutton.CircleActionButton
 
 
+
 private const val textActionText = "Обо мне"
 
-private val picOpenAction = R.drawable.arrow_compact_light
-private val picLink = R.drawable.link_dark
-private val picQr = R.drawable.qr_code_dark
+private val picOpenAction = Pics.ArrowCompactLight
+private val picLink = Pics.LinkDark
+private val picQr = Pics.QrCodeDark
 
 
 
@@ -44,7 +46,7 @@ fun Buttons (
 
             ActionText (
                 text = textActionText,
-                picture = painterResource (picOpenAction),
+                pic = picOpenAction,
                 onPress = {setDescriptionOpened (true)}
             )
 
@@ -67,7 +69,7 @@ fun Buttons (
         }
 
         CircleActionButton (
-            picture = painterResource (picLink),
+            pic = picLink,
             onPress = {}
         )
 
@@ -76,7 +78,7 @@ fun Buttons (
         )
 
         CircleActionButton (
-            picture = painterResource (picQr),
+            pic = picQr,
             onPress = {}
         )
 

@@ -8,16 +8,15 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
 
 
 private const val textSettings = "Настроить"
-private val picSetting = R.drawable.settings_light
+private val picSetting = Pics.SettingsLight
 
 
 
@@ -35,8 +34,8 @@ fun Settings (
 
         ActionText (
             text = textSettings,
-            picture = painterResource (picSetting),
-            onPress = {onPress ()}
+            pic = picSetting,
+            onPress = onPress
         )
 
     }

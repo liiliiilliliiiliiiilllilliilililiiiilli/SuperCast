@@ -14,6 +14,6 @@ fun MainLayer () {
 
     Box (
         modifier = Modifier.fillMaxSize ()
-    ) {}
+    )
 
 }

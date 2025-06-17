@@ -17,12 +17,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
@@ -33,16 +32,16 @@ private const val textName = "Sydney Sweeney"
 private const val textShortName = "@seediness_sweeney"
 private const val textEdit = "Изменить"
 
-private val textNameFont = FontFamily (Font (R.font.gadugi_bold))
-private val textShortNameFont = FontFamily (Font (R.font.gadugi_normal))
-private val textEditFont = FontFamily (Font (R.font.archivo_extra_bold))
+private val textNameFont = Fonts.GadugiBold
+private val textShortNameFont = Fonts.GadugiRegular
+private val textEditFont = Fonts.ArchivoExtraBold
 
 private val colorText = Colors.PreWhite
 
 private val colorEditButtonBack = Colors.BarBackground
 private val colorEditButtonCorner = Colors.Button
 
-private val picPen = R.drawable.edit_ordinary_light
+private val picPen = Pics.EditOrdinaryLight
 
 private const val picDescription = "[edit image]"
 
@@ -96,8 +95,8 @@ private fun Name (
         Text (
             text = text,
             fontSize = 23.sp,
-            fontFamily = textNameFont,
-            color = colorText
+            color = colorText,
+            fontFamily = textNameFont
         )
 
     }
@@ -114,8 +113,8 @@ private fun ShortName (
     Text (
         text = text,
         fontSize = 16.sp,
-        fontFamily = textShortNameFont,
-        color = colorText
+        color = colorText,
+        fontFamily = textShortNameFont
     )
 
 }
@@ -140,8 +139,8 @@ private fun EditButton () {
         Text (
             text = textEdit,
             fontSize = 14.sp,
-            fontFamily = textEditFont,
-            color = colorText
+            color = colorText,
+            fontFamily = textEditFont
         )
 
         Width (

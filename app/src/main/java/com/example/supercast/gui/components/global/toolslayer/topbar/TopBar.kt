@@ -22,7 +22,6 @@ private val colorCorner = Colors.BarBorder
 
 @Composable
 fun TopBar (
-    someParams: String = "",
     content: @Composable () -> Unit = @Composable {Box {}}
 ) {
 

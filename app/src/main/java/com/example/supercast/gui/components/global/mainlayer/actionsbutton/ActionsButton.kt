@@ -14,14 +14,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
 
 
 
-private const val dotsDescription = "[dots pic]"
-private val picDots = R.drawable.actions_dots_light
 private val colorBack = Colors.Button
+private val picDots = Pics.ActionsDotsLight
+private const val dotsDescription = "[dots pic]"
 
 
 
@@ -36,7 +36,7 @@ fun ActionsButton (
             .clip (RoundedCornerShape (100))
             .size (25.dp, 35.dp)
             .background (colorBack)
-            .clickable (onClick = {onPress ()})
+            .clickable (onClick = onPress)
     ) {
 
         Image (

@@ -3,9 +3,14 @@
 package com.example.supercast.gui.components.pages.home.mainlayer.liner
 
 import androidx.compose.runtime.Composable
-import com.example.supercast.R
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.global.mainlayer.liner.Liner as LinerComponent
+
+
+
+private const val textButtonList = "Все"
+private val picButtonRight = Pics.FilterLight
 
 
 
@@ -16,9 +21,9 @@ fun Liner () {
 
 
     LinerComponent (
-        text = "Все",
-        buttPicRight = R.drawable.filter_light,
-        picRightOnPress = {picRightOnPress ()}
+        text = textButtonList,
+        buttPicRight = picButtonRight,
+        picRightOnPress = picRightOnPress
     )
 
 }

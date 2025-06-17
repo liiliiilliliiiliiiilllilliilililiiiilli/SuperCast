@@ -7,12 +7,22 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
+import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
+
 import com.example.supercast.gui.components.distinctive.spaces.Width
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
-import com.example.supercast.ui.colors.Colors
+
+
+
+private const val textComments = "144 комментариев"
+private val colorComments = Colors.Olive
+private val picComments = Pics.CommentsGreen
+
+private const val textReplies = "16 ответов"
+private val colorReplies = Colors.DarkGrey
+private val picReplies = Pics.CitatesGreen
 
 
 
@@ -26,17 +36,17 @@ fun ActionsBar () {
 	) {
 
 		ActionText (
-			picture = painterResource (R.drawable.comments_green),
-			text = "144 комментариев",
-			color = Colors.Olive
+			text = textComments,
+			color = colorComments,
+			pic = picComments
 		)
 
 		Width (15.dp)
 
 		ActionText (
-			picture = painterResource (R.drawable.citates_green),
-			text = "16 ответов",
-			color = Colors.DarkGrey
+			text = textReplies,
+			color = colorReplies,
+			pic = picReplies
 		)
 
 	}

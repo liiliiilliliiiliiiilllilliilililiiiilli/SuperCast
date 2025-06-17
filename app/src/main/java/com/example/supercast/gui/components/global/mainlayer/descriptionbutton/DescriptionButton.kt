@@ -16,14 +16,15 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
+
 
 
 private const val picDescription = ""
 
-private val picOpened = R.drawable.smooth_dark
-private val picClosed = R.drawable.arrow_compact_light
+private val picOpened = Pics.SmoothDark
+private val picClosed = Pics.ArrowCompactLight
 
 private val colorOpened = Colors.CircleButton
 private val colorClosed = Colors.Button
@@ -36,10 +37,10 @@ fun DescriptionButton (
     setIsOpened: (Boolean) -> Unit
 ) {
 
-    val localColorBack = if (isOpened) colorOpened else colorClosed
-    val localPic = if (isOpened) picOpened else picClosed
+    val colorBack = if (isOpened) colorOpened else colorClosed
+    val pic = if (isOpened) picOpened else picClosed
 
-    val localModifier =
+    val picModifier =
 
         if (isOpened)
 
@@ -53,20 +54,22 @@ fun DescriptionButton (
                 .size (14.dp)
                 .offset (y = 1.25.dp)
 
+    val switchIsOpened = {setIsOpened (!isOpened)}
+
 
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .clickable (onClick = {setIsOpened (!isOpened)})
+            .clickable (onClick = switchIsOpened)
             .clip (RoundedCornerShape (100))
-            .background (color = localColorBack)
+            .background (color = colorBack)
             .size (33.dp)
     ) {
 
         Image (
-            painter = painterResource (localPic),
+            painter = painterResource (pic),
             contentDescription = picDescription,
-            modifier = localModifier
+            modifier = picModifier
         )
 
     }

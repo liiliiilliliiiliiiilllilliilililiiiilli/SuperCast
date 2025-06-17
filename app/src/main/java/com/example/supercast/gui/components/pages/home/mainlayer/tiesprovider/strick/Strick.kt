@@ -15,13 +15,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
@@ -31,14 +29,22 @@ import com.example.supercast.gui.components.global.mainlayer.actionsbutton.Actio
 
 
 
-private val fontListenersCounter = FontFamily (Font (R.font.archivo_regular))
 private val colorListenersCounter = Colors.Grey
+private val fontListenersCounter = Fonts.ArchivoRegular
 
-private const val isDescriptionOpened_defaultState = false
 private const val textListeners = "слушателей"
+private const val isDescriptionOpened_defaultState = false
 
 private val colorStrickBack = Colors.BarBorder
 private val colorStrickCorner = Colors.TieBarBackground
+
+private const val textDescriptioAction = "Редактировать"
+private val picPen = Pics.EditOrdinaryLight
+
+private const val textDescription = "В этом разделе я рассказываю про новости каждого дня. Кто-то что-то изобрел? У кого-то взорвался телефон? Я обязательно расскажу!\n\nЗдесь подкасты выхоят каждый день. а Брюхановой в 2021. Хочу сделать Россию лучше и избраться мэром Москвы когда-нибудь :)"
+private val colorTextDescription = Colors.Text
+private val fontDescription = Fonts.ArimoRegular
+
 
 
 
@@ -51,7 +57,7 @@ fun Strick () {
 
     val onActionsButtonPress = {}
 
-    val descriptionText = "В этом разделе я рассказываю про новости каждого дня. Кто-то что-то изобрел? У кого-то взорвался телефон? Я обязательно расскажу!\n\nЗдесь подкасты выхоят каждый день. а Брюхановой в 2021. Хочу сделать Россию лучше и избраться мэром Москвы когда-нибудь :)"
+    val descriptionText = textDescription
 
 
     Row (
@@ -120,8 +126,8 @@ private fun ListenersCounter (
     Text (
         text = text,
         fontSize = 15.sp,
-        fontFamily = fontListenersCounter,
         color = colorListenersCounter,
+        fontFamily = fontListenersCounter,
         modifier = Modifier
             .padding (start = 48.dp)
             .then (modifier)
@@ -136,18 +142,15 @@ private fun Description (
     text: String
 ) {
 
-    val editButtonPress = {}
-
-
     @Composable
     fun EditButton (
         onPress: () -> Unit
     ) {
 
         ActionText (
+            text = textDescriptioAction,
+            pic = picPen,
             isReversed = true,
-            text = "Редактировать",
-            picture = painterResource (R.drawable.edit_ordinary_light),
             onPress = onPress,
             contentAlignment = Alignment.CenterEnd,
             modifier = Modifier
@@ -166,8 +169,8 @@ private fun Description (
         Text (
             text = text,
             fontSize = 15.5.sp,
-            fontFamily = FontFamily (Font (R.font.arimo_regular)),
-            color = Colors.Text,
+            color = colorTextDescription,
+            fontFamily = fontDescription,
             modifier = Modifier
                 .padding (horizontal = 8.dp)
                 .clip (RoundedCornerShape (12.dp))
@@ -183,7 +186,7 @@ private fun Description (
     )
 
     EditButton (
-        onPress = {editButtonPress ()}
+        onPress = {}
     )
 
     Main (
