@@ -27,15 +27,15 @@ fun MainLayer () {
 
     val posts = arrayOf (
 
-        "",
+        "qwerqwe",
 
-        "",
+        "asdgadsg",
 
-        "",
+        "sgsfdg",
 
-        "",
+        "dsfgsdgf",
 
-        ""
+        "adssdfgsdfgsdfgs"
 
     )
 

@@ -2,7 +2,8 @@
 
 package com.example.supercast.gui.components.pages.home.mainlayer.content
 
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
@@ -16,14 +17,16 @@ fun Content (
     modifier: Modifier = Modifier
 ) {
 
-    Box (
-        modifier = modifier
+    Column (
+        modifier = Modifier
+            .fillMaxWidth ()
+            .then (modifier)
     ) {
 
         posts.forEach {data ->
 
             Post (
-//                data = data
+                data = data
             )
 
         }

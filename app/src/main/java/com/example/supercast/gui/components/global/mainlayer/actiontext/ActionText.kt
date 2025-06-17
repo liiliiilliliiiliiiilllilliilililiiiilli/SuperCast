@@ -13,15 +13,17 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.unit.dp
 import com.example.supercast.R
 import com.example.supercast.ui.colors.Colors
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
+
 
 
 private val textFont = FontFamily (Font (R.font.arimo_bold))
@@ -35,8 +37,9 @@ private const val picDescription = "[action image]"
 fun ActionText (
     isReversed: Boolean = false,
     text: String,
-    picture: Painter,
-    onPress: () -> Unit,
+    color: Color = textColor,
+    picture: Painter? = null,
+    onPress: () -> Unit = {},
     contentAlignment: Alignment = Alignment.TopStart,
     modifier: Modifier = Modifier
 ) {
@@ -55,7 +58,7 @@ fun ActionText (
 
         ) {
 
-            if (isReversed) {
+            if (isReversed && picture is Painter) {
 
                 Image (
                     painter = picture,
@@ -75,10 +78,10 @@ fun ActionText (
                 text = text,
                 fontSize = 16.sp,
                 fontFamily = textFont,
-                color = textColor
+                color = color
             )
 
-            if (!isReversed) {
+            if (!isReversed && picture is Painter) {
 
                 Width (
                     8.dp

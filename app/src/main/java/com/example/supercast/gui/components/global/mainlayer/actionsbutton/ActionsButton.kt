@@ -19,6 +19,12 @@ import com.example.supercast.ui.colors.Colors
 
 
 
+private const val dotsDescription = "[dots pic]"
+private val picDots = R.drawable.actions_dots_light
+private val colorBack = Colors.Button
+
+
+
 @Composable
 fun ActionsButton (
     onPress: () -> Unit
@@ -27,15 +33,15 @@ fun ActionsButton (
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .clip (RoundedCornerShape (100.dp))
+            .clip (RoundedCornerShape (100))
             .size (25.dp, 35.dp)
-            .background (Colors.Button)
+            .background (colorBack)
             .clickable (onClick = {onPress ()})
     ) {
 
         Image (
-            painter = painterResource (R.drawable.actions_dots_light),
-            contentDescription = "",
+            painter = painterResource (picDots),
+            contentDescription = dotsDescription,
             modifier = Modifier.size (15.dp)
         )
 

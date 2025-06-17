@@ -36,7 +36,7 @@ fun CircleOpenCloseButton_Closed (
         contentAlignment = Alignment.Center,
         modifier = Modifier
             .clickable (onClick = {onPress ()})
-            .clip (RoundedCornerShape(100))
+            .clip (RoundedCornerShape (100))
             .background (color = colorBack)
             .size (33.dp)
     ) {
