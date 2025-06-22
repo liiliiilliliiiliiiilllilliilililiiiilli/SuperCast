@@ -4,7 +4,6 @@ package com.example.supercast.gui.components.global.mainlayer.post.mainblock.top
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -22,44 +21,37 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.ProjectLib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
-import com.example.supercast.ui.pics.Pics
 
+import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
+import com.example.supercast.gui.components.global.mainlayer.starsbutton.StarsButton
 import com.example.supercast.gui.components.global.mainlayer.actionsbutton.ActionsButton
 
 
 
-private val picAva = Pics.SamplesAva_3
-private const val avaDescription = "[ava pic]"
+private const val picAvaDescription = "[ava pic]"
+
 private val colorAvaCircleCorner = Colors.AvaCircle
 private val colorAvaCircleRest = Colors.BarBorder
 
-private const val textDitleName = "Anny"
-private const val textDitleTie = "существую"
-private val fontDitleName = Fonts.ArimoSemiBold
-private val fontDitleTie = Fonts.ArimoSemiBold
 private val colorDitleName = Colors.PreWhite
 private val colorDitleTie = Colors.Grey
-
-private val picStarPressed = Pics.StarDark
-private val picStarNotPressed = Pics.StarLight
-private const val starDescription = "[star pic]"
-private val colorStarButtonBackPressed = Colors.CircleButton
-private val colorStarButtonBackUnPressed = Colors.Button
-private const val numStars = 5100
-private val fontStars = Fonts.ArimoBold
-private val colorStarButtonTextPressed = Colors.Blocks
-private val colorStarButtonTextUnPressed = Colors.CircleButton
+private val fontDitleName = Fonts.ArimoSemiBold
+private val fontDitleTie = Fonts.ArimoSemiBold
 
 
 
 @Composable
-fun Top () {
+fun Top (
+	picAva: Int,
+	textDitleName: String,
+	textDitleTie: String,
+	numStars: Int
+) {
 
-	val (isStarButtonPressed, setIsStarButtonPressed) = remember {mutableStateOf (false)}
+	val (isStarsButtonPressed, setIsStarsButtonPressed) = remember {mutableStateOf (false)}
 	val (isActionsButtonressed, setIsActionsButtonressed) = remember {mutableStateOf (false)}
 
 
@@ -77,15 +69,14 @@ fun Top () {
 			tie = textDitleTie,
 		)
 
-		StarButton (
+		StarsButton (
 			value = numStars,
-			isStarButtonPressed = isStarButtonPressed,
-			setIsStarButtonPressed = setIsStarButtonPressed
+			isPressed = isStarsButtonPressed,
+			setIsPressed = setIsStarsButtonPressed
 		)
 
 		ActionsButton (
-			isActionsButtonressed = isActionsButtonressed,
-			setIsActionsButtonressed = setIsActionsButtonressed
+			onPress = {setIsActionsButtonressed (!isActionsButtonressed)}
 		)
 
 	}
@@ -108,7 +99,7 @@ private fun Author (
 
 		Image (
 			painter = painterResource (pic),
-			contentDescription = avaDescription,
+			contentDescription = picAvaDescription,
 			modifier = Modifier
 				.clip (RoundedCornerShape (100))
 				.background (color = colorAvaCircleCorner)
@@ -138,6 +129,8 @@ private fun Author (
 				fontFamily = fontDitleName
 			)
 
+			Height (1.75)
+
 			Text (
 				text = tie,
 				fontSize = 14.sp,
@@ -159,9 +152,7 @@ private fun Author (
 			pic = pic
 		)
 
-		Width (
-			8.dp
-		)
+		Width (8)
 
 		Ditle (
 			name = name,
@@ -169,70 +160,5 @@ private fun Author (
 		)
 
 	}
-
-}
-
-
-
-@Composable
-private fun StarButton (
-	value: Int,
-	isStarButtonPressed: Boolean,
-	setIsStarButtonPressed: (Boolean) -> Unit
-) {
-
-	val text = ProjectLib.formatStarsNumber (value)
-
-	val colorBack = if (isStarButtonPressed) colorStarButtonBackPressed else colorStarButtonBackUnPressed
-	val colorText = if (isStarButtonPressed) colorStarButtonTextPressed else colorStarButtonTextUnPressed
-	val picStar = if (isStarButtonPressed) picStarPressed else picStarNotPressed
-
-	val switchStarState = {setIsStarButtonPressed (!isStarButtonPressed)}
-
-
-	Row (
-		verticalAlignment = Alignment.CenterVertically,
-		modifier = Modifier
-			.clickable (onClick = switchStarState)
-			.clip (RoundedCornerShape (100))
-			.background (color = colorBack)
-			.padding (top = 8.dp, bottom = 8.dp, end = 13.dp, start = 14.dp)
-	) {
-
-		Text (
-			text = text,
-			fontSize = 14.sp,
-			color = colorText,
-			fontFamily = fontStars
-		)
-
-		Width (
-			6.dp
-		)
-
-		Image (
-			painter = painterResource (picStar),
-			contentDescription = starDescription,
-			modifier = Modifier.size (14.dp)
-		)
-
-	}
-
-}
-
-
-
-@Composable
-private fun ActionsButton (
-	isActionsButtonressed: Boolean,
-	setIsActionsButtonressed: (Boolean) -> Unit
-) {
-
-	val switchActionsButtonState = {setIsActionsButtonressed (!isActionsButtonressed)}
-
-
-	ActionsButton (
-		onPress = switchActionsButtonState
-	)
 
 }

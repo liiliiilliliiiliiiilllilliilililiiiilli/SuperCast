@@ -1,0 +1,197 @@
+// Collections page - Main layer - MyComments
+
+package com.example.supercast.gui.components.pages.collections.mainlayer.mycomments
+
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
+import com.example.supercast.ui.pics.Pics
+
+import com.example.supercast.gui.components.distinctive.spaces.Height
+import com.example.supercast.gui.components.distinctive.spaces.Width
+
+
+
+private const val textLabel = "Мои комментарии"
+
+private val colorBack = Colors.Blocks
+private val colorCommentBack = Colors.Black
+
+private val colorLabel = Colors.Grey
+private val fontLabel = Fonts.ArchivoSemiBold
+
+private val colorTextComment = Colors.OliveMonochromic
+private val fontTextComment = Fonts.ArchivoSemiBold
+
+private const val logoDescription = "[playlist logo pic]"
+
+private val colorAvaCircleCorner = Colors.AvaCircle
+private val colorAvaCircleRest = Colors.BarBorder
+
+
+
+@Composable
+fun MyComments (
+	data: String,
+	modifier: Modifier = Modifier
+) {
+
+	val labelText = textLabel
+
+
+	Column (
+		modifier = modifier
+	) {
+
+		Label (
+			text = labelText
+		)
+
+		Height (12)
+
+		Main (
+			data = ""
+		)
+
+	}
+
+}
+
+
+
+@Composable
+private fun Label (
+	text: String
+) {
+
+	Text (
+		text = text,
+		fontSize = 14.5.sp,
+		color = colorLabel,
+		fontFamily = fontLabel,
+		modifier = Modifier.offset (x = 37.5.dp)
+	)
+
+}
+
+
+
+@Composable
+private fun Main (
+	data: String
+) {
+
+	@Composable
+	fun CommentSoap (
+		logo: Int,
+		content: String
+	) {
+
+		@Composable
+		fun Logo (
+			pic: Int
+		) {
+
+			Image (
+				painter = painterResource (pic),
+				contentDescription = logoDescription,
+				modifier = Modifier
+					.scale (29f/34f)
+					.clip (RoundedCornerShape (100))
+					.background (color = colorAvaCircleCorner)
+					.padding (1.75.dp)
+					.clip (RoundedCornerShape (100))
+					.background (color = colorAvaCircleRest)
+					.padding (1.75.dp)
+					.clip (RoundedCornerShape (100))
+					.size (34.dp)
+			)
+
+		}
+
+
+		@Composable
+		fun Content (
+			text: String
+		) {
+
+			Text (
+				text = text,
+				fontSize = 12.5.sp,
+				color = colorTextComment,
+				fontFamily = fontTextComment
+			)
+
+		}
+
+
+		Row (
+			verticalAlignment = Alignment.Top,
+			modifier = Modifier
+				.fillMaxWidth ()
+				.clip (RoundedCornerShape (12.dp))
+				.background (color = colorCommentBack)
+				.padding (vertical = 12.dp, horizontal = 8.dp)
+		) {
+
+			Logo (
+				pic = logo
+			)
+
+			Width (12)
+
+			Content (
+				text = content
+			)
+
+		}
+
+	}
+
+
+	Column (
+		modifier = Modifier
+			.clip (RoundedCornerShape (8.dp))
+			.background (color = colorBack)
+			.padding (12.dp)
+	) {
+
+		CommentSoap (
+			logo = Pics.SamplesAva_9,
+			content = "Классно всё передали... Не возможно остановить технологии и Дурова П.В.тем более... Цифровой мир не из бежен... Его"
+		)
+
+		Height (12)
+
+		CommentSoap (
+			logo = Pics.SamplesAva_8,
+			content = "То есть в печатном  тексте (в газете, журнале или книге) кавычки всегда должны иметь вид  скобок: «». Для того чтобы набрать их на клавиатуре компьютера, нужно  либо выбрать их из таблицы символов, либо набрать код"
+		)
+
+		Height (12)
+
+		CommentSoap (
+			logo = Pics.SamplesAva_7,
+			content = "Мне очень нравятся апельсины]"
+		)
+
+	}
+
+}

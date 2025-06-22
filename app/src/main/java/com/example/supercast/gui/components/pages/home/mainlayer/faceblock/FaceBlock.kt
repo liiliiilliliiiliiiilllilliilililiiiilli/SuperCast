@@ -48,9 +48,7 @@ fun FaceBlock (
 
         Face ()
 
-        Height (
-             13.5.dp
-        )
+        Height (13.5)
 
         ButtonsBar ()
 
@@ -82,9 +80,7 @@ private fun Face () {
 
         }
 
-        Height (
-            5.dp
-        )
+        Height (5)
 
         Row (
             verticalAlignment = Alignment.CenterVertically,
@@ -122,9 +118,7 @@ private fun ButtonsBar () {
 
         if (isDescriptionOpened) {
 
-            Height (
-                12.5.dp
-            )
+            Height (12.5)
 
             Description ()
 

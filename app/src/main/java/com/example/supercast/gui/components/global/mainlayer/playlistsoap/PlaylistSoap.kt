@@ -1,0 +1,156 @@
+// My playlists page - Main layer - Playlist soap
+
+package com.example.supercast.gui.components.global.mainlayer.playlistsoap
+
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.fonts.Fonts
+import com.example.supercast.ui.pics.Pics
+
+import com.example.supercast.gui.components.distinctive.spaces.Space
+import com.example.supercast.gui.components.distinctive.spaces.Height
+import com.example.supercast.gui.components.distinctive.spaces.Width
+
+
+
+private const val logoPicDescription = "[logo pic]"
+private const val openPicDescription = "[open pic]"
+
+private val colorTitle = Colors.PreWhite
+private val fontTitle = Fonts.ArchivoSemiBold
+
+private val colorStats = Colors.Grey
+private val fontStats = Fonts.ArchivoSemiBold
+
+private const val textSomeTracks = "треков"
+
+private val picOpen = Pics.ExpandArrowsGrey
+
+
+
+@Composable
+fun PlaylistSoap (
+	pic: Int,
+	title: String,
+	numOfTracks: Int,
+	duration: Int
+) {
+
+	Row (
+		verticalAlignment = Alignment.CenterVertically,
+		modifier = Modifier
+			.fillMaxWidth ()
+			.padding (start = (20*0.95).dp, end = (29*0.95).dp, top = (12.5*0.95).dp, bottom = (12.5*0.95).dp)
+	) {
+
+		Logo (
+			pic = pic
+		)
+
+		Width (14*0.95)
+
+		Column {
+
+			Title (
+				text = title
+			)
+
+			Height (2*0.95)
+
+			Stats (
+				listens = numOfTracks,
+				duration = duration
+			)
+
+		}
+
+		Space (modifier = Modifier.weight (1f))
+
+		UnwrapPic ()
+
+	}
+
+}
+
+
+
+@Composable
+private fun Logo (
+	pic: Int
+) {
+
+	Image (
+		painter = painterResource (pic),
+		contentDescription = logoPicDescription,
+		modifier = Modifier
+			.size ((65*0.95).dp)
+			.clip (RoundedCornerShape (4.dp))
+	)
+
+}
+
+
+
+@Composable
+private fun Title (
+	text: String
+) {
+
+	Text (
+		text = text,
+		fontSize = (20*0.95).sp,
+		color = colorTitle,
+		fontFamily = fontTitle
+	)
+
+}
+
+
+
+@Composable
+private fun Stats (
+	listens: Int,
+	duration: Int
+) {
+
+	val text = "$listens $textSomeTracks  •  $duration"
+
+
+	Text (
+		text = text,
+		fontSize = (14.5*0.95).sp,
+		color = colorStats,
+		fontFamily = fontStats,
+		modifier = Modifier.offset (x = (14*0.95).dp)
+	)
+
+}
+
+
+
+
+@Composable
+private fun UnwrapPic () {
+
+	Image (
+		painter = painterResource (picOpen),
+		contentDescription = openPicDescription,
+		modifier = Modifier .size ((21*0.95).dp)
+	)
+
+}

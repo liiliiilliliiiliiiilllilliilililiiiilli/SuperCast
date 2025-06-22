@@ -64,9 +64,7 @@ fun Voice (
             scale = 1f
         )
 
-        Width (
-            8.dp
-        )
+        Width (8)
 
         Column {
 

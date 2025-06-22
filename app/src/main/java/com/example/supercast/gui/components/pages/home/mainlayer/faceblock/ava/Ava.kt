@@ -24,7 +24,7 @@ private val colorCornerOut = Colors.AvaCircle
 private val colorCornerMediate = Colors.Blocks
 private val colorCornerIn = Colors.Black
 
-private const val picDescription = "[ava image]"
+private const val picDescription = "[ava pic]"
 
 
 

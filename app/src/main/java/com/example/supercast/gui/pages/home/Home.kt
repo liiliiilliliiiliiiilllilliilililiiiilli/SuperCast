@@ -55,9 +55,7 @@ private fun ToolsLayer () {
 
         TopBar ()
 
-        Space (
-            modifier = Modifier.weight (1f)
-        )
+        Space (modifier = Modifier.weight (1f))
 
         BottomBar ()
 

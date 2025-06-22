@@ -50,9 +50,7 @@ fun Buttons (
                 onPress = {setDescriptionOpened (true)}
             )
 
-            Width (
-                14.dp
-            )
+            Width (14)
 
         }
 
@@ -62,9 +60,7 @@ fun Buttons (
                 onPress = {setDescriptionOpened (false)}
             )
 
-            Space (
-                Modifier.weight (1f)
-            )
+            Space (Modifier.weight (1f))
 
         }
 
@@ -73,9 +69,7 @@ fun Buttons (
             onPress = {}
         )
 
-        Width (
-            14.dp
-        )
+        Width (14)
 
         CircleActionButton (
             pic = picQr,

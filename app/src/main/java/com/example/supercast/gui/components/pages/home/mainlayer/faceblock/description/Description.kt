@@ -10,7 +10,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.global.mainlayer.switcher.Switcher
@@ -65,7 +64,7 @@ fun Description () {
         )
 
 
-        var (chosenSwitch, setChosenSwitch) = remember {mutableStateOf (switch_2)}
+        val (chosenSwitch, setChosenSwitch) = remember {mutableStateOf (switch_2)}
         var contentOfSwitch by remember {mutableStateOf (if (chosenSwitch == switch_1) data_1 else data_2)}
 
         contentOfSwitch = if (chosenSwitch == switch_1) data_1 else data_2
@@ -82,9 +81,7 @@ fun Description () {
             data = contentOfSwitch
         )
 
-        Height (
-            24.dp
-        )
+        Height (24)
 
     }
 

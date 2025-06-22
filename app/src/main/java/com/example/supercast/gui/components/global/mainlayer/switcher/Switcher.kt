@@ -85,9 +85,7 @@ fun Switcher (
             onPress = {setChosenSwitch (textDescription)}
         )
 
-        Width (
-            10.dp
-        )
+        Width (10)
 
         SwitchButton (
             text = switch_2,

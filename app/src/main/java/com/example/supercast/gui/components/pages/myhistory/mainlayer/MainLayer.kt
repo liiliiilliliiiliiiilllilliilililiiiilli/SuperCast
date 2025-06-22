@@ -1,0 +1,128 @@
+// My listening history page - Main layer
+
+package com.example.supercast.gui.components.pages.myhistory.mainlayer
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBarsPadding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.example.supercast.ui.pics.Pics
+
+import com.example.supercast.gui.components.distinctive.spaces.Height
+import com.example.supercast.gui.components.pages.myhistory.mainlayer.timeseparator.TimeSeparator
+import com.example.supercast.gui.components.global.mainlayer.playlistsoap.PlaylistSoap
+import com.example.supercast.gui.components.global.mainlayer.tracksoap.TrackSoap
+
+
+
+@Composable
+fun MainLayer () {
+
+    Box (
+        modifier = Modifier
+            .fillMaxSize ()
+    ) {
+
+        Column (modifier = Modifier
+            .verticalScroll (state = rememberScrollState ())
+            .systemBarsPadding ()
+            .padding (vertical = 65.5.dp)
+            .fillMaxWidth ()
+        ) {
+
+            TimeSeparator (
+                text = "2 дня назад"
+            )
+
+            PlaylistSoap (
+                pic = Pics.SamplesAva_3,
+                title = "Чилл",
+                numOfTracks = 25,
+                duration = 2378
+            )
+
+            TrackSoap (
+                pic = Pics.SamplesAva_9,
+                title = "My Shit",
+                author = "A Buggie With A Hoodie",
+                duration = 5100
+            )
+
+            TrackSoap (
+                pic = Pics.SamplesAva_9,
+                title = "My Shit",
+                author = "A Buggie With A Hoodie",
+                duration = 5100
+            )
+
+            TimeSeparator (
+                text = "2 дня назад"
+            )
+
+            TrackSoap (
+                pic = Pics.SamplesAva_9,
+                title = "My Shit",
+                author = "A Buggie With A Hoodie",
+                duration = 5100
+            )
+
+            TrackSoap (
+                pic = Pics.SamplesAva_9,
+                title = "My Shit",
+                author = "A Buggie With A Hoodie",
+                duration = 5100
+            )
+
+            TimeSeparator (
+                text = "2 дня назад"
+            )
+
+            PlaylistSoap (
+                pic = Pics.SamplesAva_3,
+                title = "Чилл",
+                numOfTracks = 25,
+                duration = 2378
+            )
+
+            PlaylistSoap (
+                pic = Pics.SamplesAva_3,
+                title = "Чилл",
+                numOfTracks = 25,
+                duration = 2378
+            )
+
+            TrackSoap (
+                pic = Pics.SamplesAva_9,
+                title = "My Shit",
+                author = "A Buggie With A Hoodie",
+                duration = 5100
+            )
+
+            PlaylistSoap (
+                pic = Pics.SamplesAva_3,
+                title = "Чилл",
+                numOfTracks = 25,
+                duration = 2378
+            )
+
+            PlaylistSoap (
+                pic = Pics.SamplesAva_3,
+                title = "Чилл",
+                numOfTracks = 25,
+                duration = 2378
+            )
+
+            Height (25)
+
+        }
+
+    }
+
+}

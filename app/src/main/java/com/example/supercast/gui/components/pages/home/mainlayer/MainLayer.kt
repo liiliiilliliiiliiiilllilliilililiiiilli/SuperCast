@@ -25,17 +25,201 @@ import com.example.supercast.gui.components.pages.home.mainlayer.content.Content
 @Composable
 fun MainLayer () {
 
+    val data = mapOf (
+
+        "data_1" to mapOf (
+
+            "info_bar" to mapOf (
+
+                 "left" to "Редактировано",
+
+                 "right" to "Час назад"
+
+            ),
+
+            "main_block" to mapOf (
+
+                 "top" to mapOf (
+                     "" to ""
+                 ),
+
+                 "context_plot" to mapOf (
+                     "" to ""
+                 ),
+
+                 "audio_plot" to mapOf (
+                     "" to ""
+                 )
+
+            ),
+
+             "segue_bar" to mapOf (
+
+                 "comments" to 144,
+
+                 "citates" to 15
+
+            )
+
+        ),
+
+        "data_2" to mapOf (
+
+            "info_bar" to mapOf (
+
+                "left" to "Редактировано",
+
+                "right" to "Час назад"
+
+            ),
+
+            "main_block" to mapOf (
+
+                "top" to mapOf (
+                    "" to ""
+                ),
+
+                "context_plot" to mapOf (
+                    "" to ""
+                ),
+
+                "audio_plot" to mapOf (
+                    "" to ""
+                )
+
+            ),
+
+            "segue_bar" to mapOf (
+
+                "comments" to 144,
+
+                "citates" to 15
+
+            )
+
+        ),
+
+        "data_3" to mapOf (
+
+            "info_bar" to mapOf (
+
+                "left" to "Редактировано",
+
+                "right" to "Час назад"
+
+            ),
+
+            "main_block" to mapOf (
+
+                "top" to mapOf (
+                    "" to ""
+                ),
+
+                "context_plot" to mapOf (
+                    "" to ""
+                ),
+
+                "audio_plot" to mapOf (
+                    "" to ""
+                )
+
+            ),
+
+            "segue_bar" to mapOf (
+
+                "comments" to 144,
+
+                "citates" to 15
+
+            )
+
+        ),
+
+        "data_4" to mapOf (
+
+            "info_bar" to mapOf (
+
+                "left" to "Редактировано",
+
+                "right" to "Час назад"
+
+            ),
+
+            "main_block" to mapOf (
+
+                "top" to mapOf (
+                    "" to ""
+                ),
+
+                "context_plot" to mapOf (
+                    "" to ""
+                ),
+
+                "audio_plot" to mapOf (
+                    "" to ""
+                )
+
+            ),
+
+            "segue_bar" to mapOf (
+
+                "comments" to 144,
+
+                "citates" to 15
+
+            )
+
+        ),
+
+        "data_5" to mapOf (
+
+            "info_bar" to mapOf (
+
+                "left" to "Редактировано",
+
+                "right" to "Час назад"
+
+            ),
+
+            "main_block" to mapOf (
+
+                "top" to mapOf (
+                    "" to ""
+                ),
+
+                "context_plot" to mapOf (
+                    "" to ""
+                ),
+
+                "audio_plot" to mapOf (
+                    "" to ""
+                )
+
+            ),
+
+            "segue_bar" to mapOf (
+
+                "comments" to 144,
+
+                "citates" to 15
+
+            )
+
+        )
+
+    )
+
     val posts = arrayOf (
 
-        "qwerqwe",
+        "",
 
-        "asdgadsg",
+        "",
 
-        "sgsfdg",
+        "",
 
-        "dsfgsdgf",
+        "",
 
-        "adssdfgsdfgsdfgs"
+        ""
 
     )
 
@@ -47,39 +231,31 @@ fun MainLayer () {
         Column (
             modifier = Modifier
                 .verticalScroll (rememberScrollState ())
-                .fillMaxWidth ()
                 .statusBarsPadding ()
                 .padding (vertical = 65.5.dp)
+                .fillMaxWidth ()
         ) {
 
             FaceBlock (
                 modifier = Modifier.padding (horizontal = 4.dp)
             )
 
-            Height (
-                25.dp
-            )
+            Height (25)
 
             TiesProvider ()
 
-            Height (
-                25.dp
-            )
+            Height (25)
 
             Liner ()
 
-            Height (
-                23.dp
-            )
+            Height (23)
 
             Content (
                 posts = posts,
-                modifier = Modifier.padding (horizontal = 4.dp)
+                modifier = Modifier.padding (horizontal = 4.dp)  // 8?
             )
 
-            Height (
-                75.dp
-            )
+            Height (50)
 
         }
 

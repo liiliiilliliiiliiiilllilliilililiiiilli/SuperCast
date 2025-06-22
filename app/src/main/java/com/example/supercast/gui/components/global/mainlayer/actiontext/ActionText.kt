@@ -27,7 +27,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 private val textColor = Colors.ActionText
 private val textFont = Fonts.ArimoBold
 
-private const val picDescription = "[action image]"
+private const val picDescription = "[action pic]"
 
 
 
@@ -37,7 +37,7 @@ fun ActionText (
     color: Color = textColor,
     pic: Int? = null,
     isReversed: Boolean = false,
-    onPress: () -> Unit = {},
+    onPress: (() -> Unit) = {},
     contentAlignment: Alignment = Alignment.TopStart,
     modifier: Modifier = Modifier
 ) {
@@ -66,24 +66,20 @@ fun ActionText (
                         .padding (top = 0.75.dp)
                 )
 
-                Width (
-                    8.dp
-                )
+                Width (8)
 
             }
 
             Text (
                 text = text,
-                fontSize = 16.sp,
+                fontSize = 14.5.sp,
                 color = color,
                 fontFamily = textFont
             )
 
             if (!isReversed && pic is Int) {
 
-                Width (
-                    8.dp
-                )
+                Width (8)
 
                 Image (
                     painter = painterResource (pic),

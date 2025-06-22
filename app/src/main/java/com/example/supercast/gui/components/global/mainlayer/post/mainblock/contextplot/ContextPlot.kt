@@ -2,7 +2,7 @@
 
 package com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot
 
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -15,31 +15,33 @@ import com.example.supercast.gui.components.global.mainlayer.post.mainblock.cont
 
 
 
-private const val text = "Па́вел Вале́рьевич Ду́ров — российский предприниматель в  сфере информационных технологий, основатель социальной сети «ВКонтакте» и кроссплатформенного мессенджера Telegram."
-
-
-
 @Composable
-fun ContextPlot () {
+fun ContextPlot (
+	orationData: Array <String>,
+	attachmentData: Array <String>,
+	isAttachmentOpened: Boolean,
+	textPublicationFromWho: String,
+	picsMedia: Array <Int>
+) {
 
-	Row (
+	Column (
 		modifier = Modifier
 			.fillMaxWidth ()
 			.padding (bottom = 12.dp)
 	) {
 
 		Oration (
-			text = text
+			text = orationData [0]
 		)
 
-		Height (
-			12.dp
-		)
+		Height (12)
 
-		Attachment ()
-
-		Height (
-			12.dp
+		Attachment (
+			type = attachmentData [0],
+			content = attachmentData [1],
+			isOpened = isAttachmentOpened,
+			textPublicationFromWho = textPublicationFromWho,
+			picsMedia = picsMedia
 		)
 
 	}

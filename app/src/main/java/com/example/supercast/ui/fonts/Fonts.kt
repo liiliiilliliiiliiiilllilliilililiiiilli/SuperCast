@@ -13,6 +13,8 @@ class Fonts () {
     companion object {
 
         val ArchivoRegular = FontFamily (Font (R.font.archivo_regular))
+        val ArchivoSemiBold = FontFamily (Font (R.font.archivo_semi_bold))
+        val ArchivoBold = FontFamily (Font (R.font.archivo_bold))
         val ArchivoExtraBold = FontFamily (Font (R.font.archivo_extra_bold))
         val ArimoRegular = FontFamily (Font (R.font.arimo_regular))
         val ArimoSemiBold = FontFamily (Font (R.font.arimo_semi_bold))

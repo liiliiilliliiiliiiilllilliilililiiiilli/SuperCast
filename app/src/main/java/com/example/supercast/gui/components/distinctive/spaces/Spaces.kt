@@ -2,13 +2,14 @@
 
 package com.example.supercast.gui.components.distinctive.spaces
 
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.Dp
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
+import androidx.compose.ui.unit.dp
+
+import androidx.compose.foundation.layout.Spacer
 
 
 
@@ -26,12 +27,47 @@ fun Space (
 
 
 @Composable
-fun Height (
-    height: Dp
+fun Size (
+    size: Int
 ) {
 
     Spacer (
-        modifier = Modifier.height (height)
+        modifier = Modifier.size (size.dp)
+    )
+
+}
+
+@Composable
+fun Size (
+    size: Double
+) {
+
+    Spacer (
+        modifier = Modifier.size (size.dp)
+    )
+
+}
+
+
+
+@Composable
+fun Height (
+    height: Double
+) {
+
+    Spacer (
+        modifier = Modifier.height (height.dp)
+    )
+
+}
+
+@Composable
+fun Height (
+    height: Int
+) {
+
+    Spacer (
+        modifier = Modifier.height (height.dp)
     )
 
 }
@@ -40,24 +76,22 @@ fun Height (
 
 @Composable
 fun Width (
-    width: Dp
+    width: Int
 ) {
 
     Spacer (
-        modifier = Modifier.width (width)
+        modifier = Modifier.width (width.dp)
     )
 
 }
 
-
-
 @Composable
-fun Size (
-    size: Dp
+fun Width (
+    width: Double
 ) {
 
     Spacer (
-        modifier = Modifier.size (size)
+        modifier = Modifier.width (width.dp)
     )
 
 }

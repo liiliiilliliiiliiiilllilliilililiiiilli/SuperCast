@@ -22,7 +22,7 @@ import com.example.supercast.ui.pics.Pics
 
 private val colorBack = Colors.CircleButton
 private val picChrist = Pics.SmoothDark
-private const val picDescription = "[button image]"
+private const val picDescription = "[button pic]"
 
 
 

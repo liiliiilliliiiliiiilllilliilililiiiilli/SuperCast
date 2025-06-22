@@ -43,7 +43,7 @@ private val colorEditButtonCorner = Colors.Button
 
 private val picPen = Pics.EditOrdinaryLight
 
-private const val picDescription = "[edit image]"
+private const val picDescription = "[edit pic]"
 
 
 
@@ -62,19 +62,15 @@ fun Ditle () {
             text = textName
         )
 
-        Height (
-            10.dp
-        )
+        Height (10)
 
         ShortName (
             text = textShortName
         )
 
-        Height (
-            20.dp
-        )
+        Height (20)
 
-        EditButton ()
+        SubscribeButton ()
 
     }
 
@@ -122,7 +118,7 @@ private fun ShortName (
 
 
 @Composable
-private fun EditButton () {
+private fun SubscribeButton () {
 
     Row (
         verticalAlignment = Alignment.CenterVertically,
@@ -143,9 +139,7 @@ private fun EditButton () {
             fontFamily = textEditFont
         )
 
-        Width (
-            8.dp
-        )
+        Width (8)
 
         Image (
             painter = painterResource (picPen),

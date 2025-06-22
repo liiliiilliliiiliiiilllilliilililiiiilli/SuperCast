@@ -20,15 +20,52 @@ private val labelColor = Colors.PreWhite
 
 @Composable
 fun Label (
-	text: String
+	text: String,
+	fontSize: Int = 23
 ) {
 
 	Text (
 		text = text,
-		fontSize = 23.sp,
+		fontSize = fontSize.sp,
 		color = labelColor,
 		fontFamily = labelFont,
 		modifier = Modifier.padding (start = 18.5.dp, end = 25.dp)
 	)
 
 }
+//
+//
+//
+//@Composable
+//fun Label (
+//	text: String,
+//	fontSize: Double = 23.0
+//) {
+//
+//	Text (
+//		text = text,
+//		fontSize = fontSize.sp,
+//		color = labelColor,
+//		fontFamily = labelFont,
+//		modifier = Modifier.padding (start = 18.5.dp, end = 25.dp)
+//	)
+//
+//}
+//
+//
+//
+//@Composable
+//fun Label (
+//	text: String,
+//	fontSize: Float = 23f
+//) {
+//
+//	Text (
+//		text = text,
+//		fontSize = fontSize.sp,
+//		color = labelColor,
+//		fontFamily = labelFont,
+//		modifier = Modifier.padding (start = 18.5.dp, end = 25.dp)
+//	)
+//
+//}

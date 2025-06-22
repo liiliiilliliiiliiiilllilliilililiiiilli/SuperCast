@@ -3,46 +3,57 @@
 package com.example.supercast.gui.components.global.mainlayer.post.infobar
 
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.example.supercast.gui.components.distinctive.spaces.Space
-import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 import androidx.compose.ui.unit.dp
 import com.example.supercast.ui.colors.Colors
 
+import com.example.supercast.gui.components.distinctive.spaces.Space
+import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
 
-private const val textLeft = "Редактировано"
-private const val textRight = "Час назад"
 
 private val colorText = Colors.DarkGrey
 
 
 
 @Composable
-fun InfoBar () {
+fun InfoBar (
+	left: String = "",
+	right: String = ""
+) {
 
 	Row (
+		verticalAlignment = Alignment.CenterVertically,
 		modifier = Modifier
 			.height (43.dp)
+			.fillMaxWidth ()
 			.padding (horizontal = 25.dp)
 	) {
 
-		ActionText (
-			text = textLeft,
-			color = colorText
-		)
+		if (left != "") {
 
-		Space (
-			modifier = Modifier.weight (1f)
-		)
+			ActionText (
+				text = left,
+				color = colorText
+			)
 
-		ActionText (
-			text = textRight,
-			color = colorText
-		)
+		}
+
+		Space (modifier = Modifier.weight (1f))
+
+		if (right != "") {
+
+			ActionText (
+				text = right,
+				color = colorText
+			)
+
+		}
 
 	}
 

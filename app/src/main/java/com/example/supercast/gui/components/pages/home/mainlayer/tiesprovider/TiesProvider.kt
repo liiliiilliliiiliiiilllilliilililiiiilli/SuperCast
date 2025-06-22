@@ -8,7 +8,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.settings.Settings
@@ -35,9 +34,7 @@ fun TiesProvider (
 
         Settings ()
 
-        Height (
-            5.dp
-        )
+        Height (5)
 
         Blobs (
             tiesList = tiesList,
@@ -45,9 +42,7 @@ fun TiesProvider (
             setChosenTie = setChosenTie
         )
 
-        Height (
-            5.dp
-        )
+        Height (5)
 
         Strick ()
 

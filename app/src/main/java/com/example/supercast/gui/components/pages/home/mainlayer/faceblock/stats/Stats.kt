@@ -50,9 +50,7 @@ fun Stats () {
             onPress = {}
         )
 
-        Width (
-             25.dp
-        )
+        Width (25)
 
         Stat (
             num = textNum_2,

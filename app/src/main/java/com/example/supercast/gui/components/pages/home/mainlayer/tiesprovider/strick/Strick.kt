@@ -30,7 +30,7 @@ import com.example.supercast.gui.components.global.mainlayer.actionsbutton.Actio
 
 
 private val colorListenersCounter = Colors.Grey
-private val fontListenersCounter = Fonts.ArchivoRegular
+private val fontListenersCounter = Fonts.ArchivoSemiBold
 
 private const val textListeners = "слушателей"
 private const val isDescriptionOpened_defaultState = false
@@ -75,34 +75,26 @@ fun Strick () {
             modifier = Modifier.weight (1f)
         )
 
-        Width (
-            13.dp
-        )
+        Width (13)
 
         DescriptionButton (
             isOpened = isOpened,
             setIsOpened = setIsOpened
         )
 
-        Width (
-             28.5.dp
-        )
+        Width (28.5)
 
         ActionsButton (
             onPress = onActionsButtonPress
         )
 
-        Width (
-            28.5.dp
-        )
+        Width (28.5)
 
     }
 
     if (isOpened) {
 
-        Width (
-            5.dp
-        )
+        Width (5)
 
         Description (
             text = descriptionText
@@ -181,9 +173,7 @@ private fun Description (
     }
 
 
-    Height (
-        21.dp
-    )
+    Height (21)
 
     EditButton (
         onPress = {}

@@ -61,9 +61,7 @@ fun Blobs (
                 .height (50.dp)
         ) {
 
-            Width (
-                14.dp
-            )
+            Width (14)
 
             tiesList.forEachIndexed {index, tieName ->
 
@@ -79,9 +77,7 @@ fun Blobs (
 
             }
 
-            Width (
-                14.dp
-            )
+            Width (14)
 
         }
 

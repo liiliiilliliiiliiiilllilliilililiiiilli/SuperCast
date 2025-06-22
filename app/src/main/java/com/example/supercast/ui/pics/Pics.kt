@@ -25,6 +25,7 @@ class Pics () {
         val EditMagicGreenLight = R.drawable.edit_magic_green_light
         val EditOrdinaryGreenDark = R.drawable.edit_ordinary_green_dark
         val EditOrdinaryLight = R.drawable.edit_ordinary_light
+        val ExpandArrowsGrey = R.drawable.expand_arrows_grey
         val FilterLight = R.drawable.filter_light
         val HomeDark = R.drawable.home_dark
         val HomeLight = R.drawable.home_light
@@ -45,7 +46,8 @@ class Pics () {
         val SamplesAva_8 = R.drawable.samples_ava_8
         val SamplesAva_9 = R.drawable.samples_ava_9
         val SearchGrey = R.drawable.search_grey
-        val SettingsLight = R.drawable.settings_light
+//        val SettingsLight = R.drawable.settings_light
+        val SettingsGrey = R.drawable.settings_grey
         val SmoothDark = R.drawable.smooth_dark
         val SmoothLight = R.drawable.smooth_light
         val StarDark = R.drawable.star_dark

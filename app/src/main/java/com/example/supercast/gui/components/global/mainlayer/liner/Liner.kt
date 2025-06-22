@@ -35,7 +35,7 @@ private val colorLine = Colors.Line
 private val colorItemsBack = Colors.Black
 
 private val colorText = Colors.PreWhite
-private val fontText = Fonts.FredokaSemiBold
+private val fontText = Fonts.ArchivoSemiBold
 
 private val picTriangle = Pics.WrapTriangleLight
 
@@ -47,7 +47,8 @@ private const val picListDescription = "[triangle pic]"
 @Composable
 fun Liner (
     text: String,
-    buttPicRight: Int,
+    isWrapped: Boolean = true,
+    buttPicRight: Array <Int>,
     picRightOnPress: () -> Unit
 ) {
 
@@ -64,17 +65,26 @@ fun Liner (
         ) {
 
             ListButton (
-                text = text
+                text = text,
+                isWrapped = isWrapped
             )
 
-            Space (
-                Modifier.weight (1f)
-            )
+            Space (Modifier.weight (1f))
 
-            PicButton (
-                pic = buttPicRight,
-                picRightOnPress = picRightOnPress
-            )
+            buttPicRight.forEachIndexed {index, pic ->
+
+                PicButton (
+                    pic = buttPicRight[index],
+                    picRightOnPress = picRightOnPress
+                )
+
+                if (index != buttPicRight.size - 1) {
+
+                    Width (8)
+
+                }
+
+            }
 
         }
 
@@ -102,6 +112,7 @@ private fun Line () {
 @Composable
 private fun ListButton (
     text: String,
+    isWrapped: Boolean = true
 ) {
 
     val unwrapAction = {}
@@ -123,17 +134,19 @@ private fun ListButton (
             fontFamily = fontText
         )
 
-        Width (
-            10.dp
-        )
+        if (isWrapped) {
 
-        Image (
-            painter = painterResource (picTriangle),
-            contentDescription = picListDescription,
-            modifier = Modifier
-                .size (8.dp)
-                .offset (y = 2.5.dp)
-        )
+            Width (10)
+
+            Image (
+                painter = painterResource (picTriangle),
+                contentDescription = picListDescription,
+                modifier = Modifier
+                    .size (8.dp)
+                    .offset (y = 2.5.dp)
+            )
+
+        }
 
     }
 
