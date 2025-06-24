@@ -40,7 +40,7 @@ private val fontLabel = Fonts.ArchivoSemiBold
 private val colorTextComment = Colors.OliveMonochromic
 private val fontTextComment = Fonts.ArchivoSemiBold
 
-private const val logoDescription = "[playlist logo pic]"
+private const val textPicLogoDescription = "[playlist logo pic]"
 
 private val colorAvaCircleCorner = Colors.AvaCircle
 private val colorAvaCircleRest = Colors.BarBorder
@@ -111,7 +111,7 @@ private fun Main (
 
 			Image (
 				painter = painterResource (pic),
-				contentDescription = logoDescription,
+				contentDescription = textPicLogoDescription,
 				modifier = Modifier
 					.scale (29f/34f)
 					.clip (RoundedCornerShape (100))
@@ -174,21 +174,21 @@ private fun Main (
 	) {
 
 		CommentSoap (
-			logo = Pics.SamplesAva_9,
+			logo = Pics.__image_9__,
 			content = "Классно всё передали... Не возможно остановить технологии и Дурова П.В.тем более... Цифровой мир не из бежен... Его"
 		)
 
 		Height (12)
 
 		CommentSoap (
-			logo = Pics.SamplesAva_8,
+			logo = Pics.__image_8__,
 			content = "То есть в печатном  тексте (в газете, журнале или книге) кавычки всегда должны иметь вид  скобок: «». Для того чтобы набрать их на клавиатуре компьютера, нужно  либо выбрать их из таблицы символов, либо набрать код"
 		)
 
 		Height (12)
 
 		CommentSoap (
-			logo = Pics.SamplesAva_7,
+			logo = Pics.__image_7__,
 			content = "Мне очень нравятся апельсины]"
 		)
 

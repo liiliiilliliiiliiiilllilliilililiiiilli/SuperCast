@@ -20,7 +20,7 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 
 private const val labelText = "Коллекции"
 
-private val picSettings = Pics.SettingsGrey
+private val picSettings = Pics.SettingsAdjustmentsGrey
 
 
 

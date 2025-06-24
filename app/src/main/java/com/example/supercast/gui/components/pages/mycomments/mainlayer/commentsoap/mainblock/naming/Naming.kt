@@ -15,7 +15,7 @@ import com.example.supercast.ui.fonts.Fonts
 private val colorAuthor = Colors.PreWhite
 private val colorDate = Colors.DarkGrey
 
-private val font = Fonts.ArchivoBold
+private val fontNaming = Fonts.ArchivoBold
 
 
 
@@ -34,7 +34,7 @@ fun Naming (
 			text = author,
 			fontSize = 14.5.sp,
 			color = colorAuthor,
-			fontFamily = font
+			fontFamily = fontNaming
 		)
 
 		Width (8)
@@ -43,7 +43,7 @@ fun Naming (
 			text = textData,
 			fontSize = 14.5.sp,
 			color = colorDate,
-			fontFamily = font
+			fontFamily = fontNaming
 		)
 
 	}

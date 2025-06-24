@@ -3,6 +3,7 @@
 package com.example.supercast.gui.components.global.mainlayer.translatebutton
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -13,15 +14,22 @@ import com.example.supercast.ui.pics.Pics
 
 
 
+private val picTranslate = Pics.TranslateGreenLight
+private const val textPicTranslateDescription = "[translate pic]"
+
+
+
 @Composable
 fun TranslateButton (
     onPress: () -> Unit = {}
 ) {
 
     Image (
-        painter = painterResource (Pics.TranslateGreen),
-        contentDescription = "",
-        modifier = Modifier.size (32.dp)
+        painter = painterResource (picTranslate),
+        contentDescription = textPicTranslateDescription,
+        modifier = Modifier
+            .size (32.dp)
+            .clickable (onClick = onPress)
     )
 
 }

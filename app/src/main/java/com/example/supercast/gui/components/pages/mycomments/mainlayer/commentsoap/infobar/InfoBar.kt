@@ -20,7 +20,7 @@ private const val textPublicationFrom = "→  [Публикация от "
 
 private val colorNormal = Colors.Olive
 private val colorLight = Colors.OliveLight
-private val font = Fonts.ArchivoBold
+private val fontInfoBar = Fonts.ArchivoBold
 
 
 
@@ -39,14 +39,14 @@ fun InfoBar (
 			text = textPublicationFrom,
 			fontSize = 12.sp,
 			color = colorNormal,
-			fontFamily = font
+			fontFamily = fontInfoBar
 		)
 
 		Text (
 			text = text + "]",
 			fontSize = 12.sp,
 			color = colorLight,
-			fontFamily = font,
+			fontFamily = fontInfoBar,
 			modifier = Modifier.padding (end = 25.dp)
 		)
 

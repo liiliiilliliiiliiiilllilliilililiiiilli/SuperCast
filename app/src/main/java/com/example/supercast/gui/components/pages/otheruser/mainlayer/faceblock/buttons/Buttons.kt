@@ -22,7 +22,7 @@ import com.example.supercast.gui.components.global.mainlayer.circleopeneclosebut
 
 private const val textActionText = "Об авторе"
 
-private val picOpenAction = Pics.ArrowCompactLight
+private val picOpenAction = Pics.ArrowCompactDownGreyLight
 
 
 

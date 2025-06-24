@@ -44,12 +44,12 @@ private val colorCommonBigLabel = Colors.PreWhite
 
 private val fontLabels = Fonts.ArimoBold
 
-private val picTriangleGreenClosed = Pics.WrapTriangleGreenDark
-private val picTriangleGreenOpened = Pics.WrapTriangleGreenLight
-private val picTriangleYellowClosed = Pics.WrapTriangleYellowDark
-private val picTriangleYellowOpened = Pics.WrapTriangleYellowLight
+private val picTriangleGreenClosed = Pics.UnwrapTriangleGreenDark
+private val picTriangleGreenOpened = Pics.UnwrapTriangleGreenLight
+private val picTriangleYellowClosed = Pics.UnwrapTriangleYellowDark
+private val picTriangleYellowOpened = Pics.UnwrapTriangleYellowLight
 
-private const val picTriangleDescription = "[triangle pic]"
+private const val textPicTriangleDescription = "[triangle pic]"
 
 private const val textPublicationFrom = "Публикация от "
 private const val textCommentFrom = "Комментарий от "
@@ -58,13 +58,13 @@ private const val textPublication = "Публикация"
 private const val textComment = "Комментарий"
 private const val textListingMedia = "из"
 
-private const val picMediaDescription = "[media pic]"
+private const val textPicMediaDescription = "[media pic]"
 
 
 
 private const val Post_1_InfoBar_left = ""
 private const val Post_1_InfoBar_right = "2 днями ранее"
-private val Post_1_MainBlock_Top_picAva = Pics.SamplesAva_5
+private val Post_1_MainBlock_Top_picAva = Pics.__image_5__
 private const val Post_1_MainBlock_Top_textDitleName = "Алина"
 private const val Post_1_MainBlock_Top_textDitleTie = "моя жизнь"
 private const val Post_1_MainBlock_Top_numStars = 101
@@ -77,8 +77,8 @@ private val Post_1_MainBlock_ContextPlot_attachmentData = arrayOf (
 )
 private const val Post_1_MainBlock_ContextPlot_textPublicationFromWho = "Кто-то"
 private val Post_1_MainBlock_ContextPlot_picsMedia = arrayOf (
-	Pics.SamplesAva_7,
-	Pics.SamplesAva_8
+	Pics.__image_7__,
+	Pics.__image_8__
 )
 private const val Post_1_MainBlock_ContextPlot_isAttachmentOpened = false
 private val Post_1_MainBlock_AudioPlot_data = arrayOf (
@@ -92,7 +92,7 @@ private const val Post_1_SegueBar_citates = 8
 
 //private const val Post_2_InfoBar_left = "Редактировано"
 //private const val Post_2_InfoBar_right = "Час назад"
-//private val Post_2_MainBlock_Top_picAva = Pics.SamplesAva_3
+//private val Post_2_MainBlock_Top_picAva = Pics.__image_3__
 //private const val Post_2_MainBlock_Top_textDitleName = "Anny"
 //private const val Post_2_MainBlock_Top_textDitleTie = "существую"
 //private const val Post_2_MainBlock_Top_numStars = 5100
@@ -105,8 +105,8 @@ private const val Post_1_SegueBar_citates = 8
 //)
 //private const val Post_2_MainBlock_ContextPlot_textPublicationFromWho = "Кто-то"
 //private val Post_2_MainBlock_ContextPlot_picsMedia = arrayOf (
-//	Pics.SamplesAva_7,
-//	Pics.SamplesAva_8
+//	Pics.__image_7__,
+//	Pics.__image_8__
 //)
 //private const val Post_2_MainBlock_ContextPlot_isAttachmentOpened = true
 //private val Post_2_MainBlock_AudioPlot_data = arrayOf (
@@ -193,7 +193,7 @@ private fun Citate (
 
 			Image (
 				painter = painterResource (picTriangleGreenClosed),
-				contentDescription = picTriangleDescription,
+				contentDescription = textPicTriangleDescription,
 				modifier = Modifier.size (11.dp)
 			)
 
@@ -289,7 +289,7 @@ private fun Media (
 
 			Image (
 				painter = painterResource (picTriangleYellowClosed),
-				contentDescription = picTriangleDescription,
+				contentDescription = textPicTriangleDescription,
 				modifier = Modifier.size (11.dp)
 			)
 
@@ -313,7 +313,7 @@ private fun Media (
 
 				Image (
 					painter = painterResource (pic),
-					contentDescription = picMediaDescription,
+					contentDescription = textPicMediaDescription,
 					contentScale = ContentScale.Crop,
 					modifier = Modifier
 						.clip (RoundedCornerShape (6.dp))

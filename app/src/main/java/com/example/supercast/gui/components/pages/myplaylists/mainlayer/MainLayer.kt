@@ -59,35 +59,35 @@ fun MainLayer () {
 //        playlistsData.forEachIndexed {index, data ->
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_5,
+                pic = Pics.__image_5__,
                 title = "Для путешествий",
                 numOfTracks = 25,
                 duration = 62356
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_6,
+                pic = Pics.__image_6__,
                 title = "Остальное",
                 numOfTracks = 79,
                 duration = 265247
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_7,
+                pic = Pics.__image_7__,
                 title = "Рок",
                 numOfTracks = 47,
                 duration = 86545
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_8,
+                pic = Pics.__image_8__,
                 title = "Спокойное",
                 numOfTracks = 8,
                 duration = 56
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_9,
+                pic = Pics.__image_9__,
                 title = "Дождь",
                 numOfTracks = 5,
                 duration = 128

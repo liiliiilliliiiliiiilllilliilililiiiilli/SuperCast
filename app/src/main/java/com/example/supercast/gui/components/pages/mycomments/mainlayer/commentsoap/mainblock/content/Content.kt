@@ -13,8 +13,8 @@ import com.example.supercast.ui.fonts.Fonts
 
 
 
-private val color = Colors.Grey
-private val font = Fonts.ArchivoBold
+private val colorContent = Colors.Grey
+private val fontContent = Fonts.ArchivoBold
 
 
 
@@ -26,8 +26,8 @@ fun Content (
 	Text (
 		text = text,
 		fontSize = 14.5.sp,
-		color = color,
-		fontFamily = font,
+		color = colorContent,
+		fontFamily = fontContent,
 		modifier = Modifier.padding (end = 10.dp)
 	)
 

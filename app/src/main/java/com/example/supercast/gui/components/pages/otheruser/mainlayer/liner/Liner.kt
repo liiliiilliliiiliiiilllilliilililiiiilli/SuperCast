@@ -10,7 +10,7 @@ import com.example.supercast.gui.components.global.mainlayer.liner.Liner as Line
 
 
 private const val textButtonList = "Все"
-private val picButtonRight = Pics.FilterLight
+private val picButtonRight = Pics.FilterGreyLight
 
 
 

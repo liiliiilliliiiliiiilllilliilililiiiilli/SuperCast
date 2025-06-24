@@ -24,17 +24,17 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private val textColor = Colors.ActionText
-private val textFont = Fonts.ArimoBold
+private val colorText = Colors.ActionText
+private val fontText = Fonts.ArimoBold
 
-private const val picDescription = "[action pic]"
+private const val textPicActionTextDescription = "[action pic]"
 
 
 
 @Composable
 fun ActionText (
     text: String,
-    color: Color = textColor,
+    color: Color = colorText,
     pic: Int? = null,
     isReversed: Boolean = false,
     onPress: (() -> Unit) = {},
@@ -60,7 +60,7 @@ fun ActionText (
 
                 Image (
                     painter = painterResource (pic),
-                    contentDescription = picDescription,
+                    contentDescription = textPicActionTextDescription,
                     modifier = Modifier
                         .size (13.dp)
                         .padding (top = 0.75.dp)
@@ -74,7 +74,7 @@ fun ActionText (
                 text = text,
                 fontSize = 14.5.sp,
                 color = color,
-                fontFamily = textFont
+                fontFamily = fontText
             )
 
             if (!isReversed && pic is Int) {
@@ -83,7 +83,7 @@ fun ActionText (
 
                 Image (
                     painter = painterResource (pic),
-                    contentDescription = picDescription,
+                    contentDescription = textPicActionTextDescription,
                     modifier = Modifier
                         .size (13.dp)
                         .padding (top = 0.75.dp)

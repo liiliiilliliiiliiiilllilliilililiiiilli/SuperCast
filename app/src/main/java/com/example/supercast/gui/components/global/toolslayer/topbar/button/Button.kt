@@ -19,10 +19,10 @@ import com.example.supercast.ui.colors.Colors
 
 
 
-private val buttonColorBack = Colors.Black
-private val buttonColorCorner = Colors.Button
+private val colorBarButtonBack = Colors.Black
+private val colorBarButtonCorner = Colors.Button
 
-private const val picsDescription = "[top bar pic]"
+private const val textPicBarButtonDescription = "[top bar pic]"
 
 
 
@@ -30,25 +30,30 @@ private const val picsDescription = "[top bar pic]"
 fun BarButton (
 	pic: Int,
 	picSize: Dp = 17.dp,
-	isCircle: Boolean = false,
 	rotate: Float = 0f,
+	isCircle: Boolean = false,
 	onPress: () -> Unit,
 	modifier: Modifier = Modifier
 ) {
 
+	val radiusCornerOut = if (isCircle) 100.dp else 10.dp
+	val radiusCornerIn = if (isCircle) 100.dp else 7.dp
+	val paddingInside = 7.dp + (17.dp - picSize) / 2
+
+
 	Image (
 		painter = painterResource (pic),
-		contentDescription = picsDescription,
+		contentDescription = textPicBarButtonDescription,
 		modifier = Modifier
 			.clickable (onClick = onPress)
-			.clip (RoundedCornerShape (if (isCircle) 100.dp else 10.dp))
-			.background (color = buttonColorCorner)
+			.clip (RoundedCornerShape (radiusCornerOut))
+			.background (color = colorBarButtonCorner)
 			.padding (3.dp)
-			.clip (RoundedCornerShape (if (isCircle) 100.dp else 7.dp))
-			.background (color = buttonColorBack)
-			.padding (7.dp+(17.dp-picSize)/2)
+			.clip (RoundedCornerShape (radiusCornerIn))
+			.background (color = colorBarButtonBack)
+			.padding (paddingInside)
 			.size (picSize)
-			.background (color = buttonColorBack)
+			.background (color = colorBarButtonCorner)
 			.rotate (rotate)
 			.then (modifier)
 	)

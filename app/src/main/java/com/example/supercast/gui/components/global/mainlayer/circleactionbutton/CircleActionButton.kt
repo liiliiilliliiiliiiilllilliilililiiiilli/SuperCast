@@ -19,7 +19,7 @@ import com.example.supercast.ui.colors.Colors
 
 
 private val colorBack = Colors.Olive
-private const val picDescription = "[button pic]"
+private const val textPicCircleActionButtonDescription = "[button pic]"
 
 
 
@@ -40,7 +40,7 @@ fun CircleActionButton (
 
         Image (
             painter = painterResource (pic),
-            contentDescription = picDescription,
+            contentDescription = textPicCircleActionButtonDescription,
             modifier = Modifier.size (17.75.dp)
         )
 

@@ -37,10 +37,10 @@ private val colorItemsBack = Colors.Black
 private val colorText = Colors.PreWhite
 private val fontText = Fonts.ArchivoSemiBold
 
-private val picTriangle = Pics.WrapTriangleLight
+private val picTriangle = Pics.UnwrapTriangleLight
 
-private const val picOptionDescription = "[option pic]"
-private const val picListDescription = "[triangle pic]"
+private const val textPicTriangleDescription = "[triangle pic]"
+private const val textPicPicButtonDescription = "[option pic]"
 
 
 
@@ -140,7 +140,7 @@ private fun ListButton (
 
             Image (
                 painter = painterResource (picTriangle),
-                contentDescription = picListDescription,
+                contentDescription = textPicTriangleDescription,
                 modifier = Modifier
                     .size (8.dp)
                     .offset (y = 2.5.dp)
@@ -162,7 +162,7 @@ private fun PicButton (
 
     Image (
         painter = painterResource (pic),
-        contentDescription = picOptionDescription,
+        contentDescription = textPicPicButtonDescription,
         modifier = Modifier
             .clickable (onClick = picRightOnPress)
             .background (color = colorItemsBack)

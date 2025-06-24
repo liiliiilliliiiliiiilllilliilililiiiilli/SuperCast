@@ -64,7 +64,7 @@ fun MainLayer () {
             ) {
 
                 Soap (
-                    pic = Pics.SamplesAva_5,
+                    pic = Pics.__image_5__,
                     name = "растворяюсь",
                     shortName = "rainbow.water",
                     listenersNum = 1431
@@ -73,7 +73,7 @@ fun MainLayer () {
                 Height (10)
 
                 Soap (
-                    pic = Pics.SamplesAva_9,
+                    pic = Pics.__image_9__,
                     name = "аниме-тян",
                     shortName = "iuw-acjwui",
                     listenersNum = 94590
@@ -82,7 +82,7 @@ fun MainLayer () {
                 Height (10)
 
                 Soap (
-                    pic = Pics.SamplesAva_8,
+                    pic = Pics.__image_8__,
                     name = "София",
                     shortName = "sohy_yi",
                     listenersNum = 0
@@ -91,7 +91,7 @@ fun MainLayer () {
                 Height (10)
 
                 Soap (
-                    pic = Pics.SamplesAva_4,
+                    pic = Pics.__image_4__,
                     name = "Привеееет!!!!!!",
                     shortName = "hi_i_am_here",
                     listenersNum = 505
@@ -100,7 +100,7 @@ fun MainLayer () {
                 Height (10)
 
                 Soap (
-                    pic = Pics.SamplesAva_1,
+                    pic = Pics.__image_1__,
                     name = "li",
                     shortName = "liiliiilliliiiliiiilllillililil",
                     listenersNum = 101

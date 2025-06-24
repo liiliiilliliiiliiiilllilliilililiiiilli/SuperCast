@@ -12,6 +12,7 @@ import com.example.supercast.gui.pages.home.Home as HomePage
 import com.example.supercast.gui.pages.otheruser.OtherUser as OtherUserPage
 import com.example.supercast.gui.pages.subscribers.Subscribers as SubscribersPage
 import com.example.supercast.gui.pages.subscriptions.Subscriptions as SubscriptionsPage
+import com.example.supercast.gui.pages.settings.Settings as SettingsPage
 import com.example.supercast.gui.pages.myhistory.MyHistory as MyHistoryPage
 import com.example.supercast.gui.pages.myplaylists.MyPlaylists as MyPlaylistsPage
 import com.example.supercast.gui.pages.mycomments.MyComments as MyCommentsPage
@@ -28,17 +29,19 @@ fun Gui () {
     GuiBackground {
 
 //        CollectionsPage ()
+//        MainPage ()
+//        HomePage ()
+
+//        OtherUserPage ()
+
+//        SubscribersPage ()
+//        SubscriptionsPage ()
+
+        SettingsPage ()
+
 //        MyHistoryPage ()
 //        MyPlaylistsPage ()
 //        MyCommentsPage ()
-//
-//        MainPage ()
-//
-//        HomePage ()
-//        OtherUserPage ()
-//
-//        SubscribersPage ()
-//        SubscriptionsPage ()
 
     }
 

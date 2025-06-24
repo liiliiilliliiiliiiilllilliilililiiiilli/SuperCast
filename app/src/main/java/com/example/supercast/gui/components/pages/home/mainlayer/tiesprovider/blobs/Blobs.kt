@@ -28,7 +28,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private val textBlobFont = Fonts.FiraSansSemiBold
+private val fontTextBlob = Fonts.FiraSansSemiBold
 
 private val colorBlobText_Chosen = Colors.ChosenText
 private val colorBlobText_NotChosen = Colors.PreWhite
@@ -103,7 +103,7 @@ private fun Blob (
         text = text,
         fontSize = 14.sp,
         color = colorText,
-        fontFamily = textBlobFont,
+        fontFamily = fontTextBlob,
         modifier = Modifier
             .clickable (onClick = onPress)
             .padding (horizontal = 5.dp)

@@ -16,7 +16,7 @@ import com.example.supercast.gui.components.global.mainlayer.post.Post
 
 private const val Post_1_InfoBar_left = ""
 private const val Post_1_InfoBar_right = "27.03.2020"
-private val Post_1_MainBlock_Top_picAva = Pics.SamplesAva_8
+private val Post_1_MainBlock_Top_picAva = Pics.__image_8__
 private const val Post_1_MainBlock_Top_textDitleName = "Sydney Sweeny"
 private const val Post_1_MainBlock_Top_textDitleTie = "апдейты"
 private const val Post_1_MainBlock_Top_numStars = 629
@@ -29,7 +29,7 @@ private val Post_1_MainBlock_ContextPlot_attachmentData = arrayOf (
 )
 private const val Post_1_MainBlock_ContextPlot_textPublicationFromWho = ""
 private val Post_1_MainBlock_ContextPlot_picsMedia = arrayOf (
-    Pics.SamplesAva_1
+    Pics.__image_1__
 )
 private const val Post_1_MainBlock_ContextPlot_isAttachmentOpened = true
 private val Post_1_MainBlock_AudioPlot_data = arrayOf (
@@ -43,7 +43,7 @@ private const val Post_1_SegueBar_citates = 0
 
 private const val Post_2_InfoBar_left = "Редактировано"
 private const val Post_2_InfoBar_right = "Только что"
-private val Post_2_MainBlock_Top_picAva = Pics.SamplesAva_9
+private val Post_2_MainBlock_Top_picAva = Pics.__image_9__
 private const val Post_2_MainBlock_Top_textDitleName = "Джастин Ройланд"
 private const val Post_2_MainBlock_Top_textDitleTie = "основное"
 private const val Post_2_MainBlock_Top_numStars = 12505
@@ -56,11 +56,11 @@ private val Post_2_MainBlock_ContextPlot_attachmentData = arrayOf (
 )
 private const val Post_2_MainBlock_ContextPlot_textPublicationFromWho = ""
 private val Post_2_MainBlock_ContextPlot_picsMedia = arrayOf (
-    Pics.SamplesAva_4,
-    Pics.SamplesAva_2,
-    Pics.SamplesAva_5,
-    Pics.SamplesAva_9,
-    Pics.SamplesAva_8
+    Pics.__image_4__,
+    Pics.__image_2__,
+    Pics.__image_5__,
+    Pics.__image_9__,
+    Pics.__image_8__
 )
 private const val Post_2_MainBlock_ContextPlot_isAttachmentOpened = true
 private val Post_2_MainBlock_AudioPlot_data = arrayOf (

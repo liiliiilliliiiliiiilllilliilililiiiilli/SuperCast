@@ -22,7 +22,7 @@ import com.example.supercast.gui.components.global.mainlayer.starsbutton.StarsBu
 
 
 
-private val font = Fonts.ArchivoBold
+private val fontActions = Fonts.ArchivoBold
 
 private const val textSomeComments = "комментариев"
 private const val textComment = "Комментировать"
@@ -66,7 +66,7 @@ fun Actions (
 			text = textComments,
 			fontSize = 14.5.sp,
 			color = colorTextComments,
-			fontFamily = font,
+			fontFamily = fontActions,
 		)
 
 		Width (14)
@@ -75,7 +75,7 @@ fun Actions (
 			text = textCitates,
 			fontSize = 14.5.sp,
 			color = colorTextCitates,
-			fontFamily = font,
+			fontFamily = fontActions,
 		)
 
 		Space (modifier = Modifier.weight (1f))

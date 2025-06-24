@@ -1,4 +1,6 @@
-// Global components - Distinctive - Spaces   •   This is for code shortcutting :]
+// Global components - Distinctive - Spaces   •   This is for layout creation proccess shortcutting :]
+//
+// Presented components have diffirent type variants (functions are overloaded)
 
 package com.example.supercast.gui.components.distinctive.spaces
 
@@ -37,6 +39,8 @@ fun Size (
 
 }
 
+
+
 @Composable
 fun Size (
     size: Double
@@ -61,6 +65,8 @@ fun Height (
 
 }
 
+
+
 @Composable
 fun Height (
     height: Int
@@ -84,6 +90,8 @@ fun Width (
     )
 
 }
+
+
 
 @Composable
 fun Width (

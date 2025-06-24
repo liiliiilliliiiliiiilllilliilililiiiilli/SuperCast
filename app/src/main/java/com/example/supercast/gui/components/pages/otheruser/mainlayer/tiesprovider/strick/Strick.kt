@@ -45,11 +45,14 @@ private val colorStrickBack = Colors.BarBorder
 private val colorStrickCorner = Colors.TieBarBackground
 
 private const val textDescriptioAction = "Редактировать"
-private val picPen = Pics.EditOrdinaryLight
+private val picPen = Pics.PenOrdinaryGreyLight
 
 private const val textDescription = "В этом разделе я рассказываю про новости каждого дня. Кто-то что-то изобрел? У кого-то взорвался телефон? Я обязательно расскажу!\n\nЗдесь подкасты выхоят каждый день. а Брюхановой в 2021. Хочу сделать Россию лучше и избраться мэром Москвы когда-нибудь :)"
 private val colorTextDescription = Colors.Text
 private val fontDescription = Fonts.ArimoRegular
+
+private val picCheck = Pics.CheckLight
+private const val textPicCheckDescription = "[check pic]"
 
 
 
@@ -137,8 +140,8 @@ private fun SubscriptionButton () {
         Width (8)
 
         Image (
-            painter = painterResource (Pics.DoeLight),
-            contentDescription = "[done pic]",
+            painter = painterResource (picCheck),
+            contentDescription = textPicCheckDescription,
             modifier = Modifier
                 .size (8.dp)
                 .offset (y = 0.75.dp)

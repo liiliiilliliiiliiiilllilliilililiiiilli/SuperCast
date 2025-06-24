@@ -30,7 +30,7 @@ import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButt
 
 private val colorTube = Colors.OliveLight
 
-private val textFont = Fonts.FiraSansSemiBold
+private val fontText = Fonts.FiraSansSemiBold
 private val colorText = Colors.Olive
 
 
@@ -139,7 +139,7 @@ private fun Times (
         text = text,
         fontSize = 14.sp,
         color = colorText,
-        fontFamily = textFont,
+        fontFamily = fontText,
         modifier = Modifier.offset (x = 5.dp, y = 11.dp)
     )
 

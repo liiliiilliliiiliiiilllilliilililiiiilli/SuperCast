@@ -42,21 +42,21 @@ fun MainLayer () {
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_3,
+                pic = Pics.__image_3__,
                 title = "Чилл",
                 numOfTracks = 25,
                 duration = 2378
             )
 
             TrackSoap (
-                pic = Pics.SamplesAva_9,
+                pic = Pics.__image_9__,
                 title = "My Shit",
                 author = "A Buggie With A Hoodie",
                 duration = 5100
             )
 
             TrackSoap (
-                pic = Pics.SamplesAva_9,
+                pic = Pics.__image_9__,
                 title = "My Shit",
                 author = "A Buggie With A Hoodie",
                 duration = 5100
@@ -67,14 +67,14 @@ fun MainLayer () {
             )
 
             TrackSoap (
-                pic = Pics.SamplesAva_9,
+                pic = Pics.__image_9__,
                 title = "My Shit",
                 author = "A Buggie With A Hoodie",
                 duration = 5100
             )
 
             TrackSoap (
-                pic = Pics.SamplesAva_9,
+                pic = Pics.__image_9__,
                 title = "My Shit",
                 author = "A Buggie With A Hoodie",
                 duration = 5100
@@ -85,35 +85,35 @@ fun MainLayer () {
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_3,
+                pic = Pics.__image_3__,
                 title = "Чилл",
                 numOfTracks = 25,
                 duration = 2378
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_3,
+                pic = Pics.__image_3__,
                 title = "Чилл",
                 numOfTracks = 25,
                 duration = 2378
             )
 
             TrackSoap (
-                pic = Pics.SamplesAva_9,
+                pic = Pics.__image_9__,
                 title = "My Shit",
                 author = "A Buggie With A Hoodie",
                 duration = 5100
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_3,
+                pic = Pics.__image_3__,
                 title = "Чилл",
                 numOfTracks = 25,
                 duration = 2378
             )
 
             PlaylistSoap (
-                pic = Pics.SamplesAva_3,
+                pic = Pics.__image_3__,
                 title = "Чилл",
                 numOfTracks = 25,
                 duration = 2378

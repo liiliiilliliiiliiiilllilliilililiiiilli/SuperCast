@@ -13,8 +13,8 @@ import com.example.supercast.ui.fonts.Fonts
 
 
 
-private val labelFont = Fonts.FredokaSemiBold
-private val labelColor = Colors.PreWhite
+private val fontLabel = Fonts.FredokaSemiBold
+private val colorLabelText = Colors.PreWhite
 
 
 
@@ -27,45 +27,9 @@ fun Label (
 	Text (
 		text = text,
 		fontSize = fontSize.sp,
-		color = labelColor,
-		fontFamily = labelFont,
+		color = colorLabelText,
+		fontFamily = fontLabel,
 		modifier = Modifier.padding (start = 18.5.dp, end = 25.dp)
 	)
 
 }
-//
-//
-//
-//@Composable
-//fun Label (
-//	text: String,
-//	fontSize: Double = 23.0
-//) {
-//
-//	Text (
-//		text = text,
-//		fontSize = fontSize.sp,
-//		color = labelColor,
-//		fontFamily = labelFont,
-//		modifier = Modifier.padding (start = 18.5.dp, end = 25.dp)
-//	)
-//
-//}
-//
-//
-//
-//@Composable
-//fun Label (
-//	text: String,
-//	fontSize: Float = 23f
-//) {
-//
-//	Text (
-//		text = text,
-//		fontSize = fontSize.sp,
-//		color = labelColor,
-//		fontFamily = labelFont,
-//		modifier = Modifier.padding (start = 18.5.dp, end = 25.dp)
-//	)
-//
-//}

@@ -41,7 +41,7 @@ private val fontTitle = Fonts.ArchivoSemiBold
 private val colorStats = Colors.Grey
 private val fontStats = Fonts.ArchivoSemiBold
 
-private const val logoDescription = "[playlist logo pic]"
+private const val textPicLogoDescription = "[playlist logo pic]"
 
 private const val textSomeTracks = "треков"
 
@@ -113,7 +113,7 @@ private fun Main (
 
 			Image (
 				painter = painterResource (pic),
-				contentDescription = logoDescription,
+				contentDescription = textPicLogoDescription,
 				modifier = Modifier
 					.size (44.dp)
 					.clip (RoundedCornerShape (100))
@@ -197,7 +197,7 @@ private fun Main (
 	) {
 
 		ListenedSoap (
-			logo = Pics.SamplesAva_4,
+			logo = Pics.__image_4__,
 			title = "Как я обокрал гробницу",
 			data = "Cake of neon",
 			duration = 471
@@ -206,7 +206,7 @@ private fun Main (
 		Height (17)
 
 		ListenedSoap (
-			logo = Pics.SamplesAva_9,
+			logo = Pics.__image_9__,
 			title = "My Shit",
 			data = "Приведение",
 			duration = 4
@@ -215,7 +215,7 @@ private fun Main (
 		Height (17)
 
 		ListenedSoap (
-			logo = Pics.SamplesAva_2,
+			logo = Pics.__image_2__,
 			title = "Свобода",
 			data = "Goodbye",
 			duration = 5

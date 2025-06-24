@@ -11,7 +11,7 @@ import com.example.supercast.gui.components.global.mainlayer.liner.Liner as Line
 
 private const val textTotal = "всего"
 
-private val picFilter = Pics.FilterLight
+private val picFilter = Pics.FilterGreyLight
 
 
 

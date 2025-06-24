@@ -16,7 +16,7 @@ import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionTe
 
 
 private const val textSettings = "Настроить"
-private val picSetting = Pics.SettingsGrey
+private val picSetting = Pics.SettingsAdjustmentsGrey
 
 
 

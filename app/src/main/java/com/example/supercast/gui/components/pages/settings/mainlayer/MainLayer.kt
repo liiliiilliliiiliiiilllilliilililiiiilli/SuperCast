@@ -14,6 +14,29 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+import com.example.supercast.gui.components.pages.settings.mainlayer.label.Label
+import com.example.supercast.gui.components.pages.settings.mainlayer.segueslist.SeguesList
+
+
+
+val seguesListData = object {
+
+    val q = ""
+    val r = 5
+    val e = ""
+    val s = {}
+    val i = 25
+
+}
+
+
+
+class Segue (val q: String, val r: String, val i: String)
+
+class SegueList (vararg segues: Segue)
+
+val q = SegueList (Segue (q = "", r = "", i = ""))
+
 
 
 @Composable
@@ -29,7 +52,17 @@ fun MainLayer () {
                 .statusBarsPadding ()
                 .padding (vertical = 65.5.dp)
                 .fillMaxWidth ()
-        ) {}
+        ) {
+
+            Label (
+                text = ""
+            )
+
+            SeguesList (
+                data = q
+            )
+
+        }
 
     }
 

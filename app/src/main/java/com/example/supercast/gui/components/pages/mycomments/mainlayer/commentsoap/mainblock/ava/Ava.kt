@@ -16,10 +16,10 @@ import com.example.supercast.ui.colors.Colors
 
 
 
-private const val picAvaDescription = "[ava pic]"
-
 private val colorAvaCircleCorner = Colors.AvaCircle
 private val colorAvaCircleRest = Colors.BarBorder
+
+private const val textPicAvaDescription = "[ava pic]"
 
 
 
@@ -30,7 +30,7 @@ fun Ava (
 
 	Image (
 		painter = painterResource (pic),
-		contentDescription = picAvaDescription,
+		contentDescription = textPicAvaDescription,
 		modifier = Modifier
 			.clip (RoundedCornerShape (100))
 			.background (color = colorAvaCircleCorner)

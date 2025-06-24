@@ -27,7 +27,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private const val starDescription = "[star pic]"
+private const val textPicStarDescription = "[star pic]"
 private val picStarPressed = Pics.StarDark
 private val picStarNotPressed = Pics.StarLight
 private val colorStarButtonBackPressed = Colors.CircleButton
@@ -77,7 +77,7 @@ fun StarsButton (
 
 		Image (
 			painter = painterResource (picStar),
-			contentDescription = starDescription,
+			contentDescription = textPicStarDescription,
 			modifier = Modifier.size (14.dp)
 		)
 

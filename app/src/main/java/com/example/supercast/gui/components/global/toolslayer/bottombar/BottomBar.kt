@@ -29,10 +29,10 @@ import com.example.supercast.ui.pics.Pics
 
 
 
-private val barColorBack = Colors.BarBackground
-private val barColorCorner = Colors.BarBorder
+private val colorBarBack = Colors.BarBackground
+private val colorBarCorner = Colors.BarBorder
 
-private val separatorColor = Colors.Button
+private val colorSeparator = Colors.Button
 
 private val picCollectionsLight = Pics.CollectionsLight
 private val picCollectionsDark = Pics.CollectionsDark
@@ -41,7 +41,7 @@ private val picPieDark = Pics.PieDark
 private val picHomeLight = Pics.HomeLight
 private val picHomeDark = Pics.HomeDark
 
-private const val picsDescription = "[navigation pic]"
+private const val textPicNavButtonDescription = "[navigation pic]"
 
 
 
@@ -70,12 +70,12 @@ private fun Bar (
     Box (
         modifier = Modifier
             .fillMaxWidth ()
-            .background (barColorBack)
+            .background (colorBarBack)
             .navigationBarsPadding ()
             .height (65.5.dp)
-            .background (barColorCorner)
+            .background (colorBarCorner)
             .padding (top = 2.dp)
-            .background (barColorBack)
+            .background (colorBarBack)
     ) {
 
         content ()
@@ -95,7 +95,7 @@ private fun SeparatorsLayer () {
         Box (
             modifier = Modifier
                 .size (2.dp, 25.dp)
-                .background (color = separatorColor)
+                .background (color = colorSeparator)
                 .clip (RoundedCornerShape (25.dp))
         )
 
@@ -123,7 +123,7 @@ private fun ButtonsLayer (destination: String) {
     @Composable
     fun NavButton (
         pic: Int,
-        onPress: () -> Unit?
+        onPress: () -> Unit
     ) {
 
         val screenWidth = (LocalConfiguration.current.screenWidthDp + 1).dp
@@ -140,7 +140,7 @@ private fun ButtonsLayer (destination: String) {
 
             Image (
                 painter = painterResource (pic),
-                contentDescription = picsDescription,
+                contentDescription = textPicNavButtonDescription,
                 modifier = Modifier.size (30.dp)
             )
 

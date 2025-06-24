@@ -33,7 +33,7 @@ private const val textTitle = "Как побеждать (всегда)."
 private const val numDuration = 1
 private const val numListeners = 38841
 
-private val pic = Pics.SamplesAva_7
+private val pic = Pics.__image_7__
 
 
 

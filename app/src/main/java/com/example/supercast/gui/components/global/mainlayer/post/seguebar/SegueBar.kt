@@ -23,13 +23,13 @@ private const val textSomeComments = "комментариев"
 private const val textComment = "Комментировать"
 private val colorCommentsLight = Colors.Olive
 private val colorCommentsDark = Colors.DarkGrey
-private val picComments = Pics.CommentsGreen
+private val picComments = Pics.CommentGreenLight
 
 private const val textSomeCitates = "цитат"
 private const val textCitate = "Цитировать"
 private val colorCitatesLight = Colors.Olive
 private val colorCitatesDark = Colors.DarkGrey
-private val picCitates = Pics.CitatesGreen
+private val picCitates = Pics.CitationGreenLight
 
 
 

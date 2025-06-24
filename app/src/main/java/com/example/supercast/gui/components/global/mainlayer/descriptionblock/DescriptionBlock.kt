@@ -24,8 +24,8 @@ import com.example.supercast.ui.fonts.Fonts
 
 private val colorBack = Colors.Blocks
 
-private val textLinerFont = Fonts.ArimoBold
-private val textAreaFont = Fonts.ArimoRegular
+private val fontTextLiner = Fonts.ArimoBold
+private val fontTextArea = Fonts.ArimoRegular
 
 private val colorLinerLine = Colors.Line
 private val colorLinerText = Colors.PreWhite
@@ -88,7 +88,7 @@ private fun Liner (
             text = text,
             fontSize = 16.sp,
             color = colorLinerText,
-            fontFamily = textLinerFont,
+            fontFamily = fontTextLiner,
             modifier = Modifier
                 .absoluteOffset (x = 25.dp)
                 .background (color = colorLinerBack)
@@ -111,7 +111,7 @@ private fun TextArea (
         fontSize = 16.sp,
         lineHeight = 20.sp,
         color = colorAreaText,
-        fontFamily = textAreaFont,
+        fontFamily = fontTextArea,
         modifier = Modifier.padding (horizontal = 22.dp)
     )
 

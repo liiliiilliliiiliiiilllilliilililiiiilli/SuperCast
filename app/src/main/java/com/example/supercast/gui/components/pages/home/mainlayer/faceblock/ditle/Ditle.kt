@@ -32,18 +32,17 @@ private const val textName = "Sydney Sweeney"
 private const val textShortName = "@seediness_sweeney"
 private const val textEdit = "Изменить"
 
-private val textNameFont = Fonts.GadugiBold
-private val textShortNameFont = Fonts.GadugiRegular
-private val textEditFont = Fonts.ArchivoExtraBold
+private val fontTextName = Fonts.GadugiBold
+private val fontTextShortName = Fonts.GadugiRegular
+private val fontTextEdit = Fonts.ArchivoExtraBold
 
 private val colorText = Colors.PreWhite
 
 private val colorEditButtonBack = Colors.BarBackground
 private val colorEditButtonCorner = Colors.Button
 
-private val picPen = Pics.EditOrdinaryLight
-
-private const val picDescription = "[edit pic]"
+private val picPen = Pics.PenOrdinaryGreyLight
+private const val textPicPenDescription = "[edit pic]"
 
 
 
@@ -92,7 +91,7 @@ private fun Name (
             text = text,
             fontSize = 23.sp,
             color = colorText,
-            fontFamily = textNameFont
+            fontFamily = fontTextName
         )
 
     }
@@ -110,7 +109,7 @@ private fun ShortName (
         text = text,
         fontSize = 16.sp,
         color = colorText,
-        fontFamily = textShortNameFont
+        fontFamily = fontTextShortName
     )
 
 }
@@ -136,14 +135,14 @@ private fun SubscribeButton () {
             text = textEdit,
             fontSize = 14.sp,
             color = colorText,
-            fontFamily = textEditFont
+            fontFamily = fontTextEdit
         )
 
         Width (8)
 
         Image (
             painter = painterResource (picPen),
-            contentDescription = picDescription,
+            contentDescription = textPicPenDescription,
             modifier = Modifier.size (12.dp)
         )
 

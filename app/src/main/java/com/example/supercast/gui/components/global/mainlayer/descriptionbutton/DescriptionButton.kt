@@ -23,8 +23,8 @@ import com.example.supercast.ui.pics.Pics
 
 private const val picDescription = ""
 
-private val picOpened = Pics.SmoothDark
-private val picClosed = Pics.ArrowCompactLight
+private val picOpened = Pics.PlusSmoothDark
+private val picClosed = Pics.ArrowCompactDownGreyLight
 
 private val colorOpened = Colors.CircleButton
 private val colorClosed = Colors.Button

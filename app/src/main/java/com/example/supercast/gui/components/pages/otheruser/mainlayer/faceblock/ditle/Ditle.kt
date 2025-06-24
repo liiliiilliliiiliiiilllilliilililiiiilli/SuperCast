@@ -34,18 +34,17 @@ private const val textShortName = "@cesty_cat"
 private const val textSubscribed = "Подписано"
 private const val textSubscribedSomeOf = "из"
 
-private val textNameFont = Fonts.GadugiBold
-private val textShortNameFont = Fonts.GadugiRegular
-private val textEditFont = Fonts.ArchivoExtraBold
+private val fontName = Fonts.GadugiBold
+private val fontShortName = Fonts.GadugiRegular
+private val fontEditButton = Fonts.ArchivoExtraBold
 
 private val colorText = Colors.PreWhite
 
 private val colorEditButtonBack = Colors.Button
 private val colorEditButtonCorner = Colors.Button
 
-private val picTriangle = Pics.WrapTriangleLight
-
-private const val picDescription = "[edit pic]"
+private val picTriangle = Pics.UnwrapTriangleLight
+private const val textPicTriangleDescription = "[edit pic]"
 
 
 
@@ -94,7 +93,7 @@ private fun Name (
             text = text,
             fontSize = 23.sp,
             color = colorText,
-            fontFamily = textNameFont
+            fontFamily = fontName
         )
 
     }
@@ -112,7 +111,7 @@ private fun ShortName (
         text = text,
         fontSize = 16.sp,
         color = colorText,
-        fontFamily = textShortNameFont
+        fontFamily = fontShortName
     )
 
 }
@@ -144,14 +143,14 @@ private fun EditButton () {
             text = text,
             fontSize = 14.sp,
             color = colorText,
-            fontFamily = textEditFont
+            fontFamily = fontEditButton
         )
 
         Width (8)
 
         Image (
             painter = painterResource (picTriangle),
-            contentDescription = picDescription,
+            contentDescription = textPicTriangleDescription,
             modifier = Modifier
                 .size (8.dp)
                 .offset (y = 0.75.dp)

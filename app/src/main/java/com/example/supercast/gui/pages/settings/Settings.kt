@@ -10,13 +10,12 @@ import androidx.compose.ui.Modifier
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.pages.settings.toolslayer.topbar.TopBar
-import com.example.supercast.gui.components.pages.settings.toolslayer.bottombar.BottomBar
 import com.example.supercast.gui.components.pages.settings.mainlayer.MainLayer as MainLayerComponent
 
 
 
 @Composable
-fun Home () {
+fun Settings () {
 
     Box (
         modifier = Modifier.fillMaxSize ()
@@ -56,8 +55,6 @@ private fun ToolsLayer () {
         TopBar ()
 
         Space (modifier = Modifier.weight (1f))
-
-        BottomBar ()
 
     }
 

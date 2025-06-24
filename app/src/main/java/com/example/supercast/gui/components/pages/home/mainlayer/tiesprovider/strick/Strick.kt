@@ -39,7 +39,7 @@ private val colorStrickBack = Colors.BarBorder
 private val colorStrickCorner = Colors.TieBarBackground
 
 private const val textDescriptioAction = "Редактировать"
-private val picPen = Pics.EditOrdinaryLight
+private val picPen = Pics.PenOrdinaryGreyLight
 
 private const val textDescription = "В этом разделе я рассказываю про новости каждого дня. Кто-то что-то изобрел? У кого-то взорвался телефон? Я обязательно расскажу!\n\nЗдесь подкасты выхоят каждый день. а Брюхановой в 2021. Хочу сделать Россию лучше и избраться мэром Москвы когда-нибудь :)"
 private val colorTextDescription = Colors.Text

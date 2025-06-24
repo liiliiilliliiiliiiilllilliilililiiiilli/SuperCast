@@ -20,8 +20,8 @@ import com.example.supercast.ui.pics.Pics
 
 
 private val colorBack = Colors.Button
-private val picDots = Pics.ActionsDotsLight
-private const val picDotsDescription = "[dots pic]"
+private val picDots = Pics.DotsDoubleGreyLight
+private const val textPicDotsDescription = "[dots pic]"
 
 
 
@@ -43,7 +43,7 @@ fun ActionsButton (
 
         Image (
             painter = painterResource (picDots),
-            contentDescription = picDotsDescription,
+            contentDescription = textPicDotsDescription,
             modifier = Modifier.size (15.dp)
         )
 

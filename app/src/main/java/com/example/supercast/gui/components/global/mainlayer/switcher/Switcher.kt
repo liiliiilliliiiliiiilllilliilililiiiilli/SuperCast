@@ -26,7 +26,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 private const val textDescription = "Описание"
 private const val textAboutAuthor = "Об авторе"
 
-private val textFont = Fonts.ArimoBold
+private val fontText = Fonts.ArimoBold
 private val colorChosen = Colors.Olive
 private val colorNotChosen = Colors.OliveMonochromic
 
@@ -54,7 +54,7 @@ fun Switcher (
             text = text,
             fontSize = 15.5.sp,
             color = colorText,
-            fontFamily = textFont,
+            fontFamily = fontText,
             modifier = Modifier
                 .clickable (onClick = onPress)
                 .padding (horizontal = 8.dp)

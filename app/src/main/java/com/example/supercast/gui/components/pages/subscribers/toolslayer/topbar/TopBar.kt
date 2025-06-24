@@ -21,7 +21,7 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 
 private const val labelText = "Подписчики"
 
-private val picBack = Pics.ArrowCompactLight
+private val picBack = Pics.ArrowCompactDownGreyLight
 private val picSearch = Pics.SearchGrey
 
 

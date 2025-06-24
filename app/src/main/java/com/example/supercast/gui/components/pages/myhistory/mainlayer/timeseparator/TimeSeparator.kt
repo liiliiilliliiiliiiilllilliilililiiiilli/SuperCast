@@ -17,8 +17,8 @@ import com.example.supercast.gui.components.distinctive.spaces.Space
 
 
 
-private val color = Colors.DarkGrey
-private val font = Fonts.ArimoBold
+private val colorTimeSeparator = Colors.DarkGrey
+private val fontTimeSeparator = Fonts.ArimoBold
 
 
 
@@ -38,8 +38,8 @@ fun TimeSeparator (
 		Text (
 			text = text,
 			fontSize = 14.sp,
-			color = color,
-			fontFamily = font,
+			color = colorTimeSeparator,
+			fontFamily = fontTimeSeparator,
 			modifier = Modifier.padding (end = 50.dp)
 		)
 

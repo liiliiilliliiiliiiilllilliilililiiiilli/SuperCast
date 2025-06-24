@@ -31,7 +31,7 @@ import com.example.supercast.gui.components.global.mainlayer.actionsbutton.Actio
 
 
 
-private const val picAvaDescription = "[ava pic]"
+private const val textPicAvaDescription = "[ava pic]"
 
 private val colorAvaCircleCorner = Colors.AvaCircle
 private val colorAvaCircleRest = Colors.BarBorder
@@ -99,7 +99,7 @@ private fun Author (
 
 		Image (
 			painter = painterResource (pic),
-			contentDescription = picAvaDescription,
+			contentDescription = textPicAvaDescription,
 			modifier = Modifier
 				.clip (RoundedCornerShape (100))
 				.background (color = colorAvaCircleCorner)

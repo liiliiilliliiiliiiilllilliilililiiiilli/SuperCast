@@ -27,8 +27,8 @@ private const val textNum_2 = "83"
 private const val textOf_2 = "слушает"
 
 private val colorText = Colors.PreWhite
-private val textFontNum = Fonts.GadugiBold
-private val textFontOf = Fonts.ArchivoRegular
+private val fontTextNum = Fonts.GadugiBold
+private val fontTextOf = Fonts.ArchivoRegular
 
 
 
@@ -81,14 +81,14 @@ private fun Stat (
             text = num,
             fontSize = 25.sp,
             color = colorText,
-            fontFamily = textFontNum
+            fontFamily = fontTextNum
         )
 
         Text (
             text = of,
             fontSize = 15.sp,
             color = colorText,
-            fontFamily = textFontOf
+            fontFamily = fontTextOf
         )
 
     }

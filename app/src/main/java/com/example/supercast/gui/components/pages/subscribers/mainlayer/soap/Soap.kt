@@ -38,12 +38,12 @@ private val colorTextAuthorName = Colors.PreWhite
 private val colorTextAuthorShortName = Colors.OliveMonochromic
 private val colorTextListeners = Colors.OliveMonochromic
 
-private val picArrow = Pics.ArrowCompactLight
+private val picArrow = Pics.ArrowCompactDownGreyLight
 
 private val fontCommon = Fonts.ArchivoSemiBold
 
-private const val picAvaDescription = "[ava pic]"
-private const val picArrowDescription = "[arrow pic]"
+private const val textPicAuthorDescription = "[ava pic]"
+private const val textPicArrowDescription = "[arrow pic]"
 
 private const val textSomeListen = "слушают"
 
@@ -100,7 +100,7 @@ private fun Author (
 
 		Image (
 			painter = painterResource (pic),
-			contentDescription = picAvaDescription,
+			contentDescription = textPicAuthorDescription,
 			modifier = Modifier
 				.clip (RoundedCornerShape (100))
 				.background (color = colorAvaCircleCorner)
@@ -165,7 +165,7 @@ private fun Arrow () {
 
 	Image (
 		painter = painterResource (picArrow),
-		contentDescription = picArrowDescription,
+		contentDescription = textPicArrowDescription,
 		modifier = Modifier
 			.padding (horizontal = 18.5.dp)
 			.size (16.dp)
