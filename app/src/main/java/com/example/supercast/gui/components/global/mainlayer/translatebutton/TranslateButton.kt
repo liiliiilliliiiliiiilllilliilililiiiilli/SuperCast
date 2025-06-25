@@ -15,6 +15,7 @@ import com.example.supercast.ui.pics.Pics
 
 
 private val picTranslate = Pics.TranslateGreenLight
+
 private const val textPicTranslateDescription = "[translate pic]"
 
 

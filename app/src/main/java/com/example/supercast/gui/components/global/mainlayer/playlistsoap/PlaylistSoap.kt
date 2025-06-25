@@ -29,17 +29,17 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 private val colorTitle = Colors.PreWhite
-private val fontTitle = Fonts.ArchivoSemiBold
-
 private val colorStats = Colors.Grey
-private val fontStats = Fonts.ArchivoSemiBold
 
-private const val textSomeTracks = "треков"
+private val fontTitle = Fonts.ArchivoSemiBold
+private val fontStats = Fonts.ArchivoSemiBold
 
 private val picExpand = Pics.ExpandArrowsGrey
 
 private const val textPicLogoDescription = "[logo pic]"
 private const val textPicExpandDescription = "[open pic]"
+
+private const val textSomeTracks = "треков"
 
 
 
@@ -150,7 +150,7 @@ private fun UnwrapPic () {
 	Image (
 		painter = painterResource (picExpand),
 		contentDescription = textPicExpandDescription,
-		modifier = Modifier .size ((21*0.95).dp)
+		modifier = Modifier.size ((21*0.95).dp)
 	)
 
 }

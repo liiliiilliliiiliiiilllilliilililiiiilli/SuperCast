@@ -23,6 +23,7 @@ private val colorCornerMediate = Colors.Blocks
 private val colorCornerIn = Colors.Black
 
 private val picAvaSample = Pics.__image_1__
+
 private const val textPicAvaDescription = "[ava pic]"
 
 

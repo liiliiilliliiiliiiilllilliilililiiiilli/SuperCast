@@ -18,9 +18,9 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 
 
 
-private const val labelText = "Коллекции"
-
 private val picSettings = Pics.SettingsAdjustmentsGrey
+
+private const val textLabel = "Коллекции"
 
 
 
@@ -37,7 +37,7 @@ fun TopBar () {
         ) {
 
             Label (
-                text = labelText
+                text = textLabel
             )
 
             Space (modifier = Modifier.weight (1f))

@@ -31,15 +31,16 @@ import com.example.supercast.gui.components.global.mainlayer.actionsbutton.Actio
 
 
 
-private const val textPicAvaDescription = "[ava pic]"
 
 private val colorAvaCircleCorner = Colors.AvaCircle
 private val colorAvaCircleRest = Colors.BarBorder
-
 private val colorDitleName = Colors.PreWhite
 private val colorDitleTie = Colors.Grey
+
 private val fontDitleName = Fonts.ArimoSemiBold
 private val fontDitleTie = Fonts.ArimoSemiBold
+
+private const val textPicAvaDescription = "[ava pic]"
 
 
 

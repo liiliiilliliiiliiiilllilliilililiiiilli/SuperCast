@@ -25,15 +25,18 @@ import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButt
 
 private val colorTitle = Colors.PreWhite
 private val colorStats = Colors.Grey
+
 private val fontTitle = Fonts.ArchivoSemiBold
 private val fontStats = Fonts.ArchivoBold
+
+private val pic = Pics.__image_7__
+
+private const val textSomeListeners = "прослушиваний"
 
 private const val textTitle = "Как побеждать (всегда)."
 
 private const val numDuration = 1
 private const val numListeners = 38841
-
-private val pic = Pics.__image_7__
 
 
 
@@ -77,7 +80,7 @@ private fun Ditle (
 	val durationFormatted = "1:05"  // ProjectLib.formatTime ()
 	val listenesFormatted = ProjectLib.formatStarsNumber (listenes)
 
-	val textStats = "$durationFormatted  •  $listenesFormatted прослушиваний"
+	val textStats = "$durationFormatted  •  $listenesFormatted $textSomeListeners"
 
 
 	Column {
@@ -111,8 +114,11 @@ private fun PlayButton (
 	onPress: () -> Unit
 ) {
 
+	val scale = 45f/37f
+
+
 	PlayButtonComponent (
-		scale = 45f/37f,
+		scale = scale,
 		isLight = true,
 		pic = pic,
 		onPress = onPress

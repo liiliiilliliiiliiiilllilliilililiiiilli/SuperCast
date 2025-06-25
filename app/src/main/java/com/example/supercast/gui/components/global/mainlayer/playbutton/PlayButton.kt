@@ -24,8 +24,10 @@ import com.example.supercast.ui.pics.Pics
 
 
 private val colorBack = Colors.Olive
-private val picTriangleDark = Pics.PlayTriangleDark
+
 private val picTriangleLight = Pics.PlayTriangleLight
+private val picTriangleDark = Pics.PlayTriangleDark
+
 private const val textPicTriangleDescription = "[triangle pic]"
 
 
@@ -40,24 +42,30 @@ fun PlayButton (
 
     val picTriangle = if (isLight) picTriangleLight else picTriangleDark
 
+    val modifier =
 
-    val modi = if (pic != null) Modifier
-        .paint (
-            painterResource (pic),
-            contentScale = ContentScale.FillBounds
-        )
-        .background (color = Color (0x88000000)
-    ) else Modifier
+        if (pic != null)
+
+            Modifier
+                .paint (
+                    painterResource (pic),
+                    contentScale = ContentScale.FillBounds
+                )
+                .background (color = Color (0x88000000))
+
+        else
+
+            Modifier
 
 
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .clickable (onClick = {onPress ()})
+            .clickable (onClick = {onPress()})
             .clip (RoundedCornerShape (100))
             .size ((37 * scale).dp)
             .background (color = colorBack)
-            .then (modi)
+            .then (modifier)
 
     ) {
 

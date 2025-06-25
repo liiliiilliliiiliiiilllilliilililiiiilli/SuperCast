@@ -17,8 +17,8 @@ import com.example.supercast.gui.components.global.mainlayer.descriptionblock.De
 
 
 
-private const val switch_1 = "Описание"
-private const val switch_2 = "Об авторе"
+private const val textSwitch_1 = "Описание"
+private const val textSwitch_2 = "Об авторе"
 
 
 
@@ -64,15 +64,15 @@ fun Description () {
         )
 
 
-        val (chosenSwitch, setChosenSwitch) = remember {mutableStateOf (switch_2)}
-        var contentOfSwitch by remember {mutableStateOf (if (chosenSwitch == switch_1) data_1 else data_2)}
+        val (chosenSwitch, setChosenSwitch) = remember {mutableStateOf (textSwitch_2)}
+        var contentOfSwitch by remember {mutableStateOf (if (chosenSwitch == textSwitch_1) data_1 else data_2)}
 
-        contentOfSwitch = if (chosenSwitch == switch_1) data_1 else data_2
+        contentOfSwitch = if (chosenSwitch == textSwitch_1) data_1 else data_2
 
 
         Switcher (
-            switch_1 = switch_1,
-            switch_2 = switch_2,
+            switch_1 = textSwitch_1,
+            switch_2 = textSwitch_2,
             chosenSwitch = chosenSwitch,
             setChosenSwitch = setChosenSwitch
         )

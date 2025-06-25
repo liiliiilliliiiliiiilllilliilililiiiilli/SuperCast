@@ -29,22 +29,23 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private const val textName = "Котик полевой"
-private const val textShortName = "@cesty_cat"
-private const val textSubscribed = "Подписано"
-private const val textSubscribedSomeOf = "из"
+private val colorDitle = Colors.PreWhite
+private val colorEditButtonBack = Colors.Button
+private val colorEditButtonCorner = Colors.Button
 
 private val fontName = Fonts.GadugiBold
 private val fontShortName = Fonts.GadugiRegular
 private val fontEditButton = Fonts.ArchivoExtraBold
 
-private val colorText = Colors.PreWhite
-
-private val colorEditButtonBack = Colors.Button
-private val colorEditButtonCorner = Colors.Button
-
 private val picTriangle = Pics.UnwrapTriangleLight
+
 private const val textPicTriangleDescription = "[edit pic]"
+
+private const val textSubscribed = "Подписано"
+private const val textSubscribedSomeOf = "из"
+
+private const val textName = "Котик полевой"
+private const val textShortName = "@cesty_cat"
 
 
 
@@ -92,7 +93,7 @@ private fun Name (
         Text (
             text = text,
             fontSize = 23.sp,
-            color = colorText,
+            color = colorDitle,
             fontFamily = fontName
         )
 
@@ -110,7 +111,7 @@ private fun ShortName (
     Text (
         text = text,
         fontSize = 16.sp,
-        color = colorText,
+        color = colorDitle,
         fontFamily = fontShortName
     )
 
@@ -142,7 +143,7 @@ private fun EditButton () {
         Text (
             text = text,
             fontSize = 14.sp,
-            color = colorText,
+            color = colorDitle,
             fontFamily = fontEditButton
         )
 

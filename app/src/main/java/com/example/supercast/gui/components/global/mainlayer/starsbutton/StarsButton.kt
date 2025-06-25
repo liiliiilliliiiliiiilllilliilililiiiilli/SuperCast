@@ -27,15 +27,17 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private const val textPicStarDescription = "[star pic]"
-private val picStarPressed = Pics.StarDark
-private val picStarNotPressed = Pics.StarLight
 private val colorStarButtonBackPressed = Colors.CircleButton
-private val colorStarButtonBackUnPressed = Colors.Button
+private val colorStarButtonBackNotPressed = Colors.Button
+private val colorStarButtonTextPressed = Colors.Blocks
+private val colorStarButtonTextNotPressed = Colors.CircleButton
 
 private val fontStars = Fonts.ArimoBold
-private val colorStarButtonTextPressed = Colors.Blocks
-private val colorStarButtonTextUnPressed = Colors.CircleButton
+
+private val picStarPressed = Pics.StarDark
+private val picStarNotPressed = Pics.StarLight
+
+private const val textPicStarDescription = "[star pic]"
 
 
 
@@ -49,8 +51,8 @@ fun StarsButton (
 
 	val text = ProjectLib.formatStarsNumber (value)
 
-	val colorBack = if (isPressed) colorStarButtonBackPressed else colorStarButtonBackUnPressed
-	val colorText = if (isPressed) colorStarButtonTextPressed else colorStarButtonTextUnPressed
+	val colorBack = if (isPressed) colorStarButtonBackPressed else colorStarButtonBackNotPressed
+	val colorText = if (isPressed) colorStarButtonTextPressed else colorStarButtonTextNotPressed
 	val picStar = if (isPressed) picStarPressed else picStarNotPressed
 
 	val switchStarState = {setIsPressed (!isPressed)}

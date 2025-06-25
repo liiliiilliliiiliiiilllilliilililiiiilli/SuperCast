@@ -36,10 +36,13 @@ fun Post (
     isInner: Boolean = false
 ) {
 
+    val scale = if (isInner) 0.915f else 1f
+
+
     Column (
         modifier = Modifier
             .fillMaxWidth ()
-            .scale (if (isInner) 0.915f else 1f)
+            .scale (scale)
     ) {
 
         InfoBar (

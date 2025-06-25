@@ -18,11 +18,11 @@ import com.example.supercast.ui.pics.Pics
 
 
 
-private val picAvaSample = Pics.__image_5__
-
 private val colorCornerOut = Colors.AvaCircle
 private val colorCornerMediate = Colors.Blocks
 private val colorCornerIn = Colors.Black
+
+private val picAva = Pics.__image_5__
 
 private const val textPicAvaDescription = "[ava pic]"
 
@@ -32,7 +32,7 @@ private const val textPicAvaDescription = "[ava pic]"
 fun Ava () {
 
     Image (
-        painter = painterResource (picAvaSample),
+        painter = painterResource (picAva),
         contentDescription = textPicAvaDescription,
         modifier = Modifier
             .padding (start = 17.dp)

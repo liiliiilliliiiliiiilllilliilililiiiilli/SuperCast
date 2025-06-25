@@ -20,7 +20,9 @@ import com.example.supercast.ui.pics.Pics
 
 
 private val colorBack = Colors.Button
+
 private val picDots = Pics.DotsDoubleGreyLight
+
 private const val textPicDotsDescription = "[dots pic]"
 
 
@@ -38,7 +40,7 @@ fun ActionsButton (
             .clip (RoundedCornerShape (100))
             .size (25.dp, 35.dp)
             .background (colorBack)
-            .clickable (onClick = onPress)
+            .clickable (onClick = {onPress()})
     ) {
 
         Image (

@@ -28,16 +28,15 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private val fontBlob = Fonts.FiraSansSemiBold
-
-private val colorBlobText_Chosen = Colors.ChosenText
-private val colorBlobText_NotChosen = Colors.PreWhite
-private val colorBlobCorner_Chosen = Colors.ChosenFrame
-private val colorBlobCorner_NotChosen = Colors.Button
-private val colorBlobBack_Chosen = Colors.Black
-private val colorBlobBack_NotChosen = Colors.BarBackground
-
+private val colorBlobBackChosen = Colors.Black
+private val colorBlobBackNotChosen = Colors.BarBackground
+private val colorBlobCornerChosen = Colors.ChosenFrame
+private val colorBlobCornerNotChosen = Colors.Button
+private val colorBlobTextChosen = Colors.ChosenText
+private val colorBlobTextNotChosen = Colors.PreWhite
 private val colorSeparator = Colors.DarkGrey
+
+private val fontBlob = Fonts.FiraSansSemiBold
 
 
 
@@ -94,9 +93,9 @@ private fun Blob (
     onPress: () -> Unit
 ) {
 
-    val colorBack = if (isChosen) colorBlobBack_Chosen else colorBlobBack_NotChosen
-    val colorCorner = if (isChosen) colorBlobCorner_Chosen else colorBlobCorner_NotChosen
-    val colorText = if (isChosen) colorBlobText_Chosen else colorBlobText_NotChosen
+    val colorBack = if (isChosen) colorBlobBackChosen else colorBlobBackNotChosen
+    val colorCorner = if (isChosen) colorBlobCornerChosen else colorBlobCornerNotChosen
+    val colorText = if (isChosen) colorBlobTextChosen else colorBlobTextNotChosen
 
 
     Text (

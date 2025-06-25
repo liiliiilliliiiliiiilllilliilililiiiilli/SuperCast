@@ -14,6 +14,7 @@ import com.example.supercast.ui.fonts.Fonts
 
 
 private val colorContent = Colors.Grey
+
 private val fontContent = Fonts.ArchivoBold
 
 

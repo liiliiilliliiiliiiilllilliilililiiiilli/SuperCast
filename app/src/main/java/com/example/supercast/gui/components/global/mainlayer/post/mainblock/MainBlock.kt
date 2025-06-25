@@ -41,7 +41,7 @@ fun MainBlock (
 	isPostInner: Boolean
 ) {
 
-	val postHasAttachments = postHasAttachments
+	val paddingBottom = if (postHasAttachments) 4.dp else 0.dp
 
 
 	Column (
@@ -49,7 +49,7 @@ fun MainBlock (
 			.clip (RoundedCornerShape (12.dp))
 			.background (color = colorBack)
 			.fillMaxWidth ()
-			.padding (bottom = if (postHasAttachments) 4.dp else 0.dp)
+			.padding (bottom = paddingBottom)
 	) {
 
 		Top (

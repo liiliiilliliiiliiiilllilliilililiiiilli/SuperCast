@@ -19,6 +19,7 @@ import com.example.supercast.ui.colors.Colors
 
 
 private val colorBack = Colors.Olive
+
 private const val textPicCircleActionButtonDescription = "[button pic]"
 
 

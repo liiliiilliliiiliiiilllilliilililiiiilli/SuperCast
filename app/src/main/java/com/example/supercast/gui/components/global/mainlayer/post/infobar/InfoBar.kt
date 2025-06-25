@@ -17,7 +17,7 @@ import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionTe
 
 
 
-private val colorText = Colors.DarkGrey
+private val colorInfoBar = Colors.DarkGrey
 
 
 
@@ -39,7 +39,7 @@ fun InfoBar (
 
 			ActionText (
 				text = left,
-				color = colorText
+				color = colorInfoBar
 			)
 
 		}
@@ -50,7 +50,7 @@ fun InfoBar (
 
 			ActionText (
 				text = right,
-				color = colorText
+				color = colorInfoBar
 			)
 
 		}

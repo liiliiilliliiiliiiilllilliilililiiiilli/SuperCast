@@ -29,21 +29,19 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private const val textLabel = "Мои комментарии"
-
-private val colorBack = Colors.Blocks
-private val colorCommentBack = Colors.Black
-
 private val colorLabel = Colors.Grey
-private val fontLabel = Fonts.ArchivoSemiBold
+private val colorBack = Colors.Blocks
+private val colorAvaCircleCorner = Colors.AvaCircle
+private val colorAvaCircleRest = Colors.BarBorder
+private val colorCommentBack = Colors.Black
+private val colorComment = Colors.OliveMonochromic
 
-private val colorTextComment = Colors.OliveMonochromic
-private val fontTextComment = Fonts.ArchivoSemiBold
+private val fontLabel = Fonts.ArchivoSemiBold
+private val fontComment = Fonts.ArchivoSemiBold
 
 private const val textPicLogoDescription = "[playlist logo pic]"
 
-private val colorAvaCircleCorner = Colors.AvaCircle
-private val colorAvaCircleRest = Colors.BarBorder
+private const val textLabel = "Мои комментарии"
 
 
 
@@ -135,8 +133,8 @@ private fun Main (
 			Text (
 				text = text,
 				fontSize = 12.5.sp,
-				color = colorTextComment,
-				fontFamily = fontTextComment
+				color = colorComment,
+				fontFamily = fontComment
 			)
 
 		}

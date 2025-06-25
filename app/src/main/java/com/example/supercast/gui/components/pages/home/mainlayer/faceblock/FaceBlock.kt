@@ -29,9 +29,9 @@ import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.descr
 
 
 
-private val colorBack = Colors.Blocks
-
 private const val isDescriptionOpened_initialState = false
+
+private val colorBack = Colors.Blocks
 
 
 

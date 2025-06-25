@@ -9,8 +9,9 @@ import com.example.supercast.gui.components.global.mainlayer.liner.Liner as Line
 
 
 
+private val picButtonPicRight = Pics.FilterGreyLight
+
 private const val textButtonList = "Все"
-private val picButtonRight = Pics.FilterGreyLight
 
 
 
@@ -22,7 +23,7 @@ fun Liner () {
 
     LinerComponent (
         text = textButtonList,
-        buttPicRight = arrayOf (picButtonRight),
+        buttonPicRight = arrayOf (picButtonPicRight),
         picRightOnPress = picRightOnPress
     )
 

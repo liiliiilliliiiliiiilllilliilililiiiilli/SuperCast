@@ -19,9 +19,9 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 
 
 
-private const val labelText = "Настройки"
+private val picArrow = Pics.ArrowCompactDownGreyLight
 
-private val picBack = Pics.ArrowCompactDownGreyLight
+private const val textLabel = "Настройки"
 
 
 
@@ -38,7 +38,7 @@ fun TopBar () {
         ) {
 
             BarButton (
-                pic = picBack,
+                pic = picArrow,
                 picSize = 14.75.dp,
                 isCircle = true,
                 rotate = 90f,
@@ -47,7 +47,7 @@ fun TopBar () {
             )
 
             Label (
-                text = labelText
+                text = textLabel
             )
 
             Space (modifier = Modifier.weight (1f))

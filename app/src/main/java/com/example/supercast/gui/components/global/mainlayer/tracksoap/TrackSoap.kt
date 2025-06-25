@@ -29,16 +29,16 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private const val textPicLogoDescription = "[logo pic]"
-private const val textPicArrowDescription = "[arrow pic]"
-
 private val colorTitle = Colors.PreWhite
-private val fontTitle = Fonts.ArchivoSemiBold
-
 private val colorStats = Colors.Grey
+
+private val fontTitle = Fonts.ArchivoSemiBold
 private val fontStats = Fonts.ArchivoSemiBold
 
 private val picArrow = Pics.ArrowCompactDownGreyLight
+
+private const val textPicLogoDescription = "[logo pic]"
+private const val textPicArrowDescription = "[arrow pic]"
 
 
 

@@ -13,8 +13,9 @@ import com.example.supercast.ui.fonts.Fonts
 
 
 
-private val colorText = Colors.PreWhite
-private val fontText = Fonts.ArchivoRegular
+private val colorOration = Colors.PreWhite
+
+private val fontOration = Fonts.ArchivoRegular
 
 
 
@@ -26,8 +27,8 @@ fun Oration (
 	Text (
 		text = text,
 		fontSize = 14.5.sp,
-		color = colorText,
-		fontFamily = fontText,
+		color = colorOration,
+		fontFamily = fontOration,
 		modifier = Modifier.padding (start = 16.dp, end = 16.dp, bottom = 2.5.dp)
 	)
 

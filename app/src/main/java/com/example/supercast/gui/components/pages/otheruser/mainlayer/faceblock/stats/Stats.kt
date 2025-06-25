@@ -21,14 +21,15 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
+private val colorStats = Colors.PreWhite
+
+private val fontStatNum = Fonts.GadugiBold
+private val fontStatNumOfWhat = Fonts.ArchivoRegular
+
 private const val textNum_1 = "137"
 private const val textOf_1 = "слушателей"
 private const val textNum_2 = "5"
 private const val textOf_2 = "слушает"
-
-private val colorStatsText = Colors.PreWhite
-private val fontStatNum = Fonts.GadugiBold
-private val fontStatNumOfWhat = Fonts.ArchivoRegular
 
 
 
@@ -80,14 +81,14 @@ private fun Stat (
         Text (
             text = num,
             fontSize = 25.sp,
-            color = colorStatsText,
+            color = colorStats,
             fontFamily = fontStatNum
         )
 
         Text (
             text = of,
             fontSize = 15.sp,
-            color = colorStatsText,
+            color = colorStats,
             fontFamily = fontStatNumOfWhat
         )
 

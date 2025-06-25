@@ -22,9 +22,18 @@ import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButt
 import com.example.supercast.gui.components.global.mainlayer.translatebutton.TranslateButton
 
 
+
+private val colorSpeech = Colors.OliveLight
+private val colorStats = Colors.Olive
+
+private val fontSpeech = Fonts.ArchivoSemiBold
+private val fontStats = Fonts.ArchivoSemiBold
+
+private const val textSomeListeners = "прослушиваний"
+
 private const val textMain = "Мне бы не хотелось это больше когда-либо видеть. Я бы хотеля получить тою чего всегда так хотела - свободу творчества и покой. Я бы хотеля этоого больше всего в жизни."
-private const val duration = "5:42"
-private const val listenes = 1468
+private const val textDuration = "5:42"
+private const val numListenes = 1468
 
 
 
@@ -48,8 +57,8 @@ fun Voice (
 
 		Medium (
 			speech = textMain,
-			duration = duration,
-			listenes = listenes,
+			duration = textDuration,
+			listenes = numListenes,
 			modifier = Modifier.weight (1f)
 		)
 
@@ -66,15 +75,14 @@ fun Voice (
 
 
 @Composable
-fun Medium (
+private fun Medium (
 	speech: String,
 	duration: String,
 	listenes: Int,
 	modifier: Modifier
 ) {
 
-	val listenesFormatted = ProjectLib.formatStarsNumber (listenes)
-	val textStats = "$duration  ·  $listenesFormatted прослушиваний"
+	val stats = "$duration  ·  $ProjectLib.formatStarsNumber(listenes) $textSomeListeners"
 
 
 	Column (
@@ -84,17 +92,17 @@ fun Medium (
 		Text (
 			text = speech,
 			fontSize = 12.75.sp,
-			color = Colors.OliveLight,
-			fontFamily = Fonts.ArchivoSemiBold
+			color = colorSpeech,
+			fontFamily = fontSpeech
 		)
 
 		Height (2.5)
 
 		Text (
-			text = textStats,
+			text = stats,
 			fontSize = 12.75.sp,
-			color = Colors.Olive,
-			fontFamily = Fonts.ArchivoSemiBold
+			color = colorStats,
+			fontFamily = fontStats
 		)
 
 	}

@@ -30,10 +30,8 @@ import com.example.supercast.gui.components.distinctive.spaces.Height
 
 
 private val colorBack = Colors.Blocks
-
 private val colorAvaCircleCorner = Colors.AvaCircle
 private val colorAvaCircleRest = Colors.BarBorder
-
 private val colorTextAuthorName = Colors.PreWhite
 private val colorTextAuthorShortName = Colors.OliveMonochromic
 private val colorTextListeners = Colors.OliveMonochromic

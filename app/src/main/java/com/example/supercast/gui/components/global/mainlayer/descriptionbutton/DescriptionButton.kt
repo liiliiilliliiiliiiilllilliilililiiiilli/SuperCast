@@ -21,13 +21,13 @@ import com.example.supercast.ui.pics.Pics
 
 
 
-private const val picDescription = ""
+private val colorOpened = Colors.CircleButton
+private val colorClosed = Colors.Button
 
 private val picOpened = Pics.PlusSmoothDark
 private val picClosed = Pics.ArrowCompactDownGreyLight
 
-private val colorOpened = Colors.CircleButton
-private val colorClosed = Colors.Button
+private const val textPicDescriptionButtonDescription = "[wrapper pic]"
 
 
 
@@ -39,6 +39,8 @@ fun DescriptionButton (
 
     val colorBack = if (isOpened) colorOpened else colorClosed
     val pic = if (isOpened) picOpened else picClosed
+
+    val toggleIsOpened = {setIsOpened (!isOpened)}
 
     val picModifier =
 
@@ -54,13 +56,11 @@ fun DescriptionButton (
                 .size (14.dp)
                 .offset (y = 1.25.dp)
 
-    val switchIsOpened = {setIsOpened (!isOpened)}
-
 
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .clickable (onClick = switchIsOpened)
+            .clickable (onClick = toggleIsOpened)
             .clip (RoundedCornerShape (100))
             .background (color = colorBack)
             .size (33.dp)
@@ -68,7 +68,7 @@ fun DescriptionButton (
 
         Image (
             painter = painterResource (pic),
-            contentDescription = picDescription,
+            contentDescription = textPicDescriptionButtonDescription,
             modifier = picModifier
         )
 

@@ -19,17 +19,18 @@ import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionTe
 
 
 
-private const val textSomeComments = "комментариев"
-private const val textComment = "Комментировать"
 private val colorCommentsLight = Colors.Olive
 private val colorCommentsDark = Colors.DarkGrey
-private val picComments = Pics.CommentGreenLight
-
-private const val textSomeCitates = "цитат"
-private const val textCitate = "Цитировать"
 private val colorCitatesLight = Colors.Olive
 private val colorCitatesDark = Colors.DarkGrey
+
+private val picComments = Pics.CommentGreenLight
 private val picCitates = Pics.CitationGreenLight
+
+private const val textSomeComments = "комментариев"
+private const val textComment = "Комментировать"
+private const val textSomeCitates = "цитат"
+private const val textCitate = "Цитировать"
 
 
 
@@ -46,12 +47,12 @@ fun SegueBar (
 	val textComments = if (comments > 0) "$commentsNumFormatted $textSomeComments" else textComment
 	val colorTextComments = if (comments > 0) colorCommentsLight else colorCommentsDark
 	val picComments = if (comments > 0) picComments else null
- 	val pressedComments = {if (comments > 0) {} else {}}
+ 	val actionComments = {if (comments > 0) {print("")} else {print("")}}
 
 	val textCitates = if (citates > 0) "$citatesNumFormatted $textSomeCitates" else textCitate
 	val colorTextCitates = if (citates > 0) colorCitatesLight else colorCitatesDark
 	val picCitates = if (citates > 0) picCitates else null
-	val pressedCitates = {if (citates > 0) {} else {}}
+	val actionCitates = {if (citates > 0) {print("")} else {print("")}}
 
 
 	Row (
@@ -66,7 +67,7 @@ fun SegueBar (
 			text = textComments,
 			color = colorTextComments,
 			pic = picComments,
-			onPress = pressedComments
+			onPress = actionComments
 		)
 
 		Width (15)
@@ -75,7 +76,7 @@ fun SegueBar (
 			text = textCitates,
 			color = colorTextCitates,
 			pic = picCitates,
-			onPress = pressedCitates
+			onPress = actionCitates
 		)
 
 	}

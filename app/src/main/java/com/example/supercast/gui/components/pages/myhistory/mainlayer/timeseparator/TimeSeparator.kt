@@ -18,6 +18,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Space
 
 
 private val colorTimeSeparator = Colors.DarkGrey
+
 private val fontTimeSeparator = Fonts.ArimoBold
 
 

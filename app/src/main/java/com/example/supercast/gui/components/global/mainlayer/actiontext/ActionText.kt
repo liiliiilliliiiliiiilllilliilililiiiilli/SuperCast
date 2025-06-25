@@ -25,6 +25,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 private val colorText = Colors.ActionText
+
 private val fontText = Fonts.ArimoBold
 
 private const val textPicActionTextDescription = "[action pic]"

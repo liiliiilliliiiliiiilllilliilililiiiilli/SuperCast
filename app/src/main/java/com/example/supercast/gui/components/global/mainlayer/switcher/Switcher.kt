@@ -23,12 +23,13 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private const val textDescription = "Описание"
-private const val textAboutAuthor = "Об авторе"
-
-private val fontText = Fonts.ArimoBold
 private val colorChosen = Colors.Olive
 private val colorNotChosen = Colors.OliveMonochromic
+
+private val fontSwitchButton = Fonts.ArimoBold
+
+private const val textDescription = "Описание"
+private const val textAboutAuthor = "Об авторе"
 
 
 
@@ -47,14 +48,14 @@ fun Switcher (
         onPress: () -> Unit
     ) {
 
-        val colorText = if (isChosen) colorChosen else colorNotChosen
+        val color = if (isChosen) colorChosen else colorNotChosen
 
 
         Text (
             text = text,
             fontSize = 15.5.sp,
-            color = colorText,
-            fontFamily = fontText,
+            color = color,
+            fontFamily = fontSwitchButton,
             modifier = Modifier
                 .clickable (onClick = onPress)
                 .padding (horizontal = 8.dp)

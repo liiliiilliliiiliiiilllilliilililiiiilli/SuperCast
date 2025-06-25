@@ -33,32 +33,29 @@ import com.example.supercast.gui.components.global.mainlayer.post.Post
 
 
 private val colorBack = Colors.TieBarBackground
-
-private val colorFarmingCitate = Colors.Citate
-private val colorFarmingMedia = Colors.Media
-
 private val colorCitateMiniLabelContext = Colors.Olive
 private val colorCitateMiniLabelFrom = Colors.OliveLight
-private val colorMediaMiniLabel = Colors.MediaColor
 private val colorCommonBigLabel = Colors.PreWhite
+private val colorFarmingCitate = Colors.Citate
+private val colorFarmingMedia = Colors.Media
+private val colorMediaMiniLabel = Colors.MediaColor
 
 private val fontLabels = Fonts.ArimoBold
 
-private val picTriangleGreenClosed = Pics.UnwrapTriangleGreenDark
 private val picTriangleGreenOpened = Pics.UnwrapTriangleGreenLight
-private val picTriangleYellowClosed = Pics.UnwrapTriangleYellowDark
+private val picTriangleGreenClosed = Pics.UnwrapTriangleGreenDark
 private val picTriangleYellowOpened = Pics.UnwrapTriangleYellowLight
-
-private const val textPicTriangleDescription = "[triangle pic]"
-
-private const val textPublicationFrom = "Публикация от "
-private const val textCommentFrom = "Комментарий от "
-private const val textSomeMedia = "вложений"
-private const val textPublication = "Публикация"
-private const val textComment = "Комментарий"
-private const val textListingMedia = "из"
+private val picTriangleYellowClosed = Pics.UnwrapTriangleYellowDark
 
 private const val textPicMediaDescription = "[media pic]"
+private const val textPicTriangleDescription = "[triangle pic]"
+private const val textPublication = "Публикация"
+private const val textPublicationFrom = "Публикация от "
+private const val textSomeMedia = "вложений"
+
+private const val textComment = "Комментарий"
+private const val textCommentFrom = "Комментарий от "
+private const val textListingMedia = "из"
 
 
 
@@ -158,9 +155,12 @@ private fun Citate (
 	publicationFromWho: String
 ) {
 
+	val borderRadiusTopEnd = if (isOpened) 12.dp else 6.dp
+	val borderRadiusBottomEnd = if (isOpened) 12.dp else 6.dp
+
 	val modifier = Modifier
 		.padding (horizontal = 12.dp)
-		.clip (RoundedCornerShape (topEnd = if (isOpened) 12.dp else 6.dp, bottomEnd = if (isOpened) 12.dp else 6.dp))
+		.clip (RoundedCornerShape (topEnd = borderRadiusTopEnd, bottomEnd = borderRadiusBottomEnd))
 		.background (color = colorFarmingCitate)
 		.padding (start = 5.5.dp)
 		.background (color = colorBack)
@@ -254,15 +254,17 @@ private fun Media (
 	val minPicFieldHeight = 128.dp
 	val heightStep = (maxPicFieldHeight - minPicFieldHeight) / (maxMediaElementsAmount - 1)
 
-
 	val mediaCount = pics.size
 	val mediaCountFormatted = ProjectLib.formatStarsNumber (mediaCount)
 
 	val textMediaCount = "$mediaCountFormatted $textSomeMedia"
 
+	val borderRadiusTopEnd = if (isOpened) 12.dp else 6.dp
+	val borderRadiusBottomEnd = if (isOpened) 12.dp else 6.dp
+
 	val modifier = Modifier
 		.padding (horizontal = 12.dp)
-		.clip (RoundedCornerShape (topEnd = if (isOpened) 12.dp else 6.dp, bottomEnd = if (isOpened) 12.dp else 6.dp))
+		.clip (RoundedCornerShape (topEnd = borderRadiusTopEnd, bottomEnd = borderRadiusBottomEnd))
 		.background (color = colorFarmingMedia)
 		.padding (start = 5.5.dp)
 		.background (color = colorBack)
@@ -299,12 +301,15 @@ private fun Media (
 
 	else {
 
+		val height = maxPicFieldHeight - heightStep * (mediaCount - 1)
+
+
 		Row (
 			verticalAlignment = Alignment.CenterVertically,
 			horizontalArrangement = Arrangement.Center,
 			modifier = modifier
 				.padding (10.dp)
-				.height (maxPicFieldHeight - heightStep * (mediaCount - 1))
+				.height (height)
 		) {
 
 //			for (i in 1..mediaCount) {

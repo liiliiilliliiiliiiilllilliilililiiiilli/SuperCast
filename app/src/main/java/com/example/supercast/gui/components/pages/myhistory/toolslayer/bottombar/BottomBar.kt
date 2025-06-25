@@ -8,7 +8,7 @@ import com.example.supercast.gui.components.global.toolslayer.bottombar.BottomBa
 
 
 
-private const val destination = "collections"
+private const val textDestination = "collections"
 
 
 
@@ -16,7 +16,7 @@ private const val destination = "collections"
 fun BottomBar () {
 
     BottomBarComponent (
-        destination = destination
+        destination = textDestination
     )
 
 }

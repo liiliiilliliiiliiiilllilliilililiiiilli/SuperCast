@@ -29,25 +29,22 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private const val textLabel = "Мои плейлисты"
-
 private val colorBack = Colors.Blocks
-
 private val colorLabel = Colors.Grey
-private val fontLabel = Fonts.ArchivoSemiBold
-
 private val colorTitle = Colors.PreWhite
-private val fontTitle = Fonts.ArchivoSemiBold
-
 private val colorStats = Colors.Grey
-private val fontStats = Fonts.ArchivoSemiBold
-
 private val colorActions = Colors.Olive
+
+private val fontLabel = Fonts.ArchivoSemiBold
+private val fontTitle = Fonts.ArchivoSemiBold
+private val fontStats = Fonts.ArchivoSemiBold
 private val fontActions = Fonts.ArchivoSemiBold
 
 private const val textPicLogoDescription = "[logo pic]"
 
+private const val textLabel = "Мои плейлисты"
 private const val textSomeTracks = "треков"
+private const val textCreate = "+ Создать"
 
 
 
@@ -246,8 +243,8 @@ private fun Actions (
 		modifier = Modifier.fillMaxWidth ()
 	) {
 
-		Text(
-			text = "+ Создать",
+		Text (
+			text = textCreate,
 			fontSize = 14.5.sp,
 			color = colorActions,
 			fontFamily = fontActions,

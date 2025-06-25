@@ -16,11 +16,12 @@ import com.example.supercast.gui.components.distinctive.spaces.Space
 
 
 
-private const val textPublicationFrom = "→  [Публикация от "
-
-private val colorNormal = Colors.Olive
+private val colorRegular = Colors.Olive
 private val colorLight = Colors.OliveLight
+
 private val fontInfoBar = Fonts.ArchivoBold
+
+private const val textPublicationFrom = "→  [Публикация от "
 
 
 
@@ -38,12 +39,12 @@ fun InfoBar (
 		Text (
 			text = textPublicationFrom,
 			fontSize = 12.sp,
-			color = colorNormal,
+			color = colorRegular,
 			fontFamily = fontInfoBar
 		)
 
 		Text (
-			text = text + "]",
+			text = "$text ]",
 			fontSize = 12.sp,
 			color = colorLight,
 			fontFamily = fontInfoBar,

@@ -19,10 +19,10 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 
 
 
-private const val labelText = "История прослушивания"
-
-private val picBack = Pics.ArrowCompactDownGreyLight
+private val picArrow = Pics.ArrowCompactDownGreyLight
 private val picSearch = Pics.SearchGrey
+
+private const val textLabel = "История прослушивания"
 
 
 
@@ -39,7 +39,7 @@ fun TopBar () {
         ) {
 
             BarButton (
-                pic = picBack,
+                pic = picArrow,
                 picSize = 14.75.dp,
                 isCircle = true,
                 rotate = 90f,
@@ -48,7 +48,7 @@ fun TopBar () {
             )
 
             Label (
-                text = labelText,
+                text = textLabel,
                 fontSize = 20
             )
 

@@ -33,9 +33,9 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 private val colorLine = Colors.Line
 private val colorItemsBack = Colors.Black
+private val colorListButton = Colors.PreWhite
 
-private val colorText = Colors.PreWhite
-private val fontText = Fonts.ArchivoSemiBold
+private val fontListButton = Fonts.ArchivoSemiBold
 
 private val picTriangle = Pics.UnwrapTriangleLight
 
@@ -48,7 +48,7 @@ private const val textPicPicButtonDescription = "[option pic]"
 fun Liner (
     text: String,
     isWrapped: Boolean = true,
-    buttPicRight: Array <Int>,
+    buttonPicRight: Array <Int>,
     picRightOnPress: () -> Unit
 ) {
 
@@ -71,14 +71,14 @@ fun Liner (
 
             Space (Modifier.weight (1f))
 
-            buttPicRight.forEachIndexed {index, pic ->
+            buttonPicRight.forEachIndexed {index, pic ->
 
                 PicButton (
-                    pic = buttPicRight[index],
+                    pic = buttonPicRight[index],
                     picRightOnPress = picRightOnPress
                 )
 
-                if (index != buttPicRight.size - 1) {
+                if (index != buttonPicRight.size - 1) {
 
                     Width (8)
 
@@ -130,8 +130,8 @@ private fun ListButton (
         Text (
             text = text,
             fontSize = 27.sp,
-            color = colorText,
-            fontFamily = fontText
+            color = colorListButton,
+            fontFamily = fontListButton
         )
 
         if (isWrapped) {

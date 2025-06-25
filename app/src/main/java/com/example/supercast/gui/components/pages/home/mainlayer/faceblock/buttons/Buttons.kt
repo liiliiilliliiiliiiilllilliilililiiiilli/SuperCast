@@ -20,11 +20,11 @@ import com.example.supercast.gui.components.global.mainlayer.circleactionbutton.
 
 
 
-private const val textActionText = "Обо мне"
-
 private val picOpenAction = Pics.ArrowCompactDownGreyLight
 private val picLink = Pics.LinkDark
 private val picQr = Pics.QrCodeDark
+
+private const val textActionText = "Обо мне"
 
 
 

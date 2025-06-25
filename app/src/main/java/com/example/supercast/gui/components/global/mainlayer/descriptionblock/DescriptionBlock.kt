@@ -23,15 +23,13 @@ import com.example.supercast.ui.fonts.Fonts
 
 
 private val colorBack = Colors.Blocks
-
-private val fontTextLiner = Fonts.ArimoBold
-private val fontTextArea = Fonts.ArimoRegular
-
+private val colorAreaText = Colors.Text
+private val colorLinerBack = Colors.Blocks
 private val colorLinerLine = Colors.Line
 private val colorLinerText = Colors.PreWhite
-private val colorLinerBack = Colors.Blocks
 
-private val colorAreaText = Colors.Text
+private val fontTextArea = Fonts.ArimoRegular
+private val fontTextLiner = Fonts.ArimoBold
 
 
 

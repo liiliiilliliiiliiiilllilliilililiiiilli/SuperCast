@@ -29,8 +29,8 @@ import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButt
 
 
 private val colorTube = Colors.OliveLight
-
 private val colorTimes = Colors.Olive
+
 private val fontTimes = Fonts.FiraSansSemiBold
 
 

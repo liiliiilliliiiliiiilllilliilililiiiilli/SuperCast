@@ -19,8 +19,8 @@ import com.example.supercast.ui.colors.Colors
 
 
 
-private val colorBarButtonBack = Colors.Black
-private val colorBarButtonCorner = Colors.Button
+private val colorBack = Colors.Black
+private val colorCorner = Colors.Button
 
 private const val textPicBarButtonDescription = "[top bar pic]"
 
@@ -47,13 +47,13 @@ fun BarButton (
 		modifier = Modifier
 			.clickable (onClick = onPress)
 			.clip (RoundedCornerShape (radiusCornerOut))
-			.background (color = colorBarButtonCorner)
+			.background (color = colorCorner)
 			.padding (3.dp)
 			.clip (RoundedCornerShape (radiusCornerIn))
-			.background (color = colorBarButtonBack)
+			.background (color = colorBack)
 			.padding (paddingInside)
 			.size (picSize)
-			.background (color = colorBarButtonCorner)
+			.background (color = colorCorner)
 			.rotate (rotate)
 			.then (modifier)
 	)

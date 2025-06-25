@@ -21,8 +21,10 @@ import com.example.supercast.ui.pics.Pics
 
 
 private val colorBack = Colors.CircleButton
-private val picChrist = Pics.PlusSmoothDark
-private const val textPicChristDescription = "[button pic]"
+
+private val picPlus = Pics.PlusSmoothDark
+
+private const val textPicPlusDescription = "[button pic]"
 
 
 
@@ -41,8 +43,8 @@ fun CircleOpenCloseButton_Closed (
     ) {
 
         Image (
-            painter = painterResource (picChrist),
-            contentDescription = textPicChristDescription,
+            painter = painterResource (picPlus),
+            contentDescription = textPicPlusDescription,
             modifier = Modifier
                 .size (17.75.dp)
                 .rotate (45f)

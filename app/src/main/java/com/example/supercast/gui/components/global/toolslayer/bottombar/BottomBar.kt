@@ -31,7 +31,6 @@ import com.example.supercast.ui.pics.Pics
 
 private val colorBarBack = Colors.BarBackground
 private val colorBarCorner = Colors.BarBorder
-
 private val colorSeparator = Colors.Button
 
 private val picCollectionsLight = Pics.CollectionsLight
@@ -133,7 +132,7 @@ private fun ButtonsLayer (destination: String) {
         Box (
             contentAlignment = Alignment.Center,
             modifier = Modifier
-                .clickable {onPress ()}
+                .clickable {onPress}
                 .fillMaxHeight ()
                 .width (buttonWidth)
         ) {

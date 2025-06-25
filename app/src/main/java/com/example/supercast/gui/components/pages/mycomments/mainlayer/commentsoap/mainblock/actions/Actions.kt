@@ -22,17 +22,17 @@ import com.example.supercast.gui.components.global.mainlayer.starsbutton.StarsBu
 
 
 
+private val colorCommentsLight = Colors.Olive
+private val colorCommentsDark = Colors.DarkGrey
+private val colorCitatesLight = Colors.Olive
+private val colorCitatesDark = Colors.DarkGrey
+
 private val fontActions = Fonts.ArchivoBold
 
 private const val textSomeComments = "комментариев"
 private const val textComment = "Комментировать"
-private val colorCommentsLight = Colors.Olive
-private val colorCommentsDark = Colors.DarkGrey
-
 private const val textSomeCitates = "цитат"
 private const val textCitate = "Цитировать"
-private val colorCitatesLight = Colors.Olive
-private val colorCitatesDark = Colors.DarkGrey
 
 
 

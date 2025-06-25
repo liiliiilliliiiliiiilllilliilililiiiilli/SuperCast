@@ -19,10 +19,10 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 
 
 
-private const val labelText = "Автор"
-
 private val picSearch = Pics.SearchGrey
 private val picMenu = Pics.BurgerGrey
+
+private const val textLabel = "Автор"
 
 
 
@@ -40,7 +40,7 @@ fun TopBar () {
         ) {
 
             Label (
-                text = labelText
+                text = textLabel
             )
 
             Row {

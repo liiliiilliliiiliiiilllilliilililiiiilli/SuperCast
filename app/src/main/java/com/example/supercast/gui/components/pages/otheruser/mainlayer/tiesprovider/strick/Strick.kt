@@ -32,27 +32,26 @@ import com.example.supercast.gui.components.global.mainlayer.descriptionbutton.D
 
 
 
-private const val textSubscribed = "Подписано"
-private const val textSubscribe = "Подписаться"
-
-private val colorListenersCounter = Colors.Grey
-private val fontListenersCounter = Fonts.ArchivoSemiBold
-
-private const val textListeners = "слушателей"
 private const val isDescriptionOpened_defaultState = false
 
+private val colorListenersCounter = Colors.Grey
 private val colorStrickBack = Colors.BarBorder
 private val colorStrickCorner = Colors.TieBarBackground
-
-private const val textDescriptioAction = "Редактировать"
-private val picPen = Pics.PenOrdinaryGreyLight
-
-private const val textDescription = "В этом разделе я рассказываю про новости каждого дня. Кто-то что-то изобрел? У кого-то взорвался телефон? Я обязательно расскажу!\n\nЗдесь подкасты выхоят каждый день. а Брюхановой в 2021. Хочу сделать Россию лучше и избраться мэром Москвы когда-нибудь :)"
 private val colorTextDescription = Colors.Text
+
 private val fontDescription = Fonts.ArimoRegular
+private val fontListenersCounter = Fonts.ArchivoSemiBold
 
 private val picCheck = Pics.CheckLight
+
 private const val textPicCheckDescription = "[check pic]"
+
+private const val textDescriptioAction = "Редактировать"
+private const val textSubscribe = "Подписаться"
+private const val textSubscribed = "Подписано"
+private const val textListeners = "слушателей"
+
+private const val textDescription = "В этом разделе я рассказываю про новости каждого дня. Кто-то что-то изобрел? У кого-то взорвался телефон? Я обязательно расскажу!\n\nЗдесь подкасты выхоят каждый день. а Брюхановой в 2021. Хочу сделать Россию лучше и избраться мэром Москвы когда-нибудь :)"
 
 
 

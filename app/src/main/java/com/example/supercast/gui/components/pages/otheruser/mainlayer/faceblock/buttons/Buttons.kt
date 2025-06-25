@@ -20,9 +20,9 @@ import com.example.supercast.gui.components.global.mainlayer.circleopeneclosebut
 
 
 
-private const val textActionText = "Об авторе"
+private val picArrow = Pics.ArrowCompactDownGreyLight
 
-private val picOpenAction = Pics.ArrowCompactDownGreyLight
+private const val textActionText = "Об авторе"
 
 
 
@@ -44,7 +44,7 @@ fun Buttons (
 
             ActionText (
                 text = textActionText,
-                pic = picOpenAction,
+                pic = picArrow,
                 onPress = {setDescriptionOpened (true)}
             )
 

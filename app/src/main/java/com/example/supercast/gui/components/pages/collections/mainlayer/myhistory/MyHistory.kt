@@ -28,21 +28,18 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 
-private const val textLabel = "История прослушивания"
-
-private val colorBack = Colors.Blocks
-
 private val colorLabel = Colors.Grey
-private val fontLabel = Fonts.ArchivoSemiBold
-
+private val colorBack = Colors.Blocks
 private val colorTitle = Colors.PreWhite
-private val fontTitle = Fonts.ArchivoSemiBold
-
 private val colorStats = Colors.Grey
+
+private val fontLabel = Fonts.ArchivoSemiBold
+private val fontTitle = Fonts.ArchivoSemiBold
 private val fontStats = Fonts.ArchivoSemiBold
 
 private const val textPicLogoDescription = "[playlist logo pic]"
 
+private const val textLabel = "История прослушивания"
 private const val textSomeTracks = "треков"
 
 
