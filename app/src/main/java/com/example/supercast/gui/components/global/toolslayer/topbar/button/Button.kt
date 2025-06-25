@@ -53,7 +53,6 @@ fun BarButton (
 			.background (colorBack)
 			.padding (paddingInside)
 			.size (picSize)
-			.background (colorCorner)
 			.rotate (rotate)
 			.then (modifier)
 	)

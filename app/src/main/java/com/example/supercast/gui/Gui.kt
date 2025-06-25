@@ -13,6 +13,8 @@ import com.example.supercast.gui.pages.otheruser.OtherUser as OtherUserPage
 import com.example.supercast.gui.pages.subscribers.Subscribers as SubscribersPage
 import com.example.supercast.gui.pages.subscriptions.Subscriptions as SubscriptionsPage
 import com.example.supercast.gui.pages.settings.Settings as SettingsPage
+import com.example.supercast.gui.pages.settingsaccount.SettingsAccount as SettingsAccountPage
+import com.example.supercast.gui.pages.settingstheme.SettingsTheme
 import com.example.supercast.gui.pages.myhistory.MyHistory as MyHistoryPage
 import com.example.supercast.gui.pages.myplaylists.MyPlaylists as MyPlaylistsPage
 import com.example.supercast.gui.pages.mycomments.MyComments as MyCommentsPage
@@ -37,7 +39,9 @@ fun Gui () {
 //        SubscribersPage ()
 //        SubscriptionsPage ()
 
-        SettingsPage ()
+//        SettingsPage ()
+//        SettingsAccountPage ()
+        SettingsTheme ()
 
 //        MyHistoryPage ()
 //        MyPlaylistsPage ()

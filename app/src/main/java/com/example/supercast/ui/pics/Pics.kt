@@ -22,6 +22,8 @@ class Pics () {
 
         val ArrowCompactDownGreyLight = R.drawable.arrow_compact_down_grey_light
         val BellGrey = R.drawable.bell_grey
+        val BrushBigGreyLight = R.drawable.brush_big_grey_light
+        val BrushSmallGreyLight = R.drawable.brush_small_grey_light
         val BurgerGrey = R.drawable.burger_grey
         val CheckDoubleLight = R.drawable.check_double_light
         val CheckGreenLight = R.drawable.check_green_light
@@ -44,6 +46,7 @@ class Pics () {
         val PenMagicGreenDark = R.drawable.pen_magic_green_dark
         val PenMagicGreenLight = R.drawable.pen_magic_green_light
         val PenOrdinaryGreenDark = R.drawable.pen_ordinary_green_dark
+        val PenOrdinaryGrey = R.drawable.pen_ordinary_grey
         val PenOrdinaryGreyLight = R.drawable.pen_ordinary_grey_light
         val PieDark = R.drawable.pie_dark
         val PieLight = R.drawable.pie_light

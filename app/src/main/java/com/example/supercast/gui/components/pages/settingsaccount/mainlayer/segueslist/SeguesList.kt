@@ -1,6 +1,6 @@
-// Settings page - Main layer - Segues list
+// Settings account page - Main layer - Segues list
 
-package com.example.supercast.gui.components.pages.settings.mainlayer.segueslist
+package com.example.supercast.gui.components.pages.settingsaccount.mainlayer.segueslist
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -8,9 +8,11 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.requiredHeight
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
@@ -22,7 +24,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.gui.components.pages.settings.mainlayer._types_.Segue
+import com.example.supercast.gui.components.pages.settingsaccount.mainlayer._types_.Segue
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -35,7 +37,9 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 private val colorBack = Colors.Blocks
 private val colorSegue = Colors.PreWhite
-private val colorSegueValue = Colors.Text
+private val colorSegueValue = Colors.Grey
+private val colorAvaCircleCorner = Colors.AvaCircle
+private val colorAvaCircleRest = Colors.BarBorder
 private val colorSeparator = Colors.BarSeparator
 
 private val fontSegue = Fonts.ArchivoSemiBold
@@ -63,9 +67,11 @@ fun SeguesList (
 
 		segues.forEachIndexed {index, segue ->
 
-			val pic = segue.pic
+			val leftPic = segue.leftPic
 			val text = segue.text
 			val textValue = segue.textValue
+			val picValue = segue.picValue
+			val rightPic = segue.rightPic
 			val onPress = segue.onPress
 
 
@@ -79,10 +85,10 @@ fun SeguesList (
 
 				Width (8)
 
-				if (pic != null) {
+				if (leftPic != null) {
 
 					Image (
-						painter = painterResource (pic),
+						painter = painterResource (leftPic),
 						contentDescription = textPicSegueIconDescription,
 						modifier = Modifier.size (21.dp)
 					)
@@ -109,19 +115,37 @@ fun SeguesList (
 						fontFamily = fontSegue
 					)
 
+					Width (14)
+
 				}
 
-				else {
+				else if (picValue != null) {
 
 					Image (
-						painter = painterResource (picArrow),
+						painter = painterResource (picValue),
 						contentDescription = textPicArrowDescription,
 						modifier = Modifier
-							.size (15.dp)
-							.rotate (-90f)
+							.requiredHeight (41.dp)
+							.clip (RoundedCornerShape (100))
+							.background (colorAvaCircleCorner)
+							.padding (1.75.dp)
+							.clip (RoundedCornerShape (100))
+							.background (colorAvaCircleRest)
+							.padding (1.75.dp)
+							.clip (RoundedCornerShape (100))
 					)
 
+					Width (14)
+
 				}
+
+				Image (
+					painter = painterResource (if (rightPic != null) rightPic else picArrow),
+					contentDescription = textPicArrowDescription,
+					modifier = Modifier
+						.size (15.dp)
+						.rotate (if (rightPic != null) {0f} else {-90f})
+				)
 
 				Width (21)
 

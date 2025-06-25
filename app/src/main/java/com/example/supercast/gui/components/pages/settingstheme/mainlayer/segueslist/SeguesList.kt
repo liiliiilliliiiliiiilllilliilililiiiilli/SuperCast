@@ -1,6 +1,6 @@
-// Settings page - Main layer - Segues list
+// Settings theme page - Main layer - Segues list
 
-package com.example.supercast.gui.components.pages.settings.mainlayer.segueslist
+package com.example.supercast.gui.components.pages.settingstheme.mainlayer.segueslist
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -22,7 +22,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.gui.components.pages.settings.mainlayer._types_.Segue
+import com.example.supercast.gui.components.pages.settingstheme.mainlayer._types_.Segue
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -35,7 +35,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 private val colorBack = Colors.Blocks
 private val colorSegue = Colors.PreWhite
-private val colorSegueValue = Colors.Text
+private val colorSegueValue = Colors.Grey
 private val colorSeparator = Colors.BarSeparator
 
 private val fontSegue = Fonts.ArchivoSemiBold

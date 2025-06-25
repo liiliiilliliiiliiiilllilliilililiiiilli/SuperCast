@@ -1,6 +1,6 @@
-// Settings page - Main layer - Label
+// Settings account page - Main layer - Label
 
-package com.example.supercast.gui.components.pages.settings.mainlayer.label
+package com.example.supercast.gui.components.pages.settingsaccount.mainlayer.label
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text

@@ -13,9 +13,10 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.supercast.projectlib.types.Segue
+import com.example.supercast.gui.components.pages.settings.mainlayer._types_.Segue
 import com.example.supercast.ui.pics.Pics
 
+import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.pages.settings.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settings.mainlayer.segueslist.SeguesList
 
@@ -42,6 +43,7 @@ private const val textSeguePayments = "Платежи и подписки"
 private const val textSegueTheme = "Тема и оформление"
 private const val textSegueNotifications = "Уведомления"
 private const val textSegueLanguage = "Язык"
+private const val textSegueLanguageValue = "Русский"
 private const val textSegueAbout = "О сервисе"
 private const val textSegueFolders = "Папки подписок"
 private const val textSegueRecommendations = "Система рекомендаций"
@@ -64,6 +66,8 @@ fun MainLayer () {
                 .padding (vertical = 65.5.dp)
                 .fillMaxWidth ()
         ) {
+
+            Height (11/2)
 
             SeguesBlock (
                 label = textLabelCommon,
@@ -97,6 +101,7 @@ fun MainLayer () {
                     Segue (
                         pic = picSegueLanguage,
                         text = textSegueLanguage,
+                        textValue = textSegueLanguageValue,
                         onPress = {}
                     ),
                     Segue (
@@ -138,6 +143,8 @@ fun MainLayer () {
                     )
                 )
             )
+
+            Height (11/2)
 
         }
 
