@@ -18,7 +18,7 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.ProjectLib
+import com.example.supercast.projectlib.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -49,7 +49,7 @@ fun StarsButton (
 	scale: Float = 1f
 ) {
 
-	val text = ProjectLib.formatStarsNumber (value)
+	val text = Lib.formatStarsNumber (value)
 
 	val colorBack = if (isPressed) colorStarButtonBackPressed else colorStarButtonBackNotPressed
 	val colorText = if (isPressed) colorStarButtonTextPressed else colorStarButtonTextNotPressed
@@ -64,7 +64,7 @@ fun StarsButton (
 			.scale (scale)
 			.clickable (onClick = switchStarState)
 			.clip (RoundedCornerShape (100))
-			.background (color = colorBack)
+			.background (colorBack)
 			.padding (top = 8.dp, bottom = 8.dp, end = 13.dp, start = 14.dp)
 	) {
 

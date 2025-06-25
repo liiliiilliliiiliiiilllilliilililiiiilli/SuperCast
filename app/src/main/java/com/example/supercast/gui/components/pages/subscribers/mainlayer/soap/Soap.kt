@@ -59,7 +59,7 @@ fun Soap (
 		verticalAlignment = Alignment.CenterVertically,
 		modifier = Modifier
 			.clip (RoundedCornerShape (14.dp))
-			.background (color = colorBack)
+			.background (colorBack)
 			.padding (vertical = 6.dp, horizontal = 14.dp)
 			.height (50.dp)
 			.fillMaxWidth ()
@@ -101,10 +101,10 @@ private fun Author (
 			contentDescription = textPicAuthorDescription,
 			modifier = Modifier
 				.clip (RoundedCornerShape (100))
-				.background (color = colorAvaCircleCorner)
+				.background (colorAvaCircleCorner)
 				.padding (1.75.dp)
 				.clip (RoundedCornerShape (100))
-				.background (color = colorAvaCircleRest)
+				.background (colorAvaCircleRest)
 				.padding (1.75.dp)
 				.clip (RoundedCornerShape (100))
 				.size (34.dp)

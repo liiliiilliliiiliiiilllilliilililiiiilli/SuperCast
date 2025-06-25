@@ -24,7 +24,7 @@ fun GuiBackground (
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .background (color = colorBack)
+            .background (colorBack)
             .fillMaxSize ()
     ) {
 

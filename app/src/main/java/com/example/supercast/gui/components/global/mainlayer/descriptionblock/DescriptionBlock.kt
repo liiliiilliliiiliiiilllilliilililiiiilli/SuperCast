@@ -41,7 +41,7 @@ fun DescriptionBlock (
     Column (
        modifier = Modifier
            .clip (RoundedCornerShape (14.dp))
-           .background (color = colorBack)
+           .background (colorBack)
            .fillMaxWidth ()
            .padding (bottom = 15.dp)
    ) {
@@ -78,7 +78,7 @@ private fun Liner (
             modifier = Modifier
                 .height (1.dp)
                 .fillMaxWidth ()
-                .background (color = colorLinerLine)
+                .background (colorLinerLine)
                 .clip (RoundedCornerShape (100))
         )
 
@@ -89,7 +89,7 @@ private fun Liner (
             fontFamily = fontTextLiner,
             modifier = Modifier
                 .absoluteOffset (x = 25.dp)
-                .background (color = colorLinerBack)
+                .background (colorLinerBack)
                 .padding (horizontal = 5.dp)
         )
 

@@ -123,7 +123,7 @@ private fun ListButton (
         horizontalArrangement = Arrangement.Center,
         modifier = Modifier
             .clickable (onClick = unwrapAction)
-            .background (color = colorItemsBack)
+            .background (colorItemsBack)
             .padding (horizontal = 10.dp)
     ) {
 
@@ -165,7 +165,7 @@ private fun PicButton (
         contentDescription = textPicPicButtonDescription,
         modifier = Modifier
             .clickable (onClick = picRightOnPress)
-            .background (color = colorItemsBack)
+            .background (colorItemsBack)
             .padding (horizontal = 10.dp)
             .size (25.dp)
     )

@@ -13,29 +13,40 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.supercast.projectlib.types.Segue
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.pages.settings.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settings.mainlayer.segueslist.SeguesList
 
 
 
-val seguesListData = object {
+private val picSegueAccount = Pics.UserGrey
+private val picSeguePayments = Pics.DollarGrey
+private val picSegueTheme = Pics.PaletteGrey
+private val picSegueNotifications = Pics.BellGrey
+private val picSegueLanguage = Pics.PlanetGrey
+private val picSegueAbout = Pics.InfoGrey
+private val picSegueFolders = Pics.FolderGrey
+private val picSegueRecommendations = Pics.RobotGgrey
+private val picSeguePlayer = Pics.PlayTriangleGrey
+private val picSegueDownload = Pics.DownloadGrey
 
-    val q = ""
-    val r = 5
-    val e = ""
-    val s = {}
-    val i = 25
+private const val textLabelCommon = "Общее"
+private const val textLabelApp = "Приложение"
+private const val textLabelContent = "Контент"
+private const val textLabelPlayWork = "Воспроизведение"
 
-}
-
-
-
-class Segue (val q: String, val r: String, val i: String)
-
-class SegueList (vararg segues: Segue)
-
-val q = SegueList (Segue (q = "", r = "", i = ""))
+private const val textSegueAccount = "Аккаунт"
+private const val textSeguePayments = "Платежи и подписки"
+private const val textSegueTheme = "Тема и оформление"
+private const val textSegueNotifications = "Уведомления"
+private const val textSegueLanguage = "Язык"
+private const val textSegueAbout = "О сервисе"
+private const val textSegueFolders = "Папки подписок"
+private const val textSegueRecommendations = "Система рекомендаций"
+private const val textSeguePlayer = "Плеер"
+private const val textSegueDownload = "Загрузка на устройство"
 
 
 
@@ -54,15 +65,105 @@ fun MainLayer () {
                 .fillMaxWidth ()
         ) {
 
-            Label (
-                text = ""
+            SeguesBlock (
+                label = textLabelCommon,
+                segues = arrayOf (
+                    Segue (
+                        pic = picSegueAccount,
+                        text = textSegueAccount,
+                        onPress = {}
+                    ),
+                    Segue (
+                        pic = picSeguePayments,
+                        text = textSeguePayments,
+                        onPress = {}
+                    )
+                )
             )
 
-            SeguesList (
-                data = q
+            SeguesBlock (
+                label = textLabelApp,
+                segues = arrayOf (
+                    Segue (
+                        pic = picSegueTheme,
+                        text = textSegueTheme,
+                        onPress = {}
+                    ),
+                    Segue (
+                        pic = picSegueNotifications,
+                        text = textSegueNotifications,
+                        onPress = {}
+                    ),
+                    Segue (
+                        pic = picSegueLanguage,
+                        text = textSegueLanguage,
+                        onPress = {}
+                    ),
+                    Segue (
+                        pic = picSegueAbout,
+                        text = textSegueAbout,
+                        onPress = {}
+                    )
+                )
+            )
+
+            SeguesBlock (
+                label = textLabelContent,
+                segues = arrayOf (
+                    Segue (
+                        pic = picSegueFolders,
+                        text = textSegueFolders,
+                        onPress = {}
+                    ),
+                    Segue (
+                        pic = picSegueRecommendations,
+                        text = textSegueRecommendations,
+                        onPress = {}
+                    )
+                )
+            )
+
+            SeguesBlock (
+                label = textLabelPlayWork,
+                segues = arrayOf (
+                    Segue (
+                        pic = picSeguePlayer,
+                        text = textSeguePlayer,
+                        onPress = {}
+                    ),
+                    Segue (
+                        pic = picSegueDownload,
+                        text = textSegueDownload,
+                        onPress = {}
+                    )
+                )
             )
 
         }
+
+    }
+
+}
+
+
+
+@Composable
+private fun SeguesBlock (
+    label: String,
+    vararg segues: Segue
+) {
+
+    Column (
+        modifier = Modifier.fillMaxWidth ()
+    ) {
+
+        Label (
+            text = label
+        )
+
+        SeguesList (
+            segues = segues
+        )
 
     }
 

@@ -70,9 +70,9 @@ fun Strick () {
         modifier = Modifier
             .height (60.dp)
             .fillMaxWidth ()
-            .background (color = colorStrickBack)
+            .background (colorStrickBack)
             .padding (vertical = 2.dp)
-            .background (color = colorStrickCorner)
+            .background (colorStrickCorner)
     ) {
 
         Width (23)
@@ -122,10 +122,10 @@ private fun SubscriptionButton () {
         horizontalArrangement = Arrangement.Center,
         modifier = Modifier
             .clip (RoundedCornerShape (50))
-            .background (color = Colors.Button)
+            .background (Colors.Button)
             .padding (vertical = 1.5.dp)
             .clip (RoundedCornerShape (47.5f))
-            .background (color = Colors.Button)
+            .background (Colors.Button)
             .padding (top = 6.dp, start = 15.dp, end = 15.dp, bottom = 6.dp)
     ) {
 

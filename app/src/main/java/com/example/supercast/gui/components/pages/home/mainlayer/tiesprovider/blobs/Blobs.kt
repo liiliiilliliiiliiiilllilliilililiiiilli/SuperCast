@@ -128,7 +128,7 @@ private fun Separator () {
         modifier = Modifier
             .padding (horizontal = 5.dp)
             .clip (RoundedCornerShape (100))
-            .background (color = colorSeparator)
+            .background (colorSeparator)
             .height (19.dp)
             .width (2.dp)
     )

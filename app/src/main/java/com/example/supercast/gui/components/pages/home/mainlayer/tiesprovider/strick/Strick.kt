@@ -64,9 +64,9 @@ fun Strick () {
         modifier = Modifier
             .height (60.dp)
             .fillMaxWidth ()
-            .background (color = colorStrickBack)
+            .background (colorStrickBack)
             .padding (vertical = 2.dp)
-            .background (color = colorStrickCorner)
+            .background (colorStrickCorner)
     ) {
 
         ListenersCounter (

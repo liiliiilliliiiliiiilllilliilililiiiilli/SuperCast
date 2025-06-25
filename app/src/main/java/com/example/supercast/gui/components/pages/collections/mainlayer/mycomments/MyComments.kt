@@ -113,10 +113,10 @@ private fun Main (
 				modifier = Modifier
 					.scale (29f/34f)
 					.clip (RoundedCornerShape (100))
-					.background (color = colorAvaCircleCorner)
+					.background (colorAvaCircleCorner)
 					.padding (1.75.dp)
 					.clip (RoundedCornerShape (100))
-					.background (color = colorAvaCircleRest)
+					.background (colorAvaCircleRest)
 					.padding (1.75.dp)
 					.clip (RoundedCornerShape (100))
 					.size (34.dp)
@@ -145,7 +145,7 @@ private fun Main (
 			modifier = Modifier
 				.fillMaxWidth ()
 				.clip (RoundedCornerShape (12.dp))
-				.background (color = colorCommentBack)
+				.background (colorCommentBack)
 				.padding (vertical = 12.dp, horizontal = 8.dp)
 		) {
 
@@ -167,7 +167,7 @@ private fun Main (
 	Column (
 		modifier = Modifier
 			.clip (RoundedCornerShape (8.dp))
-			.background (color = colorBack)
+			.background (colorBack)
 			.padding (12.dp)
 	) {
 

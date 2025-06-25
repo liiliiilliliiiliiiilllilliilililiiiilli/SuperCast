@@ -133,10 +133,10 @@ private fun EditButton () {
         horizontalArrangement = Arrangement.Center,
         modifier = Modifier
             .clip (RoundedCornerShape (50))
-            .background (color = colorEditButtonCorner)
+            .background (colorEditButtonCorner)
             .padding (vertical = 2.5.dp, horizontal = 2.5.dp)
             .clip (RoundedCornerShape (47.5f))
-            .background (color = colorEditButtonBack)
+            .background (colorEditButtonBack)
             .padding (top = 6.dp, start = 15.dp, end = 15.dp, bottom = 6.dp)
     ) {
 

@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.supercast.projectlib.ProjectLib
+import com.example.supercast.projectlib.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.pics.Pics
 
@@ -40,8 +40,8 @@ fun SegueBar (
 	citates: Int,
 ) {
 
-	val commentsNumFormatted = ProjectLib.formatStarsNumber (comments)
-	val citatesNumFormatted = ProjectLib.formatStarsNumber (citates)
+	val commentsNumFormatted = Lib.formatStarsNumber (comments)
+	val citatesNumFormatted = Lib.formatStarsNumber (citates)
 
 
 	val textComments = if (comments > 0) "$commentsNumFormatted $textSomeComments" else textComment

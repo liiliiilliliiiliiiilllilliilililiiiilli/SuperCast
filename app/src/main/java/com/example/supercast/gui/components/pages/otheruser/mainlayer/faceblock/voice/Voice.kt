@@ -104,7 +104,7 @@ private fun SoundPrint (
                     .clip (RoundedCornerShape (100))
                     .height (height)
                     .width (4.dp)
-                    .background (color = colorTube)
+                    .background (colorTube)
             )
 
         }

@@ -66,7 +66,7 @@ private fun Face () {
             .height (279.5.dp)
             .fillMaxWidth ()
             .clip (RoundedCornerShape (topStart = 29.dp, topEnd = 29.dp, bottomStart = 21.dp, bottomEnd = 21.dp))
-            .background (color = colorBack)
+            .background (colorBack)
             .padding (top = 17.dp, bottom = 12.dp, /*left = 20.dp, right = 20.dp*/)
     ) {
 

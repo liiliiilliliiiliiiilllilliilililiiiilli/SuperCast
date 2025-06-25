@@ -51,7 +51,7 @@ fun PlayButton (
                     painterResource (pic),
                     contentScale = ContentScale.FillBounds
                 )
-                .background (color = Color (0x88000000))
+                .background (Color (0x88000000))
 
         else
 
@@ -64,7 +64,7 @@ fun PlayButton (
             .clickable (onClick = {onPress()})
             .clip (RoundedCornerShape (100))
             .size ((37 * scale).dp)
-            .background (color = colorBack)
+            .background (colorBack)
             .then (modifier)
 
     ) {

@@ -28,7 +28,7 @@ fun Gui () {
 
     GuiBackground {
 
-        CollectionsPage ()
+//        CollectionsPage ()
 //        MainPage ()
 //        HomePage ()
 
@@ -37,7 +37,7 @@ fun Gui () {
 //        SubscribersPage ()
 //        SubscriptionsPage ()
 
-//        SettingsPage ()
+        SettingsPage ()
 
 //        MyHistoryPage ()
 //        MyPlaylistsPage ()

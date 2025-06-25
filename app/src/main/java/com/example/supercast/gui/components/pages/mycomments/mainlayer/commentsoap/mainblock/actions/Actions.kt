@@ -12,7 +12,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.ProjectLib
+import com.example.supercast.projectlib.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 
@@ -46,8 +46,8 @@ fun Actions (
 	val (isStarsButtonPressed, setStarsButtonPressed) = remember {mutableStateOf (false)}
 
 
-	val commentsNumFormatted = ProjectLib.formatStarsNumber (numComments)
-	val citatesNumFormatted = ProjectLib.formatStarsNumber (numCitates)
+	val commentsNumFormatted = Lib.formatStarsNumber (numComments)
+	val citatesNumFormatted = Lib.formatStarsNumber (numCitates)
 
 	val textComments = if (numComments > 0) "$commentsNumFormatted ${textSomeComments}" else textComment
 	val colorTextComments = if (numComments > 0) colorCommentsLight else colorCommentsDark

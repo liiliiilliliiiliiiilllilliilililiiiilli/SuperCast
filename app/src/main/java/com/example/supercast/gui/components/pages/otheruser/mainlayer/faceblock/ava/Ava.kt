@@ -38,15 +38,15 @@ fun Ava () {
             .padding (start = 17.dp)
 
             .clip (RoundedCornerShape (100))
-            .background (color = colorCornerOut)
+            .background (colorCornerOut)
             .padding (3.dp)
 
             .clip (RoundedCornerShape (100))
-            .background (color = colorCornerMediate)
+            .background (colorCornerMediate)
             .padding (3.dp)
 
             .clip (RoundedCornerShape (100))
-            .background (color = colorCornerIn)
+            .background (colorCornerIn)
             .padding (3.dp)
 
             .clip (RoundedCornerShape (100))

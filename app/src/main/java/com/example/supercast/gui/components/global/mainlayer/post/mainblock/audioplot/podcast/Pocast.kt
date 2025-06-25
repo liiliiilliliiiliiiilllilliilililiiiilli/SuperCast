@@ -13,7 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.ProjectLib
+import com.example.supercast.projectlib.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -78,7 +78,7 @@ private fun Ditle (
 ) {
 
 	val durationFormatted = "1:05"  // ProjectLib.formatTime ()
-	val listenesFormatted = ProjectLib.formatStarsNumber (listenes)
+	val listenesFormatted = Lib.formatStarsNumber (listenes)
 
 	val textStats = "$durationFormatted  •  $listenesFormatted $textSomeListeners"
 

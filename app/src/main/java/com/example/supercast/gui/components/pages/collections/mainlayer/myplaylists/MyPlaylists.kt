@@ -198,7 +198,7 @@ private fun Main (
 	Column (
 		modifier = Modifier
 			.clip (RoundedCornerShape (8.dp))
-			.background (color = colorBack)
+			.background (colorBack)
 			.padding (16.dp)
 	) {
 

@@ -47,7 +47,7 @@ fun MainBlock (
 	Column (
 		modifier = Modifier
 			.clip (RoundedCornerShape (12.dp))
-			.background (color = colorBack)
+			.background (colorBack)
 			.fillMaxWidth ()
 			.padding (bottom = paddingBottom)
 	) {

@@ -12,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.ProjectLib
+import com.example.supercast.projectlib.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 
@@ -45,8 +45,8 @@ fun Voice (
 	Row (
 		horizontalArrangement = Arrangement.SpaceBetween,
 		modifier = Modifier
-			.fillMaxSize ()
-			.padding (vertical = 12.5.dp, horizontal = 25.dp)
+			.fillMaxSize()
+			.padding(vertical = 12.5.dp, horizontal = 25.dp)
 	) {
 
 		PlayButton (
@@ -82,7 +82,7 @@ private fun Medium (
 	modifier: Modifier
 ) {
 
-	val stats = "$duration  ·  $ProjectLib.formatStarsNumber(listenes) $textSomeListeners"
+	val stats = "$duration  ·  ${Lib.formatStarsNumber(listenes)} $textSomeListeners"
 
 
 	Column (

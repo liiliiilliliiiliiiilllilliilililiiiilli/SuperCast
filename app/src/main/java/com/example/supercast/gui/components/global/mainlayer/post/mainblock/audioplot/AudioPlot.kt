@@ -29,10 +29,10 @@ fun AudioPlot (
 
 	Box (
 		modifier = Modifier
-			.background (color = colorLine)
+			.background (colorLine)
 			.fillMaxWidth ()
 			.padding (top = 5.5.dp)
-			.background (color = colorBack)
+			.background (colorBack)
 	) {
 
 		when (type) {

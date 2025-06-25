@@ -62,7 +62,7 @@ fun DescriptionButton (
         modifier = Modifier
             .clickable (onClick = toggleIsOpened)
             .clip (RoundedCornerShape (100))
-            .background (color = colorBack)
+            .background (colorBack)
             .size (33.dp)
     ) {
 

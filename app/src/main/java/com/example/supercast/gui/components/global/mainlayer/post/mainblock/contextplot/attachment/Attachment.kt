@@ -21,7 +21,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.ProjectLib
+import com.example.supercast.projectlib.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -161,9 +161,9 @@ private fun Citate (
 	val modifier = Modifier
 		.padding (horizontal = 12.dp)
 		.clip (RoundedCornerShape (topEnd = borderRadiusTopEnd, bottomEnd = borderRadiusBottomEnd))
-		.background (color = colorFarmingCitate)
+		.background (colorFarmingCitate)
 		.padding (start = 5.5.dp)
-		.background (color = colorBack)
+		.background (colorBack)
 
 
 	if (!isOpened) {
@@ -255,7 +255,7 @@ private fun Media (
 	val heightStep = (maxPicFieldHeight - minPicFieldHeight) / (maxMediaElementsAmount - 1)
 
 	val mediaCount = pics.size
-	val mediaCountFormatted = ProjectLib.formatStarsNumber (mediaCount)
+	val mediaCountFormatted = Lib.formatStarsNumber (mediaCount)
 
 	val textMediaCount = "$mediaCountFormatted $textSomeMedia"
 
@@ -265,9 +265,9 @@ private fun Media (
 	val modifier = Modifier
 		.padding (horizontal = 12.dp)
 		.clip (RoundedCornerShape (topEnd = borderRadiusTopEnd, bottomEnd = borderRadiusBottomEnd))
-		.background (color = colorFarmingMedia)
+		.background (colorFarmingMedia)
 		.padding (start = 5.5.dp)
-		.background (color = colorBack)
+		.background (colorBack)
 
 
 	if (!isOpened) {

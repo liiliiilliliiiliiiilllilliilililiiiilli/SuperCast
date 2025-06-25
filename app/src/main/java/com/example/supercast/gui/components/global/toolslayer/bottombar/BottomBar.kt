@@ -94,7 +94,7 @@ private fun SeparatorsLayer () {
         Box (
             modifier = Modifier
                 .size (2.dp, 25.dp)
-                .background (color = colorSeparator)
+                .background (colorSeparator)
                 .clip (RoundedCornerShape (25.dp))
         )
 

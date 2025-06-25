@@ -33,10 +33,10 @@ fun Ava (
 		contentDescription = textPicAvaDescription,
 		modifier = Modifier
 			.clip (RoundedCornerShape (100))
-			.background (color = colorAvaCircleCorner)
+			.background (colorAvaCircleCorner)
 			.padding (1.75.dp)
 			.clip (RoundedCornerShape (100))
-			.background (color = colorAvaCircleRest)
+			.background (colorAvaCircleRest)
 			.padding (1.75.dp)
 			.clip (RoundedCornerShape (100))
 			.size (34.dp)

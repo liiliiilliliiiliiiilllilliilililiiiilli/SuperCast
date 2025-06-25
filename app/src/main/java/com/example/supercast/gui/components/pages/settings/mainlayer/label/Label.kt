@@ -2,7 +2,7 @@
 
 package com.example.supercast.gui.components.pages.settings.mainlayer.label
 
-import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -14,6 +14,7 @@ import com.example.supercast.ui.fonts.Fonts
 
 
 private val colorLabel = Colors.Grey
+
 private val fontLabel = Fonts.ArchivoSemiBold
 
 
@@ -25,10 +26,10 @@ fun Label (
 
 	Text (
 		text = text,
-		fontSize = 14.5.sp,
+		fontSize = 17.sp,
 		color = colorLabel,
 		fontFamily = fontLabel,
-		modifier = Modifier.offset (x = 37.5.dp)
+		modifier = Modifier.padding (top = 30.dp, start = 44.dp, bottom = 17.dp)
 	)
 
 }

@@ -35,7 +35,7 @@ fun CircleActionButton (
         modifier = Modifier
             .clickable (onClick = onPress)
             .clip (RoundedCornerShape (100))
-            .background (color = colorBack)
+            .background (colorBack)
             .size (33.dp)
     ) {
 
