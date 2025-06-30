@@ -1,6 +1,6 @@
 // Settings theme page - _types_
 
-package com.example.supercast.gui.components.pages.settingstheme.mainlayer._types_
+package com.example.supercast.gui.components.pages.settingstheme._types_
 
 
 

@@ -42,10 +42,10 @@ private val colorMediaMiniLabel = Colors.MediaColor
 
 private val fontLabels = Fonts.ArimoBold
 
-private val picTriangleGreenOpened = Pics.UnwrapTriangleGreenLight
-private val picTriangleGreenClosed = Pics.UnwrapTriangleGreenDark
-private val picTriangleYellowOpened = Pics.UnwrapTriangleYellowLight
-private val picTriangleYellowClosed = Pics.UnwrapTriangleYellowDark
+private val picTriangleGreenOpened = Pics.TriangleUnwrapGreenLight
+private val picTriangleGreenClosed = Pics.TriangleUnwrapGreenDark
+private val picTriangleYellowOpened = Pics.TriangleUnwrapYellowLight
+private val picTriangleYellowClosed = Pics.TriangleUnwrapYellowDark
 
 private const val textPicMediaDescription = "[media pic]"
 private const val textPicTriangleDescription = "[triangle pic]"

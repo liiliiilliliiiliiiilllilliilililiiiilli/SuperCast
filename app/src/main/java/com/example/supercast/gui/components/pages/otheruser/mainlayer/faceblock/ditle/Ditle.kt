@@ -37,7 +37,7 @@ private val fontName = Fonts.GadugiBold
 private val fontShortName = Fonts.GadugiRegular
 private val fontEditButton = Fonts.ArchivoExtraBold
 
-private val picTriangle = Pics.UnwrapTriangleLight
+private val picTriangle = Pics.TriangleUnwrapLight
 
 private const val textPicTriangleDescription = "[edit pic]"
 

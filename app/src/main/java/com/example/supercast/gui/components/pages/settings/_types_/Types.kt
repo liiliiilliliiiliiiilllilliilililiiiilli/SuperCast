@@ -1,6 +1,6 @@
 // Settings page - _types_
 
-package com.example.supercast.gui.components.pages.settings.mainlayer._types_
+package com.example.supercast.gui.components.pages.settings._types_
 
 
 

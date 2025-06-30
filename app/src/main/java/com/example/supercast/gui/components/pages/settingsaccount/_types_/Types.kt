@@ -1,6 +1,6 @@
 // Settings account page - _types_
 
-package com.example.supercast.gui.components.pages.settingsaccount.mainlayer._types_
+package com.example.supercast.gui.components.pages.settingsaccount._types_
 
 
 

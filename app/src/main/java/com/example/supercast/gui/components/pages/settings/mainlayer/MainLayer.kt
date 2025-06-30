@@ -13,7 +13,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.supercast.gui.components.pages.settings.mainlayer._types_.Segue
+import com.example.supercast.gui.components.pages.settings._types_.Segue
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
@@ -30,7 +30,7 @@ private val picSegueLanguage = Pics.PlanetGrey
 private val picSegueAbout = Pics.InfoGrey
 private val picSegueFolders = Pics.FolderGrey
 private val picSegueRecommendations = Pics.RobotGgrey
-private val picSeguePlayer = Pics.PlayTriangleGrey
+private val picSeguePlayer = Pics.TrianglePlayGrey
 private val picSegueDownload = Pics.DownloadGrey
 
 private const val textLabelCommon = "Общее"

@@ -21,6 +21,7 @@ class Pics () {
         val __image_9__ = R.drawable.__image_9__
 
         val ArrowCompactDownGreyLight = R.drawable.arrow_compact_down_grey_light
+        val ArrowGoGreyLight = R.drawable.arrow_go_grey_light
         val BellGrey = R.drawable.bell_grey
         val BrushBigGreyLight = R.drawable.brush_big_grey_light
         val BrushSmallGreyLight = R.drawable.brush_small_grey_light
@@ -51,9 +52,6 @@ class Pics () {
         val PieDark = R.drawable.pie_dark
         val PieLight = R.drawable.pie_light
         val PlanetGrey = R.drawable.planet_grey
-        val PlayTriangleDark = R.drawable.play_triangle_dark
-        val PlayTriangleGrey = R.drawable.play_triangle_grey
-        val PlayTriangleLight = R.drawable.play_triangle_light
         val PlusSharpGreen = R.drawable.plus_sharp_green
         val PlusSmoothDark = R.drawable.plus_smooth_dark
         val PlusSmoothLight = R.drawable.plus_smooth_light
@@ -66,12 +64,16 @@ class Pics () {
         val StarGrey = R.drawable.star_grey
         val StarLight = R.drawable.star_light
         val TranslateGreenLight = R.drawable.translate_green_light
-        val UnwrapTriangleGreenDark = R.drawable.unwrap_triangle_green_dark
-        val UnwrapTriangleGreenLight = R.drawable.unwrap_triangle_green_light
-        val UnwrapTriangleGreenLightLight = R.drawable.unwrap_triangle_green_light_light
-        val UnwrapTriangleLight = R.drawable.unwrap_triangle_light
-        val UnwrapTriangleYellowDark = R.drawable.unwrap_triangle_yellow_dark
-        val UnwrapTriangleYellowLight = R.drawable.unwrap_triangle_yellow_light
+        val TrianglePlayDark = R.drawable.triangle_play_dark
+        val TrianglePlayGrey = R.drawable.triangle_play_grey
+        val TrianglePlayLight = R.drawable.triangle_play_light
+        val TriangleUnwrapGreenDark = R.drawable.triangle_unwrap_green_dark
+        val TriangleUnwrapGreenLight = R.drawable.triangle_unwrap_green_light
+        val TriangleUnwrapGreenLightLight = R.drawable.triangle_unwrap_green_light_light
+        val TriangleUnwrapGrey = R.drawable.triangle_unwrap_grey
+        val TriangleUnwrapLight = R.drawable.triangle_unwrap_light
+        val TriangleUnwrapYellowDark = R.drawable.triangle_unwrap_yellow_dark
+        val TriangleUnwrapYellowLight = R.drawable.triangle_unwrap_yellow_light
         val UserGrey = R.drawable.user_grey
 
     }

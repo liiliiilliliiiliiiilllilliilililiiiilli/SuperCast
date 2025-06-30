@@ -37,7 +37,7 @@ private val colorListButton = Colors.PreWhite
 
 private val fontListButton = Fonts.ArchivoSemiBold
 
-private val picTriangle = Pics.UnwrapTriangleLight
+private val picTriangle = Pics.TriangleUnwrapLight
 
 private const val textPicTriangleDescription = "[triangle pic]"
 private const val textPicPicButtonDescription = "[option pic]"

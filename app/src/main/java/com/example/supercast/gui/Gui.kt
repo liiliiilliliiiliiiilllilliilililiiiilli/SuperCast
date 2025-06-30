@@ -14,7 +14,14 @@ import com.example.supercast.gui.pages.subscribers.Subscribers as SubscribersPag
 import com.example.supercast.gui.pages.subscriptions.Subscriptions as SubscriptionsPage
 import com.example.supercast.gui.pages.settings.Settings as SettingsPage
 import com.example.supercast.gui.pages.settingsaccount.SettingsAccount as SettingsAccountPage
-import com.example.supercast.gui.pages.settingstheme.SettingsTheme
+import com.example.supercast.gui.pages.settingstheme.SettingsTheme as SettingsThemePage
+import com.example.supercast.gui.pages.settingsnotifications.SettingsNotifications as SettingsNotificationsPage
+import com.example.supercast.gui.pages.settingsabout.SettingsAbout as SettingsAboutPage
+import com.example.supercast.gui.pages.settingssubsfolders.SettingsSubsFolders as SettingsSubsFoldersPage
+import com.example.supercast.gui.pages.settingssubsfoldersfolder.SettingsSubsFoldersFolder as SettingsSubsFoldersFolderPage
+import com.example.supercast.gui.pages.settingsrecssystem.SettingsRecsSystem as SettingsRecsSystemPage
+import com.example.supercast.gui.pages.settingsplayer.SettingsPlayer as SettingsPlayerPage
+import com.example.supercast.gui.pages.settingsdownload.SettingsDownload as SettingsDownloadPage
 import com.example.supercast.gui.pages.myhistory.MyHistory as MyHistoryPage
 import com.example.supercast.gui.pages.myplaylists.MyPlaylists as MyPlaylistsPage
 import com.example.supercast.gui.pages.mycomments.MyComments as MyCommentsPage
@@ -41,8 +48,15 @@ fun Gui () {
 
 //        SettingsPage ()
 //        SettingsAccountPage ()
-        SettingsTheme ()
-
+//        SettingsThemePage ()
+//        SettingsNotificationsPage ()
+//        SettingsAboutPage ()
+//        SettingsSubsFoldersPage ()
+//        SettingsSubsFoldersFolderPage ()
+//        SettingsRecsSystemPage ()
+//        SettingsPlayerPage ()
+//        SettingsDownloadPage ()
+//
 //        MyHistoryPage ()
 //        MyPlaylistsPage ()
 //        MyCommentsPage ()

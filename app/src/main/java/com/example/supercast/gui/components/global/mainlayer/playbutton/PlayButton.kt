@@ -25,8 +25,8 @@ import com.example.supercast.ui.pics.Pics
 
 private val colorBack = Colors.Olive
 
-private val picTriangleLight = Pics.PlayTriangleLight
-private val picTriangleDark = Pics.PlayTriangleDark
+private val picTriangleLight = Pics.TrianglePlayLight
+private val picTriangleDark = Pics.TrianglePlayDark
 
 private const val textPicTriangleDescription = "[triangle pic]"
 
