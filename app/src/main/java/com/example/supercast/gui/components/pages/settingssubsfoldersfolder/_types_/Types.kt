@@ -1,4 +1,4 @@
-// Settings subscriptions folders folder page - _types_
+// Settings page - Subscriptions folders folder page - _types_
 
 package com.example.supercast.gui.components.pages.settingssubsfoldersfolder._types_
 

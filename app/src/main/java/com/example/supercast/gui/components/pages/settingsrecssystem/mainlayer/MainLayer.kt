@@ -1,4 +1,4 @@
-// Settings recs system page - Main layer
+// Settings page - Recommendation system page - Main layer
 
 package com.example.supercast.gui.components.pages.settingsrecssystem.mainlayer
 

@@ -1,4 +1,4 @@
-// Global components - Distinctive - Gui background   •   This is App's Gui's background, it's stretched with the color themes :]
+// Global components - Distinctive - Gui background  •  This is App's Gui's background, it's stretched with the color themes :]
 
 package com.example.supercast.gui.components.distinctive.guibackground
 
@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+
 import com.example.supercast.ui.colors.Colors
 
 

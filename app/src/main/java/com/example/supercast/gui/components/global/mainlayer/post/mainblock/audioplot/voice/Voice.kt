@@ -1,4 +1,4 @@
-// Global components - Main layer - Post - MainBlock - AudioPlot - Voice
+// Global components - Main layer - Post - Main block - Audio plot - Voice
 
 package com.example.supercast.gui.components.global.mainlayer.post.mainblock.audioplot.voice
 
@@ -12,7 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.lib.Lib
+
+import com.example.supercast.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 

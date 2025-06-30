@@ -1,4 +1,4 @@
-// My comments page
+// Collections page - My comments page
 
 package com.example.supercast.gui.pages.mycomments
 

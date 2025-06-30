@@ -1,4 +1,4 @@
-// Global components - Main layer - Post - MainBlock - ContextPlot
+// Global components - Main layer - Post - Main block - Context plot
 
 package com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot
 

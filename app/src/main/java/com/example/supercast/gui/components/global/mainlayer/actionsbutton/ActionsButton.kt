@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.pics.Pics
 
@@ -40,7 +41,7 @@ fun ActionsButton (
             .clip (RoundedCornerShape (100))
             .size (25.dp, 35.dp)
             .background (colorBack)
-            .clickable (onClick = {onPress()})
+            .clickable (onClick = {onPress ()})
     ) {
 
         Image (

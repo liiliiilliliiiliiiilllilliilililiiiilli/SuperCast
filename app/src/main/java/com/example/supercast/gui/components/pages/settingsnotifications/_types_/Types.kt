@@ -1,4 +1,4 @@
-// Settings notifications page - _types_
+// Settings page - Notifications page - _types_
 
 package com.example.supercast.gui.components.pages.settingsnotifications._types_
 

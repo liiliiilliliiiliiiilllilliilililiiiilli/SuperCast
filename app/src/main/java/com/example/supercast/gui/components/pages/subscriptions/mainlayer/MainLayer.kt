@@ -1,6 +1,6 @@
 // Subscriptions page - Main layer
 
-package com.example.supercast.gui.components.pages.subscrptions.mainlayer
+package com.example.supercast.gui.components.pages.subscriptions.mainlayer
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,11 +13,12 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
-import com.example.supercast.gui.components.pages.subscribers.mainlayer.liner.Liner
-import com.example.supercast.gui.components.pages.subscribers.mainlayer.soap.Soap
+import com.example.supercast.gui.components.pages.subscriptions.mainlayer.liner.Liner
+import com.example.supercast.gui.components.pages.subscriptions.mainlayer.soap.Soap
 
 
 

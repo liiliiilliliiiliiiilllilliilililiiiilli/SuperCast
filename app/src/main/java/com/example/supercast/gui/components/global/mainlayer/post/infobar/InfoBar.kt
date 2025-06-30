@@ -1,4 +1,4 @@
-// Global components - Main layer - Post - InfoBar
+// Global components - Main layer - Post - Info bar
 
 package com.example.supercast.gui.components.global.mainlayer.post.infobar
 
@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.colors.Colors
 
 import com.example.supercast.gui.components.distinctive.spaces.Space

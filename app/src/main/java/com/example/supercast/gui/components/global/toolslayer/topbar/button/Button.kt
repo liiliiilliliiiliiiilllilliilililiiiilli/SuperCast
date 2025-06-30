@@ -15,6 +15,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.colors.Colors
 
 
@@ -46,12 +47,15 @@ fun BarButton (
 		contentDescription = textPicBarButtonDescription,
 		modifier = Modifier
 			.clickable (onClick = onPress)
+
 			.clip (RoundedCornerShape (radiusCornerOut))
 			.background (colorCorner)
 			.padding (3.dp)
+
 			.clip (RoundedCornerShape (radiusCornerIn))
 			.background (colorBack)
 			.padding (paddingInside)
+
 			.size (picSize)
 			.rotate (rotate)
 			.then (modifier)

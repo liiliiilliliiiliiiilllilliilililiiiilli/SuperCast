@@ -1,4 +1,4 @@
-// Settings about page - Tools layer - Top bar
+// Settings page - About page - Tools layer - Top bar
 
 package com.example.supercast.gui.components.pages.settingsabout.toolslayer.topbar
 
@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Space

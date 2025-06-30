@@ -1,4 +1,4 @@
-// Main page - Main layer - Content
+// Other user page - Main layer - Content
 
 package com.example.supercast.gui.components.pages.otheruser.mainlayer.content
 
@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import kotlin.String
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height

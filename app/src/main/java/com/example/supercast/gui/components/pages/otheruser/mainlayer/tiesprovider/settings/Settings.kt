@@ -1,4 +1,4 @@
-// Home page - Main layer - Ties provider - Settings
+// Other user page - Main layer - Ties provider - Settings
 
 package com.example.supercast.gui.components.pages.otheruser.mainlayer.tiesprovider.settings
 
@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText

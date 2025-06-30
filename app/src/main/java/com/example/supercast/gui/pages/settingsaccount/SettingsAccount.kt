@@ -1,4 +1,4 @@
-// Settings - account page
+// Settings page - Account page
 
 package com.example.supercast.gui.pages.settingsaccount
 

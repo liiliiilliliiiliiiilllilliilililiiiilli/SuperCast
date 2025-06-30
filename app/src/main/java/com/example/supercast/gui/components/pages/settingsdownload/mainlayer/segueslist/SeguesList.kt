@@ -1,4 +1,4 @@
-// Settings download page - Main layer - Segues list
+// Settings page - Download page - Main layer - Segues list
 
 package com.example.supercast.gui.components.pages.settingsdownload.mainlayer.segueslist
 
@@ -26,6 +26,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -86,8 +87,6 @@ fun SeguesList (
 					isLast = index == segues.size - 1,
 					notNeededUnderSeparator = if (index != segues.size - 1) segues[index+1].isDivider == true else false
 				)
-
-				null -> {}
 
 			}
 

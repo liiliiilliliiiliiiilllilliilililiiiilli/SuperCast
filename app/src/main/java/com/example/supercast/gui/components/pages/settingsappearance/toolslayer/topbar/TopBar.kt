@@ -1,6 +1,6 @@
-// Settings theme page - Tools layer - Top bar
+// Settings page - Appearance page - Tools layer - Top bar
 
-package com.example.supercast.gui.components.pages.settingstheme.toolslayer.topbar
+package com.example.supercast.gui.components.pages.settingsappearance.toolslayer.topbar
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Space

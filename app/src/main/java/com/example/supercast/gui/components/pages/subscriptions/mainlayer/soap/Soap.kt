@@ -1,6 +1,6 @@
 // Subscriptions page - Main layer - Soap
 
-package com.example.supercast.gui.components.pages.subscrptions.mainlayer.soap
+package com.example.supercast.gui.components.pages.subscriptions.mainlayer.soap
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics

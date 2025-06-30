@@ -1,4 +1,4 @@
-// Settings recs system page
+// Settings page - Recommendation system page
 
 package com.example.supercast.gui.pages.settingsrecssystem
 

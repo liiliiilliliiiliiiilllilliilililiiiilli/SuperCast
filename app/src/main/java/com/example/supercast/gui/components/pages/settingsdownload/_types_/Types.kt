@@ -1,4 +1,4 @@
-// Settings download page - _types_
+// Settings page - Download page - _types_
 
 package com.example.supercast.gui.components.pages.settingsdownload._types_
 
@@ -14,8 +14,8 @@ class Segue (
 	val description: String? = null,
 	val rightPic: Int? = null,
 
-	val switcher: Switcher? = null,
 	val editText: EditText? = null,
+	val switcher: Switcher? = null,
 	val scrollChooseList: ScrollChooseList? = null
 
 )

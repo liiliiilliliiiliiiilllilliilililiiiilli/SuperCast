@@ -1,4 +1,4 @@
-// Settings notifications page
+// Settings page - Notifications page
 
 package com.example.supercast.gui.pages.settingsnotifications
 

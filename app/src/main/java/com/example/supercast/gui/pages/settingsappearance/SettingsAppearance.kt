@@ -1,6 +1,6 @@
-// Settings theme page
+// Settings page - Appearance page
 
-package com.example.supercast.gui.pages.settingstheme
+package com.example.supercast.gui.pages.settingsappearance
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -9,13 +9,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
-import com.example.supercast.gui.components.pages.settingstheme.toolslayer.topbar.TopBar
-import com.example.supercast.gui.components.pages.settingstheme.mainlayer.MainLayer as MainLayerComponent
+import com.example.supercast.gui.components.pages.settingsappearance.toolslayer.topbar.TopBar
+import com.example.supercast.gui.components.pages.settingsappearance.mainlayer.MainLayer as MainLayerComponent
 
 
 
 @Composable
-fun SettingsTheme () {
+fun SettingsAppearance () {
 
     Box (
         modifier = Modifier.fillMaxSize ()

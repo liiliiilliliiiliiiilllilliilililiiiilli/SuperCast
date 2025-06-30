@@ -1,4 +1,4 @@
-// Main page - Main layer - FaceBlock - Buttons
+// Main page - Main layer - Face block - Buttons
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.buttons
 
@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Space

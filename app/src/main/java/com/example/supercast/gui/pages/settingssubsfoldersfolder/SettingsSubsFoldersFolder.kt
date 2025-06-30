@@ -1,4 +1,4 @@
-// Settings subscriptions folders folder page
+// Settings page - Subscriptions folders folder page
 
 package com.example.supercast.gui.pages.settingssubsfoldersfolder
 

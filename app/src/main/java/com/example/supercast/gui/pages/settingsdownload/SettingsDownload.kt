@@ -1,4 +1,4 @@
-// Settings download page
+// Settings page - Download page
 
 package com.example.supercast.gui.pages.settingsdownload
 

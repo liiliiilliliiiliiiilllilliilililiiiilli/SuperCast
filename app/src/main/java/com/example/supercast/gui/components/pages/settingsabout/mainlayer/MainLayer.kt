@@ -1,4 +1,4 @@
-// Settings about page - Main layer
+// Settings page - About page - Main layer
 
 package com.example.supercast.gui.components.pages.settingsabout.mainlayer
 
@@ -38,8 +38,6 @@ fun MainLayer () {
         ) {
 
             Height (11/2)
-
-            Height (14)
 
             Height (11/2)
 

@@ -1,4 +1,4 @@
-// My listening history page - Main layer
+// Collections page - My listening history page - Main layer
 
 package com.example.supercast.gui.components.pages.myhistory.mainlayer
 
@@ -13,6 +13,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height

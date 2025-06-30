@@ -1,4 +1,4 @@
-// My comments page - Main layer
+// Collections page - My comments page - Main layer
 
 package com.example.supercast.gui.components.pages.mycomments.mainlayer
 
@@ -13,6 +13,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height

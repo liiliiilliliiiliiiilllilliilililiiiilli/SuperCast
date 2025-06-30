@@ -1,6 +1,6 @@
 // Subscriptions page - Tools layer - Bottom bar
 
-package com.example.supercast.gui.components.pages.subscrptions.toolslayer.bottombar
+package com.example.supercast.gui.components.pages.subscriptions.toolslayer.bottombar
 
 import androidx.compose.runtime.Composable
 

@@ -1,4 +1,4 @@
-// Settings account page - Main layer - Segues list
+// Settings page - Account page - Main layer - Segues list
 
 package com.example.supercast.gui.components.pages.settingsaccount.mainlayer.segueslist
 
@@ -23,7 +23,7 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.supercast.gui.components.pages.settingsaccount._types_.Segue
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -31,6 +31,8 @@ import com.example.supercast.ui.pics.Pics
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
+
+import com.example.supercast.gui.components.pages.settingsaccount._types_.Segue
 
 
 
@@ -79,7 +81,7 @@ fun SeguesList (
 				modifier = Modifier
 					.height (32.dp)
 					.fillMaxWidth ()
-					.clickable (onClick = {onPress()})
+					.clickable (onClick = {onPress ()})
 			) {
 
 				Width (8)

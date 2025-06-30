@@ -1,4 +1,4 @@
-// Main page - Main layer - FaceBlock - Ava
+// Main page - Main layer - Face block - Ava
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.ava
 
@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.pics.Pics
 

@@ -1,8 +1,9 @@
-// My playlists page - Main layer - Liner
+// Collections page - My playlists page - Main layer - Liner
 
 package com.example.supercast.gui.components.pages.myplaylists.mainlayer.liner
 
 import androidx.compose.runtime.Composable
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.global.mainlayer.liner.Liner as LinerComponent

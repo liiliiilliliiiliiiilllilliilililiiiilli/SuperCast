@@ -1,4 +1,4 @@
-// Home page - Main layer - Ties provider
+// Other user page - Main layer - Ties provider
 
 package com.example.supercast.gui.components.pages.otheruser.mainlayer.tiesprovider
 

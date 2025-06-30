@@ -1,4 +1,4 @@
-// Collections page - Main layer - MyComments
+// Collections page - Main layer - My comments
 
 package com.example.supercast.gui.components.pages.collections.mainlayer.mycomments
 
@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -112,12 +113,15 @@ private fun Main (
 				contentDescription = textPicLogoDescription,
 				modifier = Modifier
 					.scale (29f/34f)
+
 					.clip (RoundedCornerShape (100))
 					.background (colorAvaCircleCorner)
 					.padding (1.75.dp)
+
 					.clip (RoundedCornerShape (100))
 					.background (colorAvaCircleRest)
 					.padding (1.75.dp)
+
 					.clip (RoundedCornerShape (100))
 					.size (34.dp)
 			)

@@ -1,4 +1,4 @@
-// My comments page - Main layer - Comment soap - Main content - Ava
+// Collections page - My comments page - Main layer - Comment soap - Main content - Ava
 
 package com.example.supercast.gui.components.pages.mycomments.mainlayer.commentsoap.mainblock.ava
 
@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.colors.Colors
 
 
@@ -35,9 +36,11 @@ fun Ava (
 			.clip (RoundedCornerShape (100))
 			.background (colorAvaCircleCorner)
 			.padding (1.75.dp)
+
 			.clip (RoundedCornerShape (100))
 			.background (colorAvaCircleRest)
 			.padding (1.75.dp)
+
 			.clip (RoundedCornerShape (100))
 			.size (34.dp)
 	)

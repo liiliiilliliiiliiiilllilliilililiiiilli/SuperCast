@@ -1,4 +1,4 @@
-// My comments page - Main layer - Comment soap - Main content - Naming
+// Collections page - My comments page - Main layer - Comment soap - Main content - Naming
 
 package com.example.supercast.gui.components.pages.mycomments.mainlayer.commentsoap.mainblock.naming
 
@@ -6,9 +6,11 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.sp
-import com.example.supercast.gui.components.distinctive.spaces.Width
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
+
+import com.example.supercast.gui.components.distinctive.spaces.Width
 
 
 

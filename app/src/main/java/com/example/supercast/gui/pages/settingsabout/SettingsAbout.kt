@@ -1,4 +1,4 @@
-// Settings about page
+// Settings page - About page
 
 package com.example.supercast.gui.pages.settingsabout
 

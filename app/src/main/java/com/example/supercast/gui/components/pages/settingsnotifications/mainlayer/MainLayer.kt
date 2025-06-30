@@ -1,4 +1,4 @@
-// Settings notifications page - Main layer
+// Settings page - Notifications page - Main layer
 
 package com.example.supercast.gui.components.pages.settingsnotifications.mainlayer
 
@@ -18,10 +18,10 @@ import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.pages.settingsnotifications.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settingsnotifications.mainlayer.segueslist.SeguesList
 
+import com.example.supercast.gui.components.pages.settingsnotifications._types_.Segue
 import com.example.supercast.gui.components.pages.settingsnotifications._types_.Switcher
 import com.example.supercast.gui.components.pages.settingsnotifications._types_.ScrollChooseList
 import com.example.supercast.gui.components.pages.settingsnotifications._types_.ScrollChooseListVariant
-import com.example.supercast.gui.components.pages.settingsnotifications._types_.Segue
 
 
 
@@ -307,8 +307,6 @@ fun MainLayer () {
         ) {
 
             Height (11/2)
-
-            Height (14)
 
             SeguesBlock (
                 label = textLabelFunctions,

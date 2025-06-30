@@ -1,4 +1,4 @@
-// Settings player page - Main layer
+// Settings page - Player page - Main layer
 
 package com.example.supercast.gui.components.pages.settingsplayer.mainlayer
 
@@ -15,13 +15,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
-import com.example.supercast.gui.components.pages.settingsplayer._types_.ScrollChooseList
-import com.example.supercast.gui.components.pages.settingsplayer._types_.ScrollChooseListVariant
 import com.example.supercast.gui.components.pages.settingsplayer.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settingsplayer.mainlayer.segueslist.SeguesList
 
 import com.example.supercast.gui.components.pages.settingsplayer._types_.Segue
 import com.example.supercast.gui.components.pages.settingsplayer._types_.Switcher
+import com.example.supercast.gui.components.pages.settingsplayer._types_.ScrollChooseList
+import com.example.supercast.gui.components.pages.settingsplayer._types_.ScrollChooseListVariant
 
 
 
@@ -55,8 +55,6 @@ fun MainLayer () {
         ) {
 
             Height (11/2)
-
-            Height (14)
 
             SeguesBlock (
                 label = textLabelPlaybackParameters,

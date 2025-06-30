@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 
@@ -105,15 +106,15 @@ private fun Blob (
         fontFamily = fontTextBlob,
         modifier = Modifier
             .clickable (onClick = onPress)
+
             .padding (horizontal = 5.dp)
 
             .clip (RoundedCornerShape (10.dp))
             .background (colorCorner)
-
             .padding (vertical = 2.5.dp, horizontal = 2.5.dp)
+
             .clip (RoundedCornerShape (7.5f.dp))
             .background (colorBack)
-
             .padding (vertical = 3.dp, horizontal = 10.dp)
     )
 

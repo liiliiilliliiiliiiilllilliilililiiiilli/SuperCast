@@ -1,4 +1,4 @@
-// Settings download page - Main layer
+// Settings page - Download page - Main layer
 
 package com.example.supercast.gui.components.pages.settingsdownload.mainlayer
 
@@ -17,13 +17,12 @@ import androidx.compose.ui.unit.dp
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
-
 import com.example.supercast.gui.components.pages.settingsdownload.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settingsdownload.mainlayer.segueslist.SeguesList
 
 import com.example.supercast.gui.components.pages.settingsdownload._types_.Segue
-import com.example.supercast.gui.components.pages.settingsdownload._types_.Switcher
 import com.example.supercast.gui.components.pages.settingsdownload._types_.EditText
+import com.example.supercast.gui.components.pages.settingsdownload._types_.Switcher
 import com.example.supercast.gui.components.pages.settingsdownload._types_.ScrollChooseList
 import com.example.supercast.gui.components.pages.settingsdownload._types_.ScrollChooseListVariant
 
@@ -73,8 +72,6 @@ fun MainLayer () {
         ) {
 
             Height (11/2)
-
-            Height (14)
 
             SeguesBlock (
                 label = textLabelDownloadParameters,

@@ -1,4 +1,4 @@
-// My comments page - Main layer - Comment soap
+// Collections page - My comments page - Main layer - Comment soap
 
 package com.example.supercast.gui.components.pages.mycomments.mainlayer.commentsoap
 

@@ -1,4 +1,4 @@
-// Main page - Main layer - FaceBlock - Description
+// Main page - Main layer - Face block - Description
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.description
 
@@ -28,6 +28,8 @@ fun Description () {
     Column (
         modifier = Modifier.fillMaxWidth ()
     ) {
+
+        // • sample data
 
         val data_1 = arrayOf (
             arrayOf (
@@ -62,6 +64,8 @@ fun Description () {
                 "Дерево небольшого размера, обычно не превышающее в высоту 4 м; к 30 годам, однако, может достичь пятиметровой высоты (урожай с такого дерева составляет 5—7 тысяч плодов за один сезон)"
             )
         )
+
+        // • sample data
 
 
         val (chosenSwitch, setChosenSwitch) = remember {mutableStateOf (textSwitch_2)}

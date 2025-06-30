@@ -3,6 +3,7 @@
 package com.example.supercast.gui.components.pages.subscribers.mainlayer.liner
 
 import androidx.compose.runtime.Composable
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.global.mainlayer.liner.Liner as LinerComponent
@@ -12,7 +13,7 @@ import com.example.supercast.gui.components.global.mainlayer.liner.Liner as Line
 private val picFilter = Pics.FilterGreyLight
 private val picSearch = Pics.SearchGrey
 
-private const val textButtonList = "5 авторов"
+private const val textButtonList = "5 слушателей"
 
 
 

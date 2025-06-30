@@ -9,13 +9,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
 
 
-private val picSettings = Pics.SettingsAdjustmentsGrey
+private val picSettings = Pics.SettingsWheelLight
 
 private const val textSettings = "Настроить"
 

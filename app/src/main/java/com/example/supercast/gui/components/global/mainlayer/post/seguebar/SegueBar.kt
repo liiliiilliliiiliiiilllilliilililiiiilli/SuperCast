@@ -1,4 +1,4 @@
-// Global components - Main layer - Post - SegueBar
+// Global components - Main layer - Post - Segue bar
 
 package com.example.supercast.gui.components.global.mainlayer.post.seguebar
 
@@ -10,7 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.supercast.projectlib.lib.Lib
+
+import com.example.supercast.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.pics.Pics
 

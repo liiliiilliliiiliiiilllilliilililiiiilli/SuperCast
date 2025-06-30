@@ -1,4 +1,4 @@
-// Global components - Main layer - Post - MainBlock - ContextPlot - Oration
+// Global components - Main layer - Post - Main block - Context plot - Oration
 
 package com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot.oration
 
@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 

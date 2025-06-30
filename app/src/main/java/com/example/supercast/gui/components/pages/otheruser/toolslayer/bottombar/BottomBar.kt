@@ -1,4 +1,4 @@
-// Home page - Tools layer - Bottom bar
+// Other user page - Tools layer - Bottom bar
 
 package com.example.supercast.gui.components.pages.otheruser.toolslayer.bottombar
 
@@ -8,7 +8,7 @@ import com.example.supercast.gui.components.global.toolslayer.bottombar.BottomBa
 
 
 
-private const val textDestination = "home"
+private const val textDestination = "main"
 
 
 

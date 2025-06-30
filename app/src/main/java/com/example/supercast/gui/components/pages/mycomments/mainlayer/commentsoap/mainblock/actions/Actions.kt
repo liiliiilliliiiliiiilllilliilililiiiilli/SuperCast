@@ -1,4 +1,4 @@
-// My comments page - Main layer - Comment soap - Main content - Actions
+// Collections page - My comments page - Main layer - Comment soap - Main content - Actions
 
 package com.example.supercast.gui.components.pages.mycomments.mainlayer.commentsoap.mainblock.actions
 
@@ -12,7 +12,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.lib.Lib
+
+import com.example.supercast.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 

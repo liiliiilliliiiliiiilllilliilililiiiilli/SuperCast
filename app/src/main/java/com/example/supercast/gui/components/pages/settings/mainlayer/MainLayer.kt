@@ -13,12 +13,14 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.supercast.gui.components.pages.settings._types_.Segue
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.pages.settings.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settings.mainlayer.segueslist.SeguesList
+
+import com.example.supercast.gui.components.pages.settings._types_.Segue
 
 
 

@@ -1,4 +1,5 @@
-// Global components - Distinctive - Spaces   •   This is for layout creation proccess shortcutting :]
+// Global components - Distinctive - Spaces  •  This is for layout creation proccess shortcutting :]
+//
 // Presented components have diffirent type variants (functions are overloaded)
 
 package com.example.supercast.gui.components.distinctive.spaces

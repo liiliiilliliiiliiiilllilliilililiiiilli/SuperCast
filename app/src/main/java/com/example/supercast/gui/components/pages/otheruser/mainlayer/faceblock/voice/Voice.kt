@@ -1,4 +1,4 @@
-// Main page - Main layer - FaceBlock - Voice
+// Other user page - Main layer - Face block - Voice
 
 package com.example.supercast.gui.components.pages.otheruser.mainlayer.faceblock.voice
 
@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 

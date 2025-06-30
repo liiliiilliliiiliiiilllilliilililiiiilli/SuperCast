@@ -1,4 +1,4 @@
-// Collections page - Main layer - MyHistory
+// Collections page - Main layer - My history
 
 package com.example.supercast.gui.components.pages.collections.mainlayer.myhistory
 
@@ -19,6 +19,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics

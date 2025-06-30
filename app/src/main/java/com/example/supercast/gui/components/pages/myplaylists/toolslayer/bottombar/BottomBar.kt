@@ -1,4 +1,4 @@
-// My playlists page - Tools layer - Bottom bar
+// Collections page - My playlists page - Tools layer - Bottom bar
 
 package com.example.supercast.gui.components.pages.myplaylists.toolslayer.bottombar
 

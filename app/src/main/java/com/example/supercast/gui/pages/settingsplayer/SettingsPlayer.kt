@@ -1,4 +1,4 @@
-// Settings player page
+// Settings page - Player page
 
 package com.example.supercast.gui.pages.settingsplayer
 

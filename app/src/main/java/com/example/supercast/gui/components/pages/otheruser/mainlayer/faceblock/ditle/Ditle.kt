@@ -1,4 +1,4 @@
-// Main page - Main layer - FaceBlock - Ditle
+// Other user page - Main layer - Face block - Ditle
 
 package com.example.supercast.gui.components.pages.otheruser.mainlayer.faceblock.ditle
 
@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -135,6 +136,7 @@ private fun EditButton () {
             .clip (RoundedCornerShape (50))
             .background (colorEditButtonCorner)
             .padding (vertical = 2.5.dp, horizontal = 2.5.dp)
+
             .clip (RoundedCornerShape (47.5f))
             .background (colorEditButtonBack)
             .padding (top = 6.dp, start = 15.dp, end = 15.dp, bottom = 6.dp)

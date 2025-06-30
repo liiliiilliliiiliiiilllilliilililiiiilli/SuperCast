@@ -1,4 +1,4 @@
-// Home page - Main layer - Ties provider - Strick
+// Other user page - Main layer - Ties provider - Strick
 
 package com.example.supercast.gui.components.pages.otheruser.mainlayer.tiesprovider.strick
 
@@ -22,6 +22,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -114,7 +115,7 @@ fun Strick () {
 @Composable
 private fun SubscriptionButton () {
 
-    val text = "$textSubscribed"
+    val text = textSubscribed
 
 
     Row (
@@ -124,6 +125,7 @@ private fun SubscriptionButton () {
             .clip (RoundedCornerShape (50))
             .background (Colors.Button)
             .padding (vertical = 1.5.dp)
+
             .clip (RoundedCornerShape (47.5f))
             .background (Colors.Button)
             .padding (top = 6.dp, start = 15.dp, end = 15.dp, bottom = 6.dp)

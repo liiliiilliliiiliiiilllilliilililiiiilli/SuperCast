@@ -1,4 +1,4 @@
-// My playlists page
+// Collections page - My playlists page
 
 package com.example.supercast.gui.pages.myplaylists
 

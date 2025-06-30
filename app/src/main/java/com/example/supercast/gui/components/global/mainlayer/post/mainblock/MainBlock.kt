@@ -1,4 +1,4 @@
-// Global components - Main layer - Post - MainBlock
+// Global components - Main layer - Post - Main block
 
 package com.example.supercast.gui.components.global.mainlayer.post.mainblock
 
@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import kotlin.Int
+
 import com.example.supercast.ui.colors.Colors
 
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.top.Top

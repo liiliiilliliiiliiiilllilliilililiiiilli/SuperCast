@@ -1,4 +1,4 @@
-// Settings account page - Main layer
+// Settings page - Account page - Main layer
 
 package com.example.supercast.gui.components.pages.settingsaccount.mainlayer
 
@@ -13,12 +13,14 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.supercast.gui.components.pages.settingsaccount._types_.Segue
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.pages.settingsaccount.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settingsaccount.mainlayer.segueslist.SeguesList
+
+import com.example.supercast.gui.components.pages.settingsaccount._types_.Segue
 
 
 

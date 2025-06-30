@@ -1,4 +1,4 @@
-// Main page - Main layer - FaceBlock - Stats
+// Main page - Main layer - Face block - Stats
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.stats
 
@@ -14,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 

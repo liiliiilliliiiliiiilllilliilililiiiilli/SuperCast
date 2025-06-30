@@ -1,4 +1,4 @@
-// Global components - Main layer - Post - MainBlock - ContextPlot - Attachment
+// Global components - Main layer - Post - Main block - Context plot - Attachment
 
 package com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot.attachment
 
@@ -21,7 +21,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.sp
-import com.example.supercast.projectlib.lib.Lib
+
+import com.example.supercast.lib.Lib
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics

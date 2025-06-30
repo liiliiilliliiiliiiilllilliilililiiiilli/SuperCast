@@ -1,8 +1,9 @@
-// My comments page - Main layer - Liner
+// Collections page - My comments page - Main layer - Liner
 
 package com.example.supercast.gui.components.pages.mycomments.mainlayer.liner
 
 import androidx.compose.runtime.Composable
+
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.global.mainlayer.liner.Liner as LinerComponent

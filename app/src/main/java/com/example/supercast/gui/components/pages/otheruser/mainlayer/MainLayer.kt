@@ -1,4 +1,4 @@
-// Home page - Main layer
+// Other user page - Main layer
 
 package com.example.supercast.gui.components.pages.otheruser.mainlayer
 

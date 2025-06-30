@@ -1,4 +1,4 @@
-// Global components - Main layer - Post - MainBlock - Top
+// Global components - Main layer - Post - Main block - Top
 
 package com.example.supercast.gui.components.global.mainlayer.post.mainblock.top
 
@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 
@@ -105,9 +106,11 @@ private fun Author (
 				.clip (RoundedCornerShape (100))
 				.background (colorAvaCircleCorner)
 				.padding (1.75.dp)
+
 				.clip (RoundedCornerShape (100))
 				.background (colorAvaCircleRest)
 				.padding (1.75.dp)
+
 				.clip (RoundedCornerShape (100))
 				.size (34.dp)
 		)

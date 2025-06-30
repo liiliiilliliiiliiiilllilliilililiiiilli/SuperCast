@@ -1,4 +1,4 @@
-// Main page - Main layer - FaceBlock - Description
+// Other user page - Main layer - Face block - Description
 
 package com.example.supercast.gui.components.pages.otheruser.mainlayer.faceblock.description
 

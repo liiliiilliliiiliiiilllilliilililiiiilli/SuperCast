@@ -1,4 +1,4 @@
-// My listening history page - Tools layer - Bottom bar
+// Collections page - My listening history page - Tools layer - Bottom bar
 
 package com.example.supercast.gui.components.pages.myhistory.toolslayer.bottombar
 

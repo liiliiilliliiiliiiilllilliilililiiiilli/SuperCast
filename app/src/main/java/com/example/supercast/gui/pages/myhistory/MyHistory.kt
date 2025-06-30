@@ -1,4 +1,4 @@
-// My history page
+// Collections page - My history page
 
 package com.example.supercast.gui.pages.myhistory
 

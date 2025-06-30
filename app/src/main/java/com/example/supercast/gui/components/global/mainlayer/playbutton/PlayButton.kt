@@ -18,12 +18,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.pics.Pics
 
 
 
 private val colorBack = Colors.Olive
+private val colorShadow = Color (0x88000000)
 
 private val picTriangleLight = Pics.TrianglePlayLight
 private val picTriangleDark = Pics.TrianglePlayDark
@@ -51,7 +53,7 @@ fun PlayButton (
                     painterResource (pic),
                     contentScale = ContentScale.FillBounds
                 )
-                .background (Color (0x88000000))
+                .background (colorShadow)
 
         else
 
@@ -61,7 +63,7 @@ fun PlayButton (
     Box (
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .clickable (onClick = {onPress()})
+            .clickable (onClick = {onPress ()})
             .clip (RoundedCornerShape (100))
             .size ((37 * scale).dp)
             .background (colorBack)

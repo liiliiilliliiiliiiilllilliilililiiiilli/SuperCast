@@ -1,4 +1,4 @@
-// My comments page - Tools layer - Bottom bar
+// Collections page - My comments page - Tools layer - Bottom bar
 
 package com.example.supercast.gui.components.pages.mycomments.toolslayer.bottombar
 

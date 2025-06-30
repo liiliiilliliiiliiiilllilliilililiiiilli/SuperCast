@@ -3,6 +3,7 @@
 package com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.strick
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -17,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
@@ -138,16 +140,21 @@ private fun Description (
         onPress: () -> Unit
     ) {
 
-        ActionText (
-            text = textDescriptioAction,
-            pic = picPen,
-            isReversed = true,
-            onPress = onPress,
+        Box (
             contentAlignment = Alignment.CenterEnd,
             modifier = Modifier
                 .fillMaxWidth ()
                 .padding (end = 24.dp, bottom = 15.dp)
-        )
+        ) {
+
+            ActionText (
+                text = textDescriptioAction,
+                pic = picPen,
+                isReversed = true,
+                onPress = onPress
+            )
+
+        }
 
     }
 

@@ -25,6 +25,8 @@ import com.example.supercast.gui.components.pages.home.mainlayer.content.Content
 @Composable
 fun MainLayer () {
 
+    // • sample data
+
     val data = mapOf (
 
         "data_1" to mapOf (
@@ -222,6 +224,8 @@ fun MainLayer () {
         ""
 
     )
+
+    // • sample data
 
 
     Box (

@@ -1,4 +1,4 @@
-// Settings player page - _types_
+// Settings page - Player page - _types_
 
 package com.example.supercast.gui.components.pages.settingsplayer._types_
 

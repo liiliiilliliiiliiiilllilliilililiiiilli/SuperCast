@@ -1,4 +1,4 @@
-// Settings subscriptions folders folder page - Main layer
+// Settings page - Subscriptions folders folder page - Main layer
 
 package com.example.supercast.gui.components.pages.settingssubsfoldersfolder.mainlayer
 
