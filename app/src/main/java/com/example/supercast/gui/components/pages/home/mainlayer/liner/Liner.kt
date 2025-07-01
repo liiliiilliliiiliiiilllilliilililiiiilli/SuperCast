@@ -22,9 +22,9 @@ fun Liner () {
 
 
     LinerComponent (
-        text = textButtonList,
+        textWrap = textButtonList,
         buttonPicRight = arrayOf (picButtonRight),
-        picRightOnPress = picRightOnPress
+        buttonPicRightOnPress = picRightOnPress
     )
 
 }

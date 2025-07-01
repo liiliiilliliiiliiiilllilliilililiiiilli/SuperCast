@@ -56,7 +56,7 @@ fun ActionText (
                 painter = painterResource (pic),
                 contentDescription = textPicActionTextDescription,
                 modifier = Modifier
-                    .size (13.dp)
+                    .size (14.dp)
                     .padding (top = 0.75.dp)
             )
 
@@ -66,7 +66,7 @@ fun ActionText (
 
         Text (
             text = text,
-            fontSize = 14.5.sp,
+            fontSize = 16.sp,
             color = color,
             fontFamily = fontText
         )
@@ -79,7 +79,7 @@ fun ActionText (
                 painter = painterResource (pic),
                 contentDescription = textPicActionTextDescription,
                 modifier = Modifier
-                    .size (13.dp)
+                    .size (14.dp)
                     .padding (top = 0.75.dp)
             )
 

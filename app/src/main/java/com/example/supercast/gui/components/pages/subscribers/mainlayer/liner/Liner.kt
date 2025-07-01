@@ -18,18 +18,15 @@ private const val textButtonList = "5 слушателей"
 
 
 @Composable
-fun Liner (
-    isWrapped: Boolean = true
-) {
+fun Liner () {
 
     val picRightOnPress = {}
 
 
     LinerComponent (
         text = textButtonList,
-        isWrapped = isWrapped,
         buttonPicRight = arrayOf (picSearch, picFilter),
-        picRightOnPress = picRightOnPress
+        buttonPicRightOnPress = picRightOnPress
     )
 
 }

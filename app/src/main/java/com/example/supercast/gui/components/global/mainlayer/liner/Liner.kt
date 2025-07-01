@@ -47,10 +47,11 @@ private const val textPicPicButtonDescription = "[option pic]"
 
 @Composable
 fun Liner (
-    text: String,
-    isWrapped: Boolean = true,
-    buttonPicRight: Array <Int>,
-    picRightOnPress: () -> Unit
+    text: String? = null,
+    fontSize: Int = 27,
+    textWrap: String? = null,
+    buttonPicRight: (Array <Int>)? = null,
+    buttonPicRightOnPress: (() -> Unit)? = null
 ) {
 
     Box (
@@ -65,23 +66,39 @@ fun Liner (
             modifier = Modifier.padding (horizontal = 34.dp)
         ) {
 
-            ListButton (
-                text = text,
-                isWrapped = isWrapped
-            )
+            if (text != null) {
+
+                JustText (
+                    text = text,
+                    fontSize = fontSize
+                )
+
+            }
+
+            if (textWrap != null) {
+
+                ListButton (
+                    text = textWrap
+                )
+
+            }
 
             Space (Modifier.weight (1f))
 
-            buttonPicRight.forEachIndexed {index, pic ->
+            if (buttonPicRight != null && buttonPicRightOnPress != null) {
 
-                PicButton (
-                    pic = buttonPicRight[index],
-                    picRightOnPress = picRightOnPress
-                )
+                buttonPicRight.forEachIndexed { index, pic ->
 
-                if (index != buttonPicRight.size - 1) {
+                    PicButton (
+                        pic = buttonPicRight[index],
+                        picRightOnPress = buttonPicRightOnPress
+                    )
 
-                    Width (8)
+                    if (index != buttonPicRight.size - 1) {
+
+                        Width (8)
+
+                    }
 
                 }
 
@@ -90,6 +107,26 @@ fun Liner (
         }
 
     }
+
+}
+
+
+
+@Composable
+private fun JustText (
+    text: String,
+    fontSize: Int
+) {
+
+    Text (
+        text = text,
+        fontSize = fontSize.sp,
+        color = colorListButton,
+        fontFamily = fontListButton,
+        modifier = Modifier
+            .background (colorItemsBack)
+            .padding (horizontal = 10.dp)
+    )
 
 }
 
@@ -113,7 +150,6 @@ private fun Line () {
 @Composable
 private fun ListButton (
     text: String,
-    isWrapped: Boolean = true
 ) {
 
     val unwrapAction = {}
@@ -135,19 +171,15 @@ private fun ListButton (
             fontFamily = fontListButton
         )
 
-        if (isWrapped) {
+        Width (10)
 
-            Width (10)
-
-            Image (
-                painter = painterResource (picTriangle),
-                contentDescription = textPicTriangleDescription,
-                modifier = Modifier
-                    .size (8.dp)
-                    .offset (y = 2.5.dp)
-            )
-
-        }
+        Image (
+            painter = painterResource (picTriangle),
+            contentDescription = textPicTriangleDescription,
+            modifier = Modifier
+                .size (8.dp)
+                .offset (y = 2.5.dp)
+        )
 
     }
 

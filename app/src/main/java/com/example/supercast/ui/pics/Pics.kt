@@ -39,6 +39,7 @@ class Pics () {
         val ExpandArrowsGrey = R.drawable.expand_arrows_grey
         val FilterGreyLight = R.drawable.filter_grey_light
         val FolderGrey = R.drawable.folder_grey
+        val FolderWhite = R.drawable.folder_whight
         val HomeDark = R.drawable.home_dark
         val HomeLight = R.drawable.home_light
         val InfoGrey = R.drawable.info_grey
@@ -53,6 +54,7 @@ class Pics () {
         val PieLight = R.drawable.pie_light
         val PlanetGrey = R.drawable.planet_grey
         val PlusSharpGreen = R.drawable.plus_sharp_green
+        val PlusSharpOlive = R.drawable.plus_sharp_olive
         val PlusSmoothDark = R.drawable.plus_smooth_dark
         val PlusSmoothLight = R.drawable.plus_smooth_light
         val QrCodeDark = R.drawable.qr_code_dark
@@ -64,6 +66,7 @@ class Pics () {
         val StarGrey = R.drawable.star_grey
         val StarLight = R.drawable.star_light
         val TranslateGreenLight = R.drawable.translate_green_light
+        val TrashGreyLight = R.drawable.trash_grey_light
         val TrianglePlayDark = R.drawable.triangle_play_dark
         val TrianglePlayGrey = R.drawable.triangle_play_grey
         val TrianglePlayLight = R.drawable.triangle_play_light

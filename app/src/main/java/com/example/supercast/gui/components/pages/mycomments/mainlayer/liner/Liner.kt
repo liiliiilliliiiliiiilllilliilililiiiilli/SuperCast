@@ -26,9 +26,8 @@ fun Liner (
 
     LinerComponent (
         text = text,
-        isWrapped = false,
         buttonPicRight = arrayOf (picFilter),
-        picRightOnPress = {}
+        buttonPicRightOnPress = {}
     )
 
 }

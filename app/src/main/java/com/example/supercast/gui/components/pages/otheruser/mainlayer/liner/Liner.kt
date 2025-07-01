@@ -25,7 +25,7 @@ fun Liner () {
     LinerComponent (
         text = textButtonList,
         buttonPicRight = arrayOf (picButtonPicRight),
-        picRightOnPress = picRightOnPress
+        buttonPicRightOnPress = picRightOnPress
     )
 
 }

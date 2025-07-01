@@ -26,6 +26,8 @@ class Colors () {
         val DarkGrey = Color (0xFF404040)
         val DeleteText = Color (0xFFBF4949)
         val Divider = Color (0xFF121212)
+        val FaqBack = Color (0xFF0D0D0D)
+        val FaqText = Color (0xFF545454)
         val Grey = Color (0xFF808080)
         val Line = Color (0xFF1C1C1C)
         val Media = Color (0xFF524E3B)

@@ -18,8 +18,8 @@ import com.example.supercast.gui.pages.settingsabout.SettingsAbout as SettingsAb
 import com.example.supercast.gui.pages.settingsaccount.SettingsAccount as SettingsAccountPage
 import com.example.supercast.gui.pages.settingsappearance.SettingsAppearance as SettingsAppearancePage
 import com.example.supercast.gui.pages.settingsnotifications.SettingsNotifications as SettingsNotificationsPage
-import com.example.supercast.gui.pages.settingssubsfolders.SettingsSubsFolders as SettingsSubsFoldersPage
-import com.example.supercast.gui.pages.settingssubsfoldersfolder.SettingsSubsFoldersFolder as SettingsSubsFoldersFolderPage
+import com.example.supercast.gui.pages.settingsfolders.SettingsFolders as SettingsFoldersPage
+import com.example.supercast.gui.pages.settingsfoldersfolder.SettingsFoldersFolder as SettingsFoldersFolderPage
 import com.example.supercast.gui.pages.settingsrecssystem.SettingsRecsSystem as SettingsRecsSystemPage
 import com.example.supercast.gui.pages.settingsplayer.SettingsPlayer as SettingsPlayerPage
 import com.example.supercast.gui.pages.settingsdownload.SettingsDownload as SettingsDownloadPage
@@ -52,8 +52,8 @@ fun Gui () {
 //        SettingsAppearancePage ()
 //        SettingsNotificationsPage ()
 //        SettingsAboutPage ()
-//        SettingsSubsFoldersPage ()
-//        SettingsSubsFoldersFolderPage ()
+//        SettingsFoldersPage ()
+        SettingsFoldersFolderPage ()
 //        SettingsRecsSystemPage ()
 //        SettingsPlayerPage ()
 //        SettingsDownloadPage ()

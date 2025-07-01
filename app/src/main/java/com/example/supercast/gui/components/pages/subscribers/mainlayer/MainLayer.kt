@@ -54,9 +54,7 @@ fun MainLayer () {
 
             Height (25)
 
-            Liner (
-                isWrapped = false
-            )
+            Liner ()
 
             Height (17)
 
