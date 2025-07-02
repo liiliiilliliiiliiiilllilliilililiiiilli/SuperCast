@@ -1,4 +1,4 @@
-// Collections page - Main layer - My history
+// Collections page - Main layer - My history block
 
 package com.example.supercast.gui.components.pages.collections.mainlayer.myhistory
 

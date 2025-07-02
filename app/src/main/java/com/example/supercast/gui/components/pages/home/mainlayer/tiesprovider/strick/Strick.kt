@@ -25,6 +25,7 @@ import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
+
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 import com.example.supercast.gui.components.global.mainlayer.descriptionbutton.DescriptionButton
 import com.example.supercast.gui.components.global.mainlayer.actionsbutton.ActionsButton

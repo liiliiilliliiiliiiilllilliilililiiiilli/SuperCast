@@ -58,6 +58,7 @@ fun BarButton (
 
 			.size (picSize)
 			.rotate (rotate)
+
 			.then (modifier)
 	)
 

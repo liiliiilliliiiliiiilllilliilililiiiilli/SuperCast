@@ -11,65 +11,77 @@ import kotlin.String
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
+
 import com.example.supercast.gui.components.global.mainlayer.post.Post
 
-
-
-private const val Post_1_InfoBar_left = ""
-private const val Post_1_InfoBar_right = "27.03.2020"
-private val Post_1_MainBlock_Top_picAva = Pics.__image_8__
-private const val Post_1_MainBlock_Top_textDitleName = "Sydney Sweeny"
-private const val Post_1_MainBlock_Top_textDitleTie = "апдейты"
-private const val Post_1_MainBlock_Top_numStars = 629
-private val Post_1_MainBlock_ContextPlot_orationData = arrayOf (
-    "Па́вел Вале́рьевич Ду́ров — российский предприниматель в  сфере информационных технологий, основатель социальной сети «ВКонтакте» и кроссплатформенного мессенджера Telegram."
-)
-private val Post_1_MainBlock_ContextPlot_attachmentData = arrayOf (
-    "Citate",
-    ""
-)
-private const val Post_1_MainBlock_ContextPlot_textPublicationFromWho = ""
-private val Post_1_MainBlock_ContextPlot_picsMedia = arrayOf (
-    Pics.__image_1__
-)
-private const val Post_1_MainBlock_ContextPlot_isAttachmentOpened = true
-private val Post_1_MainBlock_AudioPlot_data = arrayOf (
-    "Podcast",
-    ""
-)
-private const val Post_1_SegueBar_comments = 27
-private const val Post_1_SegueBar_citates = 0
+import com.example.supercast.gui.components.global.mainlayer.post._types_.*
 
 
 
-private const val Post_2_InfoBar_left = "Редактировано"
-private const val Post_2_InfoBar_right = "Только что"
-private val Post_2_MainBlock_Top_picAva = Pics.__image_9__
-private const val Post_2_MainBlock_Top_textDitleName = "Джастин Ройланд"
-private const val Post_2_MainBlock_Top_textDitleTie = "основное"
-private const val Post_2_MainBlock_Top_numStars = 12505
-private val Post_2_MainBlock_ContextPlot_orationData = arrayOf (
-    "В отличие от дирижаблей, воздушные шары не имеют двигателей для самостоятельного горизонтального движения в воздухе. В зависимости от наполнения различают монгольфьеры (шары, наполненные нагретым воздухом), шарльеры (наполнены лёгким газом, как правило, водородом или гелием) и розьеры (воздушные суда, использующие одновременно газ и воздух, размещённые в отдельных оболочках). "
+private val postData_1 = Post (
+    infoBar = InfoBar (
+        right = "27.03.2020"
+    ),
+    mainblock = MainBlock (
+        topBar = TopBar (
+            pic = Pics.__image_8__,
+            textDitleTie = "Sydney Sweeny",
+            textDitleName = "апдейты",
+            numStars = 629
+        ),
+        contextPlot = ContextPlot (
+            orationData = arrayOf ("Па́вел Вале́рьевич Ду́ров — российский предприниматель в  сфере информационных технологий, основатель социальной сети «ВКонтакте» и кроссплатформенного мессенджера Telegram."),
+            attachmentData = arrayOf ("Citate", ""),
+            isAttachmentOpenedState = true,
+            textPublicationFromWho = "",
+            picsMedia = arrayOf (Pics.__image_1__)
+        ),
+        audioPlot = AudioPlot (
+            data = arrayOf ("Podcast", "")
+        ),
+        isPostInner = false
+    ),
+    segueBar = SegueBar (
+        comments = 27,
+        citates = 0
+    )
 )
-private val Post_2_MainBlock_ContextPlot_attachmentData = arrayOf (
-    "Media",
-    ""
+
+private val postData_2 = Post (
+    infoBar = InfoBar (
+        left = "Редактировано",
+        right = "Только что"
+    ),
+    mainblock = MainBlock (
+        topBar = TopBar (
+            pic = Pics.__image_9__,
+            textDitleTie = "Джастин Ройланд",
+            textDitleName = "основное",
+            numStars = 12505
+        ),
+        contextPlot = ContextPlot (
+            orationData = arrayOf ("В отличие от дирижаблей, воздушные шары не имеют двигателей для самостоятельного горизонтального движения в воздухе. В зависимости от наполнения различают монгольфьеры (шары, наполненные нагретым воздухом), шарльеры (наполнены лёгким газом, как правило, водородом или гелием) и розьеры (воздушные суда, использующие одновременно газ и воздух, размещённые в отдельных оболочках). "),
+            attachmentData = arrayOf ("Media", ""),
+            isAttachmentOpenedState = true,
+            textPublicationFromWho = "",
+            picsMedia = arrayOf (
+                Pics.__image_4__,
+                Pics.__image_2__,
+                Pics.__image_5__,
+                Pics.__image_9__,
+                Pics.__image_8__
+            )
+        ),
+        audioPlot = AudioPlot (
+            data = arrayOf ("Voice", "")
+        ),
+        isPostInner = false
+    ),
+    segueBar = SegueBar (
+        comments = 5288,
+        citates = 47
+    )
 )
-private const val Post_2_MainBlock_ContextPlot_textPublicationFromWho = ""
-private val Post_2_MainBlock_ContextPlot_picsMedia = arrayOf (
-    Pics.__image_4__,
-    Pics.__image_2__,
-    Pics.__image_5__,
-    Pics.__image_9__,
-    Pics.__image_8__
-)
-private const val Post_2_MainBlock_ContextPlot_isAttachmentOpened = true
-private val Post_2_MainBlock_AudioPlot_data = arrayOf (
-    "Voice",
-    ""
-)
-private const val Post_2_SegueBar_comments = 5288
-private const val Post_2_SegueBar_citates = 47
 
 
 
@@ -88,42 +100,14 @@ fun Content (
 //        posts.forEach {data ->
 
         Post (
-            InfoBar_left = Post_2_InfoBar_left,
-            InfoBar_right = Post_2_InfoBar_right,
-            MainBlock_Top_picAva = Post_2_MainBlock_Top_picAva,
-            MainBlock_Top_textDitleName = Post_2_MainBlock_Top_textDitleName,
-            MainBlock_Top_textDitleTie = Post_2_MainBlock_Top_textDitleTie,
-            MainBlock_Top_numStars = Post_2_MainBlock_Top_numStars,
-            MainBlock_ContextPlot_orationData = Post_2_MainBlock_ContextPlot_orationData,
-            MainBlock_ContextPlot_attachmentData = Post_2_MainBlock_ContextPlot_attachmentData,
-            MainBlock_ContextPlot_isAttachmentOpened = Post_2_MainBlock_ContextPlot_isAttachmentOpened,
-            MainBlock_ContextPlot_textPublicationFromWho = Post_2_MainBlock_ContextPlot_textPublicationFromWho,
-            MainBlock_ContextPlot_picsMedia = Post_2_MainBlock_ContextPlot_picsMedia,
-            MainBlock_AudioPlot_data = Post_2_MainBlock_AudioPlot_data,
-            SegueBar_comments = Post_2_SegueBar_comments,
-            SegueBar_citates = Post_2_SegueBar_citates,
-
+            data = postData_1,
             isInner = false
         )
 
         Height (12)
 
         Post (
-            InfoBar_left = Post_1_InfoBar_left,
-            InfoBar_right = Post_1_InfoBar_right,
-            MainBlock_Top_picAva = Post_1_MainBlock_Top_picAva,
-            MainBlock_Top_textDitleName = Post_1_MainBlock_Top_textDitleName,
-            MainBlock_Top_textDitleTie = Post_1_MainBlock_Top_textDitleTie,
-            MainBlock_Top_numStars = Post_1_MainBlock_Top_numStars,
-            MainBlock_ContextPlot_orationData = Post_1_MainBlock_ContextPlot_orationData,
-            MainBlock_ContextPlot_attachmentData = Post_1_MainBlock_ContextPlot_attachmentData,
-            MainBlock_ContextPlot_textPublicationFromWho = Post_1_MainBlock_ContextPlot_textPublicationFromWho,
-            MainBlock_ContextPlot_picsMedia = Post_1_MainBlock_ContextPlot_picsMedia,
-            MainBlock_ContextPlot_isAttachmentOpened = Post_1_MainBlock_ContextPlot_isAttachmentOpened,
-            MainBlock_AudioPlot_data = Post_1_MainBlock_AudioPlot_data,
-            SegueBar_comments = Post_1_SegueBar_comments,
-            SegueBar_citates = Post_1_SegueBar_citates,
-
+            data = postData_2,
             isInner = false
         )
 

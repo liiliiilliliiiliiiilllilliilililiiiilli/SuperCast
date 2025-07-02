@@ -1,4 +1,4 @@
-// Collections page - Main layer - Wrappable
+// Collections page - Main layer - Wrappable block
 
 package com.example.supercast.gui.components.pages.collections.mainlayer.wrapable
 

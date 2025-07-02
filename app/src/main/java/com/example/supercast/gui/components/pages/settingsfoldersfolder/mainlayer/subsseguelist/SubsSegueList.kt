@@ -15,7 +15,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,7 +33,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
-import com.example.supercast.gui.components.global.mainlayer.ava.Ava
+import com.example.supercast.gui.components.global.mainlayer.avacirclemini.AvaCircleMini as Ava
 
 import com.example.supercast.gui.components.pages.settingsfoldersfolder._types_.SubSegue
 import com.example.supercast.gui.components.pages.settingsfoldersfolder._types_.Tie

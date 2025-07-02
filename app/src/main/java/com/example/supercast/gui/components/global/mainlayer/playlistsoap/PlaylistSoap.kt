@@ -1,4 +1,4 @@
-// Collections page - My playlists page - Main layer - Playlist soap
+// Global components - Main layer - Playlist soap
 
 package com.example.supercast.gui.components.global.mainlayer.playlistsoap
 

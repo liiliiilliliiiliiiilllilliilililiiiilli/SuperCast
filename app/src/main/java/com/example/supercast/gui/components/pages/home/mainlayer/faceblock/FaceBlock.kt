@@ -1,4 +1,4 @@
-// Main page - Main layer - Face block
+// Home page - Main layer - Face block
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock
 
@@ -19,9 +19,11 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 
 import com.example.supercast.ui.colors.Colors
+import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
-import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.ava.Ava
+
+import com.example.supercast.gui.components.global.mainlayer.avacirclebig.AvaCircleBig as Ava
 import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.ditle.Ditle
 import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.voice.Voice
 import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.stats.Stats
@@ -33,6 +35,8 @@ import com.example.supercast.gui.components.pages.home.mainlayer.faceblock.descr
 private const val isDescriptionOpened_initialState = false
 
 private val colorBack = Colors.Blocks
+
+private val picAva = Pics.__image_1__
 
 
 
@@ -76,7 +80,11 @@ private fun Face () {
             modifier = Modifier.fillMaxWidth ()
         ) {
 
-            Ava ()
+            Ava (
+                pic = picAva,
+                modifier = Modifier.padding (start = 17.dp)
+            )
+
             Ditle ()
 
         }

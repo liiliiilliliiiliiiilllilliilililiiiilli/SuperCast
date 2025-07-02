@@ -1,4 +1,4 @@
-// Main page - Main layer - Face block - Description
+// Home page - Main layer - Face block - Description
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.description
 
@@ -12,6 +12,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
+
 import com.example.supercast.gui.components.global.mainlayer.switcher.Switcher
 import com.example.supercast.gui.components.global.mainlayer.descriptionblock.DescriptionBlock
 

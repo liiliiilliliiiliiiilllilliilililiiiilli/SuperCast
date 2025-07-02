@@ -23,13 +23,17 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.sp
 
 import com.example.supercast.lib.Lib
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.distinctive.spaces.Width
+
 import com.example.supercast.gui.components.global.mainlayer.post.Post
+
+import com.example.supercast.gui.components.global.mainlayer.post._types_.*
 
 
 
@@ -60,31 +64,34 @@ private const val textListingMedia = "из"
 
 
 
-private const val Post_1_InfoBar_left = ""
-private const val Post_1_InfoBar_right = "2 днями ранее"
-private val Post_1_MainBlock_Top_picAva = Pics.__image_5__
-private const val Post_1_MainBlock_Top_textDitleName = "Алина"
-private const val Post_1_MainBlock_Top_textDitleTie = "моя жизнь"
-private const val Post_1_MainBlock_Top_numStars = 101
-private val Post_1_MainBlock_ContextPlot_orationData = arrayOf (
-	"Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB). "
+private val postData_1 = Post (
+	infoBar = InfoBar (
+		right = "2 днями ранее"
+	),
+	mainblock = MainBlock (
+		topBar = TopBar (
+			pic = Pics.__image_5__,
+			textDitleTie = "Алина",
+			textDitleName = "моя жизнь",
+			numStars = 101
+		),
+		contextPlot = ContextPlot (
+			orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
+			attachmentData = arrayOf ("Media", ""),
+			isAttachmentOpenedState = false,
+			textPublicationFromWho = "Кто-то",
+			picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
+		),
+		audioPlot = AudioPlot (
+			data = arrayOf ("", "")
+		),
+		isPostInner = true
+	),
+	segueBar = SegueBar (
+		comments = 19,
+		citates = 8
+	)
 )
-private val Post_1_MainBlock_ContextPlot_attachmentData = arrayOf (
-	"Media",
-	""
-)
-private const val Post_1_MainBlock_ContextPlot_textPublicationFromWho = "Кто-то"
-private val Post_1_MainBlock_ContextPlot_picsMedia = arrayOf (
-	Pics.__image_7__,
-	Pics.__image_8__
-)
-private const val Post_1_MainBlock_ContextPlot_isAttachmentOpened = false
-private val Post_1_MainBlock_AudioPlot_data = arrayOf (
-	"",
-	""
-)
-private const val Post_1_SegueBar_comments = 19
-private const val Post_1_SegueBar_citates = 8
 
 
 
@@ -217,21 +224,7 @@ private fun Citate (
 			)
 
 			Post (
-				InfoBar_left = Post_1_InfoBar_left,
-				InfoBar_right = Post_1_InfoBar_right,
-				MainBlock_Top_picAva = Post_1_MainBlock_Top_picAva,
-				MainBlock_Top_textDitleName = Post_1_MainBlock_Top_textDitleName,
-				MainBlock_Top_textDitleTie = Post_1_MainBlock_Top_textDitleTie,
-				MainBlock_Top_numStars = Post_1_MainBlock_Top_numStars,
-				MainBlock_ContextPlot_orationData = Post_1_MainBlock_ContextPlot_orationData,
-				MainBlock_ContextPlot_attachmentData = Post_1_MainBlock_ContextPlot_attachmentData,
-				MainBlock_ContextPlot_isAttachmentOpened = Post_1_MainBlock_ContextPlot_isAttachmentOpened,
-				MainBlock_ContextPlot_textPublicationFromWho = Post_1_MainBlock_ContextPlot_textPublicationFromWho,
-				MainBlock_ContextPlot_picsMedia = Post_1_MainBlock_ContextPlot_picsMedia,
-				MainBlock_AudioPlot_data = Post_1_MainBlock_AudioPlot_data,
-				SegueBar_comments = Post_1_SegueBar_comments,
-				SegueBar_citates = Post_1_SegueBar_citates,
-
+				data = postData_1,
 				isInner = true
 			)
 

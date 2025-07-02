@@ -10,6 +10,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
+
 import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.settings.Settings
 import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.blobs.Blobs
 import com.example.supercast.gui.components.pages.home.mainlayer.tiesprovider.strick.Strick

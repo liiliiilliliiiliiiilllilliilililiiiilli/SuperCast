@@ -1,23 +1,19 @@
-// Collections page - Main layer - My comments
+// Collections page - Main layer - My comments block
 
 package com.example.supercast.gui.components.pages.collections.mainlayer.mycomments
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.scale
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -28,19 +24,17 @@ import com.example.supercast.ui.pics.Pics
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
 
+import com.example.supercast.gui.components.global.mainlayer.avacirclemini.AvaCircleMini as Ava
+
 
 
 private val colorLabel = Colors.Grey
 private val colorBack = Colors.Blocks
-private val colorAvaCircleCorner = Colors.AvaCircle
-private val colorAvaCircleRest = Colors.BarBorder
 private val colorCommentBack = Colors.Black
 private val colorComment = Colors.OliveMonochromic
 
 private val fontLabel = Fonts.ArchivoSemiBold
 private val fontComment = Fonts.ArchivoSemiBold
-
-private const val textPicLogoDescription = "[playlist logo pic]"
 
 private const val textLabel = "Мои комментарии"
 
@@ -108,22 +102,9 @@ private fun Main (
 			pic: Int
 		) {
 
-			Image (
-				painter = painterResource (pic),
-				contentDescription = textPicLogoDescription,
-				modifier = Modifier
-					.scale (29f/34f)
-
-					.clip (RoundedCornerShape (100))
-					.background (colorAvaCircleCorner)
-					.padding (1.75.dp)
-
-					.clip (RoundedCornerShape (100))
-					.background (colorAvaCircleRest)
-					.padding (1.75.dp)
-
-					.clip (RoundedCornerShape (100))
-					.size (34.dp)
+			Ava (
+				pic = pic,
+				size = 29f
 			)
 
 		}

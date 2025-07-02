@@ -28,11 +28,11 @@ import com.example.supercast.ui.pics.Pics
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.distinctive.spaces.Height
 
+import com.example.supercast.gui.components.global.mainlayer.avacirclemini.AvaCircleMini as Ava
+
 
 
 private val colorBack = Colors.Blocks
-private val colorAvaCircleCorner = Colors.AvaCircle
-private val colorAvaCircleRest = Colors.BarBorder
 private val colorTextAuthorName = Colors.PreWhite
 private val colorTextAuthorShortName = Colors.OliveMonochromic
 private val colorTextListeners = Colors.OliveMonochromic
@@ -41,7 +41,6 @@ private val fontCommon = Fonts.ArchivoSemiBold
 
 private val picArrow = Pics.ArrowCompactDownGreyLight
 
-private const val textPicAuthorDescription = "[ava pic]"
 private const val textPicArrowDescription = "[arrow pic]"
 
 private const val textSomeListen = "слушают"
@@ -97,18 +96,8 @@ private fun Author (
 		verticalAlignment = Alignment.CenterVertically
 	) {
 
-		Image (
-			painter = painterResource (pic),
-			contentDescription = textPicAuthorDescription,
-			modifier = Modifier
-				.clip (RoundedCornerShape (100))
-				.background (colorAvaCircleCorner)
-				.padding (1.75.dp)
-				.clip (RoundedCornerShape (100))
-				.background (colorAvaCircleRest)
-				.padding (1.75.dp)
-				.clip (RoundedCornerShape (100))
-				.size (34.dp)
+		Ava (
+			pic = pic
 		)
 
 		Column (

@@ -24,8 +24,8 @@ private val colorInfoBar = Colors.DarkGrey
 
 @Composable
 fun InfoBar (
-	left: String = "",
-	right: String = ""
+	left: String? = null,
+	right: String? = null
 ) {
 
 	Row (
@@ -36,7 +36,7 @@ fun InfoBar (
 			.padding (horizontal = 25.dp)
 	) {
 
-		if (left != "") {
+		if (left != null) {
 
 			ActionText (
 				text = left,
@@ -47,7 +47,7 @@ fun InfoBar (
 
 		Space (modifier = Modifier.weight (1f))
 
-		if (right != "") {
+		if (right != null) {
 
 			ActionText (
 				text = right,

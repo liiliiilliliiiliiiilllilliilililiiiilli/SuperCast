@@ -11,13 +11,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import kotlin.Int
 
 import com.example.supercast.ui.colors.Colors
 
-import com.example.supercast.gui.components.global.mainlayer.post.mainblock.top.Top
+import com.example.supercast.gui.components.global.mainlayer.post.mainblock.topbar.TopBar
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot.ContextPlot
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.audioplot.AudioPlot
+
+import com.example.supercast.gui.components.global.mainlayer.post._types_.TopBar
+import com.example.supercast.gui.components.global.mainlayer.post._types_.ContextPlot
+import com.example.supercast.gui.components.global.mainlayer.post._types_.AudioPlot
 
 
 
@@ -29,16 +32,9 @@ private val colorBack = Colors.BarBorder
 
 @Composable
 fun MainBlock (
-	Top_picAva: Int,
-	Top_textDitleName: String,
-	Top_textDitleTie: String,
-	Top_numStars: Int,
-	ContextPlot_orationData: Array <String>,
-	ContextPlot_attachmentData: Array <String>,
-	ContextPlot_isAttachmentOpenedState: Boolean,
-	ContextPlot_textPublicationFromWho: String,
-	ContextPlot_picsMedia: Array <Int>,
-	AudioPlot_data: Array <String>,
+	topBar: TopBar,
+	contextPlot: ContextPlot,
+	audioPlot: AudioPlot,
 	isPostInner: Boolean
 ) {
 
@@ -53,24 +49,24 @@ fun MainBlock (
 			.padding (bottom = paddingBottom)
 	) {
 
-		Top (
-			picAva = Top_picAva,
-			textDitleName = Top_textDitleName,
-			textDitleTie = Top_textDitleTie,
-			numStars = Top_numStars
+		TopBar (
+			picAva = topBar.pic,
+			textDitleName = topBar.textDitleName,
+			textDitleTie = topBar.textDitleTie,
+			numStars = topBar.numStars
 		)
 
 		ContextPlot (
-			orationData = ContextPlot_orationData,
-			attachmentData = ContextPlot_attachmentData,
-			isAttachmentOpened = !isPostInner && ContextPlot_isAttachmentOpenedState,
-			textPublicationFromWho = ContextPlot_textPublicationFromWho,
-			picsMedia = ContextPlot_picsMedia
+			orationData = contextPlot.orationData,
+			attachmentData = contextPlot.attachmentData,
+			isAttachmentOpened = !isPostInner && contextPlot.isAttachmentOpenedState,
+			textPublicationFromWho = contextPlot.textPublicationFromWho,
+			picsMedia = contextPlot.picsMedia
 		)
 
 		AudioPlot (
-			type = AudioPlot_data [0],
-			data = AudioPlot_data [1]
+			type = audioPlot.data[0],
+			data = audioPlot.data[1]
 		)
 
 	}

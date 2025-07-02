@@ -1,4 +1,4 @@
-// Main page - Main layer - Face block - Voice
+// Home page - Main layer - Face block - Voice
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.voice
 

@@ -53,7 +53,7 @@ fun Gui () {
 //        SettingsNotificationsPage ()
 //        SettingsAboutPage ()
 //        SettingsFoldersPage ()
-        SettingsFoldersFolderPage ()
+//        SettingsFoldersFolderPage ()
 //        SettingsRecsSystemPage ()
 //        SettingsPlayerPage ()
 //        SettingsDownloadPage ()

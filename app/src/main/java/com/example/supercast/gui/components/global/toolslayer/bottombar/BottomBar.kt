@@ -120,6 +120,11 @@ private fun SeparatorsLayer () {
 @Composable
 private fun ButtonsLayer (destination: String) {
 
+    val picCollections = if (destination == "collections") picCollectionsLight else picCollectionsDark
+    val picMain = if (destination == "main") picPieLight else picPieDark
+    val picHome = if (destination == "home") picHomeLight else picHomeDark
+
+
     @Composable
     fun NavButton (
         pic: Int,
@@ -152,11 +157,6 @@ private fun ButtonsLayer (destination: String) {
     Row (
         modifier = Modifier.fillMaxSize ()
     ) {
-
-        val picCollections = if (destination == "collections") picCollectionsLight else picCollectionsDark
-        val picMain = if (destination == "main") picPieLight else picPieDark
-        val picHome = if (destination == "home") picHomeLight else picHomeDark
-
 
         NavButton (
             pic = picCollections,

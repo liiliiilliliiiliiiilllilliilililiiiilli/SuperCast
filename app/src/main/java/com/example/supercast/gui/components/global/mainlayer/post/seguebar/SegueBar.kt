@@ -12,10 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 import com.example.supercast.lib.Lib
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Width
+
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
 

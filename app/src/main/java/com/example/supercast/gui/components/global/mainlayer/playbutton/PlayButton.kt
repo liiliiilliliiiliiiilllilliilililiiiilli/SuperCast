@@ -5,12 +5,10 @@ package com.example.supercast.gui.components.global.mainlayer.playbutton
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.paint
@@ -60,25 +58,16 @@ fun PlayButton (
             Modifier
 
 
-    Box (
-        contentAlignment = Alignment.Center,
+    Image (
+        painter = painterResource (picTriangle),
+        contentDescription = textPicTriangleDescription,
         modifier = Modifier
             .clickable (onClick = {onPress ()})
             .clip (RoundedCornerShape (100))
-            .size ((37 * scale).dp)
-            .background (colorBack)
-            .then (modifier)
-
-    ) {
-
-        Image (
-            painter = painterResource (picTriangle),
-            contentDescription = textPicTriangleDescription,
-            modifier = Modifier
-                .size (19.dp)
-                .padding (start = 2.25.dp)
-        )
-
-    }
+            .background (colorBack) .then (modifier)
+            .padding (((37 * scale - 19)/2).dp)
+            .size (19.dp)
+            .padding (start = 2.25.dp)
+    )
 
 }

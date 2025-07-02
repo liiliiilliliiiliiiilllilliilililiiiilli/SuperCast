@@ -1,4 +1,4 @@
-// Main page - Main layer - Face block - Ditle
+// Home page - Main layer - Face block - Ditle
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.ditle
 

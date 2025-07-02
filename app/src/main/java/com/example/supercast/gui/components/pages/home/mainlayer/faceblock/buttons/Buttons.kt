@@ -1,4 +1,4 @@
-// Main page - Main layer - Face block - Buttons
+// Home page - Main layer - Face block - Buttons
 
 package com.example.supercast.gui.components.pages.home.mainlayer.faceblock.buttons
 
@@ -15,6 +15,7 @@ import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.distinctive.spaces.Width
+
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 import com.example.supercast.gui.components.global.mainlayer.circleopeneclosebuttonclosed.CircleOpenCloseButton_Closed
 import com.example.supercast.gui.components.global.mainlayer.circleactionbutton.CircleActionButton

@@ -11,7 +11,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.requiredHeight
+import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
@@ -32,6 +32,8 @@ import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
 
+import com.example.supercast.gui.components.global.mainlayer.avacirclemini.AvaCircleMini as Ava
+
 import com.example.supercast.gui.components.pages.settingsaccount._types_.Segue
 
 
@@ -39,8 +41,6 @@ import com.example.supercast.gui.components.pages.settingsaccount._types_.Segue
 private val colorBack = Colors.BarBorder
 private val colorSegue = Colors.PreWhite
 private val colorSegueValue = Colors.Grey
-private val colorAvaCircleCorner = Colors.AvaCircle
-private val colorAvaCircleRest = Colors.BarBorder
 private val colorSeparator = Colors.BarSeparator
 
 private val fontSegue = Fonts.ArchivoSemiBold
@@ -122,18 +122,9 @@ fun SeguesList (
 
 				else if (picValue != null) {
 
-					Image (
-						painter = painterResource (picValue),
-						contentDescription = textPicArrowDescription,
-						modifier = Modifier
-							.requiredHeight (41.dp)
-							.clip (RoundedCornerShape (100))
-							.background (colorAvaCircleCorner)
-							.padding (1.75.dp)
-							.clip (RoundedCornerShape (100))
-							.background (colorAvaCircleRest)
-							.padding (1.75.dp)
-							.clip (RoundedCornerShape (100))
+					Ava (
+						pic = picValue,
+						modifier = Modifier.requiredSize (41.dp)
 					)
 
 					Width (14)

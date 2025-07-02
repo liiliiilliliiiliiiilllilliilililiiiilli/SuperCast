@@ -1,4 +1,4 @@
-// Collections page - Main layer - My playlists
+// Collections page - Main layer - My playlists block
 
 package com.example.supercast.gui.components.pages.collections.mainlayer.myplaylists
 
