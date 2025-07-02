@@ -1,4 +1,4 @@
-// There all the color definitions are contained :]
+// All project's color definitions
 
 package com.example.supercast.ui.colors
 

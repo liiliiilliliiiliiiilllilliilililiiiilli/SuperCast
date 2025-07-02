@@ -6,8 +6,6 @@ package com.example.supercast.gui.components.pages.settingsdownload._types_
 
 class Segue (
 
-	val isDivider: Boolean = false,
-
 	val title: String = "",
 	val onPress: (() -> Unit)? = {},
 
@@ -16,7 +14,9 @@ class Segue (
 
 	val editText: EditText? = null,
 	val switcher: Switcher? = null,
-	val scrollChooseList: ScrollChooseList? = null
+	val scrollChooseList: ScrollChooseList? = null,
+
+	val isDivider: Boolean = false
 
 )
 

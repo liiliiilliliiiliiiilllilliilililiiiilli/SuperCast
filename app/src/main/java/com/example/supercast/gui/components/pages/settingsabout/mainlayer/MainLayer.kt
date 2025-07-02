@@ -15,10 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
-import com.example.supercast.gui.components.pages.settingsabout.mainlayer.label.Label
-import com.example.supercast.gui.components.pages.settingsabout.mainlayer.segueslist.SeguesList
-
-import com.example.supercast.gui.components.pages.settingsabout._types_.Segue
 
 
 
@@ -42,30 +38,6 @@ fun MainLayer () {
             Height (11/2)
 
         }
-
-    }
-
-}
-
-
-
-@Composable
-private fun SeguesBlock (
-    label: String,
-    vararg segues: Segue
-) {
-
-    Column (
-        modifier = Modifier.fillMaxWidth ()
-    ) {
-
-        Label (
-            text = label
-        )
-
-        SeguesList (
-            segues = segues
-        )
 
     }
 

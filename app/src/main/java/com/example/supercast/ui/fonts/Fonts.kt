@@ -1,4 +1,4 @@
-// There all the fonts are contained :]
+// All project's fonts
 
 package com.example.supercast.ui.fonts
 

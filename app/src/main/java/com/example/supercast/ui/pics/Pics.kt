@@ -1,4 +1,4 @@
-// There all the pics are contained :]
+// All project's pics
 
 package com.example.supercast.ui.pics
 
@@ -10,15 +10,15 @@ class Pics () {
 
     companion object {
 
-        val __image_1__ = R.drawable.__image_1__
-        val __image_2__ = R.drawable.__image_2__
-        val __image_3__ = R.drawable.__image_3__
-        val __image_4__ = R.drawable.__image_4__
-        val __image_5__ = R.drawable.__image_5__
-        val __image_6__ = R.drawable.__image_6__
-        val __image_7__ = R.drawable.__image_7__
-        val __image_8__ = R.drawable.__image_8__
-        val __image_9__ = R.drawable.__image_9__
+        val __image_1__ = R.drawable._image_1_
+        val __image_2__ = R.drawable._image_2_
+        val __image_3__ = R.drawable._image_3_
+        val __image_4__ = R.drawable._image_4_
+        val __image_5__ = R.drawable._image_5_
+        val __image_6__ = R.drawable._image_6_
+        val __image_7__ = R.drawable._image_7_
+        val __image_8__ = R.drawable._image_8_
+        val __image_9__ = R.drawable._image_9_
 
         val ArrowCompactDownGreyLight = R.drawable.arrow_compact_down_grey_light
         val ArrowGoGreyLight = R.drawable.arrow_go_grey_light
@@ -26,7 +26,7 @@ class Pics () {
         val BrushBigGreyLight = R.drawable.brush_big_grey_light
         val BrushSmallGreyLight = R.drawable.brush_small_grey_light
         val BurgerGrey = R.drawable.burger_grey
-        val CheckDoubleLight = R.drawable.check_double_light
+        val CheckTwoLight = R.drawable.check_2_light
         val CheckGreenLight = R.drawable.check_green_light
         val CheckLight = R.drawable.check_light
         val CitationGreenLight = R.drawable.citation_green_light
@@ -34,12 +34,12 @@ class Pics () {
         val CollectionsLight = R.drawable.collections_light
         val CommentGreenLight = R.drawable.comment_green_light
         val DollarGrey = R.drawable.dollar_grey
-        val DotsDoubleGreyLight = R.drawable.dots_double_grey_light
+        val DotsTwoGreyLight = R.drawable.dots_2_grey_light
         val DownloadGrey = R.drawable.download_grey
         val ExpandArrowsGrey = R.drawable.expand_arrows_grey
         val FilterGreyLight = R.drawable.filter_grey_light
         val FolderGrey = R.drawable.folder_grey
-        val FolderWhite = R.drawable.folder_whight
+        val FolderWhite = R.drawable.folder_white
         val HomeDark = R.drawable.home_dark
         val HomeLight = R.drawable.home_light
         val InfoGrey = R.drawable.info_grey

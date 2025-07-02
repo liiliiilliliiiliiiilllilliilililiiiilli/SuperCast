@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
+
 import com.example.supercast.gui.components.pages.settingsplayer.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settingsplayer.mainlayer.segueslist.SeguesList
 

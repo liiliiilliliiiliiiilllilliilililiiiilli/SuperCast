@@ -4,9 +4,9 @@ package com.example.supercast.gui.components.global.mainlayer.post.mainblock.aud
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -15,11 +15,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 import com.example.supercast.lib.Lib
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
+
 import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButton as PlayButtonComponent
 
 

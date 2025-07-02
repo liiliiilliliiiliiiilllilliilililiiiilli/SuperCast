@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
+
 import com.example.supercast.gui.components.pages.settingsnotifications.mainlayer.label.Label
 import com.example.supercast.gui.components.pages.settingsnotifications.mainlayer.segueslist.SeguesList
 
@@ -44,255 +45,205 @@ private const val textSegueSubscriptionsDescription = "Выход новых п�
 private const val textSegueSubscriptionsSpecialEvents = "Особые события одписок"
 private const val textSegueSubscriptionsSpecialEventsDescription = "Пики популярности авторов и их долгожданные публикации"
 
+private var dataScrollChooseList = arrayOf (
+    ScrollChooseListVariant (
+        text = "00:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "00:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "01:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "01:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "02:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "02:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "03:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "03:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "04:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "04:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "05:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "05:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "06:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "06:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "07:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "07:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "08:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "08:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "09:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "09:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "10:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "10:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "11:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "11:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "12:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "12:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "13:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "13:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "14:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "14:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "15:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "15:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "16:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "16:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "17:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "17:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "18:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "18:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "19:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "19:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "20:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "20:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "21:00",
+        isChosen = true
+    ),
+    ScrollChooseListVariant (
+        text = "21:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "22:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "22:30",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "23:00",
+        isChosen = false
+    ),
+    ScrollChooseListVariant (
+        text = "23:30",
+        isChosen = false
+    )
+)
+
 
 
 @Composable
 fun MainLayer () {
-
-    var scrollChooseList = arrayOf (
-
-        ScrollChooseListVariant (
-            text = "00:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "00:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "01:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "01:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "02:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "02:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "03:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "03:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "04:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "04:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "05:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "05:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "06:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "06:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "07:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "07:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "08:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "08:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "09:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "09:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "10:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "10:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "11:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "11:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "12:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "12:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "13:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "13:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "14:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "14:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "15:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "15:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "16:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "16:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "17:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "17:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "18:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "18:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "19:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "19:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "20:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "20:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "21:00",
-            isChosen = true
-        ),
-
-        ScrollChooseListVariant (
-            text = "21:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "22:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "22:30",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "23:00",
-            isChosen = false
-        ),
-
-        ScrollChooseListVariant (
-            text = "23:30",
-            isChosen = false
-        )
-
-    )
-
 
     Box (
         modifier = Modifier.fillMaxSize ()
@@ -322,7 +273,7 @@ fun MainLayer () {
                     Segue (
                         title = textSegueRegularConclusionMoment,
                         scrollChooseList = ScrollChooseList (
-                            chooses = scrollChooseList,
+                            chooses = dataScrollChooseList,
                             onChoose = {}
                         )
                     )

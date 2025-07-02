@@ -9,9 +9,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
+
 import com.example.supercast.gui.components.pages.collectionsmyhistory.toolslayer.topbar.TopBar
-import com.example.supercast.gui.components.pages.collectionsmyhistory.toolslayer.bottombar.BottomBar
 import com.example.supercast.gui.components.pages.collectionsmyhistory.mainlayer.MainLayer as MainLayerComponent
+import com.example.supercast.gui.components.pages.collectionsmyhistory.toolslayer.bottombar.BottomBar
 
 
 

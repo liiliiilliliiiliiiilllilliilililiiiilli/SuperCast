@@ -1,4 +1,4 @@
-// Settings page - Subscriptions folders folder page - Main layer - FAQ comment
+// Settings page - Subscriptions folder page - Main layer - FAQ comment
 
 package com.example.supercast.gui.components.pages.settingsfoldersfolder.mainlayer.faqcomment
 

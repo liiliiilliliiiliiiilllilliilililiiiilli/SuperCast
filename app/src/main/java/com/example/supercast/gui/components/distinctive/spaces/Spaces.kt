@@ -1,14 +1,14 @@
-// Global components - Distinctive - Spaces  •  This is for layout creation proccess shortcutting :]
-//
-// Presented components have diffirent type variants (functions are overloaded)
+// Global components - Distinctive - Spaces
+
+// These components are for layout creation proccess shortcutting
 
 package com.example.supercast.gui.components.distinctive.spaces
 
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.width
 import androidx.compose.ui.unit.dp
 
 import androidx.compose.foundation.layout.Spacer

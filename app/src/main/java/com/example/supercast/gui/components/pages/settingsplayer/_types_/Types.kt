@@ -6,11 +6,10 @@ package com.example.supercast.gui.components.pages.settingsplayer._types_
 
 class Segue (
 
-	val isDivider: Boolean? = false,
-
 	val title: String = "",
 	val switcher: Switcher? = null,
-	val scrollChooseList: ScrollChooseList? = null
+	val scrollChooseList: ScrollChooseList? = null,
+	val isDivider: Boolean? = false
 
 )
 

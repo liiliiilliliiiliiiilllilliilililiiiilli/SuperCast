@@ -1,4 +1,4 @@
-// Settings page - Subscriptions folders folder page
+// Settings page - Subscriptions folder page
 
 package com.example.supercast.gui.pages.settingsfoldersfolder
 
@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
+
 import com.example.supercast.gui.components.pages.settingsfoldersfolder.toolslayer.topbar.TopBar
 import com.example.supercast.gui.components.pages.settingsfoldersfolder.mainlayer.MainLayer as MainLayerComponent
 

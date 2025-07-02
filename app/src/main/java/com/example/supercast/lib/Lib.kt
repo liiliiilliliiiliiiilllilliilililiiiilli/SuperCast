@@ -1,4 +1,4 @@
-// There all the project helpful functions are contained :]
+// All project's helpful functions
 
 package com.example.supercast.lib
 

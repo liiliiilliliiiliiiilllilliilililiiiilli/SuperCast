@@ -1,4 +1,4 @@
-// Settings page - Subscriptions folders folder page - Main layer - Liner
+// Settings page - Subscriptions folder page - Main layer - Liner
 
 package com.example.supercast.gui.components.pages.settingsfoldersfolder.mainlayer.liner
 

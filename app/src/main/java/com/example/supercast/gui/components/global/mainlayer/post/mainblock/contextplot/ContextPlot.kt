@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
+
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot.oration.Oration
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot.attachment.Attachment
 

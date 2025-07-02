@@ -3,8 +3,8 @@
 package com.example.supercast.gui.components.pages.collectionsmycomments.mainlayer.commentsoap.mainblock.actions
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -14,11 +14,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
 
 import com.example.supercast.lib.Lib
+
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 
 import com.example.supercast.gui.components.distinctive.spaces.Space
 import com.example.supercast.gui.components.distinctive.spaces.Width
+
 import com.example.supercast.gui.components.global.mainlayer.starsbutton.StarsButton
 
 

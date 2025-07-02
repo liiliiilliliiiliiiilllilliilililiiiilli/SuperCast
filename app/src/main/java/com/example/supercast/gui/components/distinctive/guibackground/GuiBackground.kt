@@ -1,4 +1,6 @@
-// Global components - Distinctive - Gui background  •  This is App's Gui's background, it's stretched with the color themes :]
+// Global components - Distinctive - Gui background
+
+// This is App's Gui's background, it's stretched with the color themes
 
 package com.example.supercast.gui.components.distinctive.guibackground
 
