@@ -35,6 +35,7 @@ class Colors () {
         val Olive = Color (0xFF8B9E80)
         val OliveLight = Color (0xFFBDC7B7)
         val OliveMonochromic = Color (0xFF9E9E9E)
+        val PreBlack = Color (0xFF111111)
         val PreWhite = Color (0xFFF2F2F2)
         val Sun = Color (0xFF9E9780)
         val SunTransparency = Color (0xBF9E9780)

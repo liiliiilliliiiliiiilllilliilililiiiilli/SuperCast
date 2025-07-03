@@ -1,4 +1,4 @@
-// Settings page - About page - _types_
+// Settings page - About page - Types
 
 package com.example.supercast.gui.components.pages.settingsabout._types_
 

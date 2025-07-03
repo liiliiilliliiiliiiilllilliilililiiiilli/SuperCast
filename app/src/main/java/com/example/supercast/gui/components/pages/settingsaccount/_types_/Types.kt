@@ -1,4 +1,4 @@
-// Settings page - Account page - _types_
+// Settings page - Account page - Types
 
 package com.example.supercast.gui.components.pages.settingsaccount._types_
 

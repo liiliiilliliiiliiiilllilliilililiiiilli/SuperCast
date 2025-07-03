@@ -14,6 +14,7 @@ import androidx.compose.ui.draw.paint
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
@@ -34,6 +35,7 @@ private const val textPicTriangleDescription = "[triangle pic]"
 
 @Composable
 fun PlayButton (
+    size: Float = 37f,
     scale: Float = 1f,
     isLight: Boolean = false,
     pic: Int? = null,
@@ -62,6 +64,7 @@ fun PlayButton (
         painter = painterResource (picTriangle),
         contentDescription = textPicTriangleDescription,
         modifier = Modifier
+            .scale (size / 37f)
             .clickable (onClick = {onPress ()})
             .clip (RoundedCornerShape (100))
             .background (colorBack) .then (modifier)

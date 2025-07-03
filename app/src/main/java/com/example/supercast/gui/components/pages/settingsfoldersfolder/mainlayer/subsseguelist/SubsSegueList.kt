@@ -5,7 +5,6 @@ package com.example.supercast.gui.components.pages.settingsfoldersfolder.mainlay
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -88,7 +87,6 @@ private fun ActionsPanel () {
 
 	Row (
 		verticalAlignment = Alignment.CenterVertically,
-		horizontalArrangement = Arrangement.SpaceBetween,
 		modifier = Modifier
 			.fillMaxWidth ()
 			.padding (horizontal = 32.dp, vertical = 14.dp)
@@ -101,6 +99,8 @@ private fun ActionsPanel () {
 			pic = picActionChoose,
 			onPress = {}
 		)
+
+		Space (modifier = Modifier.weight (1f))
 
 		ActionText (
 			isReversed = true,

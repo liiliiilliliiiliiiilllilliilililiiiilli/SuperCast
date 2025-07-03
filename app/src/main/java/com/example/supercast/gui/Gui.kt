@@ -31,6 +31,8 @@ import com.example.supercast.gui.pages.myhistory.MyHistory as MyHistoryPage
 import com.example.supercast.gui.pages.myplaylists.MyPlaylists as MyPlaylistsPage
 import com.example.supercast.gui.pages.mycomments.MyComments as MyCommentsPage
 
+import com.example.supercast.gui.pages.playlist.Playlist as PlaylistPage
+
 
 
 @Preview (
@@ -65,6 +67,8 @@ fun Gui () {
 //        MyHistoryPage ()
 //        MyPlaylistsPage ()
 //        MyCommentsPage ()
+
+//        PlaylistPage ()
 
     }
 

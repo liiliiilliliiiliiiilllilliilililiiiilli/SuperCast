@@ -1,4 +1,4 @@
-// Settings page - Download page - _types_
+// Settings page - Download page - Types
 
 package com.example.supercast.gui.components.pages.settingsdownload._types_
 

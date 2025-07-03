@@ -21,14 +21,16 @@ class Pics () {
         val __image_9__ = R.drawable._image_9_
 
         val ArrowCompactDownGreyLight = R.drawable.arrow_compact_down_grey_light
+        val ArrowGoBlack = R.drawable.arrow_go_black
         val ArrowGoGreyLight = R.drawable.arrow_go_grey_light
         val BellGrey = R.drawable.bell_grey
+        val BookmarkSavedOlive = R.drawable.bookmark_saved_olive
         val BrushBigGreyLight = R.drawable.brush_big_grey_light
         val BrushSmallGreyLight = R.drawable.brush_small_grey_light
         val BurgerGrey = R.drawable.burger_grey
-        val CheckTwoLight = R.drawable.check_2_light
         val CheckGreenLight = R.drawable.check_green_light
         val CheckLight = R.drawable.check_light
+        val CheckTwoLight = R.drawable.check_2_light
         val CitationGreenLight = R.drawable.citation_green_light
         val CollectionsDark = R.drawable.collections_dark
         val CollectionsLight = R.drawable.collections_light

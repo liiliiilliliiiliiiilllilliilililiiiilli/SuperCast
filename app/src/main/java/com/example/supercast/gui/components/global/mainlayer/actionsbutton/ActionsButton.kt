@@ -5,11 +5,10 @@ package com.example.supercast.gui.components.global.mainlayer.actionsbutton
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
@@ -34,22 +33,16 @@ fun ActionsButton (
     modifier: Modifier = Modifier
 ) {
 
-    Box (
-        contentAlignment = Alignment.Center,
+    Image (
+        painter = painterResource (picDots),
+        contentDescription = textPicDotsDescription,
         modifier = Modifier
             .then (modifier)
-            .clip (RoundedCornerShape (100))
-            .size (25.dp, 35.dp)
-            .background (colorBack)
             .clickable (onClick = {onPress ()})
-    ) {
-
-        Image (
-            painter = painterResource (picDots),
-            contentDescription = textPicDotsDescription,
-            modifier = Modifier.size (15.dp)
-        )
-
-    }
+            .clip (RoundedCornerShape (100))
+            .background (colorBack)
+            .padding (vertical = 10.dp, horizontal = 5.dp)
+            .size (15.dp)
+    )
 
 }

@@ -1,4 +1,4 @@
-// Settings page - Recommendation system page - _types_
+// Settings page - Recommendation system page - Types
 
 package com.example.supercast.gui.components.pages.settingsrecssystem._types_
 

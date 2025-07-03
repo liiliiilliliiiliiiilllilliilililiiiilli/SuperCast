@@ -88,7 +88,6 @@ private fun ActionsPanel () {
 
 	Row (
 		verticalAlignment = Alignment.CenterVertically,
-		horizontalArrangement = Arrangement.SpaceBetween,
 		modifier = Modifier
 			.fillMaxWidth ()
 			.padding (horizontal = 31.dp, vertical = 17.dp)
@@ -101,6 +100,8 @@ private fun ActionsPanel () {
 			pic = picActionChange,
 			onPress = {}
 		)
+
+		Space (modifier = Modifier.weight (1f))
 
 		ActionText (
 			isReversed = true,
