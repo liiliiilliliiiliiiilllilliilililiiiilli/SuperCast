@@ -25,6 +25,7 @@ class Colors () {
         val Citate = Color (0xFF2A2F27)
         val DarkGrey = Color (0xFF404040)
         val DeleteText = Color (0xFFBF4949)
+        val DitleDark = Color (0xFF4A4A4A)
         val Divider = Color (0xFF121212)
         val FaqBack = Color (0xFF0D0D0D)
         val FaqText = Color (0xFF545454)

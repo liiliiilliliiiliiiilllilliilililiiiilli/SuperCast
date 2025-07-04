@@ -1,6 +1,6 @@
-// Playlist page - Tools layer - Top bar
+// Publication page - Tools layer - Top bar
 
-package com.example.supercast.gui.components.pages.playlist.toolslayer.topbar
+package com.example.supercast.gui.components.pages.publication.toolslayer.topbar
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.offset
@@ -24,7 +24,7 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 private val picArrow = Pics.ArrowCompactDownGreyLight
 private val picSearch = Pics.SearchGrey
 
-private const val textLabel = "Плейлист"
+private const val textLabel = "Публикация"
 
 
 

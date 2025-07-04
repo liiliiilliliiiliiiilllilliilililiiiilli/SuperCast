@@ -18,9 +18,7 @@ import com.example.supercast.gui.components.global.mainlayer.post.mainblock.topb
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot.ContextPlot
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.audioplot.AudioPlot
 
-import com.example.supercast.gui.components.global.mainlayer.post._types_.TopBar
-import com.example.supercast.gui.components.global.mainlayer.post._types_.ContextPlot
-import com.example.supercast.gui.components.global.mainlayer.post._types_.AudioPlot
+import com.example.supercast.gui.components.global.mainlayer.post._types_.MainBlock
 
 
 
@@ -32,11 +30,13 @@ private val colorBack = Colors.BarBorder
 
 @Composable
 fun MainBlock (
-	topBar: TopBar,
-	contextPlot: ContextPlot,
-	audioPlot: AudioPlot,
-	isPostInner: Boolean
+	data: MainBlock
 ) {
+
+	val topBar = data.topBar
+	val contextPlot = data.contextPlot
+	val audioPlot = data.audioPlot
+	val isPostInner = data.isPostInner
 
 	val paddingBottom = if (postHasAttachments) 4.dp else 0.dp
 
@@ -64,10 +64,14 @@ fun MainBlock (
 			picsMedia = contextPlot.picsMedia
 		)
 
-		AudioPlot (
-			type = audioPlot.data[0],
-			data = audioPlot.data[1]
-		)
+		if (false) {
+
+			AudioPlot (
+				type = audioPlot.data[0],
+				data = audioPlot.data[1]
+			)
+
+		}
 
 	}
 

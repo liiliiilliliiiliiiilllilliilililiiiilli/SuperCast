@@ -1,11 +1,11 @@
-// Playlist page - Tools layer - Top bar
+// Play queue page - Tools layer - Top bar
 
-package com.example.supercast.gui.components.pages.playlist.toolslayer.topbar
+package com.example.supercast.gui.components.pages.playqueue.toolslayer.topbar
 
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.offset
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -24,7 +24,7 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 private val picArrow = Pics.ArrowCompactDownGreyLight
 private val picSearch = Pics.SearchGrey
 
-private const val textLabel = "Плейлист"
+private const val textLabel = "Очередь"
 
 
 
@@ -44,7 +44,6 @@ fun TopBar () {
                 pic = picArrow,
                 picSize = 14.75.dp,
                 isCircle = true,
-                rotate = 90f,
                 onPress = {},
                 modifier = Modifier.offset (y = 0.75.dp)
             )

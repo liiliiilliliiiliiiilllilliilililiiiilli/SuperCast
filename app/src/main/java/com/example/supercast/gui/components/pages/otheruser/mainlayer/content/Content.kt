@@ -22,7 +22,7 @@ private val postData_1 = Post (
     infoBar = InfoBar (
         right = "27.03.2020"
     ),
-    mainblock = MainBlock (
+    mainBlock = MainBlock (
         topBar = TopBar (
             pic = Pics.__image_8__,
             textDitleTie = "Sydney Sweeny",
@@ -52,7 +52,7 @@ private val postData_2 = Post (
         left = "Редактировано",
         right = "Только что"
     ),
-    mainblock = MainBlock (
+    mainBlock = MainBlock (
         topBar = TopBar (
             pic = Pics.__image_9__,
             textDitleTie = "Джастин Ройланд",

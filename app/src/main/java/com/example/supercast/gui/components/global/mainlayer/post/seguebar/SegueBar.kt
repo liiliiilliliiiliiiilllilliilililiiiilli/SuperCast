@@ -20,6 +20,8 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
+import com.example.supercast.gui.components.global.mainlayer.post._types_.SegueBar
+
 
 
 private val colorCommentsLight = Colors.Olive
@@ -39,9 +41,12 @@ private const val textCitate = "Цитировать"
 
 @Composable
 fun SegueBar (
-	comments: Int,
-	citates: Int,
+	data: SegueBar
 ) {
+
+	val comments = data.comments
+	val citates = data.citates
+
 
 	val commentsNumFormatted = Lib.formatStarsNumber (comments)
 	val citatesNumFormatted = Lib.formatStarsNumber (citates)

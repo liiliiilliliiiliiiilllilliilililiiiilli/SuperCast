@@ -68,7 +68,7 @@ private val postData_1 = Post (
 	infoBar = InfoBar (
 		right = "2 днями ранее"
 	),
-	mainblock = MainBlock (
+	mainBlock = MainBlock (
 		topBar = TopBar (
 			pic = Pics.__image_5__,
 			textDitleTie = "Алина",

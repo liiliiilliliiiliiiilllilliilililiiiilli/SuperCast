@@ -19,33 +19,34 @@ import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
 @Composable
 fun Post (
     data: Post,
-    isInner: Boolean = false
+    isInner: Boolean = false,
+    modifier: Modifier = Modifier
 ) {
 
     val scale = if (isInner) 0.915f else 1f
 
+    val infoBar = data.infoBar
+    val mainBlock = data.mainBlock
+    val segueBar = data.segueBar
+
 
     Column (
         modifier = Modifier
+            .then (modifier)
             .fillMaxWidth ()
             .scale (scale)
     ) {
 
         InfoBar (
-            left = data.infoBar.left,
-            right = data.infoBar.right
+            data = infoBar
         )
 
         MainBlock (
-            topBar = data.mainblock.topBar,
-            contextPlot = data.mainblock.contextPlot,
-            audioPlot = data.mainblock.audioPlot,
-            isPostInner = data.mainblock.isPostInner
+            data = mainBlock
         )
 
         SegueBar (
-            comments = data.segueBar.comments,
-            citates = data.segueBar.citates
+            data = segueBar
         )
 
     }

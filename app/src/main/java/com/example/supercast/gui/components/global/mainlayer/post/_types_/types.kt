@@ -5,7 +5,7 @@ package com.example.supercast.gui.components.global.mainlayer.post._types_
 class Post (
 
 	val infoBar: InfoBar,
-	val mainblock: MainBlock,
+	val mainBlock: MainBlock,
 	val segueBar: SegueBar
 
 )
