@@ -1,6 +1,6 @@
-// Publication page - Main layer
+// Comment page - Main layer
 
-package com.example.supercast.gui.components.pages.publication.mainlayer
+package com.example.supercast.gui.components.pages.comment.mainlayer
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,10 +18,10 @@ import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 
-import com.example.supercast.gui.components.global.mainlayer.post.Post
+import com.example.supercast.gui.components.global.mainlayer.commentcontext.CommentContext
 import com.example.supercast.gui.components.global.mainlayer.liner.Liner as LinerComponent
-import com.example.supercast.gui.components.pages.publication.mainlayer.commentslist.CommentsList
-import com.example.supercast.gui.components.pages.publication.mainlayer.citateslist.CitatesList
+import com.example.supercast.gui.components.pages.comment.mainlayer.commentslist.CommentsList
+import com.example.supercast.gui.components.pages.comment.mainlayer.citateslist.CitatesList
 
 import com.example.supercast.gui.components.global.mainlayer.post._types_.*
 import com.example.supercast.gui.components.global.mainlayer.comment._types_.*
@@ -32,33 +32,18 @@ private val picFilter = Pics.FilterGreyLight
 
 private const val textButtonList = "Все"
 
-private val _dataContext_ = Post (
-    infoBar = InfoBar (
-        right = "2 днями ранее"
+private val _dataContext_ = Comment (
+    authorAva = Pics.__image_4__,
+    authorName = "Иисус",
+    publicationDate = 91234,
+
+    blab = Blab (
+        text = "Спасибо! Прекрасный фильм !"
     ),
-    mainBlock = MainBlock (
-        topBar = TopBar (
-            pic = Pics.__image_5__,
-            textDitleTie = "Алина",
-            textDitleName = "моя жизнь",
-            numStars = 101
-        ),
-        contextPlot = ContextPlot (
-            orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
-            attachmentData = arrayOf ("Media", ""),
-            isAttachmentOpenedState = false,
-            textPublicationFromWho = "Кто-то",
-            picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
-        ),
-        audioPlot = AudioPlot (
-            data = arrayOf ("", "")
-        ),
-        isPostInner = false
-    ),
-    segueBar = SegueBar (
-        comments = 19,
-        citates = 8
-    )
+
+    commentsNum = 519,
+    citatesNum = 1,
+    starsNum = 1173980
 )
 
 private val _dataComments_ = arrayOf (
@@ -301,9 +286,10 @@ fun MainLayer () {
 
             Height (11/2)
 
-            Post (
+            Height (14)
+
+            CommentContext (
                 data = _dataContext_,
-                isInner = false,
                 modifier = Modifier.padding (horizontal = 8.dp)
             )
 
