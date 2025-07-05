@@ -33,8 +33,11 @@ import com.example.supercast.gui.pages.mycomments.MyComments as MyCommentsPage
 
 import com.example.supercast.gui.pages.playlist.Playlist as PlaylistPage
 import com.example.supercast.gui.pages.playqueue.PlayQueue as PlayQueuePage
+
 import com.example.supercast.gui.pages.publication.Publication as PublicationPage
 import com.example.supercast.gui.pages.comment.Comment as CommentPage
+
+import com.example.supercast.gui.pages.podcast.Podcast as PodcastPage
 
 
 
@@ -70,11 +73,14 @@ fun Gui () {
 //        MyHistoryPage ()
 //        MyPlaylistsPage ()
 //        MyCommentsPage ()
-
+//
 //        PlaylistPage ()
 //        PlayQueuePage ()
+//
 //        PublicationPage ()
 //        CommentPage ()
+
+        PodcastPage ()
 
     }
 

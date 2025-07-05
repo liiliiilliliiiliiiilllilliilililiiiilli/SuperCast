@@ -1,4 +1,4 @@
-// Global components - Comment context - Types
+// Global components - MainLayer - Comment context - Types
 
 package com.example.supercast.gui.components.global.mainlayer.commentcontext._types_
 
@@ -15,23 +15,21 @@ class Comment (
 	val citatesNum: Int,
 	val starsNum: Int
 
-)
+) {
 
+	class Blab (
 
+		val text: String
 
-class Blab (
+	)
 
-	val text: String
+	class Voice (
 
-)
+		val audio: String,
+		val transcription: String,
+		val duration: Int,
+		val listensNum: Int
 
+	)
 
-
-class Voice (
-
-	val audio: String,
-	val transcription: String,
-	val duration: Int,
-	val listensNum: Int
-
-)
+}

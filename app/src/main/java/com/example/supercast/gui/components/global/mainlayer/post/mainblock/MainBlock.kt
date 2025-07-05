@@ -18,7 +18,7 @@ import com.example.supercast.gui.components.global.mainlayer.post.mainblock.topb
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.contextplot.ContextPlot
 import com.example.supercast.gui.components.global.mainlayer.post.mainblock.audioplot.AudioPlot
 
-import com.example.supercast.gui.components.global.mainlayer.post._types_.MainBlock
+import com.example.supercast.gui.components.global.mainlayer.post._types_.Post.MainBlock
 
 
 

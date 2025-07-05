@@ -20,7 +20,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
-import com.example.supercast.gui.components.global.mainlayer.post._types_.SegueBar
+import com.example.supercast.gui.components.global.mainlayer.post._types_.Post.SegueBar
 
 
 

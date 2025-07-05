@@ -20,9 +20,6 @@ import com.example.supercast.gui.components.pages.settingsnotifications.mainlaye
 import com.example.supercast.gui.components.pages.settingsnotifications.mainlayer.segueslist.SeguesList
 
 import com.example.supercast.gui.components.pages.settingsnotifications._types_.Segue
-import com.example.supercast.gui.components.pages.settingsnotifications._types_.Switcher
-import com.example.supercast.gui.components.pages.settingsnotifications._types_.ScrollChooseList
-import com.example.supercast.gui.components.pages.settingsnotifications._types_.ScrollChooseListVariant
 
 
 
@@ -46,195 +43,195 @@ private const val textSegueSubscriptionsSpecialEvents = "Особые событ
 private const val textSegueSubscriptionsSpecialEventsDescription = "Пики популярности авторов и их долгожданные публикации"
 
 private var dataScrollChooseList = arrayOf (
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "00:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "00:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "01:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "01:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "02:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "02:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "03:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "03:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "04:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "04:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "05:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "05:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "06:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "06:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "07:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "07:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "08:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "08:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "09:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "09:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "10:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "10:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "11:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "11:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "12:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "12:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "13:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "13:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "14:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "14:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "15:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "15:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "16:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "16:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "17:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "17:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "18:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "18:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "19:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "19:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "20:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "20:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "21:00",
         isChosen = true
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "21:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "22:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "22:30",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "23:00",
         isChosen = false
     ),
-    ScrollChooseListVariant (
+    Segue.ScrollChooseList.ScrollChooseListVariant (
         text = "23:30",
         isChosen = false
     )
@@ -265,14 +262,14 @@ fun MainLayer () {
                     Segue (
                         title = textSegueRegularConclusion,
                         description = textSegueRegularConclusionDescription,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )
                     ),
                     Segue (
                         title = textSegueRegularConclusionMoment,
-                        scrollChooseList = ScrollChooseList (
+                        scrollChooseList = Segue.ScrollChooseList (
                             chooses = dataScrollChooseList,
                             onChoose = {}
                         )
@@ -286,7 +283,7 @@ fun MainLayer () {
                     Segue (
                         title = textSegueServiceNotifications,
                         description = textSegueServiceNotificationsDescription,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )
@@ -294,7 +291,7 @@ fun MainLayer () {
                     Segue (
                         title = textSegueMyChannel,
                         description = textSegueMyChannelDescription,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )
@@ -302,7 +299,7 @@ fun MainLayer () {
                     Segue (
                         title = textSegueMyChannelSpecialEvents,
                         description = textSegueMyChannelSpecialEventsDescription,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )
@@ -310,7 +307,7 @@ fun MainLayer () {
                     Segue (
                         title = textSegueMyCommentsSpecialEvents,
                         description = textSegueMyCommentsSpecialEventsDescription,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )
@@ -318,7 +315,7 @@ fun MainLayer () {
                     Segue (
                         title = textSegueSubscriptions,
                         description = textSegueSubscriptionsDescription,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )
@@ -326,7 +323,7 @@ fun MainLayer () {
                     Segue (
                         title = textSegueSubscriptionsSpecialEvents,
                         description = textSegueSubscriptionsSpecialEventsDescription,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )

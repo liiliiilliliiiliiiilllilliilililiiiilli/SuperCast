@@ -33,7 +33,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 import com.example.supercast.gui.components.global.mainlayer.post.Post
 
-import com.example.supercast.gui.components.global.mainlayer.post._types_.*
+import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
 
 
 
@@ -65,29 +65,29 @@ private const val textListingMedia = "из"
 
 
 private val postData_1 = Post (
-	infoBar = InfoBar (
+	infoBar = Post.InfoBar (
 		right = "2 днями ранее"
 	),
-	mainBlock = MainBlock (
-		topBar = TopBar (
+	mainBlock = Post.MainBlock (
+		topBar = Post.MainBlock.TopBar (
 			pic = Pics.__image_5__,
 			textDitleTie = "Алина",
 			textDitleName = "моя жизнь",
 			numStars = 101
 		),
-		contextPlot = ContextPlot (
+		contextPlot = Post.MainBlock.ContextPlot (
 			orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
 			attachmentData = arrayOf ("Media", ""),
 			isAttachmentOpenedState = false,
 			textPublicationFromWho = "Кто-то",
 			picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
 		),
-		audioPlot = AudioPlot (
+		audioPlot = Post.MainBlock.AudioPlot (
 			data = arrayOf ("", "")
 		),
 		isPostInner = true
 	),
-	segueBar = SegueBar (
+	segueBar = Post.SegueBar (
 		comments = 19,
 		citates = 8
 	)

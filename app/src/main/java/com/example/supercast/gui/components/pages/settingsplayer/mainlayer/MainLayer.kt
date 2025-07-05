@@ -20,9 +20,6 @@ import com.example.supercast.gui.components.pages.settingsplayer.mainlayer.label
 import com.example.supercast.gui.components.pages.settingsplayer.mainlayer.segueslist.SeguesList
 
 import com.example.supercast.gui.components.pages.settingsplayer._types_.Segue
-import com.example.supercast.gui.components.pages.settingsplayer._types_.Switcher
-import com.example.supercast.gui.components.pages.settingsplayer._types_.ScrollChooseList
-import com.example.supercast.gui.components.pages.settingsplayer._types_.ScrollChooseListVariant
 
 
 
@@ -62,17 +59,17 @@ fun MainLayer () {
                 segues = arrayOf (
                     Segue (
                         title = textSegueDefaultBitrate,
-                        scrollChooseList = ScrollChooseList (
+                        scrollChooseList = Segue.ScrollChooseList (
                             chooses = arrayOf (
-                                ScrollChooseListVariant (
+                               Segue.ScrollChooseList.ScrollChooseListVariant (
                                     text = textSegueChoose_kbs_1,
                                     isChosen = false
                                 ),
-                                ScrollChooseListVariant (
+                               Segue.ScrollChooseList.ScrollChooseListVariant (
                                     text = textSegueChoose_kbs_2,
                                     isChosen = false
                                 ),
-                                ScrollChooseListVariant (
+                               Segue.ScrollChooseList.ScrollChooseListVariant (
                                     text = textSegueChoose_kbs_3,
                                     isChosen = true
                                 )
@@ -82,17 +79,17 @@ fun MainLayer () {
                     ),
                     Segue (
                         title = textSegueDefaultPlayerType,
-                        scrollChooseList = ScrollChooseList (
+                        scrollChooseList = Segue.ScrollChooseList (
                             chooses = arrayOf (
-                                ScrollChooseListVariant (
+                               Segue.ScrollChooseList.ScrollChooseListVariant (
                                     text = textSegueChoose_PlayerType_1,
                                     isChosen = true
                                 ),
-                                ScrollChooseListVariant (
+                               Segue.ScrollChooseList.ScrollChooseListVariant (
                                     text = textSegueChoose_PlayerType_2,
                                     isChosen = false
                                 ),
-                                ScrollChooseListVariant (
+                               Segue.ScrollChooseList.ScrollChooseListVariant (
                                     text = textSegueChoose_PlayerType_3,
                                     isChosen = false
                                 )
@@ -105,14 +102,14 @@ fun MainLayer () {
                     ),
                     Segue (
                         title = textSeguePlayWithTurnedOffScreen,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )
                     ),
                     Segue (
                         title = textSeguePlayNextPodcastAfterEndOfPrevious,
-                        switcher = Switcher (
+                        switcher = Segue.Switcher (
                             state = false,
                             onPress = {}
                         )

@@ -18,39 +18,35 @@ class Segue (
 
 	val isDivider: Boolean = false
 
-)
+) {
 
+	class EditText (
 
+		var text: String,
+		val pic: Int
 
-class EditText (
+	)
 
-	var text: String,
-	val pic: Int
+	class Switcher (
 
-)
+		var state: Boolean
 
+	)
 
+	class ScrollChooseList (
 
-class Switcher (
+		val chooses: Array <ScrollChooseListVariant>,
+		val onChoose: () -> Unit
 
-	var state: Boolean
+	) {
 
-)
+		class ScrollChooseListVariant (
 
+			val text: String,
+			val isChosen: Boolean
 
+		)
 
-class ScrollChooseList (
+	}
 
-	val chooses: Array <ScrollChooseListVariant>,
-	val onChoose: () -> Unit
-
-)
-
-
-
-class ScrollChooseListVariant (
-
-	val text: String,
-	val isChosen: Boolean
-
-)
+}

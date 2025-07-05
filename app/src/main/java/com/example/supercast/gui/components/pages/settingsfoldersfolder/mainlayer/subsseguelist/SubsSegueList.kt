@@ -35,7 +35,6 @@ import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionTe
 import com.example.supercast.gui.components.global.mainlayer.avacirclemini.AvaCircleMini as Ava
 
 import com.example.supercast.gui.components.pages.settingsfoldersfolder._types_.SubSegue
-import com.example.supercast.gui.components.pages.settingsfoldersfolder._types_.Tie
 
 
 
@@ -125,7 +124,7 @@ private fun Subs (
 	fun Sub (
 		ava: Int,
 		name: String,
-		ties: Array <Tie>,
+		ties: Array <SubSegue.Tie>,
 		isOpened: Boolean,
 		toggleOpened: () -> Unit
 	) {

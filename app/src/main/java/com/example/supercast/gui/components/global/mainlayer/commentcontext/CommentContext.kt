@@ -1,4 +1,4 @@
-// Global components - Comment context
+// Global components - MainLayer - Comment context
 
 package com.example.supercast.gui.components.global.mainlayer.commentcontext
 

@@ -17,7 +17,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Space
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
-import com.example.supercast.gui.components.global.mainlayer.post._types_.InfoBar
+import com.example.supercast.gui.components.global.mainlayer.post._types_.Post.InfoBar
 
 
 

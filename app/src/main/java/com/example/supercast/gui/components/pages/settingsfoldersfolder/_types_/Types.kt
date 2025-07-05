@@ -10,12 +10,12 @@ class SubSegue (
 	val name: String,
 	val ties: Array <Tie>
 
-)
+) {
 
+	class Tie (
 
+		val title: String
 
-class Tie (
+	)
 
-	val title: String
-
-)
+}

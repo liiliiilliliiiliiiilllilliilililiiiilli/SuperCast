@@ -1,4 +1,4 @@
-// Global components - Comment context - Ditle
+// Global components - MainLayer - Comment context - Ditle
 
 package com.example.supercast.gui.components.global.mainlayer.commentcontext.ditle
 

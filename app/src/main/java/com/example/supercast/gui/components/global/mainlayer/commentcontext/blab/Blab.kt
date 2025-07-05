@@ -1,4 +1,4 @@
-// Global components - Comment context - Blab
+// Global components - MainLayer - Comment context - Blab
 
 package com.example.supercast.gui.components.global.mainlayer.commentcontext.blab
 
@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.sp
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 
-import com.example.supercast.gui.components.global.mainlayer.commentcontext._types_.Blab
+import com.example.supercast.gui.components.global.mainlayer.commentcontext._types_.Comment.Blab
 
 
 

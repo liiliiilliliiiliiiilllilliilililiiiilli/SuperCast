@@ -23,8 +23,8 @@ import com.example.supercast.gui.components.global.mainlayer.liner.Liner as Line
 import com.example.supercast.gui.components.pages.publication.mainlayer.commentslist.CommentsList
 import com.example.supercast.gui.components.pages.publication.mainlayer.citateslist.CitatesList
 
-import com.example.supercast.gui.components.global.mainlayer.post._types_.*
-import com.example.supercast.gui.components.global.mainlayer.comment._types_.*
+import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
+import com.example.supercast.gui.components.global.mainlayer.comment._types_.Comment
 
 
 
@@ -33,29 +33,29 @@ private val picFilter = Pics.FilterGreyLight
 private const val textButtonList = "Все"
 
 private val _dataContext_ = Post (
-    infoBar = InfoBar (
+    infoBar = Post.InfoBar (
         right = "2 днями ранее"
     ),
-    mainBlock = MainBlock (
-        topBar = TopBar (
+    mainBlock = Post.MainBlock (
+        topBar = Post.MainBlock.TopBar (
             pic = Pics.__image_5__,
             textDitleTie = "Алина",
             textDitleName = "моя жизнь",
             numStars = 101
         ),
-        contextPlot = ContextPlot (
+        contextPlot = Post.MainBlock.ContextPlot (
             orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
             attachmentData = arrayOf ("Media", ""),
             isAttachmentOpenedState = false,
             textPublicationFromWho = "Кто-то",
             picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
         ),
-        audioPlot = AudioPlot (
+        audioPlot = Post.MainBlock.AudioPlot (
             data = arrayOf ("", "")
         ),
         isPostInner = false
     ),
-    segueBar = SegueBar (
+    segueBar = Post.SegueBar (
         comments = 19,
         citates = 8
     )
@@ -67,7 +67,7 @@ private val _dataComments_ = arrayOf (
         authorName = "кто-то",
         publicationDate = 918234,
 
-        blab = Blab (
+        blab = Comment.Blab (
             text = "Классно всё передали... Не возможно остановить технологии и Дурова П.В.тем более... Цифровой мир не из бежен... Его необходимо изучать... Присоединяюсь к команде Дурова и я- простой обычный пользователь Телеграмм... Сегодня это стало возможно... Благодарю ,Павел,за вашу щедрость.... Всё только начинается"
         ),
 
@@ -80,7 +80,7 @@ private val _dataComments_ = arrayOf (
         authorName = "Павел Дуров",
         publicationDate = 912348,
 
-        voice = Voice (
+        voice = Comment.Voice (
             audio = "",
             transcription = "Почему я не согласен с тем, что сказано в этом подкасте хоть. Хоть и я был бы не проти того, чтобы очень сильно запустить аппарат",
             duration = 25,
@@ -96,7 +96,7 @@ private val _dataComments_ = arrayOf (
         authorName = "Иисус",
         publicationDate = 91234,
 
-        blab = Blab (
+        blab = Comment.Blab (
             text = "Спасибо! Прекрасный фильм !"
         ),
 
@@ -109,7 +109,7 @@ private val _dataComments_ = arrayOf (
         authorName = "Анна",
         publicationDate = 9821374,
 
-        blab = Blab (
+        blab = Comment.Blab (
             text = "Читал книгу 'Код Дурова', Дуров далеко не идеальный персонаж, но тот факт, как он бился за свободу, как он посылал собачек, в официальных ответах фсб, которые требовали удалить группы Навального, или группы Евромайдана, как он спорил c ..."
         ),
 
@@ -122,7 +122,7 @@ private val _dataComments_ = arrayOf (
         authorName = "Александра",
         publicationDate = 328764,
 
-        voice = Voice (
+        voice = Comment.Voice (
             audio = "",
             transcription = "Вау, как красиво] Мне понравилось слушать!",
             duration = 25,
@@ -137,141 +137,141 @@ private val _dataComments_ = arrayOf (
 
 private val _dataCitates_ = arrayOf (
     Post (
-        infoBar = InfoBar (
+        infoBar = Post.InfoBar (
             right = "2 днями ранее"
         ),
-        mainBlock = MainBlock (
-            topBar = TopBar (
+        mainBlock = Post.MainBlock (
+            topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
                 textDitleTie = "Алина",
                 textDitleName = "моя жизнь",
                 numStars = 101
             ),
-            contextPlot = ContextPlot (
+            contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
                 attachmentData = arrayOf ("Media", ""),
                 isAttachmentOpenedState = false,
                 textPublicationFromWho = "Кто-то",
                 picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
             ),
-            audioPlot = AudioPlot (
+            audioPlot = Post.MainBlock.AudioPlot (
                 data = arrayOf ("", "")
             ),
             isPostInner = true
         ),
-        segueBar = SegueBar (
+        segueBar = Post.SegueBar (
             comments = 19,
             citates = 8
         )
     ),
     Post (
-        infoBar = InfoBar (
+        infoBar = Post.InfoBar (
             right = "2 днями ранее"
         ),
-        mainBlock = MainBlock (
-            topBar = TopBar (
+        mainBlock = Post.MainBlock (
+            topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
                 textDitleTie = "Алина",
                 textDitleName = "моя жизнь",
                 numStars = 101
             ),
-            contextPlot = ContextPlot (
+            contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
                 attachmentData = arrayOf ("Media", ""),
                 isAttachmentOpenedState = false,
                 textPublicationFromWho = "Кто-то",
                 picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
             ),
-            audioPlot = AudioPlot (
+            audioPlot = Post.MainBlock.AudioPlot (
                 data = arrayOf ("", "")
             ),
             isPostInner = true
         ),
-        segueBar = SegueBar (
+        segueBar = Post.SegueBar (
             comments = 19,
             citates = 8
         )
     ),
     Post (
-        infoBar = InfoBar (
+        infoBar = Post.InfoBar (
             right = "2 днями ранее"
         ),
-        mainBlock = MainBlock (
-            topBar = TopBar (
+        mainBlock = Post.MainBlock (
+            topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
                 textDitleTie = "Алина",
                 textDitleName = "моя жизнь",
                 numStars = 101
             ),
-            contextPlot = ContextPlot (
+            contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
                 attachmentData = arrayOf ("Media", ""),
                 isAttachmentOpenedState = false,
                 textPublicationFromWho = "Кто-то",
                 picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
             ),
-            audioPlot = AudioPlot (
+            audioPlot = Post.MainBlock.AudioPlot (
                 data = arrayOf ("", "")
             ),
             isPostInner = true
         ),
-        segueBar = SegueBar (
+        segueBar = Post.SegueBar (
             comments = 19,
             citates = 8
         )
     ),
     Post (
-        infoBar = InfoBar (
+        infoBar = Post.InfoBar (
             right = "2 днями ранее"
         ),
-        mainBlock = MainBlock (
-            topBar = TopBar (
+        mainBlock = Post.MainBlock (
+            topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
                 textDitleTie = "Алина",
                 textDitleName = "моя жизнь",
                 numStars = 101
             ),
-            contextPlot = ContextPlot (
+            contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
                 attachmentData = arrayOf ("Media", ""),
                 isAttachmentOpenedState = false,
                 textPublicationFromWho = "Кто-то",
                 picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
             ),
-            audioPlot = AudioPlot (
+            audioPlot = Post.MainBlock.AudioPlot (
                 data = arrayOf ("", "")
             ),
             isPostInner = true
         ),
-        segueBar = SegueBar (
+        segueBar = Post.SegueBar (
             comments = 19,
             citates = 8
         )
     ),
     Post (
-        infoBar = InfoBar (
+        infoBar = Post.InfoBar (
             right = "2 днями ранее"
         ),
-        mainBlock = MainBlock (
-            topBar = TopBar (
+        mainBlock = Post.MainBlock (
+            topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
                 textDitleTie = "Алина",
                 textDitleName = "моя жизнь",
                 numStars = 101
             ),
-            contextPlot = ContextPlot (
+            contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
                 attachmentData = arrayOf ("Media", ""),
                 isAttachmentOpenedState = false,
                 textPublicationFromWho = "Кто-то",
                 picsMedia = arrayOf (Pics.__image_7__, Pics.__image_8__)
             ),
-            audioPlot = AudioPlot (
+            audioPlot = Post.MainBlock.AudioPlot (
                 data = arrayOf ("", "")
             ),
             isPostInner = true
         ),
-        segueBar = SegueBar (
+        segueBar = Post.SegueBar (
             comments = 19,
             citates = 8
         )

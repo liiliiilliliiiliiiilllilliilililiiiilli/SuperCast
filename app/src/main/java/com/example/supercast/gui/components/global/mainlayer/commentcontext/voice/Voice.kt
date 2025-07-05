@@ -1,4 +1,4 @@
-// Global components - Comment context - Voice
+// Global components - MainLayer - Comment context - Voice
 
 package com.example.supercast.gui.components.global.mainlayer.commentcontext.voice
 
@@ -21,7 +21,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButton as PlayButtonComponent
 import com.example.supercast.gui.components.global.mainlayer.translatebutton.TranslateButton as TranslateButtonComponent
 
-import com.example.supercast.gui.components.global.mainlayer.commentcontext._types_.Voice
+import com.example.supercast.gui.components.global.mainlayer.commentcontext._types_.Comment.Voice
 
 
 

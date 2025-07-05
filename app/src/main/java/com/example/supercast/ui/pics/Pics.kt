@@ -47,6 +47,7 @@ class Pics () {
         val InfoGrey = R.drawable.info_grey
         val LinkDark = R.drawable.link_dark
         val NoteGrey = R.drawable.note_grey
+        val NotelistGrey = R.drawable.notelist_grey
         val PaletteGrey = R.drawable.palette_grey
         val PenMagicGreenDark = R.drawable.pen_magic_green_dark
         val PenMagicGreenLight = R.drawable.pen_magic_green_light

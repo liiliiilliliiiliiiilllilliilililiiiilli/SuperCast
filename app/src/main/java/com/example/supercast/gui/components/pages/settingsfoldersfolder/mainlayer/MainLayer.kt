@@ -24,7 +24,6 @@ import com.example.supercast.gui.components.pages.settingsfoldersfolder.mainlaye
 import com.example.supercast.gui.components.pages.settingsfoldersfolder.mainlayer.subsseguelist.SubsSegueList
 
 import com.example.supercast.gui.components.pages.settingsfoldersfolder._types_.SubSegue
-import com.example.supercast.gui.components.pages.settingsfoldersfolder._types_.Tie
 
 
 
@@ -38,7 +37,7 @@ private val dataSubsSegueList = arrayOf (
         ava = Pics.__image_1__,
         name = "Anny",
         ties = arrayOf (
-            Tie (
+            SubSegue.Tie (
                 title = "Все"
             )
         )
@@ -47,19 +46,19 @@ private val dataSubsSegueList = arrayOf (
         ava = Pics.__image_2__,
         name = "Леви",
         ties = arrayOf (
-            Tie (
+            SubSegue.Tie (
                 title = "Путешествия"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Идеи"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Основное"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Пузыри"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Голубой"
             )
         )
@@ -68,28 +67,28 @@ private val dataSubsSegueList = arrayOf (
         ava = Pics.__image_3__,
         name = "аниме-тян",
         ties = arrayOf (
-            Tie (
+            SubSegue.Tie (
                 title = "Основное"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Тесты"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Треки"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Желе"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Свобода"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Фильмы"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Цвета"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Мое любимое"
             )
         )
@@ -98,7 +97,7 @@ private val dataSubsSegueList = arrayOf (
         ava = Pics.__image_4__,
         name = "медуза",
         ties = arrayOf (
-            Tie (
+            SubSegue.Tie (
                 title = "Что-то"
             )
         )
@@ -107,31 +106,31 @@ private val dataSubsSegueList = arrayOf (
         ava = Pics.__image_5__,
         name = "li",
         ties = arrayOf (
-            Tie (
+            SubSegue.Tie (
                 title = "Все"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Изобретения"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Идеи"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Жидкости"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Синий цвет"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Пришельцы"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Вода"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Космос"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Океан"
             )
         )
@@ -140,28 +139,28 @@ private val dataSubsSegueList = arrayOf (
         ava = Pics.__image_6__,
         name = "рыбка",
         ties = arrayOf (
-            Tie (
+            SubSegue.Tie (
                 title = "Океан"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Потоки"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Капли"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Лимны"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Космос"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Сокровища"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Магия"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Цели"
             )
         )
@@ -170,13 +169,13 @@ private val dataSubsSegueList = arrayOf (
         ava = Pics.__image_7__,
         name = "космический котик",
         ties = arrayOf (
-            Tie (
+            SubSegue.Tie (
                 title = "Синий"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Вода"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Космос"
             )
         )
@@ -185,16 +184,16 @@ private val dataSubsSegueList = arrayOf (
         ava = Pics.__image_8__,
         name = "кто-то",
         ties = arrayOf (
-            Tie (
+            SubSegue.Tie (
                 title = "Космический корабль"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Путешествия"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Осьминоги"
             ),
-            Tie (
+            SubSegue.Tie (
                 title = "Космос"
             )
         )

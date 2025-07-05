@@ -11,31 +11,31 @@ class Segue (
 	val switcher: Switcher? = null,
 	val scrollChooseList: ScrollChooseList? = null
 
-)
+) {
+
+	class Switcher (
+
+		var state: Boolean,
+		val onPress: () -> Unit,
+
+		)
 
 
 
-class Switcher (
+	class ScrollChooseList (
 
-	var state: Boolean,
-	val onPress: () -> Unit,
+		val chooses: Array <ScrollChooseListVariant>,
+		val onChoose: () -> Unit
 
-)
+	) {
 
+		class ScrollChooseListVariant (
 
+			val text: String,
+			val isChosen: Boolean
 
-class ScrollChooseList (
+		)
 
-	val chooses: Array <ScrollChooseListVariant>,
-	val onChoose: () -> Unit
+	}
 
-)
-
-
-
-class ScrollChooseListVariant (
-
-	val text: String,
-	val isChosen: Boolean
-
-)
+}
