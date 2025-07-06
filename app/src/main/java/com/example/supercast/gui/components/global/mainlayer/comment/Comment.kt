@@ -2,13 +2,18 @@
 
 package com.example.supercast.gui.components.global.mainlayer.comment
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
+
+import com.example.supercast.ui.colors.Colors
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 import com.example.supercast.gui.components.distinctive.spaces.Width
@@ -25,8 +30,24 @@ import com.example.supercast.gui.components.global.mainlayer.comment._types_.Com
 
 @Composable
 fun Comment (
-    data: Comment
+    isContext: Boolean = false,
+    data: Comment,
+    modifier: Modifier = Modifier
 ) {
+
+    val modifierIsContext =
+
+        if (isContext) {
+
+            Modifier
+                .clip (RoundedCornerShape (14.dp))
+                .background (color = Colors.Blocks)
+        }
+
+        else
+
+            Modifier
+
 
     val ava = data.authorAva
     val name = data.authorName
@@ -40,7 +61,11 @@ fun Comment (
 
     Row (
         modifier = Modifier
+            .then (modifier)
             .fillMaxWidth ()
+
+            .then (modifierIsContext)
+
             .padding (top = 11.dp, bottom = 11.dp, start = 14.dp, end = 5.dp)
     ) {
 
@@ -70,14 +95,14 @@ fun Comment (
                 )
 
             }
-
-            else if (voice != null) {
-
-                Voice (
-                    data = voice
-                )
-
-            }
+//
+//            else if (voice != null) {
+//
+//                Voice (
+//                    data = voice
+//                )
+//
+//            }
 
             Height (8)
 

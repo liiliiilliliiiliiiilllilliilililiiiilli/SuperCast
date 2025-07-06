@@ -23,6 +23,7 @@ class Pics () {
         val ArrowCompactDownGreyLight = R.drawable.arrow_compact_down_grey_light
         val ArrowGoBlack = R.drawable.arrow_go_black
         val ArrowGoGreyLight = R.drawable.arrow_go_grey_light
+        val ArrowsExpandOlive = R.drawable.arrows_expand_olive
         val BellGrey = R.drawable.bell_grey
         val BookmarkSavedOlive = R.drawable.bookmark_saved_olive
         val BrushBigGreyLight = R.drawable.brush_big_grey_light
@@ -51,6 +52,7 @@ class Pics () {
         val PaletteGrey = R.drawable.palette_grey
         val PenMagicGreenDark = R.drawable.pen_magic_green_dark
         val PenMagicGreenLight = R.drawable.pen_magic_green_light
+        val PenOrdinaryBlack = R.drawable.pen_ordinary_black
         val PenOrdinaryGreenDark = R.drawable.pen_ordinary_green_dark
         val PenOrdinaryGrey = R.drawable.pen_ordinary_grey
         val PenOrdinaryGreyLight = R.drawable.pen_ordinary_grey_light
@@ -58,17 +60,20 @@ class Pics () {
         val PieLight = R.drawable.pie_light
         val PlanetGrey = R.drawable.planet_grey
         val PlusSharpGreen = R.drawable.plus_sharp_green
+        val PlusSharpGreyLight = R.drawable.plus_sharp_grey_light
         val PlusSharpOlive = R.drawable.plus_sharp_olive
         val PlusSmoothDark = R.drawable.plus_smooth_dark
         val PlusSmoothLight = R.drawable.plus_smooth_light
         val QrCodeDark = R.drawable.qr_code_dark
         val RobotGgrey = R.drawable.robot_grey
         val SearchGrey = R.drawable.search_grey
+        val SearchLime = R.drawable.search_lime
         val SettingsAdjustmentsGrey = R.drawable.settings_adjustments_grey
         val SettingsWheelLight = R.drawable.settings_wheel_light
         val StarDark = R.drawable.star_dark
         val StarGrey = R.drawable.star_grey
         val StarLight = R.drawable.star_light
+        val TapGreySark = R.drawable.tap_grey_dark
         val TranslateGreenLight = R.drawable.translate_green_light
         val TrashGreyLight = R.drawable.trash_grey_light
         val TrianglePlayDark = R.drawable.triangle_play_dark

@@ -3,13 +3,16 @@
 package com.example.supercast.gui.components.pages.podcast.mainlayer.playerblock
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 
-import com.example.supercast.gui.components.pages.podcast.mainlayer.playerblock.player.Player as PlayerComponent
-import com.example.supercast.gui.components.pages.podcast.mainlayer.playerblock.reactions.Reactions as ReactionsComponent
+import com.example.supercast.gui.components.distinctive.spaces.Height
 
-import com.example.supercast.gui.components.pages.podcast._types_.Player
-import com.example.supercast.gui.components.pages.podcast._types_.Reactions
+import com.example.supercast.gui.components.pages.podcast.mainlayer.playerblock.player.Player
+import com.example.supercast.gui.components.pages.podcast.mainlayer.playerblock.reactions.Reactions
+
+import com.example.supercast.gui.components.pages.podcast._types_.*
 
 
 
@@ -19,13 +22,17 @@ fun PlayerBlock (
 	reactions: Reactions
 ) {
 
-	Column () {
+	Column (
+		modifier = Modifier.fillMaxWidth ()
+	) {
 
-		PlayerComponent (
+		Player (
 			data = player
 		)
 
-		ReactionsComponent (
+		Height (12)
+
+		Reactions (
 			data = reactions
 		)
 

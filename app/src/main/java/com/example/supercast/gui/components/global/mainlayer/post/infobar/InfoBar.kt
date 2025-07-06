@@ -17,7 +17,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Space
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
-import com.example.supercast.gui.components.global.mainlayer.post._types_.Post.InfoBar
+import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
 
 
 
@@ -27,7 +27,7 @@ private val colorInfoBar = Colors.DarkGrey
 
 @Composable
 fun InfoBar (
-	data: InfoBar
+	data: Post.InfoBar
 ) {
 
 	val left = data.left

@@ -18,7 +18,7 @@ import com.example.supercast.ui.pics.Pics
 
 import com.example.supercast.gui.components.distinctive.spaces.Height
 
-import com.example.supercast.gui.components.global.mainlayer.commentcontext.CommentContext
+import com.example.supercast.gui.components.global.mainlayer.comment.Comment
 import com.example.supercast.gui.components.global.mainlayer.liner.Liner as LinerComponent
 import com.example.supercast.gui.components.pages.comment.mainlayer.commentslist.CommentsList
 import com.example.supercast.gui.components.pages.comment.mainlayer.citateslist.CitatesList
@@ -288,7 +288,8 @@ fun MainLayer () {
 
             Height (14)
 
-            CommentContext (
+            Comment (
+                isContext = true,
                 data = _dataContext_,
                 modifier = Modifier.padding (horizontal = 8.dp)
             )

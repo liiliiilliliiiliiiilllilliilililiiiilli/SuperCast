@@ -1,4 +1,4 @@
-// Global components - MainLayer - Comment - Types
+// Global components - Main layer - Comment - Types
 
 package com.example.supercast.gui.components.global.mainlayer.comment._types_
 

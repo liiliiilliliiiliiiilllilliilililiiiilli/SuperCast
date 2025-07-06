@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.sp
 import com.example.supercast.ui.colors.Colors
 import com.example.supercast.ui.fonts.Fonts
 
-import com.example.supercast.gui.components.global.mainlayer.comment._types_.Comment.Blab
+import com.example.supercast.gui.components.global.mainlayer.comment._types_.Comment
 
 
 
@@ -25,7 +25,7 @@ val fontBlab = Fonts.ArchivoSemiBold
 
 @Composable
 fun Blab (
-	data: Blab
+	data: Comment.Blab
 ) {
 
 	val text = data.text

@@ -20,7 +20,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 
 import com.example.supercast.gui.components.global.mainlayer.actiontext.ActionText
 
-import com.example.supercast.gui.components.global.mainlayer.post._types_.Post.SegueBar
+import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
 
 
 
@@ -41,7 +41,7 @@ private const val textCitate = "Цитировать"
 
 @Composable
 fun SegueBar (
-	data: SegueBar
+	data: Post.SegueBar
 ) {
 
 	val comments = data.comments

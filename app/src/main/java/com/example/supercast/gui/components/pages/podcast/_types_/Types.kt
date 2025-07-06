@@ -2,43 +2,51 @@
 
 package com.example.supercast.gui.components.pages.podcast._types_
 
-import com.example.supercast.gui.components.global.mainlayer.commentcontext._types_.Comment
+import com.example.supercast.gui.components.global.mainlayer.comment._types_.Comment
 import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
 
 
 
 class Player (
 
-	content: Content,
-	credits: Credits
+	val content: Content,
+	val credits: Credits
 
 ) {
 
 	class Content (
 
-		ditle: Ditle,
-		track: Track,
-		preview: Preview
+		val ditle: Ditle,
+		val preview: Preview,
+		val track: Track
 
 	) {
 
 		class Ditle (
 
-			title: String,
-			stage: String
+			val title: String,
+			val stage: String
 
 		)
 
 		class Track (
 
-			totalDuration: Int,
-			currentPosition: Int
+			val totalDuration: Int,
+			val currentPosition: Int
 
 		)
 
 		class Preview (
 
-			data: String
+			val data: Array <Bubble>
+
+		)
+
+		class Bubble (
+
+			val speaker: String,
+			val speakerRole: String,
+			val speech: String
 
 		)
 
@@ -46,40 +54,40 @@ class Player (
 
 	class Credits (
 
-		creator: Creator,
-		chaatters: Chatters,
-		stats: Stats,
-		description: Description
+		val creator: Creator,
+		val chatters: Chatters,
+		val stats: Stats,
+		val description: Description
 
 	) {
 
 		class Creator (
 
-			ava: Int,
-			tie: String,
-			name: String,
-			listeners: Int,
-			isSubscribed: Boolean
+			val ava: Int,
+			val tie: String,
+			val name: String,
+			val listeners: Int,
+			val isSubscribed: Boolean
 
 		)
 
 		class Chatters (
 
-			num: Int,
-			avas: Array <Int>
+			val num: Int,
+			val avas: Array <Int>
 
 		)
 
 		class Stats (
 
-			stars: Int,
-			listenes: Int
+			val stars: Int,
+			val listenes: Int
 
 		)
 
 		class Description (
 
-			text: String
+			val text: String
 
 		)
 
@@ -91,8 +99,8 @@ class Player (
 
 class Reactions (
 
-	whichOpened: String,
-	comments: Array <Comment>,
-	citates: Array <Post>,
+	val whichOpened: String,
+	val comments: (Array <Comment>)? = null,
+	val citates: (Array <Post>)? = null
 
 )

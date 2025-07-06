@@ -2,6 +2,7 @@
 
 package com.example.supercast.gui.components.pages.podcast.mainlayer.similarposts
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -18,13 +19,17 @@ fun SimilarPosts (
 	posts: Array <Post>
 ) {
 
-	posts.forEach {post ->
+	Column {
 
-		Post (
-			data = post,
-			isInner = false,
-			modifier = Modifier.padding (4.dp)
-		)
+		posts.forEach {post ->
+
+			Post (
+				data = post,
+				isInner = false,
+				modifier = Modifier.padding (4.dp)
+			)
+
+		}
 
 	}
 

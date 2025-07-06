@@ -80,7 +80,7 @@ fun Gui () {
 //        PublicationPage ()
 //        CommentPage ()
 
-        PodcastPage ()
+//        PodcastPage ()
 
     }
 

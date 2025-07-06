@@ -21,7 +21,7 @@ import com.example.supercast.gui.components.distinctive.spaces.Width
 import com.example.supercast.gui.components.global.mainlayer.playbutton.PlayButton as PlayButtonComponent
 import com.example.supercast.gui.components.global.mainlayer.translatebutton.TranslateButton as TranslateButtonComponent
 
-import com.example.supercast.gui.components.global.mainlayer.comment._types_.Comment.Voice
+import com.example.supercast.gui.components.global.mainlayer.comment._types_.Comment
 
 
 
@@ -37,7 +37,7 @@ private const val textListeners = "прослушиваний"
 
 @Composable
 fun Voice (
-	data: Voice
+	data: Comment.Voice
 ) {
 
 	val audio = data.audio
@@ -91,7 +91,7 @@ fun Voice (
 
 
 @Composable
-fun PlayButton () {
+private fun PlayButton () {
 
 	val onPress = {}
 
@@ -105,7 +105,7 @@ fun PlayButton () {
 
 
 @Composable
-fun TranslateButton () {
+private fun TranslateButton () {
 
 	val onPress = {}
 

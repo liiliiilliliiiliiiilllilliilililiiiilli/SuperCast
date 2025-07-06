@@ -23,7 +23,7 @@ import com.example.supercast.gui.components.pages.podcast.mainlayer.liner.Liner
 import com.example.supercast.gui.components.pages.podcast.mainlayer.similarposts.SimilarPosts
 
 import com.example.supercast.gui.components.pages.podcast._types_.*
-import com.example.supercast.gui.components.global.mainlayer.commentcontext._types_.Comment
+import com.example.supercast.gui.components.global.mainlayer.comment._types_.Comment
 import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
 
 
@@ -31,38 +31,47 @@ import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
 private val _dataPlayer_ = Player (
     content = Player.Content (
         ditle = Player.Content.Ditle (
-            title = "",
-            stage = ""
+            title = "Как побеждать (всегда).",
+            stage = "Предисловие"
         ),
         track = Player.Content.Track (
-            totalDuration = 5,
-            currentPosition = 25
+            totalDuration = 34501,
+            currentPosition = 5901
         ),
         preview = Player.Content.Preview (
-            data = ""
+            data = arrayOf (
+                Player.Content.Bubble (
+                    speaker = "Георгий Долгих",
+                    speakerRole = "интервьюер",
+                    speech = "Why do wte use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at ..s layout. The point of  using Lorem Ipsum is that it has a more-or-less normal distribution of  letters, as opposed to using 'Content here, content here', making it  look like readable English. Many desktop publishing packages and web  page editors now use Lorem Ipsum as their default model text, and a  search for 'lorem ipsum' will uncover many web sites still in their  infancy. Various versions have evolved over the years, sometimes by  accident, sometimes on purpose (injected humour and the like)."
+                ),
+                Player.Content.Bubble (
+                    speaker = "Павел Дуров",
+                    speakerRole = "приглашенный",
+                    speech = "Why do we use it?\nIt is a long established fact that a reader will be distracted"
+                )
+            )
         )
     ),
     credits = Player.Credits (
         creator = Player.Credits.Creator (
             ava = Pics.__image_8__,
-            tie = "",
-            name = "",
-            listeners = 368101,
+            tie = "подкасты",
+            name = "Юрий Дудь",
+            listeners = 57,
             isSubscribed = false
         ),
-        chaatters = Player.Credits.Chatters (
-            num = 8,
+        chatters = Player.Credits.Chatters (
+            num = 4,
             avas = arrayOf (
                 Pics.__image_1__,
                 Pics.__image_2__,
-                Pics.__image_3__,
-                Pics.__image_4__,
-                Pics.__image_5__,
+                Pics.__image_3__
             )
         ),
         stats = Player.Credits.Stats (
-            stars = 128,
-            listenes = 101
+            stars = 57525,
+            listenes = 30491
         ),
         description = Player.Credits.Description (
             text = ""
@@ -450,8 +459,6 @@ fun MainLayer () {
         ) {
 
             Height (11/2)
-
-            Height (25)
 
             PlayerBlock (
                 player = _dataPlayer_,
