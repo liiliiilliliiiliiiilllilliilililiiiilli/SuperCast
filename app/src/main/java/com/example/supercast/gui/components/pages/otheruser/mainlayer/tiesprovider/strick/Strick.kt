@@ -36,13 +36,13 @@ import com.example.supercast.gui.components.global.mainlayer.descriptionbutton.D
 
 private const val isDescriptionOpened_defaultState = false
 
-private val colorListenersCounter = Colors.Grey
+private val colorAudience = Colors.Grey
 private val colorStrickBack = Colors.BarBorder
 private val colorStrickCorner = Colors.TieBarBackground
 private val colorTextDescription = Colors.Text
 
 private val fontDescription = Fonts.ArimoRegular
-private val fontListenersCounter = Fonts.ArchivoSemiBold
+private val fontAudience = Fonts.ArchivoSemiBold
 
 private val picCheck = Pics.CheckLight
 
@@ -60,7 +60,7 @@ private const val textDescription = "В этом разделе я расска�
 @Composable
 fun Strick () {
 
-    val listenersNum = 9
+    val audience = 9
 
     val (isOpened, setIsOpened) = remember {mutableStateOf (isDescriptionOpened_defaultState)}
 
@@ -83,8 +83,8 @@ fun Strick () {
 
         Width (23)
 
-        ListenersCounter (
-            listenersNum = listenersNum,
+        Audience (
+            num = audience,
             modifier = Modifier.weight (1f)
         )
 
@@ -156,19 +156,19 @@ private fun SubscriptionButton () {
 
 
 @Composable
-private fun ListenersCounter (
-    listenersNum: Int,
+private fun Audience (
+    num: Int,
     modifier: Modifier = Modifier
 ) {
 
-    val text = "$listenersNum $textListeners"
+    val text = "$num $textListeners"
 
 
     Text (
         text = text,
         fontSize = 15.sp,
-        color = colorListenersCounter,
-        fontFamily = fontListenersCounter,
+        color = colorAudience,
+        fontFamily = fontAudience,
         modifier = modifier
     )
 

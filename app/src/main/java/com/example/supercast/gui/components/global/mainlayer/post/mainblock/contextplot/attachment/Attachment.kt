@@ -56,7 +56,7 @@ private const val textPicMediaDescription = "[media pic]"
 private const val textPicTriangleDescription = "[triangle pic]"
 private const val textPublication = "Публикация"
 private const val textPublicationFrom = "Публикация от "
-private const val textSomeMedia = "вложений"
+private const val textMedia = "вложений"
 
 private const val textComment = "Комментарий"
 private const val textCommentFrom = "Комментарий от "
@@ -71,9 +71,9 @@ private val postData_1 = Post (
 	mainBlock = Post.MainBlock (
 		topBar = Post.MainBlock.TopBar (
 			pic = Pics.__image_5__,
-			textDitleTie = "Алина",
-			textDitleName = "моя жизнь",
-			numStars = 101
+			name = "Алина",
+			tie = "моя жизнь",
+			stars = 101
 		),
 		contextPlot = Post.MainBlock.ContextPlot (
 			orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
@@ -99,7 +99,7 @@ private val postData_1 = Post (
 //private const val Post_2_InfoBar_right = "Час назад"
 //private val Post_2_MainBlock_Top_picAva = Pics.__image_3__
 //private const val Post_2_MainBlock_Top_textDitleName = "Anny"
-//private const val Post_2_MainBlock_Top_textDitleTie = "существую"
+//private const val Post_2_MainBlock_Top_tie = "существую"
 //private const val Post_2_MainBlock_Top_numStars = 5100
 //private val Post_2_MainBlock_ContextPlot_orationData = arrayOf (
 //	"Па́вел Вале́рьевич Ду́ров — российский предприниматель в  сфере информационных технологий, основатель социальной сети «ВКонтакте» и кроссплатформенного мессенджера Telegram."
@@ -251,7 +251,7 @@ private fun Media (
 	val mediaCount = pics.size
 	val mediaCountFormatted = Lib.formatStarsNumber (mediaCount)
 
-	val textMediaCount = "$mediaCountFormatted $textSomeMedia"
+	val textMediaCount = "$mediaCountFormatted $textMedia"
 
 	val borderRadiusTopEnd = if (isOpened) 12.dp else 6.dp
 	val borderRadiusBottomEnd = if (isOpened) 12.dp else 6.dp

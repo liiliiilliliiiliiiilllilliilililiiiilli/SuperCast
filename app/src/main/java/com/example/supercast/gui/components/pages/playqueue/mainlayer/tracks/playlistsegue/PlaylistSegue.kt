@@ -39,8 +39,6 @@ private val picExpand = Pics.ExpandArrowsGrey
 private const val textPicLogoDescription = "[logo pic]"
 private const val textPicExpandDescription = "[open pic]"
 
-private const val textSomeTracks = "треков"
-
 
 
 @Composable

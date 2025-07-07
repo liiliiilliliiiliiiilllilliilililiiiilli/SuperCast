@@ -33,8 +33,8 @@ import com.example.supercast.gui.components.pages.podcast._types_.Player
 
 
 
-private val colorCreatorDark = Colors.Grey
-private val colorCreatorLight = Colors.PreWhite
+private val colorCreatorSecondary = Colors.Grey
+private val colorCreatorPrimary = Colors.PreWhite
 private val colorSubscribeButtonBack = Colors.Button
 
 private val fontCreator = Fonts.ArchivoBold
@@ -54,13 +54,13 @@ fun Creator (
 	val ava = data.ava
 	val tie = data.tie
 	val name = data.name
-	val listeners = Lib.formatStarsNumber (data.listeners)
+	val audience = Lib.formatStarsNumber (data.audience)
 	val isSubscribed = data.isSubscribed
 
 
 	Row (
 		verticalAlignment = Alignment.CenterVertically,
-		modifier = Modifier.padding (start = 32.dp, top = 1.dp, bottom = 8.dp)
+		modifier = Modifier.padding (top = 1.dp, bottom = 8.dp, start = 32.dp)
 	) {
 
 		Ava (
@@ -72,7 +72,7 @@ fun Creator (
 		Ditle (
 			tie = tie,
 			name = name,
-			listeners = listeners
+			audience = audience
 		)
 
 		Width (11)
@@ -105,7 +105,7 @@ private fun Ava (
 private fun Ditle (
 	tie: String,
 	name: String,
-	listeners: String
+	audience: String
 ) {
 
 	Column (
@@ -115,7 +115,7 @@ private fun Ditle (
 		Text (
 			text = tie,
 			fontSize = 14.5.sp,
-			color = colorCreatorDark,
+			color = colorCreatorSecondary,
 			fontFamily = fontCreator
 		)
 
@@ -124,16 +124,16 @@ private fun Ditle (
 		Text (
 			text = name,
 			fontSize = 20.sp,
-			color = colorCreatorLight,
+			color = colorCreatorPrimary,
 			fontFamily = fontCreator
 		)
 
 		Height (5)
 
 		Text (
-			text = listeners,
+			text = audience,
 			fontSize = 14.5.sp,
-			color = colorCreatorDark,
+			color = colorCreatorSecondary,
 			fontFamily = fontCreator
 		)
 

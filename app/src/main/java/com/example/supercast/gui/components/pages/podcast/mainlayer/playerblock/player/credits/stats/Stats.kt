@@ -23,11 +23,11 @@ import com.example.supercast.gui.components.pages.podcast._types_.Player
 
 
 
-private val colorListenes = Colors.DitleDark
+private val colorListens = Colors.DitleDark
 
-private val fontListenes = Fonts.ArchivoBold
+private val fontListens = Fonts.ArchivoBold
 
-private const val textSomeListenes = "прослушиваний"
+private const val textListens = "прослушиваний"
 
 
 
@@ -40,7 +40,7 @@ fun Stats (
 
 
 	val stars = data.stars
-	var listenes = "${Lib.formatStarsNumber(data.listenes)} $textSomeListenes"
+	var listens = "${Lib.formatStarsNumber(data.listens)} $textListens"
 
 
 	Row (
@@ -56,10 +56,10 @@ fun Stats (
 		Width (15)
 
 		Text (
-			text = listenes,
+			text = listens,
 			fontSize = 15.5.sp,
-			color = colorListenes,
-			fontFamily = fontListenes
+			color = colorListens,
+			fontFamily = fontListens
 		)
 
 	}

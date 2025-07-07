@@ -32,11 +32,11 @@ private val colorStats = Colors.Olive
 private val fontSpeech = Fonts.ArchivoSemiBold
 private val fontStats = Fonts.ArchivoSemiBold
 
-private const val textSomeListeners = "прослушиваний"
+private const val textListens = "прослушиваний"
 
 private const val textMain = "Мне бы не хотелось это больше когда-либо видеть. Я бы хотеля получить тою чего всегда так хотела - свободу творчества и покой. Я бы хотеля этоого больше всего в жизни."
 private const val textDuration = "5:42"
-private const val numListenes = 1468
+private const val numListens = 1468
 
 
 
@@ -61,7 +61,7 @@ fun Voice (
 		Medium (
 			speech = textMain,
 			duration = textDuration,
-			listenes = numListenes,
+			listens = numListens,
 			modifier = Modifier.weight (1f)
 		)
 
@@ -81,11 +81,11 @@ fun Voice (
 private fun Medium (
 	speech: String,
 	duration: String,
-	listenes: Int,
+	listens: Int,
 	modifier: Modifier
 ) {
 
-	val stats = "$duration  ·  ${Lib.formatStarsNumber(listenes)} $textSomeListeners"
+	val stats = "$duration  ·  ${Lib.formatStarsNumber(listens)} $textListens"
 
 
 	Column (

@@ -49,7 +49,7 @@ private const val textSegueDescriptionSmartPreload = "Временно пред�
 
 private val picEdit = Pics.PenOrdinaryGreyLight
 private val picArrowGo = Pics.ArrowGoGreyLight
-private val picArrowRight = Pics.ArrowCompactDownGreyLight
+private val picArrowRight = Pics.ArrowCompactDownGrey
 
 
 

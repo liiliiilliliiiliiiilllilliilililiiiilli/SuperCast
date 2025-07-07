@@ -73,7 +73,7 @@ fun NotificationsButton (
 			fontFamily = fontCounter,
 			textAlign = TextAlign.Center,
 			modifier = Modifier
-				.absoluteOffset (x = 24.5.dp, y = -5.dp)
+				.absoluteOffset (x = 24.5.dp, y = (-5).dp)
 				.size (16.5.dp)
 				.clip (RoundedCornerShape (100))
 				.background (color = colorCounterBack)

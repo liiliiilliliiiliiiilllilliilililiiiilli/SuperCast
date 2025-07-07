@@ -4,7 +4,6 @@ package com.example.supercast.gui.components.pages.settingsfolders.mainlayer.fol
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -50,7 +49,7 @@ private val picActionChange = Pics.PenOrdinaryGreyLight
 private val picActionCreate = Pics.PlusSharpOlive
 private val picFolderDark = Pics.FolderGrey
 private val picFolderLight = Pics.FolderWhite
-private val picArrow = Pics.ArrowCompactDownGreyLight
+private val picArrow = Pics.ArrowCompactDownGrey
 
 private const val textPicFolderDescription = "[folder pic]"
 private const val textPicArrowDescription = "[arrow pic]"

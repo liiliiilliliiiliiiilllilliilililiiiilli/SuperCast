@@ -54,8 +54,8 @@ fun Controller (
 	track: Player.Content.Track
 ) {
 
-	val totalDuration = track.totalDuration
-	val currentPosition = track.currentPosition
+	val totalDuration = track.duration
+	val currentPosition = track.current
 
 
 	Column (

@@ -200,7 +200,7 @@ private fun SegueComponent (
 				contentDescription = "[some pic]",
 				modifier = Modifier
 					.size (18.dp)
-					.rotate (if (rightPic == Pics.ArrowCompactDownGreyLight) {-90f} else {0f})
+					.rotate (if (rightPic == Pics.ArrowCompactDownGrey) {-90f} else {0f})
 			)
 
 		}

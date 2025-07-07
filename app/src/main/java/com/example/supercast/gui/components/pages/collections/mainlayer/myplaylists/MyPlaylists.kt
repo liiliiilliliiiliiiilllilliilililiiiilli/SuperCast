@@ -44,7 +44,7 @@ private val fontActions = Fonts.ArchivoSemiBold
 private const val textPicLogoDescription = "[logo pic]"
 
 private const val textLabel = "Мои плейлисты"
-private const val textSomeTracks = "треков"
+private const val textTracks = "треков"
 private const val textCreate = "+ Создать"
 
 
@@ -151,7 +151,7 @@ private fun Main (
 			duration: Int
 		) {
 
-			val text = "$listens $textSomeTracks  •  $duration"
+			val text = "$listens $textTracks  •  $duration"
 
 
 			Text (
@@ -249,7 +249,7 @@ private fun Actions (
 			fontSize = 14.5.sp,
 			color = colorActions,
 			fontFamily = fontActions,
-			modifier = Modifier.offset (x = -37.5.dp)
+			modifier = Modifier.offset (x = (-37.5).dp)
 		)
 
 	}

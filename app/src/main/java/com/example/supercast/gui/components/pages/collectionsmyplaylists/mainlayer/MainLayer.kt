@@ -63,35 +63,35 @@ fun MainLayer () {
             PlaylistSoap (
                 pic = Pics.__image_5__,
                 title = "Для путешествий",
-                numOfTracks = 25,
+                tracks = 25,
                 duration = 62356
             )
 
             PlaylistSoap (
                 pic = Pics.__image_6__,
                 title = "Остальное",
-                numOfTracks = 79,
+                tracks = 79,
                 duration = 265247
             )
 
             PlaylistSoap (
                 pic = Pics.__image_7__,
                 title = "Рок",
-                numOfTracks = 47,
+                tracks = 47,
                 duration = 86545
             )
 
             PlaylistSoap (
                 pic = Pics.__image_8__,
                 title = "Спокойное",
-                numOfTracks = 8,
+                tracks = 8,
                 duration = 56
             )
 
             PlaylistSoap (
                 pic = Pics.__image_9__,
                 title = "Дождь",
-                numOfTracks = 5,
+                tracks = 5,
                 duration = 128
             )
 

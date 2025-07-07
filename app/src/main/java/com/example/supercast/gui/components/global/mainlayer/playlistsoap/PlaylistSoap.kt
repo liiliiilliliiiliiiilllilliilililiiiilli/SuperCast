@@ -40,7 +40,7 @@ private val picExpand = Pics.ExpandArrowsGrey
 private const val textPicLogoDescription = "[logo pic]"
 private const val textPicExpandDescription = "[open pic]"
 
-private const val textSomeTracks = "треков"
+private const val textTracks = "треков"
 
 
 
@@ -48,7 +48,7 @@ private const val textSomeTracks = "треков"
 fun PlaylistSoap (
 	pic: Int,
 	title: String,
-	numOfTracks: Int,
+	tracks: Int,
 	duration: Int
 ) {
 
@@ -74,7 +74,7 @@ fun PlaylistSoap (
 			Height (2*0.95)
 
 			Stats (
-				listens = numOfTracks,
+				listens = tracks,
 				duration = duration
 			)
 
@@ -129,7 +129,7 @@ private fun Stats (
 	duration: Int
 ) {
 
-	val text = "$listens $textSomeTracks  •  $duration"
+	val text = "$listens $textTracks  •  $duration"
 
 
 	Text (

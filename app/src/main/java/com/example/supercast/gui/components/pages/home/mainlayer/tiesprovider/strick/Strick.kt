@@ -34,13 +34,13 @@ import com.example.supercast.gui.components.global.mainlayer.actionsbutton.Actio
 
 private const val isDescriptionOpened_defaultState = false
 
-private val colorListenersCounter = Colors.Grey
+private val colorAudience = Colors.Grey
 private val colorStrickBack = Colors.BarBorder
 private val colorStrickCorner = Colors.TieBarBackground
 private val colorTextDescription = Colors.Text
 
 private val fontDescription = Fonts.ArimoRegular
-private val fontListenersCounter = Fonts.ArchivoSemiBold
+private val fontAudience = Fonts.ArchivoSemiBold
 
 private val picPen = Pics.PenOrdinaryGreyLight
 
@@ -53,7 +53,7 @@ private const val textListeners = "слушателей"
 @Composable
 fun Strick () {
 
-    val listenersNum = 505
+    val audience = 505
 
     val (isOpened, setIsOpened) = remember {mutableStateOf (isDescriptionOpened_defaultState)}
 
@@ -72,8 +72,8 @@ fun Strick () {
             .background (colorStrickCorner)
     ) {
 
-        ListenersCounter (
-            listenersNum = listenersNum,
+        Audience (
+            num = audience,
             modifier = Modifier.weight (1f)
         )
 
@@ -109,19 +109,19 @@ fun Strick () {
 
 
 @Composable
-private fun ListenersCounter (
-    listenersNum: Int,
+private fun Audience (
+    num: Int,
     modifier: Modifier = Modifier
 ) {
 
-    val text = "$listenersNum $textListeners"
+    val text = "$num $textListeners"
 
 
     Text (
         text = text,
         fontSize = 15.sp,
-        color = colorListenersCounter,
-        fontFamily = fontListenersCounter,
+        color = colorAudience,
+        fontFamily = fontAudience,
         modifier = Modifier
             .padding (start = 48.dp)
             .then (modifier)

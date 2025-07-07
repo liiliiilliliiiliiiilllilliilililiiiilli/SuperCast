@@ -27,6 +27,10 @@ import com.example.supercast.gui.components.pages.podcast._types_.Player
 
 
 
+private val colorBack = Colors.Blocks
+
+
+
 @Composable
 fun Credits (
 	data: Player.Credits
@@ -41,7 +45,7 @@ fun Credits (
 	Column (
 		modifier = Modifier
 			.clip (shape = RoundedCornerShape (bottomStart = 14.dp, bottomEnd = 14.dp))
-			.background (color = Colors.Blocks)
+			.background (color = colorBack)
 			.padding (top = 12.dp, bottom = 17.dp)
 	) {
 

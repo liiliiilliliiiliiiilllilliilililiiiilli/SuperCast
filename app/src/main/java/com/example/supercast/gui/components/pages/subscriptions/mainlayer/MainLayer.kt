@@ -67,7 +67,7 @@ fun MainLayer () {
                     pic = Pics.__image_5__,
                     name = "растворяюсь",
                     shortName = "rainbow.water",
-                    listenersNum = 1431
+                    audience = 1431
                 )
 
                 Height (10)
@@ -76,7 +76,7 @@ fun MainLayer () {
                     pic = Pics.__image_9__,
                     name = "аниме-тян",
                     shortName = "iuw-acjwui",
-                    listenersNum = 94590
+                    audience = 94590
                 )
 
                 Height (10)
@@ -85,7 +85,7 @@ fun MainLayer () {
                     pic = Pics.__image_8__,
                     name = "София",
                     shortName = "sohy_yi",
-                    listenersNum = 0
+                    audience = 0
                 )
 
                 Height (10)
@@ -94,7 +94,7 @@ fun MainLayer () {
                     pic = Pics.__image_4__,
                     name = "Привеееет!!!!!!",
                     shortName = "hi_i_am_here",
-                    listenersNum = 505
+                    audience = 505
                 )
 
                 Height (10)
@@ -103,7 +103,7 @@ fun MainLayer () {
                     pic = Pics.__image_1__,
                     name = "li",
                     shortName = "liiliiilliliiiliiiilllillililil",
-                    listenersNum = 101
+                    audience = 101
                 )
 
             }

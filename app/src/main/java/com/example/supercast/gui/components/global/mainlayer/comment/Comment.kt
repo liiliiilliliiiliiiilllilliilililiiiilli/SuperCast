@@ -30,9 +30,9 @@ import com.example.supercast.gui.components.global.mainlayer.comment._types_.Com
 
 @Composable
 fun Comment (
+    modifier: Modifier = Modifier,
     isContext: Boolean = false,
-    data: Comment,
-    modifier: Modifier = Modifier
+    data: Comment
 ) {
 
     val modifierIsContext =
@@ -49,14 +49,14 @@ fun Comment (
             Modifier
 
 
-    val ava = data.authorAva
-    val name = data.authorName
-    val date = data.publicationDate
+    val ava = data.ava
+    val name = data.name
+    val date = data.date
     val blab = data.blab
     val voice = data.voice
-    val comments = data.commentsNum
-    val citates = data.citatesNum
-    val stars = data.starsNum
+    val comments = data.comments
+    val citates = data.citates
+    val stars = data.stars
 
 
     Row (

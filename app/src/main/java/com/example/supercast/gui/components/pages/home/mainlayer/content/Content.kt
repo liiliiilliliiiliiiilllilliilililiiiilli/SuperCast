@@ -26,9 +26,9 @@ private val postData_1 = Post (
     mainBlock = Post.MainBlock (
         topBar = Post.MainBlock.TopBar (
             pic = Pics.__image_8__,
-            textDitleTie = "Sydney Sweeny",
-            textDitleName = "апдейты",
-            numStars = 629
+            name = "Sydney Sweeny",
+            tie = "апдейты",
+            stars = 629
         ),
         contextPlot = Post.MainBlock.ContextPlot (
             orationData = arrayOf ("Па́вел Вале́рьевич Ду́ров — российский предприниматель в  сфере информационных технологий, основатель социальной сети «ВКонтакте» и кроссплатформенного мессенджера Telegram."),
@@ -56,9 +56,9 @@ private val postData_2 = Post (
     mainBlock = Post.MainBlock (
         topBar = Post.MainBlock.TopBar (
             pic = Pics.__image_9__,
-            textDitleTie = "Джастин Ройланд",
-            textDitleName = "основное",
-            numStars = 12505
+            name = "Джастин Ройланд",
+            tie = "основное",
+            stars = 12505
         ),
         contextPlot = Post.MainBlock.ContextPlot (
             orationData = arrayOf ("В отличие от дирижаблей, воздушные шары не имеют двигателей для самостоятельного горизонтального движения в воздухе. В зависимости от наполнения различают монгольфьеры (шары, наполненные нагретым воздухом), шарльеры (наполнены лёгким газом, как правило, водородом или гелием) и розьеры (воздушные суда, использующие одновременно газ и воздух, размещённые в отдельных оболочках). "),

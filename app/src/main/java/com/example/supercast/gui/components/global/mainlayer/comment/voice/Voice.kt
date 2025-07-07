@@ -31,7 +31,7 @@ private val colorInfo = Colors.Olive
 private val fontBlab = Fonts.ArchivoBold
 private val fontInfo = Fonts.FiraSansSemiBold
 
-private const val textListeners = "прослушиваний"
+private const val textListens = "прослушиваний"
 
 
 
@@ -43,9 +43,9 @@ fun Voice (
 	val audio = data.audio
 	val transcription = data.transcription
 	val duration = data.duration
-	val listesNum = data.listensNum
+	val listesNum = data.listens
 
-	val textInfo = "$duration  ·  $listesNum $textListeners"
+	val textInfo = "$duration  ·  $listesNum $textListens"
 
 
 	Row (

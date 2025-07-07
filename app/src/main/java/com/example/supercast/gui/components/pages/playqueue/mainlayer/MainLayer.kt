@@ -30,19 +30,19 @@ private val _dataTracks_ = arrayOf (
     PlaylistSegue (
         preview = Pics.__image_3__,
         title = "My Shit",
-        numPodcasts = 8,
+        podcasts = 8,
         duration = 50585
     ),
     PlaylistSegue (
         preview = Pics.__image_2__,
         title = "Hoyoverse",
-        numPodcasts = 3,
+        podcasts = 3,
         duration = 50585
     ),
     PlaylistSegue (
         preview = Pics.__image_6__,
         title = "One",
-        numPodcasts = 14,
+        podcasts = 14,
         duration = 50585
     ),
     PodcastSegue (

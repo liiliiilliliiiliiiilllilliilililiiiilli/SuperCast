@@ -64,7 +64,7 @@ fun Main (
 	val title = ditle.title
 	val stage = ditle.stage
 
-	val preview = preview.data
+	val preview = preview.bubbles
 
 
 	Column (
@@ -83,9 +83,7 @@ fun Main (
 			modifier = Modifier.weight (1f)
 		)
 
-		ExpaddButton (
-//			modifier = Modifier.weight (1f)
-		)
+		ExpaddButton ()
 
 	}
 
@@ -100,7 +98,7 @@ private fun Ditle (
 ) {
 
 	Column (
-		modifier = Modifier.padding (top = 16.dp, bottom = 16.dp, start = 26.dp)
+		modifier = Modifier.padding (top = 16.dp, bottom = 16.dp, start = 25.dp)
 	) {
 
 		Text (
@@ -127,8 +125,8 @@ private fun Ditle (
 
 @Composable
 private fun Bubbles (
-	bubble_1: Player.Content.Bubble,
-	bubble_2: Player.Content.Bubble,
+	bubble_1: Player.Content.Preview.Bubble,
+	bubble_2: Player.Content.Preview.Bubble,
 	modifier: Modifier
 ) {
 

@@ -23,8 +23,8 @@ private val fontNaming = Fonts.ArchivoBold
 
 @Composable
 fun Naming (
-	author: String,
-	date: Int,
+	name: String,
+	date: Int
 ) {
 
 	val textData = "$date"
@@ -33,7 +33,7 @@ fun Naming (
 	Row {
 
 		Text (
-			text = author,
+			text = name,
 			fontSize = 14.5.sp,
 			color = colorAuthor,
 			fontFamily = fontNaming

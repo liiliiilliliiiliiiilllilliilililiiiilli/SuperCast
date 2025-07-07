@@ -16,12 +16,12 @@ import com.example.supercast.gui.components.pages.collectionsmycomments.mainlaye
 fun CommentSoap (
 	citateOf: String,
 	ava: Int,
-	author: String,
+	name: String,
 	date: Int,
 	content: String,
-	numComments: Int,
-	numCitates: Int,
-	numStars: Int,
+	comments: Int,
+	citates: Int,
+	stars: Int,
 	modifier: Modifier = Modifier
 ) {
 
@@ -35,12 +35,12 @@ fun CommentSoap (
 
 		MainBlock (
 			ava = ava,
-			author = author,
+			name = name,
 			date = date,
-			content = content,
-			numComments = numComments,
-			numCitates = numCitates,
-			numStars = numStars
+			blab = content,
+			comments = comments,
+			citates = citates,
+			stars = stars
 		)
 
 	}

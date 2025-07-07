@@ -36,7 +36,7 @@ private val colorStats = Colors.Grey
 private val fontTitle = Fonts.ArchivoSemiBold
 private val fontStats = Fonts.ArchivoSemiBold
 
-private val picArrow = Pics.ArrowCompactDownGreyLight
+private val picArrow = Pics.ArrowCompactDownGrey
 
 private const val textPicLogoDescription = "[logo pic]"
 private const val textPicArrowDescription = "[arrow pic]"

@@ -8,7 +8,7 @@ class PlaylistSegue (
 
 	val preview: Int,
 	val title: String,
-	val numPodcasts: Int,
+	val podcasts: Int,
 	val duration: Int
 
 )

@@ -32,12 +32,12 @@ private val colorBack = Colors.Blocks
 @Composable
 fun MainBlock (
 	ava: Int,
-	author: String,
+	name: String,
 	date: Int,
-	content: String,
-	numComments: Int,
-	numCitates: Int,
-	numStars: Int
+	blab: String,
+	comments: Int,
+	citates: Int,
+	stars: Int
 ) {
 
 	Row (
@@ -61,22 +61,22 @@ fun MainBlock (
 		) {
 
 			Naming (
-				author = author,
+				name = name,
 				date = date
 			)
 
 			Height (8)
 
 			Content (
-				text = content
+				text = blab
 			)
 
 			Height (8)
 
 			Actions (
-				numComments = numComments,
-				numCitates = numCitates,
-				numStars = numStars
+				comments = comments,
+				citates = citates,
+				stars = stars
 			)
 
 		}

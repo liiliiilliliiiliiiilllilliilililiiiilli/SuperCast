@@ -22,7 +22,7 @@ import com.example.supercast.gui.components.global.mainlayer.circleactionbutton.
 
 
 
-private val picOpenAction = Pics.ArrowCompactDownGreyLight
+private val picOpenAction = Pics.ArrowCompactDownGrey
 private val picLink = Pics.LinkDark
 private val picQr = Pics.QrCodeDark
 

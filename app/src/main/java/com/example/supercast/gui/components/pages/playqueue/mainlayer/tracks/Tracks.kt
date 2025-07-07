@@ -25,8 +25,6 @@ fun Tracks (
 	Column (
 		modifier = Modifier
 			.fillMaxWidth ()
-//			.clip (RoundedCornerShape (14.dp))
-//			.background (color = colorBack)
 			.padding (vertical = 10.dp)
 	) {
 
@@ -36,7 +34,7 @@ fun Tracks (
 
 				val preview = track.preview
 				val title = track.title
-				val numPodcasts = track.numPodcasts
+				val numPodcasts = track.podcasts
 				val duration = track.duration
 
 

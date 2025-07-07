@@ -49,7 +49,7 @@ private val fontSegue = Fonts.ArchivoSemiBold
 //private val picActionChoose = Pics.TrashGreyLight
 private val picActionChoose = Pics.PenOrdinaryGreyLight
 private val picActionCreate = Pics.PlusSharpOlive
-private val picArrow = Pics.ArrowCompactDownGreyLight
+private val picArrow = Pics.ArrowCompactDownGrey
 
 private const val textPicArrowDescription = "[arrow pic]"
 

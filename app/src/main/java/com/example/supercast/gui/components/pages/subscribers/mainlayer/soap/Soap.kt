@@ -35,15 +35,15 @@ import com.example.supercast.gui.components.global.mainlayer.avacirclemini.AvaCi
 private val colorBack = Colors.Blocks
 private val colorTextAuthorName = Colors.PreWhite
 private val colorTextAuthorShortName = Colors.OliveMonochromic
-private val colorTextListeners = Colors.OliveMonochromic
+private val colorTextAudience = Colors.OliveMonochromic
 
-private val picArrow = Pics.ArrowCompactDownGreyLight
+private val picArrow = Pics.ArrowCompactDownGrey
 
 private val fontCommon = Fonts.ArchivoSemiBold
 
 private const val textPicArrowDescription = "[arrow pic]"
 
-private const val textSomeListen = "слушают"
+private const val textListen = "слушают"
 
 
 
@@ -52,7 +52,7 @@ fun Soap (
 	pic: Int,
 	name: String,
 	shortName: String,
-	listenersNum: Int
+	audience: Int
 ) {
 
 	Row (
@@ -73,8 +73,8 @@ fun Soap (
 
 		Space (modifier = Modifier.weight (1f))
 
-		Listeners (
-			num = listenersNum
+		Audience (
+			num = audience
 		)
 
 		Arrow ()
@@ -129,17 +129,17 @@ private fun Author (
 
 
 @Composable
-private fun Listeners (
+private fun Audience (
 	num: Int
 ) {
 
-	val text = "$num $textSomeListen"
+	val text = "$num $textListen"
 
 
 	Text (
 		text = text,
 		fontSize = 14.sp,
-		color = colorTextListeners,
+		color = colorTextAudience,
 		fontFamily = fontCommon,
 		modifier = Modifier.padding (horizontal = 8.dp)
 	)

@@ -38,10 +38,10 @@ private val fontDitleTie = Fonts.ArimoSemiBold
 
 @Composable
 fun TopBar (
-	picAva: Int,
-	textDitleName: String,
-	textDitleTie: String,
-	numStars: Int
+	ava: Int,
+	name: String,
+	tie: String,
+	stars: Int
 ) {
 
 	val (isStarsButtonPressed, setIsStarsButtonPressed) = remember {mutableStateOf (false)}
@@ -57,13 +57,13 @@ fun TopBar (
 	) {
 
 		Author (
-			pic = picAva,
-			name = textDitleName,
-			tie = textDitleTie,
+			pic = ava,
+			name = name,
+			tie = tie,
 		)
 
 		StarsButton (
-			value = numStars,
+			value = stars,
 			isPressed = isStarsButtonPressed,
 			setIsPressed = setIsStarsButtonPressed
 		)

@@ -22,7 +22,7 @@ import com.example.supercast.gui.components.global.toolslayer.topbar.button.BarB
 
 
 
-private val picArrow = Pics.ArrowCompactDownGreyLight
+private val picArrow = Pics.ArrowCompactDownGrey
 private val picSearch = Pics.SearchGrey
 private val picNoteList = Pics.NotelistGrey
 
@@ -66,7 +66,8 @@ fun TopBar () {
 
             BarButton (
                 pic = picNoteList,
-                onPress = {}
+                onPress = {},
+                modifier = Modifier.offset (x = 0.75.dp, y = 1.25.dp)
             )
 
         }

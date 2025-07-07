@@ -34,12 +34,12 @@ private val fontStats = Fonts.ArchivoBold
 
 private val pic = Pics.__image_7__
 
-private const val textSomeListeners = "прослушиваний"
+private const val textListens = "прослушиваний"
 
 private const val textTitle = "Как побеждать (всегда)."
 
 private const val numDuration = 1
-private const val numListeners = 38841
+private const val numAudience = 38841
 
 
 
@@ -59,7 +59,7 @@ fun Podcast (
 		Ditle (
 			title = textTitle,
 			duration = numDuration,
-			listenes = numListeners
+			listens = numAudience
 		)
 
 		PlayButton (
@@ -77,13 +77,13 @@ fun Podcast (
 private fun Ditle (
 	title: String,
 	duration: Int,
-	listenes: Int
+	listens: Int
 ) {
 
 	val durationFormatted = "1:05"  // ProjectLib.formatTime ()
-	val listenesFormatted = Lib.formatStarsNumber (listenes)
+	val listensFormatted = Lib.formatStarsNumber (listens)
 
-	val textStats = "$durationFormatted  •  $listenesFormatted $textSomeListeners"
+	val textStats = "$durationFormatted  •  $listensFormatted $textListens"
 
 
 	Column {

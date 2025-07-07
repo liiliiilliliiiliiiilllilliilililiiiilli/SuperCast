@@ -32,31 +32,31 @@ private val colorCitatesDark = Colors.DarkGrey
 
 private val fontActions = Fonts.ArchivoBold
 
-private const val textSomeComments = "комментариев"
+private const val textComments = "комментариев"
 private const val textComment = "Комментировать"
-private const val textSomeCitates = "цитат"
+private const val textCitates = "цитат"
 private const val textCitate = "Цитировать"
 
 
 
 @Composable
 fun Actions (
-	numComments: Int,
-	numCitates: Int,
-	numStars: Int
+	comments: Int,
+	citates: Int,
+	stars: Int
 ) {
 
 	val (isStarsButtonPressed, setStarsButtonPressed) = remember {mutableStateOf (false)}
 
 
-	val commentsNumFormatted = Lib.formatStarsNumber (numComments)
-	val citatesNumFormatted = Lib.formatStarsNumber (numCitates)
+	val commentsFormatted = Lib.formatStarsNumber (comments)
+	val citatesFormatted = Lib.formatStarsNumber (citates)
 
-	val textComments = if (numComments > 0) "$commentsNumFormatted ${textSomeComments}" else textComment
-	val colorTextComments = if (numComments > 0) colorCommentsLight else colorCommentsDark
+	val textComments = if (comments > 0) "$commentsFormatted $textComments" else textComment
+	val colorTextComments = if (comments > 0) colorCommentsLight else colorCommentsDark
 
-	val textCitates = if (numCitates > 0) "$citatesNumFormatted $textSomeCitates" else textCitate
-	val colorTextCitates = if (numCitates > 0) colorCitatesLight else colorCitatesDark
+	val textCitates = if (citates > 0) "$citatesFormatted $textCitates" else textCitate
+	val colorTextCitates = if (citates > 0) colorCitatesLight else colorCitatesDark
 
 
 	Row (
@@ -85,7 +85,7 @@ fun Actions (
 
 		StarsButton (
 			scale = 0.92f,
-			value = numStars,
+			value = stars,
 			isPressed = isStarsButtonPressed,
 			setIsPressed = setStarsButtonPressed
 		)

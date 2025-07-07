@@ -26,7 +26,7 @@ private val colorOpened = Colors.CircleButton
 private val colorClosed = Colors.Button
 
 private val picOpened = Pics.PlusSmoothDark
-private val picClosed = Pics.ArrowCompactDownGreyLight
+private val picClosed = Pics.ArrowCompactDownGrey
 
 private const val textPicDescriptionButtonDescription = "[wrapper pic]"
 

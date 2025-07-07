@@ -41,7 +41,7 @@ private val fontStats = Fonts.ArchivoSemiBold
 private const val textPicLogoDescription = "[playlist logo pic]"
 
 private const val textLabel = "История прослушивания"
-private const val textSomeTracks = "треков"
+private const val textTracks = "треков"
 
 
 
@@ -141,7 +141,7 @@ private fun Main (
 			duration: Int
 		) {
 
-			val text = "$listens $textSomeTracks  •  $duration"
+			val text = "$listens $textTracks  •  $duration"
 
 
 			Text (

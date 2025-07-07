@@ -33,90 +33,90 @@ private val picFilter = Pics.FilterGreyLight
 private const val textButtonList = "Все"
 
 private val _dataContext_ = Comment (
-    authorAva = Pics.__image_4__,
-    authorName = "Иисус",
-    publicationDate = 91234,
+    ava = Pics.__image_4__,
+    name = "Иисус",
+    date = 91234,
 
     blab = Comment.Blab (
         text = "Спасибо! Прекрасный фильм !"
     ),
 
-    commentsNum = 519,
-    citatesNum = 1,
-    starsNum = 1173980
+    comments = 519,
+    citates = 1,
+    stars = 1173980
 )
 
 private val _dataComments_ = arrayOf (
     Comment (
-        authorAva = Pics.__image_9__,
-        authorName = "кто-то",
-        publicationDate = 918234,
+        ava = Pics.__image_9__,
+        name = "кто-то",
+        date = 918234,
 
         blab = Comment.Blab (
             text = "Классно всё передали... Не возможно остановить технологии и Дурова П.В.тем более... Цифровой мир не из бежен... Его необходимо изучать... Присоединяюсь к команде Дурова и я- простой обычный пользователь Телеграмм... Сегодня это стало возможно... Благодарю ,Павел,за вашу щедрость.... Всё только начинается"
         ),
 
-        commentsNum = 29,
-        citatesNum = 0,
-        starsNum = 8635
+        comments = 29,
+        citates = 0,
+        stars = 8635
     ),
     Comment (
-        authorAva = Pics.__image_8__,
-        authorName = "Павел Дуров",
-        publicationDate = 912348,
+        ava = Pics.__image_8__,
+        name = "Павел Дуров",
+        date = 912348,
 
         voice = Comment.Voice (
             audio = "",
             transcription = "Почему я не согласен с тем, что сказано в этом подкасте хоть. Хоть и я был бы не проти того, чтобы очень сильно запустить аппарат",
             duration = 25,
-            listensNum = 128
+            listens = 128
         ),
 
-        commentsNum = 837,
-        citatesNum = 3,
-        starsNum = 65
+        comments = 837,
+        citates = 3,
+        stars = 65
     ),
     Comment (
-        authorAva = Pics.__image_4__,
-        authorName = "Иисус",
-        publicationDate = 91234,
+        ava = Pics.__image_4__,
+        name = "Иисус",
+        date = 91234,
 
         blab = Comment.Blab (
             text = "Спасибо! Прекрасный фильм !"
         ),
 
-        commentsNum = 519,
-        citatesNum = 1,
-        starsNum = 1173980
+        comments = 519,
+        citates = 1,
+        stars = 1173980
     ),
     Comment (
-        authorAva = Pics.__image_3__,
-        authorName = "Анна",
-        publicationDate = 9821374,
+        ava = Pics.__image_3__,
+        name = "Анна",
+        date = 9821374,
 
         blab = Comment.Blab (
             text = "Читал книгу 'Код Дурова', Дуров далеко не идеальный персонаж, но тот факт, как он бился за свободу, как он посылал собачек, в официальных ответах фсб, которые требовали удалить группы Навального, или группы Евромайдана, как он спорил c ..."
         ),
 
-        commentsNum = 0,
-        citatesNum = 0,
-        starsNum = 5
+        comments = 0,
+        citates = 0,
+        stars = 5
     ),
     Comment (
-        authorAva = Pics.__image_7__,
-        authorName = "Александра",
-        publicationDate = 328764,
+        ava = Pics.__image_7__,
+        name = "Александра",
+        date = 328764,
 
         voice = Comment.Voice (
             audio = "",
             transcription = "Вау, как красиво] Мне понравилось слушать!",
             duration = 25,
-            listensNum = 0
+            listens = 0
         ),
 
-        commentsNum = 0,
-        citatesNum = 0,
-        starsNum = 0
+        comments = 0,
+        citates = 0,
+        stars = 0
     )
 )
 
@@ -128,9 +128,9 @@ private val _dataCitates_ = arrayOf (
         mainBlock = Post.MainBlock (
             topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
-                textDitleTie = "Алина",
-                textDitleName = "моя жизнь",
-                numStars = 101
+                name = "Алина",
+                tie = "моя жизнь",
+                stars = 101
             ),
             contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
@@ -156,9 +156,9 @@ private val _dataCitates_ = arrayOf (
         mainBlock = Post.MainBlock (
             topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
-                textDitleTie = "Алина",
-                textDitleName = "моя жизнь",
-                numStars = 101
+                name = "Алина",
+                tie = "моя жизнь",
+                stars = 101
             ),
             contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
@@ -184,9 +184,9 @@ private val _dataCitates_ = arrayOf (
         mainBlock = Post.MainBlock (
             topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
-                textDitleTie = "Алина",
-                textDitleName = "моя жизнь",
-                numStars = 101
+                name = "Алина",
+                tie = "моя жизнь",
+                stars = 101
             ),
             contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
@@ -212,9 +212,9 @@ private val _dataCitates_ = arrayOf (
         mainBlock = Post.MainBlock (
             topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
-                textDitleTie = "Алина",
-                textDitleName = "моя жизнь",
-                numStars = 101
+                name = "Алина",
+                tie = "моя жизнь",
+                stars = 101
             ),
             contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),
@@ -240,9 +240,9 @@ private val _dataCitates_ = arrayOf (
         mainBlock = Post.MainBlock (
             topBar = Post.MainBlock.TopBar (
                 pic = Pics.__image_5__,
-                textDitleTie = "Алина",
-                textDitleName = "моя жизнь",
-                numStars = 101
+                name = "Алина",
+                tie = "моя жизнь",
+                stars = 101
             ),
             contextPlot = Post.MainBlock.ContextPlot (
                 orationData = arrayOf ("Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм[1][2][3][4][5] (иногда диапазон указывают шире — 420—490 нм). Один из основных цветов в системе КЗС (RGB)."),

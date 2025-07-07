@@ -31,9 +31,9 @@ class Post (
 		class TopBar (
 
 			val pic: Int,
-			val textDitleName: String,
-			val textDitleTie: String,
-			val numStars: Int
+			val name: String,
+			val tie: String,
+			val stars: Int
 
 		)
 

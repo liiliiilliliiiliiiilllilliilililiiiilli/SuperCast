@@ -32,9 +32,9 @@ private val colorCitatesDark = Colors.DarkGrey
 private val picComments = Pics.CommentGreenLight
 private val picCitates = Pics.CitationGreenLight
 
-private const val textSomeComments = "комментариев"
+private const val textComments = "комментариев"
 private const val textComment = "Комментировать"
-private const val textSomeCitates = "цитат"
+private const val textCitates = "цитат"
 private const val textCitate = "Цитировать"
 
 
@@ -48,16 +48,16 @@ fun SegueBar (
 	val citates = data.citates
 
 
-	val commentsNumFormatted = Lib.formatStarsNumber (comments)
-	val citatesNumFormatted = Lib.formatStarsNumber (citates)
+	val commentsFormatted = Lib.formatStarsNumber (comments)
+	val citatesFormatted = Lib.formatStarsNumber (citates)
 
 
-	val textComments = if (comments > 0) "$commentsNumFormatted $textSomeComments" else textComment
+	val textComments = if (comments > 0) "$commentsFormatted $textComments" else textComment
 	val colorTextComments = if (comments > 0) colorCommentsLight else colorCommentsDark
 	val picComments = if (comments > 0) picComments else null
- 	val actionComments = {if (comments > 0) {print("")} else {print("")}}
+	val actionComments = {if (comments > 0) {print("")} else {print("")}}
 
-	val textCitates = if (citates > 0) "$citatesNumFormatted $textSomeCitates" else textCitate
+	val textCitates = if (citates > 0) "$citatesFormatted $textCitates" else textCitate
 	val colorTextCitates = if (citates > 0) colorCitatesLight else colorCitatesDark
 	val picCitates = if (citates > 0) picCitates else null
 	val actionCitates = {if (citates > 0) {print("")} else {print("")}}

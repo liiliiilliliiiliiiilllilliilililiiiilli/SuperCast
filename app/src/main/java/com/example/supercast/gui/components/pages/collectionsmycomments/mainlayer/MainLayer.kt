@@ -82,12 +82,12 @@ fun MainLayer () {
             CommentSoap (
                 citateOf = citateOf_1,
                 ava = pic__Ava_1__,
-                author = author_1,
+                name = author_1,
                 date = date_1,
                 content = content_1,
-                numComments = numComments_1,
-                numCitates = numCitates_1,
-                numStars = numStars_1,
+                comments = numComments_1,
+                citates = numCitates_1,
+                stars = numStars_1,
                 modifier = Modifier.padding (horizontal = 4.dp)
             )
 
@@ -96,12 +96,12 @@ fun MainLayer () {
             CommentSoap (
                 citateOf = citateOf_2,
                 ava = pic__Ava_2__,
-                author = author_2,
+                name = author_2,
                 date = date_2,
                 content = content_2,
-                numComments = numComments_2,
-                numCitates = numCitates_2,
-                numStars = numStars_2,
+                comments = numComments_2,
+                citates = numCitates_2,
+                stars = numStars_2,
                 modifier = Modifier.padding (horizontal = 4.dp)
             )
 
@@ -110,12 +110,12 @@ fun MainLayer () {
             CommentSoap (
                 citateOf = citateOf_3,
                 ava = pic__Ava_3__,
-                author = author_3,
+                name = author_3,
                 date = date_3,
                 content = content_3,
-                numComments = numComments_3,
-                numCitates = numCitates_3,
-                numStars = numStars_3,
+                comments = numComments_3,
+                citates = numCitates_3,
+                stars = numStars_3,
                 modifier = Modifier.padding (horizontal = 4.dp)
             )
 

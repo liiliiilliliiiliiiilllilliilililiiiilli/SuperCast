@@ -43,7 +43,7 @@ private val picTriangle = Pics.TriangleUnwrapLight
 private const val textPicTriangleDescription = "[edit pic]"
 
 private const val textSubscribed = "Подписано"
-private const val textSubscribedSomeOf = "из"
+private const val textSubscribedOf = "из"
 
 private const val textName = "Котик полевой"
 private const val textShortName = "@cesty_cat"
@@ -126,7 +126,7 @@ private fun EditButton () {
     val numSubscribed = 5
     val numTotalSubscriptions = 6
 
-    val text = "$textSubscribed ($numSubscribed $textSubscribedSomeOf $numTotalSubscriptions)"
+    val text = "$textSubscribed ($numSubscribed $textSubscribedOf $numTotalSubscriptions)"
 
 
     Row (

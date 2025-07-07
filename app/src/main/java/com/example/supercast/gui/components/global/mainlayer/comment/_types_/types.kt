@@ -6,14 +6,14 @@ package com.example.supercast.gui.components.global.mainlayer.comment._types_
 
 class Comment (
 
-	val authorAva: Int,
-	val authorName: String,
-	val publicationDate: Int,
+	val ava: Int,
+	val name: String,
+	val date: Int,
 	val blab: Blab? = null,
 	val voice: Voice? = null,
-	val commentsNum: Int,
-	val citatesNum: Int,
-	val starsNum: Int
+	val comments: Int,
+	val citates: Int,
+	val stars: Int
 
 ) {
 
@@ -28,7 +28,7 @@ class Comment (
 		val audio: String,
 		val transcription: String,
 		val duration: Int,
-		val listensNum: Int
+		val listens: Int
 
 	)
 

@@ -36,7 +36,7 @@ private val colorEctDots = Colors.EctDots
 
 private val fontChatters = Fonts.ArchivoSemiBold
 
-private const val textSomeChatters = "Собеседники"
+private const val textChatters = "Собеседники"
 
 
 
@@ -48,7 +48,7 @@ fun Chatters (
 	val num = data.num
 	val avas = data.avas
 
-	val textNum = "$textSomeChatters $num"
+	val textNum = "$textChatters $num"
 
 
 	Column {
@@ -58,7 +58,7 @@ fun Chatters (
 			fontSize = 16.sp,
 			color = colorCreatorDark,
 			fontFamily = fontChatters,
-			modifier = Modifier.offset (x = -14.dp)
+			modifier = Modifier.offset (x = (-14).dp)
 		)
 
 		Height (8)
@@ -67,19 +67,15 @@ fun Chatters (
 			verticalAlignment = Alignment.Bottom
 		) {
 
-			Row {
+			avas.forEachIndexed {index, ava ->
 
-				avas.forEachIndexed {index, ava ->
-
-					AvaCircleMini (
-						pic = ava,
-						size = 37f - index * 5,
-						modifier = Modifier
-							.absoluteOffset (x = (-index * 16).dp)
-							.zIndex (-index.toFloat())
-					)
-
-				}
+				AvaCircleMini (
+					pic = ava,
+					size = 37f - index * 5,
+					modifier = Modifier
+						.absoluteOffset (x = (-index * 16).dp)
+						.zIndex (-index.toFloat())
+				)
 
 			}
 
@@ -101,10 +97,10 @@ fun Chatters (
 private fun EctDots () {
 
 	Row (
-		modifier = Modifier.offset (x = -38.dp, y = -1.dp)
+		modifier = Modifier.offset (x = (-38).dp, y = (-1).dp)
 	) {
 
-		Box(
+		Box (
 			modifier = Modifier
 				.size (4.25.dp)
 				.clip (RoundedCornerShape (100))

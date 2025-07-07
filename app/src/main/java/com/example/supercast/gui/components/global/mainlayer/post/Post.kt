@@ -18,9 +18,9 @@ import com.example.supercast.gui.components.global.mainlayer.post._types_.Post
 
 @Composable
 fun Post (
+    modifier: Modifier = Modifier,
     data: Post,
-    isInner: Boolean = false,
-    modifier: Modifier = Modifier
+    isInner: Boolean = false
 ) {
 
     val scale = if (isInner) 0.915f else 1f

@@ -50,10 +50,10 @@ fun MainBlock (
 	) {
 
 		TopBar (
-			picAva = topBar.pic,
-			textDitleName = topBar.textDitleName,
-			textDitleTie = topBar.textDitleTie,
-			numStars = topBar.numStars
+			ava = topBar.pic,
+			name = topBar.name,
+			tie = topBar.tie,
+			stars = topBar.stars
 		)
 
 		ContextPlot (

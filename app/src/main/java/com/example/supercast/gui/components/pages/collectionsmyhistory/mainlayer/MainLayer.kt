@@ -46,7 +46,7 @@ fun MainLayer () {
             PlaylistSoap (
                 pic = Pics.__image_3__,
                 title = "Чилл",
-                numOfTracks = 25,
+                tracks = 25,
                 duration = 2378
             )
 
@@ -89,14 +89,14 @@ fun MainLayer () {
             PlaylistSoap (
                 pic = Pics.__image_3__,
                 title = "Чилл",
-                numOfTracks = 25,
+                tracks = 25,
                 duration = 2378
             )
 
             PlaylistSoap (
                 pic = Pics.__image_3__,
                 title = "Чилл",
-                numOfTracks = 25,
+                tracks = 25,
                 duration = 2378
             )
 
@@ -110,14 +110,14 @@ fun MainLayer () {
             PlaylistSoap (
                 pic = Pics.__image_3__,
                 title = "Чилл",
-                numOfTracks = 25,
+                tracks = 25,
                 duration = 2378
             )
 
             PlaylistSoap (
                 pic = Pics.__image_3__,
                 title = "Чилл",
-                numOfTracks = 25,
+                tracks = 25,
                 duration = 2378
             )
 

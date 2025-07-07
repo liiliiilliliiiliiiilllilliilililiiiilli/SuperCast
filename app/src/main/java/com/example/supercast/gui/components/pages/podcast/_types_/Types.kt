@@ -29,24 +29,26 @@ class Player (
 
 		)
 
-		class Track (
-
-			val totalDuration: Int,
-			val currentPosition: Int
-
-		)
-
 		class Preview (
 
-			val data: Array <Bubble>
+			val bubbles: Array <Bubble>
 
-		)
+		) {
 
-		class Bubble (
+			class Bubble (
 
-			val speaker: String,
-			val speakerRole: String,
-			val speech: String
+				val speaker: String,
+				val speakerRole: String,
+				val speech: String
+
+			)
+
+		}
+
+		class Track (
+
+			val duration: Int,
+			val current: Int
 
 		)
 
@@ -66,7 +68,7 @@ class Player (
 			val ava: Int,
 			val tie: String,
 			val name: String,
-			val listeners: Int,
+			val audience: Int,
 			val isSubscribed: Boolean
 
 		)
@@ -81,7 +83,7 @@ class Player (
 		class Stats (
 
 			val stars: Int,
-			val listenes: Int
+			val listens: Int
 
 		)
 

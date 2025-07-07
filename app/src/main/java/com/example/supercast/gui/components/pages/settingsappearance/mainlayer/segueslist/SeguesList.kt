@@ -42,10 +42,10 @@ private val colorSeparator = Colors.BarSeparator
 
 private val fontSegue = Fonts.ArchivoSemiBold
 
-private val picArrow = Pics.ArrowCompactDownGreyLight
+private val picArrow = Pics.ArrowCompactDownGrey
 
-private const val textPicSegueIconDescription = "[pic]"
-private const val textPicArrowDescription = "[pic]"
+private const val textPicSegueIconDescription = "[some pic]"
+private const val textPicArrowDescription = "[arrow pic]"
 
 
 

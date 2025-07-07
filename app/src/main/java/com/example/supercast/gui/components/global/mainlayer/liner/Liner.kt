@@ -87,7 +87,7 @@ fun Liner (
 
             if (buttonPicRight != null && buttonPicRightOnPress != null) {
 
-                buttonPicRight.forEachIndexed { index, pic ->
+                buttonPicRight.forEachIndexed {index, pic ->
 
                     PicButton (
                         pic = buttonPicRight[index],

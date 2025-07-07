@@ -37,7 +37,7 @@ fun List (
 
 		if (whichOpened == "comments" && comments != null) {
 
-			comments.forEach {comment ->
+			comments.forEachIndexed {index, comment ->
 
 				Comment (
 
@@ -46,7 +46,11 @@ fun List (
 
 				)
 
-				Width (15)
+				if (index != comments.size - 1) {
+
+					Width (16)
+
+				}
 
 			}
 
@@ -54,7 +58,7 @@ fun List (
 
 		else if (whichOpened == "citates" && citates != null) {
 
-			citates.forEach {citate ->
+			citates.forEachIndexed {index, citate ->
 
 				Post (
 
@@ -63,7 +67,11 @@ fun List (
 
 				)
 
-				Width (16)
+				if (index != citates.size - 1) {
+
+					Width (16)
+
+				}
 
 			}
 

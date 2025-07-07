@@ -20,6 +20,7 @@ class Pics () {
         val __image_8__ = R.drawable._image_8_
         val __image_9__ = R.drawable._image_9_
 
+        val ArrowCompactDownGrey = R.drawable.arrow_compact_down_grey
         val ArrowCompactDownGreyLight = R.drawable.arrow_compact_down_grey_light
         val ArrowGoBlack = R.drawable.arrow_go_black
         val ArrowGoGreyLight = R.drawable.arrow_go_grey_light
