@@ -1,97 +1,97 @@
-# SuperCast — чирикалка нового уровня. English
+# SuperCast - a new area of chirping.
 
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.en.md)
 [![ch](https://img.shields.io/badge/lang-ch-yellow.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.ch.md)
 
-Аудиохостинг, где можно слушать, создавать и обсуждать подкасты.
-Никакой рекламы, пользовательских соглашений и сбора данных - каким и должен быть интернет.
+An audio hosting site where you can listen, create and discuss podcasts.
+No ads, no user agreements and no data collection - the way the internet should be.
 
-## 💡 Основная идея
+## 💡 Main idea
 
-До сих пор концепция "аудиохостинг" не имела четкого воплощения и была разрознена между схожими по сути платформами.
-Не существовало аудиосервиса столь же самобытного, как качественно это делает **[YouTube](https://www.youtube.com)**, реализуя просмотр видеороликов, **[Pinterest](https://www.pinterest.com)** для создания коллажей или **[Telegram](https://telegram.org)** для свободного общения.
-Подкасты и голосовые записи не имели права на самостоятельность и существовали второстепенно без должного развития.
+Until now, the concept of "audio hosting" had no clear embodiment and was scattered between essentially similar platforms.
+There was no audio service as original as **[YouTube](https://www.youtube.com)**, which implements viewing of videos, **[Pinterest](https://www.pinterest.com)** for creating collages or **[Telegram](https://telegram.org)** for free communication.
+Podcasts and voice recordings did not have the right to independence and existed secondary without proper development.
 
-Вдобавок, существующие музыкальные сервисы, такие как **[Yandex.Music](https://music.yandex.ru)** или **[Spotify](https://open.spotify.com)**, при всей своей безальтернативности портят опыт, вводя пользователей в платежи за подписки а также вторгаясь в их частное цифровое пространство (например, криптографически запрещая доступ к скаченным на устройство аудиофайлам, лишая человека доверия к собственному ПО).
+In addition, existing music services such as **[Yandex.Music](https://music.yandex.ru)** or **[Spotify](https://open.spotify.com)**, despite their lack of alternatives, spoil the experience by forcing users to pay for subscriptions and also invading their private digital space (for example, cryptographically prohibiting access to audio files downloaded to the device, depriving a person of trust in their own software).
 
-**SuperCast** - это аудиоплатформа c акцентом на свободу ПО и свободу действий пользователя.
-Здесь подкасты и голосовые записи, вложения к публикациям и любой контент можно скачивать, переиспользовать и распространять без ограничений - а цензуры нет.
-Никто не ограничивает вас во внешних действиях и не вторгается в личные - таковы принципы сервиса.
+**SuperCast** is an audio platform with an emphasis on software freedom and user freedom of action.
+Here, podcasts and voice recordings, publication attachments and any content can be downloaded, reused and distributed without restrictions - and there is no censorship.
+No one limits your external actions and does not intrude into your personal ones - these are the principles of the service.
 
-## ⚙️ Механизмы сервиса
+## ⚙️ Service mechanics
 
-### Публикации
+### Publications
 
-* *Публикация* (или пост) - основная единица контента, создаваемая Автором.
-Посты размещаются в профиле пользователя и могут содержать текст, вложения и аудиомедиа (подкаст/аудиозапись).
-Любую публикацию можно оценить, а также комментировать текстом или голосом или же ответить на нее публично у себя в профиле.
+* *Publication* (or post) is the basic unit of content created by the Author.
+  Posts are placed in the user profile and can contain text, attachments and audio media (podcast/audio recording).
+  Any publication can be rated, as well as commented on with text or voice, or responded to publicly in your profile.
 
-### Подкасты и аудиозаписи
+### Podcasts and audio recordings
 
-* *Подкасты* являются ключевым аудиовизуальным форматом.
-Их можно слушать и одновременно наблюдать живую транскрипцию разговора.
-Плеер имеет несколько типов визуального отображения, а во время воспроизведения в виде примечаний и вложений всплывают *Живые подсказки*, присвоенные определенным тайм-кодам.
-Подкасты можно скачивать и слушать в фоновом режиме.
-Создать подкаст можно в любом приложении сервиса вручную через встроенный редактор или посредством импорта уже готового пресета.
+* *Podcasts* are a key audiovisual format.
+  They can be listened to and simultaneously watched as a live transcript of the conversation.
+  The player has several types of visual display, and during playback, *Live hints* assigned to specific time codes pop up as notes and attachments.
+  Podcasts can be downloaded and listened to in the background.
+  You can create a podcast in any application of the service manually through the built-in editor or by importing a ready-made preset.
 
-* *Аудиозапись* - короткое голосовое сообщение для приложения к комментарию или публикации, которое нельзя записать предварительно.
-Любую аудиозапись можно расшифровать в текст.
-Одну аудиозапись можно также закрепить в профиле в качестве *Голосового статуса*.
+* *Audio recording* - a short voice message for attachment to a comment or publication, which cannot be pre-recorded.
+  Any audio recording can be transcribed into text.
+  One audio recording can also be pinned to the profile as a *Voice status*.
 
-### Поисковик
+### Search engine
 
-* Может показаться простой функцией, но мы встроили поиск с фильтрами буквально повсюду - он доступен на любом экране и помогает искать пользователей, публикации, комментарии или интересующие моменты в аудиомедиа.
+* It may seem like a simple feature, but we've built filtered search literally everywhere - it's available on any screen and helps you search for users, posts, comments, or interesting moments in audio media.
 
-### Тематические ленты и подписки
+### Thematic feeds and subscriptions
 
-* Для наглядности Автор может тематически распределять публикации у себя в профиле по разным *Лентам публикации*, давая им название и описание.
-Слушатель в свою очередь может подписаться отдельно на каждую из лент (или разом на всего Автора), при этом количество подписчиков Автора складываться из числа пользователей, подписанных хотя бы на одну из его лент.
+* For clarity, the Author can thematically distribute publications in his profile across different *Publication Feeds*, giving them a name and description.
+  The listener, in turn, can subscribe separately to each of the feeds (or to the entire Author at once), while the number of the Author's subscribers is made up of the number of users subscribed to at least one of his feeds.
 
-* Слушатель может объединить множество подписок в отдельные *Ленты просмотра*, настраивая отдельно для каждой параметры показа контента.
-Ленты просмотра доступны с главного экрана и помогают лучше ориентироваться в своих подписках.
+* The listener can combine multiple subscriptions into separate *View Feeds*, separately setting up content display parameters for each.
+  View Feeds are available from the main screen and help you better navigate your subscriptions.
 
-### Хранилище и загрузка
+### Storage and downloading
 
-* Любой контент можно пометить и добавить в *Сохраненные*, или же скачать.
-Такой контент помещается в Хранилище, где также сохраняется история прослушивания.
+* Any content can be marked and added to *Saved*, or downloaded.
+  Such content is placed in the Storage, where the listening history is also saved.
 
-* *Хранилище* - это деревья папок и файлов загрузок на текущем устройстве и виртуально сохраненного контента, доступные между несколькими девайсами.
-Сохраненный контент можно группировать на свое усмотрение, а система автоматически разделит его по типу.
+* *Storage* is a tree of folders and files of downloads on the current device and virtually saved content, available between several devices.
+  Saved content can be grouped at your discretion, and the system will automatically divide it by type.
 
-## 🗽 Особенности
+## 🗽 Features
 
-Мы не принуждаем пользователей смотреть или слушать рекламу, покупать платные подписки и не вводим каких-либо возрастных ограничений.
-Наша работа не включает сотрудничество с правительствами стран, и мы не модерируем пользователей в политических или религиозных взглядах.
-Единственная модерация сервиса - на предмет общечеловечески принятых вещей.
+We do not force users to watch or listen to ads, buy paid subscriptions, and do not impose any age restrictions.
+Our work does not include cooperation with governments of countries, and we do not moderate users in political or religious views.
+The only moderation of the service is for universally accepted things.
 
-## 🪇 Распространение и использование
+## 🪇 Distribution and use
 
-Сеть бесплатна и будет доступна во всех регионах.
-Мы добавим благотворительную подписку, не привносящую дополнительных функций, но поддерживающую сервис на плаву.
+The network is free and will be available in all regions.
+We will add a charity subscription that does not bring additional functions, but keeps the service afloat.
 
-Сервис находится в разработке - готовится приложение под **Android**.
-Позже выйдет **веб-сайт**, приложение под **iOS** и десктопные под **Linux**, **Windows** и **MacOS**.
+The service is under development - an application for **Android** is being prepared.
+Later, a **website**, an application for **iOS** and desktop applications for **Linux**, **Windows** and **MacOS** will be released.
 
-Проект имеет открытую кодовую базу, но сейчас не предполагает внесение сторонних правок.
+The project has an open code base, but currently does not allow for third-party edits.
 
-## 💬 И еще
+## 💬 And more
 
-Опыт с **[Facebook](https://facebook.com)**, **[VK](https://vk.com)**, **[Twitter](https://x.com)** и прочим революционным "хламом" показывает, что социальные сети берут на себя слишком большую ответственность за жизни и опыт людей.
-Практически все они рано или поздно увязают в деньгах, политике и обмане - мы не хотим, чтобы с нашим сервисом происходило то же самое.
-Мы хотим верить в успех **SuperCast**, но осознаем бренность проекта, как и любых других.
-Необычно слышать подобное от создателей очередной социальной сети - не правда ли?
+Experience with **[Facebook](https://facebook.com)**, **[VK](https://vk.com)**, **[Twitter](https://x.com)** and other revolutionary "junk" shows that social networks take on too much responsibility for people's lives and experiences.
+Almost all of them sooner or later get bogged down in money, politics and deception - we do not want the same thing to happen to our service.
+We want to believe in the success of **SuperCast**, but we understand the frailty of the project, like any other.
+It is unusual to hear something like this from the creators of another social network - isn't it?
 
-Поэтому мы делаем вызов всем прочим сервисам, отстаивая идеологию свободы пользователя, и хотим показать пример, что свободный интернет - это то, к чему можно стремиться.
-Мы хотим, чтобы этот пример привел к тому, чего мы действительно хотим, или, по крайней мере, прояснил идею того, в чем мы действительно нуждаемся.
-Мы хотим, чтобы конец был таким, каким он и должен быть.
+Therefore, we challenge all other services, defending the ideology of user freedom, and want to set an example that a free Internet is something to strive for.
+We want this example to lead to what we really want, or at least clarify the idea of ​​what we really need.
+We want the end to be what it should be.
 
-## ✉️ Обратная связь
+## ✉️ Feedback
 
-* По любым вопросам: **[почта](mailto:lime.rainbow.li@gmail.com)**
-* Мы в Telegram: **[канал](https://t.me/super_cast)**
-* Исходный код на GitHub: **[репозиторий](https://github.com/i-rick-y/SuperCast)**
+* For any questions: **[mail](mailto:lime.rainbow.li@gmail.com)**
+* We are on Telegram: **[channel](https://t.me/super_cast)**
+* Source code on GitHub: **[repository](https://github.com/i-rick-y/SuperCast)**
 
-## 📜 Лицензия
+## 📜 License
 
 **[MIT](https://choosealicense.com/licenses/mit/)**
