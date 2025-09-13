@@ -84,7 +84,7 @@
 
 ## ✉️ Обратная связь
 
-- По любым вопросам: [почта](lime.rainbow.li@gmail.com)
+- По любым вопросам: [почта](mailto:lime.rainbow.li@gmail.com)
 - Мы есть в Telegram: [канал](https://t.me/super_cast)
 - Мы публикуем исходный код на GitHub: [репозиторий](https://github.com/i-rick-y/SuperCast)
 
