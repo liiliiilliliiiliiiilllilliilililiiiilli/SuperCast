@@ -2,7 +2,7 @@
 
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.en.md)
-[![ch](https://img.shields.io/badge/lang-ch-yellow.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.ch.md)
+[![ch](https://img.shields.io/badge/lang-ch-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.ch.md)
 > 使用 **[谷歌翻译](https://translate.google.com)**
 
 音频托管平台，您可以在这里收听、创建和讨论播客。
