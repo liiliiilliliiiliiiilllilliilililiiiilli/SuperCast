@@ -1,8 +1,8 @@
 # <ins>SuperCast</ins> — чирикалка нового уровня.
 
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.en.md)
-[![ch](https://img.shields.io/badge/lang-ch-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.ch.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README_Translated/README.en.md)
+[![ch](https://img.shields.io/badge/lang-ch-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README_Translated/README.ch.md)
 
 Аудиохостинг, где можно слушать, создавать и обсуждать подкасты.
 Никакой рекламы, пользовательских соглашений и сбора данных - каким и должен быть интернет.
