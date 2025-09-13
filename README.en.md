@@ -3,7 +3,7 @@
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.en.md)
 [![ch](https://img.shields.io/badge/lang-ch-yellow.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.ch.md)
-> translated with translate.google.com
+> translated with [Google Translate](https://translate.google.com)
 
 An audio hosting site where you can listen, create and discuss podcasts.
 No ads, no user agreements and no data collection - the way the internet should be.
