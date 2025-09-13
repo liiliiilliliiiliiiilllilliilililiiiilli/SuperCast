@@ -1,4 +1,4 @@
-# 💿 SuperCast - a new area of chirping.
+# <ins>SuperCast</ins> - a new area of chirping.
 
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.en.md)
