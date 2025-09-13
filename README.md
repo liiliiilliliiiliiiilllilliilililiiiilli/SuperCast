@@ -1,4 +1,4 @@
-<span style="font-weight: normal; font-size: 0.5em; color: #7fadc9;">SuperCast — чирикалка нового уровня</span>
+<h1 style="color: #7fadc9;">SuperCast — чирикалка нового уровня</h1>
 
 Аудиохостинг, где можно слушать, распространять и обсуждать подкасты.
 Свободный и без ограничений.
