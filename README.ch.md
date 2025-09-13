@@ -1,4 +1,4 @@
-# SuperCast——全新级别的推特体验。
+# 💿 SuperCast——全新级别的推特体验。
 
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.en.md)
