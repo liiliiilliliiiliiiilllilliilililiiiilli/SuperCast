@@ -2,7 +2,7 @@
 
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/README_Translated/README.en.md)
-[![cn](https://img.shields.io/badge/lang-cn-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/README_Translated/README.ch.md)
+[![cn](https://img.shields.io/badge/lang-cn-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/README_Translated/README.cn.md)
 
 Аудиохостинг, где можно слушать, создавать и обсуждать подкасты.
 Никакой рекламы, пользовательских соглашений и сбора данных - каким и должен быть интернет.
