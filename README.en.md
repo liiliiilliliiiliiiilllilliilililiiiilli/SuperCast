@@ -89,9 +89,9 @@ We want the end to be what it should be.
 
 ## ✉️ Feedback
 
-* For any questions: **[mail](mailto:lime.rainbow.li@gmail.com)**
-* We are on Telegram: **[channel](https://t.me/super_cast)**
-* Source code on GitHub: **[repository](https://github.com/i-rick-y/SuperCast)**
+* For any questions: **[Mail](mailto:lime.rainbow.li@gmail.com)**
+* We are on Telegram: **[Channel](https://t.me/super_cast)**
+* Source code on GitHub: **[Repository](https://github.com/i-rick-y/SuperCast)**
 
 ## 📜 License
 

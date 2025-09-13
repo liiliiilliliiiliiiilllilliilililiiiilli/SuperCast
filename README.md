@@ -88,9 +88,9 @@
 
 ## ✉️ Обратная связь
 
-* По любым вопросам: **[почта](mailto:lime.rainbow.li@gmail.com)**
-* Мы в Telegram: **[канал](https://t.me/super_cast)**
-* Исходный код на GitHub: **[репозиторий](https://github.com/i-rick-y/SuperCast)**
+* По любым вопросам: **[Почта](mailto:lime.rainbow.li@gmail.com)**
+* Мы в Telegram: **[Канал](https://t.me/super_cast)**
+* Исходный код на GitHub: **[Репозиторий](https://github.com/i-rick-y/SuperCast)**
 
 ## 📜 Лицензия
 
