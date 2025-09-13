@@ -5,8 +5,8 @@
 [![ch](https://img.shields.io/badge/lang-ch-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.ch.md)
 > Translated with **[Google Translate](https://translate.google.com)**
 
-An audio hosting site where you can listen, create and discuss podcasts.
-No ads, no user agreements and no data collection - the way the internet should be.
+Audio hosting where you can listen, create and discuss podcasts.
+No advertising, user agreements and data collection - as the Internet should be.
 
 ## 💡 Main idea
 
