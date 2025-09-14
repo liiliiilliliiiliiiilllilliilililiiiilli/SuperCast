@@ -1,4 +1,4 @@
-# <ins>SuperCast</ins> - чирикалка нового уровня.
+# <ins>SuperCast</ins> — чирикалка нового уровня.
 
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/README_Translated/README.en.md)
