@@ -1,8 +1,8 @@
 # <ins>SuperCast</ins>——全新级别的推特体验。
 
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/README_Translated/README.en.md)
-[![cn](https://img.shields.io/badge/lang-cn-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/README_Translated/README.cn.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/READMEs_Translated/README.en.md)
+[![cn](https://img.shields.io/badge/lang-cn-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/READMEs_Translated/README.cn.md)
 > 使用 **[谷歌翻译](https://translate.google.com)**
 
 音频托管，让您可以收听、创作和讨论播客。
