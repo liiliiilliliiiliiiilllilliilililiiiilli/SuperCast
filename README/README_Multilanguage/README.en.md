@@ -1,8 +1,8 @@
 # <ins>SuperCast</ins> — a new area of chirping.
 
-[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/README.md)
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/READMEs_Translated/README.en.md)
-[![cn](https://img.shields.io/badge/lang-cn-red.svg)](https://github.com/i-rick-y/SuperCast/blob/prime/READMEs/READMEs_Translated/README.cn.md)
+[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/liiliiilliliiiliiiilllilliilililiiiilli/SuperCast/blob/prime/README/README_Multilanguage/README.ru.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/liiliiilliliiiliiiilllilliilililiiiilli/SuperCast/blob/prime/README/README_Multilanguage/README.en.md)
+[![cn](https://img.shields.io/badge/lang-cn-red.svg)](https://github.com/liiliiilliliiiliiiilllilliilililiiiilli/SuperCast/blob/prime/README/README_Multilanguage/README.cn.md)
 > Translated with **[Google Translate](https://translate.google.com)**
 
 Audio hosting where you can listen, create and discuss podcasts.
