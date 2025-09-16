@@ -1,0 +1,430 @@
+[
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_plus_sharp_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/plus_sharp_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_gadugi_normal.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/gadugi_normal.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_user_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/user_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_5_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_5_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_archivo_extra_bold.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/archivo_extra_bold.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_translate_green_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/translate_green_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_star_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/star_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_arrows_expand_olive.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/arrows_expand_olive.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_check_green_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/check_green_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_8_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_8_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_dollar_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/dollar_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_unwrap_green_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_unwrap_green_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_gadugi_bold.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/gadugi_bold.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_pen_magic_green_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/pen_magic_green_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_bell_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/bell_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_pen_ordinary_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/pen_ordinary_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_archivo_regular.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/archivo_regular.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_collections_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/collections_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_collections_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/collections_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_play_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_play_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_plus_smooth_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/plus_smooth_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_dots_2_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/dots_2_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_unwrap_green_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_unwrap_green_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_filter_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/filter_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_home_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/home_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_unwrap_green_light_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_unwrap_green_light_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_pen_magic_green_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/pen_magic_green_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_settings_adjustments_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/settings_adjustments_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_bookmark_saved_olive.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/bookmark_saved_olive.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_settings_wheel_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/settings_wheel_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_search_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/search_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_plus_smooth_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/plus_smooth_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_3_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_3_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_pen_ordinary_black.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/pen_ordinary_black.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_archivo_semi_bold.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/archivo_semi_bold.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_search_lime.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/search_lime.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_link_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/link_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_trash_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/trash_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_tap_grey_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/tap_grey_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_fira_sans_semi_bold.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/fira_sans_semi_bold.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_brush_small_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/brush_small_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_1_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_1_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_star_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/star_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_expand_arrows_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/expand_arrows_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_arrow_compact_down_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/arrow_compact_down_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_star_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/star_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_plus_sharp_olive.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/plus_sharp_olive.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/xml_backup_rules.xml.flat",
+        "source": "com.example.supercast.app-main-55:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_2_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_2_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_arimo_regular.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/arimo_regular.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_unwrap_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_unwrap_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_arimo_semi_bold.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/arimo_semi_bold.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_check_2_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/check_2_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_notelist_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/notelist_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_qr_code_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/qr_code_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_arimo_bold.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/arimo_bold.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_archivo_bold.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/archivo_bold.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_4_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_4_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/font_fredoka_semi_bold.ttf.flat",
+        "source": "com.example.supercast.app-main-55:/font/fredoka_semi_bold.ttf"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_7_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_7_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_check_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/check_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_plus_sharp_green.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/plus_sharp_green.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_info_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/info_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_home_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/home_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_folder_white.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/folder_white.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_unwrap_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_unwrap_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_citation_green_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/citation_green_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_6_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_6_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_play_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_play_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable__image_9_.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/_image_9_.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_pie_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/pie_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_brush_big_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/brush_big_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_pen_ordinary_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/pen_ordinary_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_palette_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/palette_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_arrow_go_black.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/arrow_go_black.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_play_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_play_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_note_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/note_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_planet_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/planet_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_burger_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/burger_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_unwrap_yellow_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_unwrap_yellow_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_robot_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/robot_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_pie_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/pie_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_arrow_compact_down_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/arrow_compact_down_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_pen_ordinary_green_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/pen_ordinary_green_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_folder_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/folder_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_download_grey.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/download_grey.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_comment_green_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/comment_green_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.supercast.app-main-55:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_arrow_go_grey_light.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/arrow_go_grey_light.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/drawable_triangle_unwrap_yellow_dark.png.flat",
+        "source": "com.example.supercast.app-main-55:/drawable/triangle_unwrap_yellow_dark.png"
+    },
+    {
+        "merged": "com.example.supercast.app-debug-53:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.supercast.app-main-55:/xml/data_extraction_rules.xml"
+    }
+]
